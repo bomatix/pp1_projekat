@@ -1,0 +1,136 @@
+INFO  23:23:59,525 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\Projekat\test\program.mj
+INFO  23:23:59,558 - #2 program
+INFO  23:23:59,558 - #10 MJProgram
+INFO  23:23:59,558 - #10 int
+INFO  23:23:59,559 - #10 x
+INFO  23:23:59,559 - #6 ,
+INFO  23:23:59,560 - #10 y
+INFO  23:23:59,560 - #5 ;
+INFO  23:23:59,560 - #3 {
+INFO  23:23:59,560 - #16 void
+INFO  23:23:59,560 - #10 main
+INFO  23:23:59,561 - #14 (
+INFO  23:23:59,561 - #15 )
+INFO  23:23:59,561 - #3 {
+INFO  23:23:59,562 - #20 if
+INFO  23:23:59,562 - #14 (
+INFO  23:23:59,562 - #10 x
+INFO  23:23:59,562 - #38 ==
+INFO  23:23:59,563 - #9 3
+INFO  23:23:59,564 - #15 )
+INFO  23:23:59,565 - #10 x
+INFO  23:23:59,565 - #37 =
+INFO  23:23:59,565 - #9 2
+INFO  23:23:59,566 - #5 ;
+INFO  23:23:59,566 - #4 }
+INFO  23:23:59,566 - #4 }
+INFO  23:23:59,567 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+       x
+        NoArrayDeclaration(
+        ) [NoArrayDeclaration]
+        VarIdents_(
+          NoVarIdents(
+          ) [NoVarIdents]
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdents_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        IfSt(
+          Condition_(
+            ConditionTerm(
+              ConditionFact(
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorDesignator(
+                      DesignatorExpression(
+                       x
+                        NoDesignatorList(
+                        ) [NoDesignatorList]
+                      ) [DesignatorExpression]
+                      NoDesignatorPars(
+                      ) [NoDesignatorPars]
+                    ) [FactorDesignator]
+                  ) [Term_]
+                ) [Expression]
+                ConditionFactExpr(
+                  Equal(
+                  ) [Equal]
+                  Expression(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    Term_(
+                      NoTermList(
+                      ) [NoTermList]
+                      FactorNum(
+                       3
+                      ) [FactorNum]
+                    ) [Term_]
+                  ) [Expression]
+                ) [ConditionFactExpr]
+              ) [ConditionFact]
+              NoConditionFactList(
+              ) [NoConditionFactList]
+            ) [ConditionTerm]
+            NoConditionTermList(
+            ) [NoConditionTermList]
+          ) [Condition_]
+          DesignatorSt(
+            DesignatorStatementExpression(
+              DesignatorExpression(
+               x
+                NoDesignatorList(
+                ) [NoDesignatorList]
+              ) [DesignatorExpression]
+              DesignatorAssign(
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     2
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [DesignatorAssign]
+            ) [DesignatorStatementExpression]
+          ) [DesignatorSt]
+        ) [IfSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  23:23:59,567 - ===================================

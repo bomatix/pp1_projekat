@@ -1,0 +1,21 @@
+INFO  11:49:02,015 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\LeksickaAnaliza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:49:02,018 - #1 program
+INFO  11:49:02,018 - #16 MJProgram
+INFO  11:49:02,018 - #16 int
+INFO  11:49:02,018 - #16 x
+INFO  11:49:02,018 - #37 ,
+INFO  11:49:02,018 - #16 y
+INFO  11:49:02,018 - #36 ;
+INFO  11:49:02,018 - #16 bool
+INFO  11:49:02,018 - #16 a
+INFO  11:49:02,018 - #33 =
+INFO  11:49:02,018 - #16 true
+INFO  11:49:02,018 - #36 ;
+INFO  11:49:02,018 - #41 {
+INFO  11:49:02,018 - #12 void
+INFO  11:49:02,018 - #16 main
+INFO  11:49:02,018 - #39 (
+INFO  11:49:02,018 - #40 )
+INFO  11:49:02,019 - #41 {
+INFO  11:49:02,019 - #42 }
+INFO  11:49:02,019 - #42 }

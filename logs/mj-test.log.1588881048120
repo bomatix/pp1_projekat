@@ -1,0 +1,14 @@
+INFO  21:50:11,710 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\Projekat\test\program.mj
+INFO  21:50:11,742 - #2 program
+INFO  21:50:11,742 - #10 MJProgram
+INFO  21:50:11,742 - #10 int
+INFO  21:50:11,742 - #10 x
+INFO  21:50:11,743 - #6 ,
+INFO  21:50:11,743 - #10 y
+INFO  21:50:11,743 - #5 ;
+INFO  21:50:11,744 - #10 bool
+INFO  21:50:11,744 - #10 a
+INFO  21:50:11,744 - #37 =
+ERROR 21:50:11,744 - 
+Sintaksna greska na liniji 3
+ERROR 21:50:11,744 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

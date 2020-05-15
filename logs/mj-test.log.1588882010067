@@ -1,0 +1,29 @@
+INFO  22:06:34,144 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\Projekat\test\program.mj
+INFO  22:06:34,182 - #2 program
+INFO  22:06:34,182 - #10 MJProgram
+INFO  22:06:34,182 - #10 int
+INFO  22:06:34,183 - #10 x
+INFO  22:06:34,183 - #6 ,
+INFO  22:06:34,184 - #10 y
+INFO  22:06:34,184 - #5 ;
+INFO  22:06:34,184 - #3 {
+INFO  22:06:34,184 - #16 void
+INFO  22:06:34,185 - #10 main
+INFO  22:06:34,185 - #14 (
+INFO  22:06:34,185 - #15 )
+INFO  22:06:34,186 - #3 {
+INFO  22:06:34,186 - #10 y
+INFO  22:06:34,187 - #37 =
+INFO  22:06:34,187 - #9 3
+INFO  22:06:34,188 - #5 ;
+ERROR 22:06:34,188 - 
+Sintaksna greska na liniji 5
+ERROR 22:06:34,189 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5
+INFO  22:06:34,189 - Term_(
+  NoTermList(
+  ) [NoTermList]
+  FactorNum(
+   3
+  ) [FactorNum]
+) [Term_]
+INFO  22:06:34,189 - ===================================

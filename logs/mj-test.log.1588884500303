@@ -1,0 +1,76 @@
+INFO  22:47:24,861 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\Projekat\test\program.mj
+INFO  22:47:24,895 - #2 program
+INFO  22:47:24,895 - #10 MJProgram
+INFO  22:47:24,895 - #10 int
+INFO  22:47:24,896 - #10 x
+INFO  22:47:24,896 - #6 ,
+INFO  22:47:24,897 - #10 y
+INFO  22:47:24,897 - #5 ;
+INFO  22:47:24,897 - #3 {
+INFO  22:47:24,897 - #16 void
+INFO  22:47:24,897 - #10 main
+INFO  22:47:24,898 - #14 (
+INFO  22:47:24,898 - #15 )
+INFO  22:47:24,898 - #3 {
+INFO  22:47:24,898 - #10 y
+INFO  22:47:24,899 - #37 =
+INFO  22:47:24,899 - #9 3
+INFO  22:47:24,900 - #5 ;
+ERROR 22:47:24,900 - 
+Sintaksna greska na liniji 5
+INFO  22:47:24,900 - #10 x
+INFO  22:47:24,900 - #37 =
+INFO  22:47:24,900 - #9 2
+INFO  22:47:24,901 - #5 ;
+ERROR 22:47:24,902 - 
+Sintaksna greska na liniji 6
+INFO  22:47:24,902 - #4 }
+INFO  22:47:24,902 - #4 }
+INFO  22:47:24,902 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+       x
+        NoArrayDeclaration(
+        ) [NoArrayDeclaration]
+        VarIdents_(
+          NoVarIdents(
+          ) [NoVarIdents]
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdents_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        StatementList_(
+          NoStatementList(
+          ) [NoStatementList]
+          StatementDerived1(
+          ) [StatementDerived1]
+        ) [StatementList_]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  22:47:24,902 - ===================================

@@ -1,0 +1,56 @@
+INFO  21:52:19,771 - Compiling source file: C:\Users\Matija\Desktop\Fakultet\PP1\Projekat\Projekat\test\program.mj
+INFO  21:52:19,803 - #2 program
+INFO  21:52:19,803 - #10 MJProgram
+INFO  21:52:19,804 - #10 int
+INFO  21:52:19,804 - #10 x
+INFO  21:52:19,804 - #6 ,
+INFO  21:52:19,805 - #10 y
+INFO  21:52:19,805 - #5 ;
+INFO  21:52:19,805 - #3 {
+INFO  21:52:19,805 - #16 void
+INFO  21:52:19,806 - #10 main
+INFO  21:52:19,806 - #14 (
+INFO  21:52:19,806 - #15 )
+INFO  21:52:19,806 - #3 {
+INFO  21:52:19,807 - #4 }
+INFO  21:52:19,807 - #4 }
+INFO  21:52:19,808 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+       x
+        NoArrayDeclaration(
+        ) [NoArrayDeclaration]
+        VarIdents_(
+          NoVarIdents(
+          ) [NoVarIdents]
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdents_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  21:52:19,808 - ===================================
