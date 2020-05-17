@@ -33,8 +33,10 @@ public class MJTest {
 			Yylex lexer = new Yylex(br);
 			
 			MJParser p = new MJParser(lexer);
-			Symbol s = p.parse();  //pocetak parsiranja
+//			Symbol s = p.parse();  //pocetak parsiranja
+			Symbol s = p.debug_parse();  //pocetak parsiranja
 	       
+			log.info(s.value);
 	        Program prog = (Program)(s.value); 
 			// ispis sintaksnog stabla
 			log.info(prog.toString(""));

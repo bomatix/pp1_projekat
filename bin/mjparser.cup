@@ -78,9 +78,8 @@ ConstDecl ::= (ConstDeclaration_) CONST Type:varType IDENT:varName EQUAL ConstVa
 ConstIdents ::= (ConstIdents_) ConstIdents COMMA IDENT EQUAL ConstValue | (NoConstIdents);
 ConstValue ::= (NumConst) NUMCONST | (CharConst) CHARCONST | (BoolConst) BOOLCONST;
 
-VarDecl ::= (VarDeclaration_) Type IDENT ArrayDecl VarIdentsList VarIdents SEMI;
-VarIdentsList ::= (VarIdentsList_) VarIdentsList COMMA VarIdent | (NoVarIdentsList) | error COMMA;
-VarIdents ::= (VarIdents_) IDENT ArrayDecl;
+VarDecl ::= (VarDeclaration_) Type IDENT ArrayDecl SEMI;
+VarIdents ::= (VarIdents_) VarIdents COMMA IDENT ArrayDecl |(NoVarIdents);
 
 ArrayDecl ::= (ArrayDeclaration) ArrayDecl LBRACKET RBRACKET | (NoArrayDeclaration);
 

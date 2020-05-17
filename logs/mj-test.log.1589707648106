@@ -1,0 +1,18 @@
+INFO  11:00:34,798 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  11:00:34,808 - #2 program
+INFO  11:00:34,808 - #10 MJProgram
+INFO  11:00:34,808 - #10 int
+INFO  11:00:34,809 - #10 x
+INFO  11:00:34,809 - #5 ;
+INFO  11:00:34,809 - #3 {
+INFO  11:00:34,810 - #16 void
+INFO  11:00:34,810 - #10 main
+INFO  11:00:34,810 - #14 (
+INFO  11:00:34,811 - #15 )
+INFO  11:00:34,811 - #3 {
+INFO  11:00:34,812 - #10 x
+INFO  11:00:34,812 - #37 =
+INFO  11:00:34,813 - #9 2
+INFO  11:00:34,814 - #5 ;
+INFO  11:00:34,815 - #4 }
+INFO  11:00:34,815 - #4 }
