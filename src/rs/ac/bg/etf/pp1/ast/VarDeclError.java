@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NoVarIdents extends VarIdents {
+public class VarDeclError extends VarDecl {
 
-    public NoVarIdents () {
+    public VarDeclError () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class NoVarIdents extends VarIdents {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("NoVarIdents(\n");
+        buffer.append("VarDeclError(\n");
 
         buffer.append(tab);
-        buffer.append(") [NoVarIdents]");
+        buffer.append(") [VarDeclError]");
         return buffer.toString();
     }
 }

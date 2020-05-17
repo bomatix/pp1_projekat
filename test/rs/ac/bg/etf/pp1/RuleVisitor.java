@@ -6,7 +6,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 public class RuleVisitor extends VisitorAdaptor{
 	
-	public void visit(PrintSt printSt) {
+	public void visit(Program program) {
 		Logger log = Logger.getLogger(getClass());
 		
 		log.info("printed");

@@ -1,0 +1,135 @@
+INFO  12:17:21,923 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  12:17:22,017 - #2 program
+INFO  12:17:22,019 - #10 MJProgram
+INFO  12:17:22,019 - #10 int
+INFO  12:17:22,021 - #10 x
+INFO  12:17:22,023 - #5 ;
+INFO  12:17:22,023 - #3 {
+INFO  12:17:22,025 - #16 void
+INFO  12:17:22,027 - #10 main
+INFO  12:17:22,029 - #14 (
+INFO  12:17:22,030 - #15 )
+INFO  12:17:22,031 - #3 {
+INFO  12:17:22,032 - #10 x
+INFO  12:17:22,033 - #37 =
+INFO  12:17:22,035 - #9 2
+INFO  12:17:22,037 - #5 ;
+INFO  12:17:22,039 - #4 }
+INFO  12:17:22,039 - #4 }
+INFO  12:17:22,041 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+       x
+        NoArrayDeclaration(
+        ) [NoArrayDeclaration]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        DesignatorSt(
+          DesignatorStatementExpression(
+            DesignatorExpression(
+             x
+              NoDesignatorList(
+              ) [NoDesignatorList]
+            ) [DesignatorExpression]
+            DesignatorAssign(
+              Assign(
+              ) [Assign]
+              Expression(
+                NoExpressionList(
+                ) [NoExpressionList]
+                Term_(
+                  NoTermList(
+                  ) [NoTermList]
+                  FactorNum(
+                   2
+                  ) [FactorNum]
+                ) [Term_]
+              ) [Expression]
+            ) [DesignatorAssign]
+          ) [DesignatorStatementExpression]
+        ) [DesignatorSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  12:17:22,042 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+       x
+        NoArrayDeclaration(
+        ) [NoArrayDeclaration]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        DesignatorSt(
+          DesignatorStatementExpression(
+            DesignatorExpression(
+             x
+              NoDesignatorList(
+              ) [NoDesignatorList]
+            ) [DesignatorExpression]
+            DesignatorAssign(
+              Assign(
+              ) [Assign]
+              Expression(
+                NoExpressionList(
+                ) [NoExpressionList]
+                Term_(
+                  NoTermList(
+                  ) [NoTermList]
+                  FactorNum(
+                   2
+                  ) [FactorNum]
+                ) [Term_]
+              ) [Expression]
+            ) [DesignatorAssign]
+          ) [DesignatorStatementExpression]
+        ) [DesignatorSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  12:17:22,042 - ===================================

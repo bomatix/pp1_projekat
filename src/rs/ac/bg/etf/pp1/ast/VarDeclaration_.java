@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,15 +8,16 @@ package rs.ac.bg.etf.pp1.ast;
 public class VarDeclaration_ extends VarDecl {
 
     private Type Type;
-    private String ident;
-    private ArrayDecl ArrayDecl;
+    private VarIdentList VarIdentList;
+    private VarIdent VarIdent;
 
-    public VarDeclaration_ (Type Type, String ident, ArrayDecl ArrayDecl) {
+    public VarDeclaration_ (Type Type, VarIdentList VarIdentList, VarIdent VarIdent) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.ident=ident;
-        this.ArrayDecl=ArrayDecl;
-        if(ArrayDecl!=null) ArrayDecl.setParent(this);
+        this.VarIdentList=VarIdentList;
+        if(VarIdentList!=null) VarIdentList.setParent(this);
+        this.VarIdent=VarIdent;
+        if(VarIdent!=null) VarIdent.setParent(this);
     }
 
     public Type getType() {
@@ -27,20 +28,20 @@ public class VarDeclaration_ extends VarDecl {
         this.Type=Type;
     }
 
-    public String getIdent() {
-        return ident;
+    public VarIdentList getVarIdentList() {
+        return VarIdentList;
     }
 
-    public void setIdent(String ident) {
-        this.ident=ident;
+    public void setVarIdentList(VarIdentList VarIdentList) {
+        this.VarIdentList=VarIdentList;
     }
 
-    public ArrayDecl getArrayDecl() {
-        return ArrayDecl;
+    public VarIdent getVarIdent() {
+        return VarIdent;
     }
 
-    public void setArrayDecl(ArrayDecl ArrayDecl) {
-        this.ArrayDecl=ArrayDecl;
+    public void setVarIdent(VarIdent VarIdent) {
+        this.VarIdent=VarIdent;
     }
 
     public void accept(Visitor visitor) {
@@ -49,18 +50,21 @@ public class VarDeclaration_ extends VarDecl {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
-        if(ArrayDecl!=null) ArrayDecl.accept(visitor);
+        if(VarIdentList!=null) VarIdentList.accept(visitor);
+        if(VarIdent!=null) VarIdent.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
-        if(ArrayDecl!=null) ArrayDecl.traverseTopDown(visitor);
+        if(VarIdentList!=null) VarIdentList.traverseTopDown(visitor);
+        if(VarIdent!=null) VarIdent.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
-        if(ArrayDecl!=null) ArrayDecl.traverseBottomUp(visitor);
+        if(VarIdentList!=null) VarIdentList.traverseBottomUp(visitor);
+        if(VarIdent!=null) VarIdent.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -75,11 +79,14 @@ public class VarDeclaration_ extends VarDecl {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+ident);
+        if(VarIdentList!=null)
+            buffer.append(VarIdentList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(ArrayDecl!=null)
-            buffer.append(ArrayDecl.toString("  "+tab));
+        if(VarIdent!=null)
+            buffer.append(VarIdent.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,0 +1,15 @@
+INFO  12:15:50,238 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  12:15:50,266 - #2 program
+INFO  12:15:50,266 - #15 MJProgram
+INFO  12:15:50,266 - #3 {
+INFO  12:15:50,268 - #4 }
+INFO  12:15:50,270 - rs.ac.bg.etf.pp1.ast.Program@133314b
+INFO  12:15:50,270 - Program(
+ MJProgram
+  NoVarDecl(
+  ) [NoVarDecl]
+  NoMethodDecl(
+  ) [NoMethodDecl]
+) [Program]
+INFO  12:15:50,270 - ===================================
+INFO  12:15:50,272 - printed

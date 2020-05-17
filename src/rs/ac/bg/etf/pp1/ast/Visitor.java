@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,6 +8,7 @@ package rs.ac.bg.etf.pp1.ast;
 public interface Visitor { 
 
     public void visit(MethodDecl MethodDecl);
+    public void visit(VarIdent VarIdent);
     public void visit(DesignatorExpr DesignatorExpr);
     public void visit(TermList TermList);
     public void visit(ActParsExpression ActParsExpression);
@@ -28,7 +29,6 @@ public interface Visitor {
     public void visit(Term Term);
     public void visit(FormParsList FormParsList);
     public void visit(Condition Condition);
-    public void visit(VarIdents VarIdents);
     public void visit(ConstValue ConstValue);
     public void visit(MulOp MulOp);
     public void visit(ActParsList ActParsList);
@@ -52,13 +52,13 @@ public interface Visitor {
     public void visit(OptionalDesignatorStatement OptionalDesignatorStatement);
     public void visit(Statement Statement);
     public void visit(VarDecl VarDecl);
+    public void visit(VarIdentList VarIdentList);
     public void visit(ClassDecl ClassDecl);
     public void visit(ConstDecl ConstDecl);
     public void visit(CondFact CondFact);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(DesignatorStatementExpr DesignatorStatementExpr);
     public void visit(Program Program);
-    public void visit(VarIdentsList VarIdentsList);
     public void visit(AllMethodDecl AllMethodDecl);
     public void visit(FormPars FormPars);
     public void visit(Mod Mod);
@@ -158,8 +158,11 @@ public interface Visitor {
     public void visit(Type_ Type_);
     public void visit(NoArrayDeclaration NoArrayDeclaration);
     public void visit(ArrayDeclaration ArrayDeclaration);
-    public void visit(NoVarIdents NoVarIdents);
-    public void visit(VarIdents_ VarIdents_);
+    public void visit(VarIdent_ VarIdent_);
+    public void visit(NoVarIdentList NoVarIdentList);
+    public void visit(VarIdentError VarIdentError);
+    public void visit(VarIdentList_ VarIdentList_);
+    public void visit(VarDeclError VarDeclError);
     public void visit(VarDeclaration_ VarDeclaration_);
     public void visit(BoolConst BoolConst);
     public void visit(CharConst CharConst);

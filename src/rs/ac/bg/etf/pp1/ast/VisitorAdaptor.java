@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,6 +8,7 @@ package rs.ac.bg.etf.pp1.ast;
 public abstract class VisitorAdaptor implements Visitor { 
 
     public void visit(MethodDecl MethodDecl) { }
+    public void visit(VarIdent VarIdent) { }
     public void visit(DesignatorExpr DesignatorExpr) { }
     public void visit(TermList TermList) { }
     public void visit(ActParsExpression ActParsExpression) { }
@@ -28,7 +29,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Term Term) { }
     public void visit(FormParsList FormParsList) { }
     public void visit(Condition Condition) { }
-    public void visit(VarIdents VarIdents) { }
     public void visit(ConstValue ConstValue) { }
     public void visit(MulOp MulOp) { }
     public void visit(ActParsList ActParsList) { }
@@ -52,13 +52,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(OptionalDesignatorStatement OptionalDesignatorStatement) { }
     public void visit(Statement Statement) { }
     public void visit(VarDecl VarDecl) { }
+    public void visit(VarIdentList VarIdentList) { }
     public void visit(ClassDecl ClassDecl) { }
     public void visit(ConstDecl ConstDecl) { }
     public void visit(CondFact CondFact) { }
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(DesignatorStatementExpr DesignatorStatementExpr) { }
     public void visit(Program Program) { }
-    public void visit(VarIdentsList VarIdentsList) { }
     public void visit(AllMethodDecl AllMethodDecl) { }
     public void visit(FormPars FormPars) { }
     public void visit(Mod Mod) { visit(); }
@@ -158,8 +158,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Type_ Type_) { visit(); }
     public void visit(NoArrayDeclaration NoArrayDeclaration) { visit(); }
     public void visit(ArrayDeclaration ArrayDeclaration) { visit(); }
-    public void visit(NoVarIdents NoVarIdents) { visit(); }
-    public void visit(VarIdents_ VarIdents_) { visit(); }
+    public void visit(VarIdent_ VarIdent_) { visit(); }
+    public void visit(NoVarIdentList NoVarIdentList) { visit(); }
+    public void visit(VarIdentError VarIdentError) { visit(); }
+    public void visit(VarIdentList_ VarIdentList_) { visit(); }
+    public void visit(VarDeclError VarDeclError) { visit(); }
     public void visit(VarDeclaration_ VarDeclaration_) { visit(); }
     public void visit(BoolConst BoolConst) { visit(); }
     public void visit(CharConst CharConst) { visit(); }

@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class OptionalPrintParam_ extends OptionalPrintParam {
 
-    private Integer numconst;
+    private Integer N1;
 
-    public OptionalPrintParam_ (Integer numconst) {
-        this.numconst=numconst;
+    public OptionalPrintParam_ (Integer N1) {
+        this.N1=N1;
     }
 
-    public Integer getNumconst() {
-        return numconst;
+    public Integer getN1() {
+        return N1;
     }
 
-    public void setNumconst(Integer numconst) {
-        this.numconst=numconst;
+    public void setN1(Integer N1) {
+        this.N1=N1;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class OptionalPrintParam_ extends OptionalPrintParam {
         buffer.append(tab);
         buffer.append("OptionalPrintParam_(\n");
 
-        buffer.append(" "+tab+numconst);
+        buffer.append(" "+tab+N1);
         buffer.append("\n");
 
         buffer.append(tab);

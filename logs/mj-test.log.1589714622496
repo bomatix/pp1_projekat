@@ -1,0 +1,87 @@
+INFO  13:23:10,910 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  13:23:10,975 - #2 program
+INFO  13:23:10,975 - #10 MJProgram
+INFO  13:23:10,975 - #10 int
+INFO  13:23:10,976 - #10 x
+INFO  13:23:10,977 - #6 ,
+INFO  13:23:10,978 - #9 6
+ERROR 13:23:10,978 - 
+Sintaksna greska na liniji 2
+INFO  13:23:10,978 - #6 ,
+INFO  13:23:10,979 - #10 y
+INFO  13:23:10,979 - #5 ;
+INFO  13:23:10,981 - #3 {
+INFO  13:23:10,983 - #16 void
+INFO  13:23:10,985 - #10 main
+INFO  13:23:10,987 - #14 (
+INFO  13:23:10,987 - #15 )
+INFO  13:23:10,988 - #3 {
+INFO  13:23:10,989 - #10 x
+INFO  13:23:10,990 - #37 =
+INFO  13:23:10,990 - #9 2
+INFO  13:23:10,992 - #5 ;
+INFO  13:23:10,992 - #4 }
+INFO  13:23:10,993 - #4 }
+INFO  13:23:10,994 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentError(
+        ) [VarIdentError]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        DesignatorSt(
+          DesignatorStatementExpression(
+            DesignatorExpression(
+             x
+              NoDesignatorList(
+              ) [NoDesignatorList]
+            ) [DesignatorExpression]
+            DesignatorAssign(
+              Assign(
+              ) [Assign]
+              Expression(
+                NoExpressionList(
+                ) [NoExpressionList]
+                Term_(
+                  NoTermList(
+                  ) [NoTermList]
+                  FactorNum(
+                   2
+                  ) [FactorNum]
+                ) [Term_]
+              ) [Expression]
+            ) [DesignatorAssign]
+          ) [DesignatorStatementExpression]
+        ) [DesignatorSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  13:23:10,994 - ===================================

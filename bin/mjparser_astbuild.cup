@@ -54,6 +54,7 @@ terminal AND, OR, ISNOTEQUAL;
 nonterminal Program Program;
 nonterminal DeclList DeclList;
 nonterminal MethodDeclList MethodDeclList;
+nonterminal VarIdentList VarIdentList;
 nonterminal Decl Decl;
 nonterminal ConstDecl ConstDecl;
 nonterminal VarDecl VarDecl;
@@ -64,7 +65,7 @@ nonterminal ConstIdents ConstIdents;
 nonterminal ConstValue ConstValue;
 nonterminal FormParsList FormParsList;
 nonterminal ArrayDecl ArrayDecl;
-nonterminal VarIdents VarIdents;
+nonterminal VarIdent VarIdent;
 nonterminal TypeVoid TypeVoid;
 nonterminal OptionalCondition OptionalCondition;
 nonterminal AssignOp AssignOp;
@@ -121,8 +122,9 @@ ConstDecl ::= (ConstDeclaration_) CONST Type:varType IDENT:varName EQUAL ConstVa
 ConstIdents ::= (ConstIdents_) ConstIdents:C1 COMMA IDENT:I2 EQUAL ConstValue:C3 {: RESULT=new ConstIdents_(C1, I2, C3); RESULT.setLine(C1left); :} | (NoConstIdents) {: RESULT=new NoConstIdents(); :};
 ConstValue ::= (NumConst) NUMCONST:N1 {: RESULT=new NumConst(N1); RESULT.setLine(N1left); :} | (CharConst) CHARCONST:C1 {: RESULT=new CharConst(C1); RESULT.setLine(C1left); :} | (BoolConst) BOOLCONST {: RESULT=new BoolConst(); :};
 
-VarDecl ::= (VarDeclaration_) Type:T1 IDENT:I2 ArrayDecl:A3 VarIdents:V4 SEMI {: RESULT=new VarDeclaration_(T1, I2, A3, V4); RESULT.setLine(T1left); :};
-VarIdents ::= (VarIdents_) VarIdents:V1 COMMA IDENT:I2 ArrayDecl:A3 {: RESULT=new VarIdents_(V1, I2, A3); RESULT.setLine(V1left); :} | (NoVarIdents) {: RESULT=new NoVarIdents(); :};
+VarDecl ::= (VarDeclaration_) Type:T1 VarIdentList:V2 VarIdent:V3 SEMI {: RESULT=new VarDeclaration_(T1, V2, V3); RESULT.setLine(T1left); :} | (VarDeclError) error SEMI {: RESULT=new VarDeclError(); :};
+VarIdentList ::= (VarIdentList_) VarIdentList:V1 VarIdent:V2 COMMA {: RESULT=new VarIdentList_(V1, V2); RESULT.setLine(V1left); :} | (VarIdentError) error COMMA {: RESULT=new VarIdentError(); :} |(NoVarIdentList) {: RESULT=new NoVarIdentList(); :};
+VarIdent ::= (VarIdent_) IDENT:I1 ArrayDecl:A2 {: RESULT=new VarIdent_(I1, A2); RESULT.setLine(I1left); :};
 
 ArrayDecl ::= (ArrayDeclaration) ArrayDecl:A1 LBRACKET RBRACKET {: RESULT=new ArrayDeclaration(A1); RESULT.setLine(A1left); :} | (NoArrayDeclaration) {: RESULT=new NoArrayDeclaration(); :};
 

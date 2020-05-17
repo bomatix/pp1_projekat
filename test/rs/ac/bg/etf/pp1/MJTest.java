@@ -33,10 +33,10 @@ public class MJTest {
 			Yylex lexer = new Yylex(br);
 			
 			MJParser p = new MJParser(lexer);
-//			Symbol s = p.parse();  //pocetak parsiranja
-			Symbol s = p.debug_parse();  //pocetak parsiranja
+			Symbol s = p.parse();  //pocetak parsiranja
+//			Symbol s = p.debug_parse();  //pocetak parsiranja
 	       
-			log.info(s.value);
+//			log.info(s.value);
 	        Program prog = (Program)(s.value); 
 			// ispis sintaksnog stabla
 			log.info(prog.toString(""));
@@ -51,6 +51,8 @@ public class MJTest {
 //			log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
 			
 		} 
+		catch (Exception e) {
+		}
 		finally {
 			if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }
 		}

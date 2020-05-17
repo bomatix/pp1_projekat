@@ -51,10 +51,10 @@ terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MIN
 terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQUAL, GRE, GREEQUAL;
 terminal AND, OR, ISNOTEQUAL;
 
-nonterminal Program, DeclList, MethodDeclList, VarIdentsList;
+nonterminal Program, DeclList, MethodDeclList, VarIdentList;
 nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl, Type;
 nonterminal ConstIdents, ConstValue, FormParsList;
-nonterminal ArrayDecl, VarIdents, TypeVoid, OptionalCondition;
+nonterminal ArrayDecl, VarIdent, TypeVoid, OptionalCondition;
 nonterminal AssignOp, RelOp, AddOp, MulOp;
 nonterminal MethodDecl, VarDeclList, FormPars, EmptyBrackets;
 nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList;
@@ -78,8 +78,9 @@ ConstDecl ::= (ConstDeclaration_) CONST Type:varType IDENT:varName EQUAL ConstVa
 ConstIdents ::= (ConstIdents_) ConstIdents COMMA IDENT EQUAL ConstValue | (NoConstIdents);
 ConstValue ::= (NumConst) NUMCONST | (CharConst) CHARCONST | (BoolConst) BOOLCONST;
 
-VarDecl ::= (VarDeclaration_) Type IDENT ArrayDecl SEMI;
-VarIdents ::= (VarIdents_) VarIdents COMMA IDENT ArrayDecl |(NoVarIdents);
+VarDecl ::= (VarDeclaration_) Type VarIdentList VarIdent SEMI | (VarDeclError) error SEMI;
+VarIdentList ::= (VarIdentList_) VarIdentList VarIdent COMMA | (VarIdentError) error COMMA |(NoVarIdentList);
+VarIdent ::= (VarIdent_) IDENT ArrayDecl;
 
 ArrayDecl ::= (ArrayDeclaration) ArrayDecl LBRACKET RBRACKET | (NoArrayDeclaration);
 

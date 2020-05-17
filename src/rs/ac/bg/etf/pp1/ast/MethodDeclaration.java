@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,15 +8,15 @@ package rs.ac.bg.etf.pp1.ast;
 public class MethodDeclaration extends MethodDecl {
 
     private TypeVoid TypeVoid;
-    private String ident;
+    private String I2;
     private FormParsList FormParsList;
     private VarDeclList VarDeclList;
     private StatementList StatementList;
 
-    public MethodDeclaration (TypeVoid TypeVoid, String ident, FormParsList FormParsList, VarDeclList VarDeclList, StatementList StatementList) {
+    public MethodDeclaration (TypeVoid TypeVoid, String I2, FormParsList FormParsList, VarDeclList VarDeclList, StatementList StatementList) {
         this.TypeVoid=TypeVoid;
         if(TypeVoid!=null) TypeVoid.setParent(this);
-        this.ident=ident;
+        this.I2=I2;
         this.FormParsList=FormParsList;
         if(FormParsList!=null) FormParsList.setParent(this);
         this.VarDeclList=VarDeclList;
@@ -33,12 +33,12 @@ public class MethodDeclaration extends MethodDecl {
         this.TypeVoid=TypeVoid;
     }
 
-    public String getIdent() {
-        return ident;
+    public String getI2() {
+        return I2;
     }
 
-    public void setIdent(String ident) {
-        this.ident=ident;
+    public void setI2(String I2) {
+        this.I2=I2;
     }
 
     public FormParsList getFormParsList() {
@@ -103,7 +103,7 @@ public class MethodDeclaration extends MethodDecl {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+ident);
+        buffer.append(" "+tab+I2);
         buffer.append("\n");
 
         if(FormParsList!=null)

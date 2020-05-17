@@ -1,0 +1,20 @@
+INFO  12:17:09,824 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  12:17:09,905 - #2 program
+INFO  12:17:09,906 - #10 MJProgram
+INFO  12:17:09,906 - #3 {
+INFO  12:17:09,907 - #4 }
+INFO  12:17:09,909 - Program_(
+ MJProgram
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program_]
+INFO  12:17:09,910 - Program_(
+ MJProgram
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  NoMethodDeclarations(
+  ) [NoMethodDeclarations]
+) [Program_]
+INFO  12:17:09,910 - ===================================

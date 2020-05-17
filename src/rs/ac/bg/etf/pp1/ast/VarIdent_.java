@@ -1,38 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 11:52:18
+// 17/4/2020 13:25:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class VarIdents_ extends VarIdents {
+public class VarIdent_ extends VarIdent {
 
-    private VarIdents VarIdents;
-    private String ident;
+    private String I1;
     private ArrayDecl ArrayDecl;
 
-    public VarIdents_ (VarIdents VarIdents, String ident, ArrayDecl ArrayDecl) {
-        this.VarIdents=VarIdents;
-        if(VarIdents!=null) VarIdents.setParent(this);
-        this.ident=ident;
+    public VarIdent_ (String I1, ArrayDecl ArrayDecl) {
+        this.I1=I1;
         this.ArrayDecl=ArrayDecl;
         if(ArrayDecl!=null) ArrayDecl.setParent(this);
     }
 
-    public VarIdents getVarIdents() {
-        return VarIdents;
+    public String getI1() {
+        return I1;
     }
 
-    public void setVarIdents(VarIdents VarIdents) {
-        this.VarIdents=VarIdents;
-    }
-
-    public String getIdent() {
-        return ident;
-    }
-
-    public void setIdent(String ident) {
-        this.ident=ident;
+    public void setI1(String I1) {
+        this.I1=I1;
     }
 
     public ArrayDecl getArrayDecl() {
@@ -48,18 +37,15 @@ public class VarIdents_ extends VarIdents {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarIdents!=null) VarIdents.accept(visitor);
         if(ArrayDecl!=null) ArrayDecl.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarIdents!=null) VarIdents.traverseTopDown(visitor);
         if(ArrayDecl!=null) ArrayDecl.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarIdents!=null) VarIdents.traverseBottomUp(visitor);
         if(ArrayDecl!=null) ArrayDecl.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -67,15 +53,9 @@ public class VarIdents_ extends VarIdents {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("VarIdents_(\n");
+        buffer.append("VarIdent_(\n");
 
-        if(VarIdents!=null)
-            buffer.append(VarIdents.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        buffer.append(" "+tab+ident);
+        buffer.append(" "+tab+I1);
         buffer.append("\n");
 
         if(ArrayDecl!=null)
@@ -85,7 +65,7 @@ public class VarIdents_ extends VarIdents {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [VarIdents_]");
+        buffer.append(") [VarIdent_]");
         return buffer.toString();
     }
 }
