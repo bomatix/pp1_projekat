@@ -1,28 +1,74 @@
-INFO  13:26:00,781 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
-INFO  13:26:00,863 - #2 program
-INFO  13:26:00,864 - #10 MJProgram
-INFO  13:26:00,864 - #10 int
-INFO  13:26:00,865 - #10 x
-INFO  13:26:00,866 - #6 ,
-INFO  13:26:00,867 - #9 6
-ERROR 13:26:00,867 - 
-Sintaksna greska na liniji 2
-INFO  13:26:00,868 - #6 ,
-INFO  13:26:00,868 - #10 y
-INFO  13:26:00,868 - #6 ,
-INFO  13:26:00,868 - #5 ;
-ERROR 13:26:00,869 - 
-Sintaksna greska na liniji 2
-INFO  13:26:00,869 - #3 {
-INFO  13:26:00,869 - #16 void
-INFO  13:26:00,869 - #10 main
-INFO  13:26:00,870 - #14 (
-INFO  13:26:00,870 - #15 )
-INFO  13:26:00,870 - #3 {
-INFO  13:26:00,870 - #10 x
-INFO  13:26:00,870 - #37 =
-INFO  13:26:00,870 - #9 2
-INFO  13:26:00,871 - #5 ;
-INFO  13:26:00,871 - #4 }
-INFO  13:26:00,871 - #4 }
-ERROR 13:26:00,871 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7
+INFO  23:40:01,178 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  23:40:01,289 - #2 program
+INFO  23:40:01,289 - #10 MJProgram
+INFO  23:40:01,289 - #10 int
+INFO  23:40:01,289 - #10 x
+INFO  23:40:01,289 - #6 ,
+INFO  23:40:01,289 - #10 y
+INFO  23:40:01,289 - #5 ;
+INFO  23:40:01,289 - #3 {
+INFO  23:40:01,289 - #16 void
+INFO  23:40:01,297 - #10 main
+INFO  23:40:01,297 - #14 (
+INFO  23:40:01,297 - #15 )
+INFO  23:40:01,297 - #3 {
+INFO  23:40:01,299 - #10 x
+INFO  23:40:01,299 - #37 =
+INFO  23:40:01,299 - #9 2
+INFO  23:40:01,299 - #31 ++
+ERROR 23:40:01,299 - 
+Sintaksna greska na liniji 5
+INFO  23:40:01,299 - #5 ;
+INFO  23:40:01,299 - #4 }
+INFO  23:40:01,299 - #4 }
+ERROR 23:40:01,299 - Izvrsen oporavak do ; na liniji 5
+INFO  23:40:01,307 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentList_(
+          NoVarIdentList(
+          ) [NoVarIdentList]
+          VarIdent_(
+           x
+            NoArrayDeclaration(
+            ) [NoArrayDeclaration]
+          ) [VarIdent_]
+        ) [VarIdentList_]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        AssignExpression(
+          AssignExprError(
+          ) [AssignExprError]
+        ) [AssignExpression]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  23:40:01,307 - ===================================

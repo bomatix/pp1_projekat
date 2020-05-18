@@ -106,6 +106,7 @@ nonterminal ActParsExpression ActParsExpression;
 nonterminal TermList TermList;
 nonterminal Term Term;
 nonterminal ExprList ExprList;
+nonterminal AssignExpr AssignExpr;
 
 precedence left ELSE;
 
@@ -160,7 +161,7 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr:D1 SEMI {: RESULT=new Desig
 			  (IfSt) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new IfSt(C1, S2); RESULT.setLine(C1left); :} |
 			  (ForSt) FOR LPAREN OptionalDesignatorStatement:O1 SEMI OptionalCondition:O2 SEMI OptionalDesignatorStatement:O3 RPAREN Statement:S4 {: RESULT=new ForSt(O1, O2, O3, S4); RESULT.setLine(O1left); :} |
 			  (BreakSt) BREAK SEMI {: RESULT=new BreakSt(); :} |
-			  (StatementError) error SEMI {: RESULT=new StatementError(); :}|
+			  (AssignExpression) AssignExpr:A1 {: RESULT=new AssignExpression(A1); RESULT.setLine(A1left); :} |
 			  (ContinueSt) CONTINUE SEMI {: RESULT=new ContinueSt(); :} |
 			  (ReturnSt) RETURN OptionalExpr:O1 SEMI {: RESULT=new ReturnSt(O1); RESULT.setLine(O1left); :} |
 			  (ReadSt) READ LPAREN DesignatorExpr:D1 RPAREN SEMI {: RESULT=new ReadSt(D1); RESULT.setLine(D1left); :} |
@@ -189,7 +190,9 @@ Factor ::= (FactorDesignator) DesignatorExpr:D1 DesignatorPars:D2 {: RESULT=new 
 FactorExpr ::= (FactorExpression) LBRACKET Expr:E1 RBRACKET {: RESULT=new FactorExpression(E1); RESULT.setLine(E1left); :};
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr:D1 DesignatorStatement:D2 {: RESULT=new DesignatorStatementExpression(D1, D2); RESULT.setLine(D1left); :}; 
-DesignatorStatement ::=  (DesignatorAssign) AssignOp:A1 Expr:E2 {: RESULT=new DesignatorAssign(A1, E2); RESULT.setLine(A1left); :} | (DesignatorActPars) LPAREN ActParsExpression:A1 RPAREN {: RESULT=new DesignatorActPars(A1); RESULT.setLine(A1left); :} | (DesignatorPlusPlus) PLUSPLUS {: RESULT=new DesignatorPlusPlus(); :} | (DesignatorMinusMinus) MINUSMINUS {: RESULT=new DesignatorMinusMinus(); :};
+DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsExpression:A1 RPAREN {: RESULT=new DesignatorActPars(A1); RESULT.setLine(A1left); :} | (DesignatorPlusPlus) PLUSPLUS {: RESULT=new DesignatorPlusPlus(); :} | (DesignatorMinusMinus) MINUSMINUS {: RESULT=new DesignatorMinusMinus(); :};
+
+AssignExpr ::= (AssignExpr_) DesignatorExpr:D1 AssignOp:A2 Expr:E3 SEMI {: RESULT=new AssignExpr_(D1, A2, E3); RESULT.setLine(D1left); :} | (AssignExprError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :} {: RESULT=new AssignExprError(); :};
 
 Condition ::= (Condition_) CondTerm:C1 CondTermList:C2 {: RESULT=new Condition_(C1, C2); RESULT.setLine(C1left); :};
 CondTermList ::= (ConditionTermList) CondTermList:C1 OR CondTerm:C2 {: RESULT=new ConditionTermList(C1, C2); RESULT.setLine(C1left); :} | (NoConditionTermList) {: RESULT=new NoConditionTermList(); :} ;

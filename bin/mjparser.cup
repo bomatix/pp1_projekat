@@ -61,7 +61,7 @@ nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList;
 nonterminal AllMethodDecl, Statement, StatementList, Expr, OptionalExpr;
 nonterminal OptionalDesignatorStatement, OptionalPrintParam, Designator, DesignatorList, DesignatorExpr, DesignatorPars;
 nonterminal CondFactExpr, CondFact, CondFactList, CondTerm, CondTermList, Condition, DesignatorStatement, DesignatorStatementExpr;
-nonterminal FactorExpr, Factor, ActPars, ActParsList, ActParsExpression, TermList, Term, ExprList;
+nonterminal FactorExpr, Factor, ActPars, ActParsList, ActParsExpression, TermList, Term, ExprList, AssignExpr;
 
 precedence left ELSE;
 
@@ -116,7 +116,7 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr SEMI |
 			  (IfSt) IF LPAREN Condition RPAREN Statement |
 			  (ForSt) FOR LPAREN OptionalDesignatorStatement SEMI OptionalCondition SEMI OptionalDesignatorStatement RPAREN Statement |
 			  (BreakSt) BREAK SEMI |
-			  (StatementError) error SEMI|
+			  (AssignExpression) AssignExpr |
 			  (ContinueSt) CONTINUE SEMI |
 			  (ReturnSt) RETURN OptionalExpr SEMI |
 			  (ReadSt) READ LPAREN DesignatorExpr RPAREN SEMI |
@@ -145,7 +145,9 @@ Factor ::= (FactorDesignator) DesignatorExpr DesignatorPars | (FactorNum) NUMCON
 FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET;
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr DesignatorStatement; 
-DesignatorStatement ::=  (DesignatorAssign) AssignOp Expr | (DesignatorActPars) LPAREN ActParsExpression RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
+DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsExpression RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
+
+AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr SEMI | (AssignExprError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
 
 Condition ::= (Condition_) CondTerm CondTermList;
 CondTermList ::= (ConditionTermList) CondTermList OR CondTerm | (NoConditionTermList) ;

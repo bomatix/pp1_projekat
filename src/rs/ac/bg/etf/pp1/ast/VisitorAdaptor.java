@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 13:25:46
+// 18/4/2020 23:39:36
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -29,6 +29,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Term Term) { }
     public void visit(FormParsList FormParsList) { }
     public void visit(Condition Condition) { }
+    public void visit(AssignExpr AssignExpr) { }
     public void visit(ConstValue ConstValue) { }
     public void visit(MulOp MulOp) { }
     public void visit(ActParsList ActParsList) { }
@@ -89,10 +90,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoConditionTermList NoConditionTermList) { visit(); }
     public void visit(ConditionTermList ConditionTermList) { visit(); }
     public void visit(Condition_ Condition_) { visit(); }
+    public void visit(AssignExprError AssignExprError) { visit(); }
+    public void visit(AssignExpr_ AssignExpr_) { visit(); }
     public void visit(DesignatorMinusMinus DesignatorMinusMinus) { visit(); }
     public void visit(DesignatorPlusPlus DesignatorPlusPlus) { visit(); }
     public void visit(DesignatorActPars DesignatorActPars) { visit(); }
-    public void visit(DesignatorAssign DesignatorAssign) { visit(); }
     public void visit(DesignatorStatementExpression DesignatorStatementExpression) { visit(); }
     public void visit(FactorExpression FactorExpression) { visit(); }
     public void visit(FactorExpr_ FactorExpr_) { visit(); }
@@ -125,7 +127,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ReadSt ReadSt) { visit(); }
     public void visit(ReturnSt ReturnSt) { visit(); }
     public void visit(ContinueSt ContinueSt) { visit(); }
-    public void visit(StatementError StatementError) { visit(); }
+    public void visit(AssignExpression AssignExpression) { visit(); }
     public void visit(BreakSt BreakSt) { visit(); }
     public void visit(ForSt ForSt) { visit(); }
     public void visit(IfSt IfSt) { visit(); }

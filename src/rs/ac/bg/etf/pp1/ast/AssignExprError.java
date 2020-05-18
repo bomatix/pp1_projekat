@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/4/2020 13:25:46
+// 18/4/2020 23:39:35
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class StatementError extends Statement {
+public class AssignExprError extends AssignExpr {
 
-    public StatementError () {
+    public AssignExprError () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class StatementError extends Statement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("StatementError(\n");
+        buffer.append("AssignExprError(\n");
 
         buffer.append(tab);
-        buffer.append(") [StatementError]");
+        buffer.append(") [AssignExprError]");
         return buffer.toString();
     }
 }

@@ -1,0 +1,74 @@
+INFO  23:39:48,113 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  23:39:48,260 - #2 program
+INFO  23:39:48,262 - #10 MJProgram
+INFO  23:39:48,262 - #10 int
+INFO  23:39:48,264 - #10 x
+INFO  23:39:48,266 - #6 ,
+INFO  23:39:48,267 - #10 y
+INFO  23:39:48,268 - #5 ;
+INFO  23:39:48,268 - #3 {
+INFO  23:39:48,268 - #16 void
+INFO  23:39:48,269 - #10 main
+INFO  23:39:48,270 - #14 (
+INFO  23:39:48,272 - #15 )
+INFO  23:39:48,274 - #3 {
+INFO  23:39:48,275 - #10 x
+INFO  23:39:48,276 - #37 =
+INFO  23:39:48,277 - #9 2
+INFO  23:39:48,280 - #31 ++
+ERROR 23:39:48,280 - 
+Sintaksna greska na liniji 5
+INFO  23:39:48,280 - #5 ;
+INFO  23:39:48,280 - #4 }
+INFO  23:39:48,280 - #4 }
+ERROR 23:39:48,284 - Izvrsen oporavak do ;13
+INFO  23:39:48,287 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentList_(
+          NoVarIdentList(
+          ) [NoVarIdentList]
+          VarIdent_(
+           x
+            NoArrayDeclaration(
+            ) [NoArrayDeclaration]
+          ) [VarIdent_]
+        ) [VarIdentList_]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        NoStatementList(
+        ) [NoStatementList]
+        AssignExpression(
+          AssignExprError(
+          ) [AssignExprError]
+        ) [AssignExpression]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  23:39:48,288 - ===================================
