@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/4/2020 15:17:14
+// 19/4/2020 21:50:39
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -150,16 +150,19 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDeclaration_ MethodDeclaration_) { visit(); }
     public void visit(NoAllMethodsDeclarationList NoAllMethodsDeclarationList) { visit(); }
     public void visit(AllMethodsDeclarationList AllMethodsDeclarationList) { visit(); }
+    public void visit(ExtendsErrorAll ExtendsErrorAll) { visit(); }
+    public void visit(ExtendsError ExtendsError) { visit(); }
     public void visit(NoExtends NoExtends) { visit(); }
     public void visit(Extends_ Extends_) { visit(); }
     public void visit(AbstractClassDeclaration AbstractClassDeclaration) { visit(); }
     public void visit(Type Type) { visit(); }
+    public void visit(AbstractMethodDeclarationError AbstractMethodDeclarationError) { visit(); }
     public void visit(AbstractMethodDeclaration AbstractMethodDeclaration) { visit(); }
     public void visit(NoEmptyBrackets NoEmptyBrackets) { visit(); }
     public void visit(EmptyBrackets_ EmptyBrackets_) { visit(); }
     public void visit(FormParItem_ FormParItem_) { visit(); }
-    public void visit(NoFormParsList NoFormParsList) { visit(); }
     public void visit(FormParsListError FormParsListError) { visit(); }
+    public void visit(NoFormParsList NoFormParsList) { visit(); }
     public void visit(FormParsListItem FormParsListItem) { visit(); }
     public void visit(FormParsList_ FormParsList_) { visit(); }
     public void visit(FormParsError FormParsError) { visit(); }

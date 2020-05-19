@@ -39,7 +39,7 @@ public class MJTest {
 //			log.info(s.value);
 	        Program prog = (Program)(s.value); 
 			// ispis sintaksnog stabla
-			log.info(prog.toString(""));
+//			log.info(prog.toString(""));
 			log.info("===================================");
 
 			// ispis prepoznatih programskih konstrukcija

@@ -1,8 +1,12 @@
 program MJProgram
 int x, y;
+abstract class A extends == B{
+	{
+		abstract void doIt();
+	}
+}
 {
-
-	int funkcija(int broj, int + broj2, int broj3) {
+	int funkcija(int broj, int broj2, int broj3) {
 		return 3;
 	}
 

@@ -92,19 +92,36 @@ MethodDecl ::= (MethodDeclaration) TypeVoid IDENT FormPars VarDeclList LBRACE St
 
 VarDeclList ::= (VarDeclarations) VarDeclList VarDecl | (NoVarDeclaration);
 
-FormPars ::= (FormPars_) LPAREN FormParsList RPAREN | (FormParsError) LPAREN error RPAREN:FormParsRParenError  {: parser.report_error("Izvrsen oporavak do ) na liniji " + FormParsRParenErrorleft, null);  :} ;
-FormParsList ::= (FormParsList_) FormParsList COMMA FormParItem | (FormParsListItem) FormParItem | (FormParsListError) error COMMA:FormParsCommaError {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :} | (NoFormParsList);
+FormPars ::= (FormPars_) LPAREN FormParsList RPAREN | 
+			 (FormParsError) LPAREN error RPAREN:FormParsRParenError  
+			 {: parser.report_error("Izvrsen oporavak do ) na liniji " + FormParsRParenErrorleft, null);  :};
+			 
+FormParsList ::= (FormParsList_) FormParsList COMMA FormParItem | 
+				 (FormParsListItem) FormParItem | 
+				 (NoFormParsList) |
+				 (FormParsListError) error COMMA:FormParsCommaError 
+				 {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :};
+				 
 FormParItem ::=  (FormParItem_) Type IDENT EmptyBrackets;
+
 
 EmptyBrackets ::= (EmptyBrackets_) LBRACKET RBRACKET | (NoEmptyBrackets);
 
-AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars SEMI;
+AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars SEMI | 
+					   (AbstractMethodDeclarationError) error SEMI:AbstractMethodDeclError
+					   {: parser.report_error("Izvrsen oporavak do ; na liniji " + AbstractMethodDeclErrorleft, null); :};
 
 Type ::= (Type) IDENT;
 
 
 AbstractClassDecl ::= (AbstractClassDeclaration) ABSTRACT CLASS IDENT Extends LBRACE VarDeclList LBRACE AllMethodsDeclList RBRACE RBRACE;
-Extends ::= (Extends_) EXTENDS IDENT | (NoExtends);
+
+Extends ::= (Extends_) EXTENDS IDENT | 
+			(NoExtends) | 
+			(ExtendsError) error:ExtendsError EXTENDS IDENT | 
+			(ExtendsErrorAll) error:ExtendsErrorAll
+			{: parser.report_error("Izvrsen oporavak do { na liniji " + ExtendsErrorAllleft, null); :};
+
 AllMethodsDeclList ::= (AllMethodsDeclarationList) AllMethodsDeclList AllMethodDecl | (NoAllMethodsDeclarationList);
 AllMethodDecl ::= (MethodDeclaration_) MethodDecl | (AbstractMethodDeclaration_) AbstractMethodDecl;
 
@@ -123,7 +140,6 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr SEMI |
 			  (ReadSt) READ LPAREN DesignatorExpr RPAREN SEMI |
 			  (PrintSt) PRINT LPAREN Expr OptionalPrintParam RPAREN SEMI |
 			  (Statements) LBRACE StatementList RBRACE;
-			  
 			  
 
 OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST;

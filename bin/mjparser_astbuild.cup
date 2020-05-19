@@ -141,19 +141,35 @@ MethodDecl ::= (MethodDeclaration) TypeVoid:T1 IDENT:I2 FormPars:F3 VarDeclList:
 
 VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclarations(V1, V2); RESULT.setLine(V1left); :} | (NoVarDeclaration) {: RESULT=new NoVarDeclaration(); :};
 
-FormPars ::= (FormPars_) LPAREN FormParsList:F1 RPAREN {: RESULT=new FormPars_(F1); RESULT.setLine(F1left); :} | (FormParsError) LPAREN error RPAREN:FormParsRParenError  {: parser.report_error("Izvrsen oporavak do ) na liniji " + FormParsRParenErrorleft, null);  :} {: RESULT=new FormParsError(); :} ;
-FormParsList ::= (FormParsList_) FormParsList:F1 COMMA FormParItem:F2 {: RESULT=new FormParsList_(F1, F2); RESULT.setLine(F1left); :} | (FormParsListItem) FormParItem:F1 {: RESULT=new FormParsListItem(F1); RESULT.setLine(F1left); :} | (FormParsListError) error COMMA:FormParsCommaError {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :} {: RESULT=new FormParsListError(); :} | (NoFormParsList) {: RESULT=new NoFormParsList(); :};
+FormPars ::= (FormPars_) LPAREN FormParsList:F1 RPAREN {: RESULT=new FormPars_(F1); RESULT.setLine(F1left); :} | 
+			 (FormParsError) LPAREN error RPAREN:FormParsRParenError  
+			 {: parser.report_error("Izvrsen oporavak do ) na liniji " + FormParsRParenErrorleft, null);  :} {: RESULT=new FormParsError(); :};
+			 
+FormParsList ::= (FormParsList_) FormParsList:F1 COMMA FormParItem:F2 {: RESULT=new FormParsList_(F1, F2); RESULT.setLine(F1left); :} | 
+				 (FormParsListItem) FormParItem:F1 {: RESULT=new FormParsListItem(F1); RESULT.setLine(F1left); :} | 
+				 (NoFormParsList) {: RESULT=new NoFormParsList(); :} |
+				 (FormParsListError) error COMMA:FormParsCommaError 
+				 {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :} {: RESULT=new FormParsListError(); :};
+				 
 FormParItem ::=  (FormParItem_) Type:T1 IDENT:I2 EmptyBrackets:E3 {: RESULT=new FormParItem_(T1, I2, E3); RESULT.setLine(T1left); :};
+
 
 EmptyBrackets ::= (EmptyBrackets_) LBRACKET RBRACKET {: RESULT=new EmptyBrackets_(); :} | (NoEmptyBrackets) {: RESULT=new NoEmptyBrackets(); :};
 
-AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars:F1 SEMI {: RESULT=new AbstractMethodDeclaration(varType, varName, F1); RESULT.setLine(varTypeleft); :};
+AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars:F1 SEMI {: RESULT=new AbstractMethodDeclaration(varType, varName, F1); RESULT.setLine(varTypeleft); :} | 
+					   (AbstractMethodDeclarationError) error SEMI:AbstractMethodDeclError
+					   {: parser.report_error("Izvrsen oporavak do ; na liniji " + AbstractMethodDeclErrorleft, null); :} {: RESULT=new AbstractMethodDeclarationError(); :};
 
 Type ::= (Type) IDENT:I1 {: RESULT=new Type(I1); RESULT.setLine(I1left); :};
 
 
 AbstractClassDecl ::= (AbstractClassDeclaration) ABSTRACT CLASS IDENT:I1 Extends:E2 LBRACE VarDeclList:V3 LBRACE AllMethodsDeclList:A4 RBRACE RBRACE {: RESULT=new AbstractClassDeclaration(I1, E2, V3, A4); RESULT.setLine(I1left); :};
-Extends ::= (Extends_) EXTENDS IDENT:I1 {: RESULT=new Extends_(I1); RESULT.setLine(I1left); :} | (NoExtends) {: RESULT=new NoExtends(); :};
+
+Extends ::= (Extends_) EXTENDS IDENT:I1 {: RESULT=new Extends_(I1); RESULT.setLine(I1left); :} | 
+			(NoExtends) {: RESULT=new NoExtends(); :} | 
+			(ExtendsError) error EXTENDS IDENT:I1 {: RESULT=new ExtendsError(I1); RESULT.setLine(I1left); :} | 
+			(ExtendsErrorAll) error {: RESULT=new ExtendsErrorAll(); :} ;
+
 AllMethodsDeclList ::= (AllMethodsDeclarationList) AllMethodsDeclList:A1 AllMethodDecl:A2 {: RESULT=new AllMethodsDeclarationList(A1, A2); RESULT.setLine(A1left); :} | (NoAllMethodsDeclarationList) {: RESULT=new NoAllMethodsDeclarationList(); :};
 AllMethodDecl ::= (MethodDeclaration_) MethodDecl:M1 {: RESULT=new MethodDeclaration_(M1); RESULT.setLine(M1left); :} | (AbstractMethodDeclaration_) AbstractMethodDecl:A1 {: RESULT=new AbstractMethodDeclaration_(A1); RESULT.setLine(A1left); :};
 
@@ -172,7 +188,6 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr:D1 SEMI {: RESULT=new Desig
 			  (ReadSt) READ LPAREN DesignatorExpr:D1 RPAREN SEMI {: RESULT=new ReadSt(D1); RESULT.setLine(D1left); :} |
 			  (PrintSt) PRINT LPAREN Expr:E1 OptionalPrintParam:O2 RPAREN SEMI {: RESULT=new PrintSt(E1, O2); RESULT.setLine(E1left); :} |
 			  (Statements) LBRACE StatementList:S1 RBRACE {: RESULT=new Statements(S1); RESULT.setLine(S1left); :};
-			  
 			  
 
 OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST:N1 {: RESULT=new OptionalPrintParam_(N1); RESULT.setLine(N1left); :};

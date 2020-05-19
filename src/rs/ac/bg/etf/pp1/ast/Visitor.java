@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/4/2020 15:17:14
+// 19/4/2020 21:50:39
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -150,16 +150,19 @@ public interface Visitor {
     public void visit(MethodDeclaration_ MethodDeclaration_);
     public void visit(NoAllMethodsDeclarationList NoAllMethodsDeclarationList);
     public void visit(AllMethodsDeclarationList AllMethodsDeclarationList);
+    public void visit(ExtendsErrorAll ExtendsErrorAll);
+    public void visit(ExtendsError ExtendsError);
     public void visit(NoExtends NoExtends);
     public void visit(Extends_ Extends_);
     public void visit(AbstractClassDeclaration AbstractClassDeclaration);
     public void visit(Type Type);
+    public void visit(AbstractMethodDeclarationError AbstractMethodDeclarationError);
     public void visit(AbstractMethodDeclaration AbstractMethodDeclaration);
     public void visit(NoEmptyBrackets NoEmptyBrackets);
     public void visit(EmptyBrackets_ EmptyBrackets_);
     public void visit(FormParItem_ FormParItem_);
-    public void visit(NoFormParsList NoFormParsList);
     public void visit(FormParsListError FormParsListError);
+    public void visit(NoFormParsList NoFormParsList);
     public void visit(FormParsListItem FormParsListItem);
     public void visit(FormParsList_ FormParsList_);
     public void visit(FormParsError FormParsError);
