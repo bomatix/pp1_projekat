@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,14 +9,14 @@ public class AbstractMethodDeclaration extends AbstractMethodDecl {
 
     private TypeVoid TypeVoid;
     private String varName;
-    private FormParsList FormParsList;
+    private FormPars FormPars;
 
-    public AbstractMethodDeclaration (TypeVoid TypeVoid, String varName, FormParsList FormParsList) {
+    public AbstractMethodDeclaration (TypeVoid TypeVoid, String varName, FormPars FormPars) {
         this.TypeVoid=TypeVoid;
         if(TypeVoid!=null) TypeVoid.setParent(this);
         this.varName=varName;
-        this.FormParsList=FormParsList;
-        if(FormParsList!=null) FormParsList.setParent(this);
+        this.FormPars=FormPars;
+        if(FormPars!=null) FormPars.setParent(this);
     }
 
     public TypeVoid getTypeVoid() {
@@ -35,12 +35,12 @@ public class AbstractMethodDeclaration extends AbstractMethodDecl {
         this.varName=varName;
     }
 
-    public FormParsList getFormParsList() {
-        return FormParsList;
+    public FormPars getFormPars() {
+        return FormPars;
     }
 
-    public void setFormParsList(FormParsList FormParsList) {
-        this.FormParsList=FormParsList;
+    public void setFormPars(FormPars FormPars) {
+        this.FormPars=FormPars;
     }
 
     public void accept(Visitor visitor) {
@@ -49,18 +49,18 @@ public class AbstractMethodDeclaration extends AbstractMethodDecl {
 
     public void childrenAccept(Visitor visitor) {
         if(TypeVoid!=null) TypeVoid.accept(visitor);
-        if(FormParsList!=null) FormParsList.accept(visitor);
+        if(FormPars!=null) FormPars.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(TypeVoid!=null) TypeVoid.traverseTopDown(visitor);
-        if(FormParsList!=null) FormParsList.traverseTopDown(visitor);
+        if(FormPars!=null) FormPars.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(TypeVoid!=null) TypeVoid.traverseBottomUp(visitor);
-        if(FormParsList!=null) FormParsList.traverseBottomUp(visitor);
+        if(FormPars!=null) FormPars.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -78,8 +78,8 @@ public class AbstractMethodDeclaration extends AbstractMethodDecl {
         buffer.append(" "+tab+varName);
         buffer.append("\n");
 
-        if(FormParsList!=null)
-            buffer.append(FormParsList.toString("  "+tab));
+        if(FormPars!=null)
+            buffer.append(FormPars.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

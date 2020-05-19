@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NoFormPars extends FormParsList {
+public class OptionalConditionError extends OptionalCondition {
 
-    public NoFormPars () {
+    public OptionalConditionError () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class NoFormPars extends FormParsList {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("NoFormPars(\n");
+        buffer.append("OptionalConditionError(\n");
 
         buffer.append(tab);
-        buffer.append(") [NoFormPars]");
+        buffer.append(") [OptionalConditionError]");
         return buffer.toString();
     }
 }

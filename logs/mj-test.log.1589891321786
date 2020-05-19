@@ -1,0 +1,222 @@
+INFO  14:28:07,598 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  14:28:07,667 - #2 program
+INFO  14:28:07,667 - #10 MJProgram
+INFO  14:28:07,667 - #10 int
+INFO  14:28:07,667 - #10 x
+INFO  14:28:07,667 - #6 ,
+INFO  14:28:07,667 - #10 y
+INFO  14:28:07,667 - #5 ;
+INFO  14:28:07,667 - #3 {
+INFO  14:28:07,667 - #16 void
+INFO  14:28:07,667 - #10 main
+INFO  14:28:07,667 - #14 (
+INFO  14:28:07,667 - #15 )
+INFO  14:28:07,667 - #3 {
+INFO  14:28:07,667 - #10 y
+INFO  14:28:07,683 - #37 =
+INFO  14:28:07,683 - #9 4
+INFO  14:28:07,683 - #5 ;
+INFO  14:28:07,683 - #23 for
+INFO  14:28:07,683 - #14 (
+INFO  14:28:07,683 - #10 x
+INFO  14:28:07,683 - #37 =
+INFO  14:28:07,683 - #9 0
+INFO  14:28:07,683 - #5 ;
+INFO  14:28:07,683 - #10 x
+INFO  14:28:07,683 - #39 <
+INFO  14:28:07,683 - #9 3
+INFO  14:28:07,683 - #5 ;
+INFO  14:28:07,683 - #10 x
+INFO  14:28:07,683 - #31 ++
+INFO  14:28:07,683 - #15 )
+INFO  14:28:07,683 - #3 {
+INFO  14:28:07,683 - #10 y
+INFO  14:28:07,683 - #37 =
+INFO  14:28:07,683 - #9 3
+INFO  14:28:07,683 - #5 ;
+INFO  14:28:07,683 - #4 }
+INFO  14:28:07,683 - #4 }
+INFO  14:28:07,683 - #4 }
+INFO  14:28:07,683 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentList_(
+          NoVarIdentList(
+          ) [NoVarIdentList]
+          VarIdent_(
+           x
+            NoArrayDeclaration(
+            ) [NoArrayDeclaration]
+          ) [VarIdent_]
+        ) [VarIdentList_]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        StatementList_(
+          NoStatementList(
+          ) [NoStatementList]
+          AssignExpression(
+            AssignExprSemi_(
+              AssignExpr_(
+                DesignatorExpression(
+                 y
+                  NoDesignatorList(
+                  ) [NoDesignatorList]
+                ) [DesignatorExpression]
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     4
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [AssignExpr_]
+            ) [AssignExprSemi_]
+          ) [AssignExpression]
+        ) [StatementList_]
+        ForSt(
+          OptionalAssignStatement(
+            AssignExprSemi_(
+              AssignExpr_(
+                DesignatorExpression(
+                 x
+                  NoDesignatorList(
+                  ) [NoDesignatorList]
+                ) [DesignatorExpression]
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     0
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [AssignExpr_]
+            ) [AssignExprSemi_]
+          ) [OptionalAssignStatement]
+          OptionalCondition_(
+            Condition_(
+              ConditionTerm(
+                ConditionFact(
+                  Expression(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    Term_(
+                      NoTermList(
+                      ) [NoTermList]
+                      FactorDesignator(
+                        DesignatorExpression(
+                         x
+                          NoDesignatorList(
+                          ) [NoDesignatorList]
+                        ) [DesignatorExpression]
+                        NoDesignatorPars(
+                        ) [NoDesignatorPars]
+                      ) [FactorDesignator]
+                    ) [Term_]
+                  ) [Expression]
+                  ConditionFactExpr(
+                    Less(
+                    ) [Less]
+                    Expression(
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                      Term_(
+                        NoTermList(
+                        ) [NoTermList]
+                        FactorNum(
+                         3
+                        ) [FactorNum]
+                      ) [Term_]
+                    ) [Expression]
+                  ) [ConditionFactExpr]
+                ) [ConditionFact]
+                NoConditionFactList(
+                ) [NoConditionFactList]
+              ) [ConditionTerm]
+              NoConditionTermList(
+              ) [NoConditionTermList]
+            ) [Condition_]
+          ) [OptionalCondition_]
+          OptionalDesignatorStatementThird_(
+            DesignatorStatementExpression(
+              DesignatorExpression(
+               x
+                NoDesignatorList(
+                ) [NoDesignatorList]
+              ) [DesignatorExpression]
+              DesignatorPlusPlus(
+              ) [DesignatorPlusPlus]
+            ) [DesignatorStatementExpression]
+          ) [OptionalDesignatorStatementThird_]
+          Statements(
+            StatementList_(
+              NoStatementList(
+              ) [NoStatementList]
+              AssignExpression(
+                AssignExprSemi_(
+                  AssignExpr_(
+                    DesignatorExpression(
+                     y
+                      NoDesignatorList(
+                      ) [NoDesignatorList]
+                    ) [DesignatorExpression]
+                    Assign(
+                    ) [Assign]
+                    Expression(
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                      Term_(
+                        NoTermList(
+                        ) [NoTermList]
+                        FactorNum(
+                         3
+                        ) [FactorNum]
+                      ) [Term_]
+                    ) [Expression]
+                  ) [AssignExpr_]
+                ) [AssignExprSemi_]
+              ) [AssignExpression]
+            ) [StatementList_]
+          ) [Statements]
+        ) [ForSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  14:28:07,683 - ===================================

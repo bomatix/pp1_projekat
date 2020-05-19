@@ -1,0 +1,207 @@
+INFO  14:28:41,790 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  14:28:41,863 - #2 program
+INFO  14:28:41,863 - #10 MJProgram
+INFO  14:28:41,863 - #10 int
+INFO  14:28:41,864 - #10 x
+INFO  14:28:41,865 - #6 ,
+INFO  14:28:41,865 - #10 y
+INFO  14:28:41,866 - #5 ;
+INFO  14:28:41,866 - #3 {
+INFO  14:28:41,866 - #16 void
+INFO  14:28:41,867 - #10 main
+INFO  14:28:41,868 - #14 (
+INFO  14:28:41,868 - #15 )
+INFO  14:28:41,868 - #3 {
+INFO  14:28:41,869 - #10 y
+INFO  14:28:41,870 - #37 =
+INFO  14:28:41,872 - #9 4
+INFO  14:28:41,873 - #5 ;
+INFO  14:28:41,874 - #23 for
+INFO  14:28:41,874 - #14 (
+INFO  14:28:41,874 - #10 x
+INFO  14:28:41,874 - #37 =
+INFO  14:28:41,875 - #9 0
+INFO  14:28:41,875 - #5 ;
+INFO  14:28:41,875 - #10 x
+INFO  14:28:41,875 - #39 <
+INFO  14:28:41,876 - #39 <
+ERROR 14:28:41,876 - 
+Sintaksna greska na liniji 7
+INFO  14:28:41,876 - #9 3
+INFO  14:28:41,876 - #5 ;
+INFO  14:28:41,876 - #10 x
+INFO  14:28:41,877 - #31 ++
+INFO  14:28:41,877 - #15 )
+ERROR 14:28:41,877 - Izvrsen oporavak do ; na liniji OptionalAssignStatement(
+  AssignExprSemi_(
+    AssignExpr_(
+      DesignatorExpression(
+       x
+        NoDesignatorList(
+        ) [NoDesignatorList]
+      ) [DesignatorExpression]
+      Assign(
+      ) [Assign]
+      Expression(
+        NoExpressionList(
+        ) [NoExpressionList]
+        Term_(
+          NoTermList(
+          ) [NoTermList]
+          FactorNum(
+           0
+          ) [FactorNum]
+        ) [Term_]
+      ) [Expression]
+    ) [AssignExpr_]
+  ) [AssignExprSemi_]
+) [OptionalAssignStatement]
+INFO  14:28:41,880 - #3 {
+INFO  14:28:41,880 - #10 y
+INFO  14:28:41,881 - #37 =
+INFO  14:28:41,881 - #9 3
+INFO  14:28:41,881 - #5 ;
+INFO  14:28:41,881 - #4 }
+INFO  14:28:41,881 - #4 }
+INFO  14:28:41,882 - #4 }
+INFO  14:28:41,883 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentList_(
+          NoVarIdentList(
+          ) [NoVarIdentList]
+          VarIdent_(
+           x
+            NoArrayDeclaration(
+            ) [NoArrayDeclaration]
+          ) [VarIdent_]
+        ) [VarIdentList_]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        StatementList_(
+          NoStatementList(
+          ) [NoStatementList]
+          AssignExpression(
+            AssignExprSemi_(
+              AssignExpr_(
+                DesignatorExpression(
+                 y
+                  NoDesignatorList(
+                  ) [NoDesignatorList]
+                ) [DesignatorExpression]
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     4
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [AssignExpr_]
+            ) [AssignExprSemi_]
+          ) [AssignExpression]
+        ) [StatementList_]
+        ForSt(
+          OptionalAssignStatement(
+            AssignExprSemi_(
+              AssignExpr_(
+                DesignatorExpression(
+                 x
+                  NoDesignatorList(
+                  ) [NoDesignatorList]
+                ) [DesignatorExpression]
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     0
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [AssignExpr_]
+            ) [AssignExprSemi_]
+          ) [OptionalAssignStatement]
+          OptionalConditionError(
+          ) [OptionalConditionError]
+          OptionalDesignatorStatementThird_(
+            DesignatorStatementExpression(
+              DesignatorExpression(
+               x
+                NoDesignatorList(
+                ) [NoDesignatorList]
+              ) [DesignatorExpression]
+              DesignatorPlusPlus(
+              ) [DesignatorPlusPlus]
+            ) [DesignatorStatementExpression]
+          ) [OptionalDesignatorStatementThird_]
+          Statements(
+            StatementList_(
+              NoStatementList(
+              ) [NoStatementList]
+              AssignExpression(
+                AssignExprSemi_(
+                  AssignExpr_(
+                    DesignatorExpression(
+                     y
+                      NoDesignatorList(
+                      ) [NoDesignatorList]
+                    ) [DesignatorExpression]
+                    Assign(
+                    ) [Assign]
+                    Expression(
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                      Term_(
+                        NoTermList(
+                        ) [NoTermList]
+                        FactorNum(
+                         3
+                        ) [FactorNum]
+                      ) [Term_]
+                    ) [Expression]
+                  ) [AssignExpr_]
+                ) [AssignExprSemi_]
+              ) [AssignExpression]
+            ) [StatementList_]
+          ) [Statements]
+        ) [ForSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  14:28:41,884 - ===================================

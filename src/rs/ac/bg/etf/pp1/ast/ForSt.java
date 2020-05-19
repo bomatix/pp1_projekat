@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,16 +9,16 @@ public class ForSt extends Statement {
 
     private OptionalDesignatorStatement OptionalDesignatorStatement;
     private OptionalCondition OptionalCondition;
-    private OptionalDesignatorStatement OptionalDesignatorStatement1;
+    private OptionalDesignatorStatementThird OptionalDesignatorStatementThird;
     private Statement Statement;
 
-    public ForSt (OptionalDesignatorStatement OptionalDesignatorStatement, OptionalCondition OptionalCondition, OptionalDesignatorStatement OptionalDesignatorStatement1, Statement Statement) {
+    public ForSt (OptionalDesignatorStatement OptionalDesignatorStatement, OptionalCondition OptionalCondition, OptionalDesignatorStatementThird OptionalDesignatorStatementThird, Statement Statement) {
         this.OptionalDesignatorStatement=OptionalDesignatorStatement;
         if(OptionalDesignatorStatement!=null) OptionalDesignatorStatement.setParent(this);
         this.OptionalCondition=OptionalCondition;
         if(OptionalCondition!=null) OptionalCondition.setParent(this);
-        this.OptionalDesignatorStatement1=OptionalDesignatorStatement1;
-        if(OptionalDesignatorStatement1!=null) OptionalDesignatorStatement1.setParent(this);
+        this.OptionalDesignatorStatementThird=OptionalDesignatorStatementThird;
+        if(OptionalDesignatorStatementThird!=null) OptionalDesignatorStatementThird.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
     }
@@ -39,12 +39,12 @@ public class ForSt extends Statement {
         this.OptionalCondition=OptionalCondition;
     }
 
-    public OptionalDesignatorStatement getOptionalDesignatorStatement1() {
-        return OptionalDesignatorStatement1;
+    public OptionalDesignatorStatementThird getOptionalDesignatorStatementThird() {
+        return OptionalDesignatorStatementThird;
     }
 
-    public void setOptionalDesignatorStatement1(OptionalDesignatorStatement OptionalDesignatorStatement1) {
-        this.OptionalDesignatorStatement1=OptionalDesignatorStatement1;
+    public void setOptionalDesignatorStatementThird(OptionalDesignatorStatementThird OptionalDesignatorStatementThird) {
+        this.OptionalDesignatorStatementThird=OptionalDesignatorStatementThird;
     }
 
     public Statement getStatement() {
@@ -62,7 +62,7 @@ public class ForSt extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(OptionalDesignatorStatement!=null) OptionalDesignatorStatement.accept(visitor);
         if(OptionalCondition!=null) OptionalCondition.accept(visitor);
-        if(OptionalDesignatorStatement1!=null) OptionalDesignatorStatement1.accept(visitor);
+        if(OptionalDesignatorStatementThird!=null) OptionalDesignatorStatementThird.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
     }
 
@@ -70,14 +70,14 @@ public class ForSt extends Statement {
         accept(visitor);
         if(OptionalDesignatorStatement!=null) OptionalDesignatorStatement.traverseTopDown(visitor);
         if(OptionalCondition!=null) OptionalCondition.traverseTopDown(visitor);
-        if(OptionalDesignatorStatement1!=null) OptionalDesignatorStatement1.traverseTopDown(visitor);
+        if(OptionalDesignatorStatementThird!=null) OptionalDesignatorStatementThird.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(OptionalDesignatorStatement!=null) OptionalDesignatorStatement.traverseBottomUp(visitor);
         if(OptionalCondition!=null) OptionalCondition.traverseBottomUp(visitor);
-        if(OptionalDesignatorStatement1!=null) OptionalDesignatorStatement1.traverseBottomUp(visitor);
+        if(OptionalDesignatorStatementThird!=null) OptionalDesignatorStatementThird.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -99,8 +99,8 @@ public class ForSt extends Statement {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(OptionalDesignatorStatement1!=null)
-            buffer.append(OptionalDesignatorStatement1.toString("  "+tab));
+        if(OptionalDesignatorStatementThird!=null)
+            buffer.append(OptionalDesignatorStatementThird.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:36
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,7 @@ public interface Visitor {
 
     public void visit(MethodDecl MethodDecl);
     public void visit(VarIdent VarIdent);
+    public void visit(AssignExprSemi AssignExprSemi);
     public void visit(DesignatorExpr DesignatorExpr);
     public void visit(TermList TermList);
     public void visit(ActParsExpression ActParsExpression);
@@ -16,6 +17,7 @@ public interface Visitor {
     public void visit(CondTermList CondTermList);
     public void visit(TypeVoid TypeVoid);
     public void visit(EmptyBrackets EmptyBrackets);
+    public void visit(FormParItem FormParItem);
     public void visit(StatementList StatementList);
     public void visit(Extends Extends);
     public void visit(Factor Factor);
@@ -24,8 +26,8 @@ public interface Visitor {
     public void visit(AbstractMethodDecl AbstractMethodDecl);
     public void visit(DeclList DeclList);
     public void visit(Designator Designator);
-    public void visit(ConstIdents ConstIdents);
     public void visit(OptionalExpr OptionalExpr);
+    public void visit(ConstIdents ConstIdents);
     public void visit(Term Term);
     public void visit(FormParsList FormParsList);
     public void visit(Condition Condition);
@@ -42,6 +44,7 @@ public interface Visitor {
     public void visit(FactorExpr FactorExpr);
     public void visit(VarDeclList VarDeclList);
     public void visit(Expr Expr);
+    public void visit(ForDesignatorStatement ForDesignatorStatement);
     public void visit(ActPars ActPars);
     public void visit(DesignatorList DesignatorList);
     public void visit(AddOp AddOp);
@@ -62,6 +65,7 @@ public interface Visitor {
     public void visit(Program Program);
     public void visit(AllMethodDecl AllMethodDecl);
     public void visit(FormPars FormPars);
+    public void visit(OptionalDesignatorStatementThird OptionalDesignatorStatementThird);
     public void visit(Mod Mod);
     public void visit(Divide Divide);
     public void visit(Multiply Multiply);
@@ -90,7 +94,8 @@ public interface Visitor {
     public void visit(NoConditionTermList NoConditionTermList);
     public void visit(ConditionTermList ConditionTermList);
     public void visit(Condition_ Condition_);
-    public void visit(AssignExprError AssignExprError);
+    public void visit(AssignExprSemiError AssignExprSemiError);
+    public void visit(AssignExprSemi_ AssignExprSemi_);
     public void visit(AssignExpr_ AssignExpr_);
     public void visit(DesignatorMinusMinus DesignatorMinusMinus);
     public void visit(DesignatorPlusPlus DesignatorPlusPlus);
@@ -117,8 +122,13 @@ public interface Visitor {
     public void visit(Expression Expression);
     public void visit(NoOptionalExpression NoOptionalExpression);
     public void visit(OptionalExpression OptionalExpression);
+    public void visit(OptionalConditionError OptionalConditionError);
     public void visit(NoOptionalCondition NoOptionalCondition);
     public void visit(OptionalCondition_ OptionalCondition_);
+    public void visit(OptionalAssignStatementThird OptionalAssignStatementThird);
+    public void visit(NoOptionalDesignatorStatementThird NoOptionalDesignatorStatementThird);
+    public void visit(OptionalDesignatorStatementThird_ OptionalDesignatorStatementThird_);
+    public void visit(OptionalAssignStatement OptionalAssignStatement);
     public void visit(NoOptionalDesignatorStatement NoOptionalDesignatorStatement);
     public void visit(OptionalDesignatorStatement_ OptionalDesignatorStatement_);
     public void visit(OptionalPrintParam_ OptionalPrintParam_);
@@ -142,15 +152,18 @@ public interface Visitor {
     public void visit(AllMethodsDeclarationList AllMethodsDeclarationList);
     public void visit(NoExtends NoExtends);
     public void visit(Extends_ Extends_);
-    public void visit(AbstractClassDelcaration AbstractClassDelcaration);
+    public void visit(AbstractClassDeclaration AbstractClassDeclaration);
     public void visit(Type Type);
     public void visit(AbstractMethodDeclaration AbstractMethodDeclaration);
     public void visit(NoEmptyBrackets NoEmptyBrackets);
     public void visit(EmptyBrackets_ EmptyBrackets_);
-    public void visit(FormPars_ FormPars_);
-    public void visit(NoFormPars NoFormPars);
-    public void visit(FormParsItem FormParsItem);
+    public void visit(FormParItem_ FormParItem_);
+    public void visit(NoFormParsList NoFormParsList);
+    public void visit(FormParsListError FormParsListError);
+    public void visit(FormParsListItem FormParsListItem);
     public void visit(FormParsList_ FormParsList_);
+    public void visit(FormParsError FormParsError);
+    public void visit(FormPars_ FormPars_);
     public void visit(NoVarDeclaration NoVarDeclaration);
     public void visit(VarDeclarations VarDeclarations);
     public void visit(MethodDeclaration MethodDeclaration);

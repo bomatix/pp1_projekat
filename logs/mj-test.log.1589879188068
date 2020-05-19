@@ -1,0 +1,44 @@
+INFO  11:05:55,188 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  11:05:55,449 - #2 program
+INFO  11:05:55,453 - #10 MJProgram
+INFO  11:05:55,454 - #10 int
+INFO  11:05:55,455 - #10 x
+INFO  11:05:55,463 - #6 ,
+INFO  11:05:55,463 - #10 y
+INFO  11:05:55,467 - #5 ;
+INFO  11:05:55,467 - #3 {
+INFO  11:05:55,473 - #16 void
+INFO  11:05:55,477 - #10 main
+INFO  11:05:55,477 - #14 (
+INFO  11:05:55,481 - #15 )
+INFO  11:05:55,481 - #3 {
+INFO  11:05:55,484 - #23 for
+INFO  11:05:55,484 - #14 (
+INFO  11:05:55,484 - #10 x
+INFO  11:05:55,484 - #37 =
+ERROR 11:05:55,488 - 
+Sintaksna greska na liniji 5
+INFO  11:05:55,488 - #9 1
+INFO  11:05:55,488 - #5 ;
+INFO  11:05:55,488 - #10 x
+INFO  11:05:55,491 - #39 <
+INFO  11:05:55,491 - #9 3
+INFO  11:05:55,494 - #5 ;
+INFO  11:05:55,494 - #10 x
+INFO  11:05:55,494 - #31 ++
+INFO  11:05:55,494 - #15 )
+ERROR 11:05:55,494 - Izvrsen oporavak do ; na liniji 5
+ERROR 11:05:55,501 - 
+Sintaksna greska na liniji 5
+INFO  11:05:55,503 - #3 {
+INFO  11:05:55,503 - #10 y
+INFO  11:05:55,504 - #37 =
+INFO  11:05:55,504 - #9 3
+INFO  11:05:55,504 - #5 ;
+INFO  11:05:55,504 - #4 }
+INFO  11:05:55,504 - #4 }
+INFO  11:05:55,504 - #4 }
+ERROR 11:05:55,504 - Izvrsen oporavak do ; na liniji 5
+ERROR 11:05:55,504 - 
+Sintaksna greska na liniji 9
+ERROR 11:05:55,504 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

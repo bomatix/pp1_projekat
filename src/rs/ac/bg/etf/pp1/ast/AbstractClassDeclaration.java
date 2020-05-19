@@ -1,18 +1,18 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class AbstractClassDelcaration extends AbstractClassDecl {
+public class AbstractClassDeclaration extends AbstractClassDecl {
 
     private String I1;
     private Extends Extends;
     private VarDeclList VarDeclList;
     private AllMethodsDeclList AllMethodsDeclList;
 
-    public AbstractClassDelcaration (String I1, Extends Extends, VarDeclList VarDeclList, AllMethodsDeclList AllMethodsDeclList) {
+    public AbstractClassDeclaration (String I1, Extends Extends, VarDeclList VarDeclList, AllMethodsDeclList AllMethodsDeclList) {
         this.I1=I1;
         this.Extends=Extends;
         if(Extends!=null) Extends.setParent(this);
@@ -81,7 +81,7 @@ public class AbstractClassDelcaration extends AbstractClassDecl {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("AbstractClassDelcaration(\n");
+        buffer.append("AbstractClassDeclaration(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
@@ -105,7 +105,7 @@ public class AbstractClassDelcaration extends AbstractClassDecl {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [AbstractClassDelcaration]");
+        buffer.append(") [AbstractClassDeclaration]");
         return buffer.toString();
     }
 }

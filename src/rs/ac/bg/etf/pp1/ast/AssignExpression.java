@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class AssignExpression extends Statement {
 
-    private AssignExpr AssignExpr;
+    private AssignExprSemi AssignExprSemi;
 
-    public AssignExpression (AssignExpr AssignExpr) {
-        this.AssignExpr=AssignExpr;
-        if(AssignExpr!=null) AssignExpr.setParent(this);
+    public AssignExpression (AssignExprSemi AssignExprSemi) {
+        this.AssignExprSemi=AssignExprSemi;
+        if(AssignExprSemi!=null) AssignExprSemi.setParent(this);
     }
 
-    public AssignExpr getAssignExpr() {
-        return AssignExpr;
+    public AssignExprSemi getAssignExprSemi() {
+        return AssignExprSemi;
     }
 
-    public void setAssignExpr(AssignExpr AssignExpr) {
-        this.AssignExpr=AssignExpr;
+    public void setAssignExprSemi(AssignExprSemi AssignExprSemi) {
+        this.AssignExprSemi=AssignExprSemi;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class AssignExpression extends Statement {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(AssignExpr!=null) AssignExpr.accept(visitor);
+        if(AssignExprSemi!=null) AssignExprSemi.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(AssignExpr!=null) AssignExpr.traverseTopDown(visitor);
+        if(AssignExprSemi!=null) AssignExprSemi.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(AssignExpr!=null) AssignExpr.traverseBottomUp(visitor);
+        if(AssignExprSemi!=null) AssignExprSemi.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class AssignExpression extends Statement {
         buffer.append(tab);
         buffer.append("AssignExpression(\n");
 
-        if(AssignExpr!=null)
-            buffer.append(AssignExpr.toString("  "+tab));
+        if(AssignExprSemi!=null)
+            buffer.append(AssignExprSemi.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

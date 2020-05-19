@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:35
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class FormParsList_ extends FormParsList {
 
     private FormParsList FormParsList;
-    private FormPars FormPars;
+    private FormParItem FormParItem;
 
-    public FormParsList_ (FormParsList FormParsList, FormPars FormPars) {
+    public FormParsList_ (FormParsList FormParsList, FormParItem FormParItem) {
         this.FormParsList=FormParsList;
         if(FormParsList!=null) FormParsList.setParent(this);
-        this.FormPars=FormPars;
-        if(FormPars!=null) FormPars.setParent(this);
+        this.FormParItem=FormParItem;
+        if(FormParItem!=null) FormParItem.setParent(this);
     }
 
     public FormParsList getFormParsList() {
@@ -25,12 +25,12 @@ public class FormParsList_ extends FormParsList {
         this.FormParsList=FormParsList;
     }
 
-    public FormPars getFormPars() {
-        return FormPars;
+    public FormParItem getFormParItem() {
+        return FormParItem;
     }
 
-    public void setFormPars(FormPars FormPars) {
-        this.FormPars=FormPars;
+    public void setFormParItem(FormParItem FormParItem) {
+        this.FormParItem=FormParItem;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +39,18 @@ public class FormParsList_ extends FormParsList {
 
     public void childrenAccept(Visitor visitor) {
         if(FormParsList!=null) FormParsList.accept(visitor);
-        if(FormPars!=null) FormPars.accept(visitor);
+        if(FormParItem!=null) FormParItem.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(FormParsList!=null) FormParsList.traverseTopDown(visitor);
-        if(FormPars!=null) FormPars.traverseTopDown(visitor);
+        if(FormParItem!=null) FormParItem.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(FormParsList!=null) FormParsList.traverseBottomUp(visitor);
-        if(FormPars!=null) FormPars.traverseBottomUp(visitor);
+        if(FormParItem!=null) FormParItem.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class FormParsList_ extends FormParsList {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(FormPars!=null)
-            buffer.append(FormPars.toString("  "+tab));
+        if(FormParItem!=null)
+            buffer.append(FormParItem.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

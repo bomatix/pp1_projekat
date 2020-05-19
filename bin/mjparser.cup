@@ -51,13 +51,13 @@ terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MIN
 terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQUAL, GRE, GREEQUAL;
 terminal AND, OR, ISNOTEQUAL;
 
-nonterminal Program, DeclList, MethodDeclList, VarIdentList;
+nonterminal Program, DeclList, MethodDeclList, VarIdentList, AssignExprSemi;
 nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl, Type;
 nonterminal ConstIdents, ConstValue, FormParsList;
 nonterminal ArrayDecl, VarIdent, TypeVoid, OptionalCondition;
-nonterminal AssignOp, RelOp, AddOp, MulOp;
-nonterminal MethodDecl, VarDeclList, FormPars, EmptyBrackets;
-nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList;
+nonterminal AssignOp, RelOp, AddOp, MulOp, ForDesignatorStatement;
+nonterminal MethodDecl, VarDeclList, FormPars, FormParItem, EmptyBrackets;
+nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList, OptionalDesignatorStatementThird;
 nonterminal AllMethodDecl, Statement, StatementList, Expr, OptionalExpr;
 nonterminal OptionalDesignatorStatement, OptionalPrintParam, Designator, DesignatorList, DesignatorExpr, DesignatorPars;
 nonterminal CondFactExpr, CondFact, CondFactList, CondTerm, CondTermList, Condition, DesignatorStatement, DesignatorStatementExpr;
@@ -88,21 +88,22 @@ TypeVoid ::= (Type_) Type | (Voidd) VOIDD;
 
 
 MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl | (NoMethodDeclarations);
-MethodDecl ::= (MethodDeclaration) TypeVoid IDENT LPAREN FormParsList RPAREN VarDeclList LBRACE StatementList RBRACE; 
+MethodDecl ::= (MethodDeclaration) TypeVoid IDENT FormPars VarDeclList LBRACE StatementList RBRACE; 
 
 VarDeclList ::= (VarDeclarations) VarDeclList VarDecl | (NoVarDeclaration);
 
-FormParsList ::= (FormParsList_) FormParsList COMMA FormPars | (FormParsItem) FormPars | (NoFormPars) ;
-FormPars ::= (FormPars_) Type IDENT EmptyBrackets;
+FormPars ::= (FormPars_) LPAREN FormParsList RPAREN | (FormParsError) LPAREN error RPAREN:FormParsRParenError  {: parser.report_error("Izvrsen oporavak do ) na liniji " + FormParsRParenErrorleft, null);  :} ;
+FormParsList ::= (FormParsList_) FormParsList COMMA FormParItem | (FormParsListItem) FormParItem | (FormParsListError) error COMMA:FormParsCommaError {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :} | (NoFormParsList);
+FormParItem ::=  (FormParItem_) Type IDENT EmptyBrackets;
 
 EmptyBrackets ::= (EmptyBrackets_) LBRACKET RBRACKET | (NoEmptyBrackets);
 
-AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName LPAREN FormParsList RPAREN SEMI;
+AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars SEMI;
 
 Type ::= (Type) IDENT;
 
 
-AbstractClassDecl ::= (AbstractClassDelcaration) ABSTRACT CLASS IDENT Extends LBRACE VarDeclList LBRACE AllMethodsDeclList RBRACE RBRACE;
+AbstractClassDecl ::= (AbstractClassDeclaration) ABSTRACT CLASS IDENT Extends LBRACE VarDeclList LBRACE AllMethodsDeclList RBRACE RBRACE;
 Extends ::= (Extends_) EXTENDS IDENT | (NoExtends);
 AllMethodsDeclList ::= (AllMethodsDeclarationList) AllMethodsDeclList AllMethodDecl | (NoAllMethodsDeclarationList);
 AllMethodDecl ::= (MethodDeclaration_) MethodDecl | (AbstractMethodDeclaration_) AbstractMethodDecl;
@@ -114,20 +115,22 @@ StatementList ::= (StatementList_) StatementList Statement | (NoStatementList);
 Statement ::= (DesignatorSt) DesignatorStatementExpr SEMI |
 			  (IfElseSt) IF LPAREN Condition RPAREN Statement ELSE Statement |
 			  (IfSt) IF LPAREN Condition RPAREN Statement |
-			  (ForSt) FOR LPAREN OptionalDesignatorStatement SEMI OptionalCondition SEMI OptionalDesignatorStatement RPAREN Statement |
+			  (ForSt) FOR LPAREN OptionalDesignatorStatement OptionalCondition OptionalDesignatorStatementThird RPAREN Statement |
 			  (BreakSt) BREAK SEMI |
-			  (AssignExpression) AssignExpr |
+			  (AssignExpression) AssignExprSemi|
 			  (ContinueSt) CONTINUE SEMI |
 			  (ReturnSt) RETURN OptionalExpr SEMI |
 			  (ReadSt) READ LPAREN DesignatorExpr RPAREN SEMI |
 			  (PrintSt) PRINT LPAREN Expr OptionalPrintParam RPAREN SEMI |
 			  (Statements) LBRACE StatementList RBRACE;
-
 			  
-OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST;
-OptionalDesignatorStatement ::= (OptionalDesignatorStatement_) DesignatorStatementExpr | (NoOptionalDesignatorStatement) ;
+			  
 
-OptionalCondition ::= (OptionalCondition_) Condition | (NoOptionalCondition);
+OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST;
+OptionalDesignatorStatement ::= (OptionalDesignatorStatement_) DesignatorStatementExpr SEMI | (NoOptionalDesignatorStatement) SEMI | (OptionalAssignStatement) AssignExprSemi;
+OptionalDesignatorStatementThird ::= (OptionalDesignatorStatementThird_) DesignatorStatementExpr | (NoOptionalDesignatorStatementThird) | (OptionalAssignStatementThird) AssignExpr;
+
+OptionalCondition ::= (OptionalCondition_) Condition SEMI | (NoOptionalCondition) SEMI | (OptionalConditionError) error SEMI:ConditionError {: parser.report_error("Izvrsen oporavak do ; na liniji " + ConditionErrorleft, null);  :};
  
 OptionalExpr ::= (OptionalExpression) Expr | (NoOptionalExpression);
 Expr ::= (Expression) ExprList Term | (ExprestionMinus) MINUS ExprList Term;
@@ -147,7 +150,8 @@ FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET;
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr DesignatorStatement; 
 DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsExpression RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
 
-AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr SEMI | (AssignExprError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
+AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr;
+AssignExprSemi ::= (AssignExprSemi_) AssignExpr SEMI | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
 
 Condition ::= (Condition_) CondTerm CondTermList;
 CondTermList ::= (ConditionTermList) CondTermList OR CondTerm | (NoConditionTermList) ;

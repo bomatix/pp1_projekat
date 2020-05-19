@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/4/2020 23:39:36
+// 19/4/2020 15:17:14
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,7 @@ public abstract class VisitorAdaptor implements Visitor {
 
     public void visit(MethodDecl MethodDecl) { }
     public void visit(VarIdent VarIdent) { }
+    public void visit(AssignExprSemi AssignExprSemi) { }
     public void visit(DesignatorExpr DesignatorExpr) { }
     public void visit(TermList TermList) { }
     public void visit(ActParsExpression ActParsExpression) { }
@@ -16,6 +17,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondTermList CondTermList) { }
     public void visit(TypeVoid TypeVoid) { }
     public void visit(EmptyBrackets EmptyBrackets) { }
+    public void visit(FormParItem FormParItem) { }
     public void visit(StatementList StatementList) { }
     public void visit(Extends Extends) { }
     public void visit(Factor Factor) { }
@@ -24,8 +26,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AbstractMethodDecl AbstractMethodDecl) { }
     public void visit(DeclList DeclList) { }
     public void visit(Designator Designator) { }
-    public void visit(ConstIdents ConstIdents) { }
     public void visit(OptionalExpr OptionalExpr) { }
+    public void visit(ConstIdents ConstIdents) { }
     public void visit(Term Term) { }
     public void visit(FormParsList FormParsList) { }
     public void visit(Condition Condition) { }
@@ -42,6 +44,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FactorExpr FactorExpr) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(Expr Expr) { }
+    public void visit(ForDesignatorStatement ForDesignatorStatement) { }
     public void visit(ActPars ActPars) { }
     public void visit(DesignatorList DesignatorList) { }
     public void visit(AddOp AddOp) { }
@@ -62,6 +65,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Program Program) { }
     public void visit(AllMethodDecl AllMethodDecl) { }
     public void visit(FormPars FormPars) { }
+    public void visit(OptionalDesignatorStatementThird OptionalDesignatorStatementThird) { }
     public void visit(Mod Mod) { visit(); }
     public void visit(Divide Divide) { visit(); }
     public void visit(Multiply Multiply) { visit(); }
@@ -90,7 +94,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoConditionTermList NoConditionTermList) { visit(); }
     public void visit(ConditionTermList ConditionTermList) { visit(); }
     public void visit(Condition_ Condition_) { visit(); }
-    public void visit(AssignExprError AssignExprError) { visit(); }
+    public void visit(AssignExprSemiError AssignExprSemiError) { visit(); }
+    public void visit(AssignExprSemi_ AssignExprSemi_) { visit(); }
     public void visit(AssignExpr_ AssignExpr_) { visit(); }
     public void visit(DesignatorMinusMinus DesignatorMinusMinus) { visit(); }
     public void visit(DesignatorPlusPlus DesignatorPlusPlus) { visit(); }
@@ -117,8 +122,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Expression Expression) { visit(); }
     public void visit(NoOptionalExpression NoOptionalExpression) { visit(); }
     public void visit(OptionalExpression OptionalExpression) { visit(); }
+    public void visit(OptionalConditionError OptionalConditionError) { visit(); }
     public void visit(NoOptionalCondition NoOptionalCondition) { visit(); }
     public void visit(OptionalCondition_ OptionalCondition_) { visit(); }
+    public void visit(OptionalAssignStatementThird OptionalAssignStatementThird) { visit(); }
+    public void visit(NoOptionalDesignatorStatementThird NoOptionalDesignatorStatementThird) { visit(); }
+    public void visit(OptionalDesignatorStatementThird_ OptionalDesignatorStatementThird_) { visit(); }
+    public void visit(OptionalAssignStatement OptionalAssignStatement) { visit(); }
     public void visit(NoOptionalDesignatorStatement NoOptionalDesignatorStatement) { visit(); }
     public void visit(OptionalDesignatorStatement_ OptionalDesignatorStatement_) { visit(); }
     public void visit(OptionalPrintParam_ OptionalPrintParam_) { visit(); }
@@ -142,15 +152,18 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AllMethodsDeclarationList AllMethodsDeclarationList) { visit(); }
     public void visit(NoExtends NoExtends) { visit(); }
     public void visit(Extends_ Extends_) { visit(); }
-    public void visit(AbstractClassDelcaration AbstractClassDelcaration) { visit(); }
+    public void visit(AbstractClassDeclaration AbstractClassDeclaration) { visit(); }
     public void visit(Type Type) { visit(); }
     public void visit(AbstractMethodDeclaration AbstractMethodDeclaration) { visit(); }
     public void visit(NoEmptyBrackets NoEmptyBrackets) { visit(); }
     public void visit(EmptyBrackets_ EmptyBrackets_) { visit(); }
-    public void visit(FormPars_ FormPars_) { visit(); }
-    public void visit(NoFormPars NoFormPars) { visit(); }
-    public void visit(FormParsItem FormParsItem) { visit(); }
+    public void visit(FormParItem_ FormParItem_) { visit(); }
+    public void visit(NoFormParsList NoFormParsList) { visit(); }
+    public void visit(FormParsListError FormParsListError) { visit(); }
+    public void visit(FormParsListItem FormParsListItem) { visit(); }
     public void visit(FormParsList_ FormParsList_) { visit(); }
+    public void visit(FormParsError FormParsError) { visit(); }
+    public void visit(FormPars_ FormPars_) { visit(); }
     public void visit(NoVarDeclaration NoVarDeclaration) { visit(); }
     public void visit(VarDeclarations VarDeclarations) { visit(); }
     public void visit(MethodDeclaration MethodDeclaration) { visit(); }

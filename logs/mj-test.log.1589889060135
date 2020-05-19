@@ -1,0 +1,48 @@
+INFO  11:10:00,197 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  11:10:00,283 - #2 program
+INFO  11:10:00,283 - #10 MJProgram
+INFO  11:10:00,283 - #10 int
+INFO  11:10:00,283 - #10 x
+INFO  11:10:00,283 - #6 ,
+INFO  11:10:00,287 - #10 y
+INFO  11:10:00,287 - #5 ;
+INFO  11:10:00,287 - #3 {
+INFO  11:10:00,287 - #16 void
+INFO  11:10:00,287 - #10 main
+INFO  11:10:00,287 - #14 (
+INFO  11:10:00,287 - #15 )
+INFO  11:10:00,287 - #3 {
+INFO  11:10:00,287 - #10 y
+INFO  11:10:00,291 - #37 =
+INFO  11:10:00,291 - #9 4
+INFO  11:10:00,291 - #5 ;
+INFO  11:10:00,295 - #23 for
+INFO  11:10:00,295 - #14 (
+INFO  11:10:00,295 - #10 x
+INFO  11:10:00,295 - #37 =
+ERROR 11:10:00,295 - 
+Sintaksna greska na liniji 7
+INFO  11:10:00,295 - #9 1
+INFO  11:10:00,295 - #5 ;
+INFO  11:10:00,295 - #10 x
+INFO  11:10:00,295 - #39 <
+INFO  11:10:00,295 - #9 3
+INFO  11:10:00,295 - #5 ;
+INFO  11:10:00,295 - #10 x
+INFO  11:10:00,295 - #31 ++
+INFO  11:10:00,295 - #15 )
+ERROR 11:10:00,295 - Izvrsen oporavak do ; na liniji 7
+ERROR 11:10:00,299 - 
+Sintaksna greska na liniji 7
+INFO  11:10:00,299 - #3 {
+INFO  11:10:00,299 - #10 y
+INFO  11:10:00,299 - #37 =
+INFO  11:10:00,299 - #9 3
+INFO  11:10:00,299 - #5 ;
+INFO  11:10:00,299 - #4 }
+INFO  11:10:00,299 - #4 }
+INFO  11:10:00,299 - #4 }
+ERROR 11:10:00,299 - Izvrsen oporavak do ; na liniji 7
+ERROR 11:10:00,299 - 
+Sintaksna greska na liniji 11
+ERROR 11:10:00,299 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

@@ -1,0 +1,141 @@
+INFO  14:27:44,388 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  14:27:44,450 - #2 program
+INFO  14:27:44,450 - #10 MJProgram
+INFO  14:27:44,450 - #10 int
+INFO  14:27:44,450 - #10 x
+INFO  14:27:44,450 - #6 ,
+INFO  14:27:44,450 - #10 y
+INFO  14:27:44,450 - #5 ;
+INFO  14:27:44,450 - #3 {
+INFO  14:27:44,450 - #16 void
+INFO  14:27:44,450 - #10 main
+INFO  14:27:44,466 - #14 (
+INFO  14:27:44,466 - #15 )
+INFO  14:27:44,466 - #3 {
+INFO  14:27:44,466 - #10 y
+INFO  14:27:44,466 - #37 =
+INFO  14:27:44,466 - #9 4
+INFO  14:27:44,466 - #5 ;
+INFO  14:27:44,466 - #23 for
+INFO  14:27:44,472 - #14 (
+INFO  14:27:44,472 - #5 ;
+INFO  14:27:44,472 - #5 ;
+INFO  14:27:44,472 - #15 )
+INFO  14:27:44,472 - #3 {
+INFO  14:27:44,472 - #10 y
+INFO  14:27:44,472 - #37 =
+INFO  14:27:44,472 - #9 3
+INFO  14:27:44,472 - #5 ;
+INFO  14:27:44,472 - #4 }
+INFO  14:27:44,472 - #4 }
+INFO  14:27:44,472 - #4 }
+INFO  14:27:44,472 - Program_(
+ MJProgram
+  Declarations(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDeclaration(
+      VarDeclaration_(
+        Type(
+         int
+        ) [Type]
+        VarIdentList_(
+          NoVarIdentList(
+          ) [NoVarIdentList]
+          VarIdent_(
+           x
+            NoArrayDeclaration(
+            ) [NoArrayDeclaration]
+          ) [VarIdent_]
+        ) [VarIdentList_]
+        VarIdent_(
+         y
+          NoArrayDeclaration(
+          ) [NoArrayDeclaration]
+        ) [VarIdent_]
+      ) [VarDeclaration_]
+    ) [VarDeclaration]
+  ) [Declarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      Voidd(
+      ) [Voidd]
+     main
+      NoFormPars(
+      ) [NoFormPars]
+      NoVarDeclaration(
+      ) [NoVarDeclaration]
+      StatementList_(
+        StatementList_(
+          NoStatementList(
+          ) [NoStatementList]
+          AssignExpression(
+            AssignExprSemi_(
+              AssignExpr_(
+                DesignatorExpression(
+                 y
+                  NoDesignatorList(
+                  ) [NoDesignatorList]
+                ) [DesignatorExpression]
+                Assign(
+                ) [Assign]
+                Expression(
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                  Term_(
+                    NoTermList(
+                    ) [NoTermList]
+                    FactorNum(
+                     4
+                    ) [FactorNum]
+                  ) [Term_]
+                ) [Expression]
+              ) [AssignExpr_]
+            ) [AssignExprSemi_]
+          ) [AssignExpression]
+        ) [StatementList_]
+        ForSt(
+          NoOptionalDesignatorStatement(
+          ) [NoOptionalDesignatorStatement]
+          NoOptionalCondition(
+          ) [NoOptionalCondition]
+          NoOptionalDesignatorStatementThird(
+          ) [NoOptionalDesignatorStatementThird]
+          Statements(
+            StatementList_(
+              NoStatementList(
+              ) [NoStatementList]
+              AssignExpression(
+                AssignExprSemi_(
+                  AssignExpr_(
+                    DesignatorExpression(
+                     y
+                      NoDesignatorList(
+                      ) [NoDesignatorList]
+                    ) [DesignatorExpression]
+                    Assign(
+                    ) [Assign]
+                    Expression(
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                      Term_(
+                        NoTermList(
+                        ) [NoTermList]
+                        FactorNum(
+                         3
+                        ) [FactorNum]
+                      ) [Term_]
+                    ) [Expression]
+                  ) [AssignExpr_]
+                ) [AssignExprSemi_]
+              ) [AssignExpression]
+            ) [StatementList_]
+          ) [Statements]
+        ) [ForSt]
+      ) [StatementList_]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program_]
+INFO  14:27:44,472 - ===================================

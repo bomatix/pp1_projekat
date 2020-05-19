@@ -1,0 +1,52 @@
+INFO  11:07:29,516 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  11:07:29,598 - #2 program
+INFO  11:07:29,598 - #10 MJProgram
+INFO  11:07:29,598 - #10 int
+INFO  11:07:29,598 - #10 x
+INFO  11:07:29,598 - #6 ,
+INFO  11:07:29,602 - #10 y
+INFO  11:07:29,602 - #5 ;
+INFO  11:07:29,602 - #3 {
+INFO  11:07:29,602 - #16 void
+INFO  11:07:29,602 - #10 main
+INFO  11:07:29,602 - #14 (
+INFO  11:07:29,602 - #15 )
+INFO  11:07:29,606 - #3 {
+INFO  11:07:29,606 - #10 y
+INFO  11:07:29,606 - #37 =
+INFO  11:07:29,606 - #9 4
+INFO  11:07:29,610 - #29 +
+INFO  11:07:29,610 - #5 ;
+ERROR 11:07:29,610 - 
+Sintaksna greska na liniji 5
+INFO  11:07:29,610 - #23 for
+INFO  11:07:29,610 - #14 (
+INFO  11:07:29,610 - #10 x
+ERROR 11:07:29,610 - Izvrsen oporavak do ; na liniji 5
+INFO  11:07:29,614 - #37 =
+ERROR 11:07:29,614 - 
+Sintaksna greska na liniji 7
+INFO  11:07:29,614 - #9 1
+INFO  11:07:29,614 - #5 ;
+INFO  11:07:29,614 - #10 x
+INFO  11:07:29,614 - #39 <
+INFO  11:07:29,614 - #9 3
+INFO  11:07:29,614 - #5 ;
+INFO  11:07:29,614 - #10 x
+INFO  11:07:29,614 - #31 ++
+INFO  11:07:29,614 - #15 )
+ERROR 11:07:29,614 - Izvrsen oporavak do ; na liniji 7
+ERROR 11:07:29,614 - 
+Sintaksna greska na liniji 7
+INFO  11:07:29,614 - #3 {
+INFO  11:07:29,614 - #10 y
+INFO  11:07:29,614 - #37 =
+INFO  11:07:29,614 - #9 3
+INFO  11:07:29,614 - #5 ;
+INFO  11:07:29,614 - #4 }
+INFO  11:07:29,614 - #4 }
+INFO  11:07:29,614 - #4 }
+ERROR 11:07:29,618 - Izvrsen oporavak do ; na liniji 7
+ERROR 11:07:29,618 - 
+Sintaksna greska na liniji 11
+ERROR 11:07:29,618 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11
