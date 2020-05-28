@@ -1,0 +1,78 @@
+INFO  17:33:36,860 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  17:33:36,944 - #2 program
+INFO  17:33:36,944 - #10 MJProgram
+INFO  17:33:36,944 - #10 int
+INFO  17:33:36,944 - #10 x
+INFO  17:33:36,944 - #6 ,
+INFO  17:33:36,944 - #10 y
+INFO  17:33:36,944 - #17 [
+INFO  17:33:36,944 - #18 ]
+INFO  17:33:36,944 - #5 ;
+INFO  17:33:36,944 - #8 const
+INFO  17:33:36,944 - #10 char
+INFO  17:33:36,944 - #10 a
+INFO  17:33:36,960 - #37 =
+INFO  17:33:36,960 - #11 a
+INFO  17:33:36,960 - #5 ;
+INFO  17:33:36,960 - #12 abstract
+INFO  17:33:36,960 - #13 class
+INFO  17:33:36,960 - #10 A
+INFO  17:33:36,960 - #26 extends
+INFO  17:33:36,960 - #10 B
+INFO  17:33:36,960 - #3 {
+INFO  17:33:36,960 - #3 {
+INFO  17:33:36,960 - #12 abstract
+INFO  17:33:36,960 - #16 void
+INFO  17:33:36,960 - #10 doIt
+INFO  17:33:36,960 - #14 (
+INFO  17:33:36,960 - #15 )
+INFO  17:33:36,960 - #5 ;
+INFO  17:33:36,960 - #4 }
+INFO  17:33:36,960 - #4 }
+INFO  17:33:36,960 - #3 {
+INFO  17:33:36,960 - #16 void
+INFO  17:33:36,960 - #10 main
+INFO  17:33:36,960 - #14 (
+INFO  17:33:36,960 - #15 )
+INFO  17:33:36,960 - #3 {
+INFO  17:33:36,960 - #10 y
+INFO  17:33:36,960 - #17 [
+INFO  17:33:36,960 - #9 2
+INFO  17:33:36,960 - #29 +
+INFO  17:33:36,960 - #9 2
+INFO  17:33:36,960 - #18 ]
+INFO  17:33:36,960 - #37 =
+INFO  17:33:36,960 - #9 4
+INFO  17:33:36,960 - #5 ;
+INFO  17:33:36,960 - #23 for
+INFO  17:33:36,960 - #14 (
+INFO  17:33:36,960 - #10 x
+INFO  17:33:36,960 - #37 =
+INFO  17:33:36,960 - #9 0
+INFO  17:33:36,960 - #5 ;
+INFO  17:33:36,960 - #10 x
+INFO  17:33:36,960 - #39 <
+INFO  17:33:36,975 - #9 3
+INFO  17:33:36,975 - #5 ;
+INFO  17:33:36,975 - #10 x
+INFO  17:33:36,975 - #31 ++
+INFO  17:33:36,975 - #15 )
+INFO  17:33:36,975 - #3 {
+INFO  17:33:36,975 - #10 y
+INFO  17:33:36,975 - #37 =
+INFO  17:33:36,975 - #9 3
+INFO  17:33:36,975 - #5 ;
+INFO  17:33:36,975 - #4 }
+INFO  17:33:36,975 - #4 }
+INFO  17:33:36,975 - #4 }
+INFO  17:33:36,991 - ===================================
+INFO  17:33:36,991 - Promenljiva x na liniji 2
+INFO  17:33:36,991 - Promenljiva y na liniji 2
+INFO  17:33:36,991 - Konstanta a na liniji 3
+INFO  17:33:36,991 - Validno sabiranje na liniji 11
+INFO  17:33:36,991 - Niz na liniji 2
+INFO  17:33:36,991 - y -- hasDesignatorList: true
+INFO  17:33:36,991 - x -- hasDesignatorList: null
+INFO  17:33:36,991 - x -- hasDesignatorList: null
+INFO  17:33:36,991 - x -- hasDesignatorList: null
+INFO  17:33:36,991 - y -- hasDesignatorList: null

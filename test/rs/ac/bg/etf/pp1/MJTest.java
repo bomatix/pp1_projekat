@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
+import rs.etf.pp1.symboltable.*;
 import rs.ac.bg.etf.pp1.ast.*;
 
 public class MJTest {
@@ -38,13 +39,17 @@ public class MJTest {
 	       
 //			log.info(s.value);
 	        Program prog = (Program)(s.value); 
+	        
+	        Tab.init();
 			// ispis sintaksnog stabla
 //			log.info(prog.toString(""));
 			log.info("===================================");
 
 			// ispis prepoznatih programskih konstrukcija
-			RuleVisitor v = new RuleVisitor();
-			prog.traverseBottomUp(v); 
+			SemanticAnalyzer sa = new SemanticAnalyzer();
+			prog.traverseBottomUp(sa); 
+			
+			Tab.dump();
 	      
 //			log.info(" Print count calls = " + v.printCallCount);
 //
@@ -52,6 +57,7 @@ public class MJTest {
 			
 		} 
 		catch (Exception e) {
+			e.printStackTrace();
 		}
 		finally {
 			if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }

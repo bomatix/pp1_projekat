@@ -1,0 +1,93 @@
+INFO  20:41:10,303 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  20:41:10,372 - #2 program
+INFO  20:41:10,372 - #10 MJProgram
+INFO  20:41:10,372 - #10 int
+INFO  20:41:10,372 - #10 x
+INFO  20:41:10,372 - #6 ,
+INFO  20:41:10,372 - #10 y
+INFO  20:41:10,372 - #17 [
+INFO  20:41:10,372 - #18 ]
+INFO  20:41:10,372 - #5 ;
+INFO  20:41:10,372 - #8 const
+INFO  20:41:10,372 - #10 char
+INFO  20:41:10,372 - #10 x
+INFO  20:41:10,372 - #37 =
+INFO  20:41:10,372 - #9 3
+INFO  20:41:10,372 - #5 ;
+INFO  20:41:10,372 - #12 abstract
+INFO  20:41:10,372 - #13 class
+INFO  20:41:10,372 - #10 A
+INFO  20:41:10,372 - #26 extends
+INFO  20:41:10,372 - #10 B
+INFO  20:41:10,372 - #3 {
+INFO  20:41:10,372 - #3 {
+INFO  20:41:10,372 - #12 abstract
+INFO  20:41:10,372 - #16 void
+INFO  20:41:10,372 - #10 doIt
+INFO  20:41:10,372 - #14 (
+INFO  20:41:10,372 - #15 )
+INFO  20:41:10,388 - #5 ;
+INFO  20:41:10,388 - #4 }
+INFO  20:41:10,388 - #4 }
+INFO  20:41:10,388 - #3 {
+INFO  20:41:10,388 - #10 int
+INFO  20:41:10,388 - #10 funkcija
+INFO  20:41:10,388 - #14 (
+INFO  20:41:10,388 - #10 int
+INFO  20:41:10,388 - #10 broj
+INFO  20:41:10,388 - #6 ,
+INFO  20:41:10,388 - #10 int
+INFO  20:41:10,388 - #10 broj2
+INFO  20:41:10,388 - #6 ,
+INFO  20:41:10,388 - #10 int
+INFO  20:41:10,388 - #10 broj3
+INFO  20:41:10,388 - #15 )
+INFO  20:41:10,388 - #3 {
+INFO  20:41:10,388 - #25 return
+INFO  20:41:10,388 - #9 3
+INFO  20:41:10,388 - #5 ;
+INFO  20:41:10,388 - #4 }
+INFO  20:41:10,388 - #16 void
+INFO  20:41:10,388 - #10 main
+INFO  20:41:10,388 - #14 (
+INFO  20:41:10,388 - #15 )
+INFO  20:41:10,388 - #3 {
+INFO  20:41:10,388 - #10 y
+INFO  20:41:10,388 - #17 [
+INFO  20:41:10,388 - #9 0
+INFO  20:41:10,388 - #18 ]
+INFO  20:41:10,388 - #37 =
+INFO  20:41:10,388 - #9 4
+INFO  20:41:10,388 - #5 ;
+INFO  20:41:10,403 - #23 for
+INFO  20:41:10,403 - #14 (
+INFO  20:41:10,403 - #10 x
+INFO  20:41:10,403 - #37 =
+INFO  20:41:10,403 - #9 0
+INFO  20:41:10,403 - #5 ;
+INFO  20:41:10,403 - #10 x
+INFO  20:41:10,403 - #39 <
+INFO  20:41:10,403 - #9 3
+INFO  20:41:10,403 - #5 ;
+INFO  20:41:10,403 - #10 x
+INFO  20:41:10,403 - #31 ++
+INFO  20:41:10,403 - #15 )
+INFO  20:41:10,403 - #3 {
+INFO  20:41:10,403 - #10 y
+INFO  20:41:10,403 - #37 =
+INFO  20:41:10,403 - #9 3
+INFO  20:41:10,403 - #5 ;
+INFO  20:41:10,403 - #4 }
+INFO  20:41:10,403 - #4 }
+INFO  20:41:10,403 - #4 }
+INFO  20:41:10,419 - ===================================
+INFO  20:41:10,419 - Pronadjen tip int na liniji 2
+INFO  20:41:10,419 - Promenljiva x na liniji 2
+INFO  20:41:10,419 - Promenljiva y na liniji 2
+INFO  20:41:10,419 - Pronadjen tip char na liniji 3
+INFO  20:41:10,419 - Konstanta x na liniji 3
+ERROR 20:41:10,419 - Identifikator x je vec definisan! na liniji 3
+INFO  20:41:10,419 - Pronadjen tip int na liniji 10
+INFO  20:41:10,419 - Pronadjen tip int na liniji 10
+INFO  20:41:10,419 - Pronadjen tip int na liniji 10
+INFO  20:41:10,419 - Pronadjen tip int na liniji 10

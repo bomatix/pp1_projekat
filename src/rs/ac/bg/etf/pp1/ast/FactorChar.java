@@ -1,23 +1,23 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/4/2020 21:50:39
+// 26/4/2020 23:38:6
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FactorChar extends Factor {
 
-    private char C1;
+    private Character C1;
 
-    public FactorChar (char C1) {
+    public FactorChar (Character C1) {
         this.C1=C1;
     }
 
-    public char getC1() {
+    public Character getC1() {
         return C1;
     }
 
-    public void setC1(char C1) {
+    public void setC1(Character C1) {
         this.C1=C1;
     }
 

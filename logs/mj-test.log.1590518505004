@@ -1,0 +1,72 @@
+INFO  20:39:31,857 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  20:39:31,926 - #2 program
+INFO  20:39:31,926 - #10 MJProgram
+INFO  20:39:31,926 - #10 int
+INFO  20:39:31,926 - #10 x
+INFO  20:39:31,926 - #6 ,
+INFO  20:39:31,926 - #10 y
+INFO  20:39:31,926 - #17 [
+INFO  20:39:31,926 - #18 ]
+INFO  20:39:31,942 - #5 ;
+INFO  20:39:31,942 - #8 const
+INFO  20:39:31,942 - #10 char
+INFO  20:39:31,942 - #10 a
+INFO  20:39:31,942 - #37 =
+INFO  20:39:31,942 - #11 a
+INFO  20:39:31,942 - #5 ;
+INFO  20:39:31,942 - #12 abstract
+INFO  20:39:31,942 - #13 class
+INFO  20:39:31,942 - #10 A
+INFO  20:39:31,942 - #26 extends
+INFO  20:39:31,942 - #10 B
+INFO  20:39:31,942 - #3 {
+INFO  20:39:31,942 - #3 {
+INFO  20:39:31,942 - #12 abstract
+INFO  20:39:31,942 - #16 void
+INFO  20:39:31,942 - #10 doIt
+INFO  20:39:31,942 - #14 (
+INFO  20:39:31,942 - #15 )
+INFO  20:39:31,942 - #5 ;
+INFO  20:39:31,942 - #4 }
+INFO  20:39:31,942 - #4 }
+INFO  20:39:31,942 - #3 {
+INFO  20:39:31,942 - #16 void
+INFO  20:39:31,942 - #10 main
+INFO  20:39:31,942 - #14 (
+INFO  20:39:31,942 - #15 )
+INFO  20:39:31,942 - #3 {
+INFO  20:39:31,942 - #10 y
+INFO  20:39:31,942 - #17 [
+INFO  20:39:31,942 - #9 2
+INFO  20:39:31,942 - #18 ]
+INFO  20:39:31,958 - #37 =
+INFO  20:39:31,958 - #9 4
+INFO  20:39:31,958 - #5 ;
+INFO  20:39:31,958 - #23 for
+INFO  20:39:31,958 - #14 (
+INFO  20:39:31,958 - #10 x
+INFO  20:39:31,958 - #37 =
+INFO  20:39:31,958 - #9 0
+INFO  20:39:31,958 - #5 ;
+INFO  20:39:31,958 - #10 x
+INFO  20:39:31,958 - #39 <
+INFO  20:39:31,958 - #9 3
+INFO  20:39:31,958 - #5 ;
+INFO  20:39:31,958 - #10 x
+INFO  20:39:31,958 - #31 ++
+INFO  20:39:31,958 - #15 )
+INFO  20:39:31,958 - #3 {
+INFO  20:39:31,958 - #10 y
+INFO  20:39:31,958 - #37 =
+INFO  20:39:31,958 - #9 3
+INFO  20:39:31,958 - #5 ;
+INFO  20:39:31,958 - #4 }
+INFO  20:39:31,958 - #4 }
+INFO  20:39:31,973 - #4 }
+INFO  20:39:31,989 - ===================================
+INFO  20:39:31,989 - Promenljiva x na liniji 2
+INFO  20:39:31,989 - Promenljiva y na liniji 2
+INFO  20:39:31,989 - Konstanta a na liniji 3
+INFO  20:39:31,989 - NoDesignatorList
+INFO  20:39:31,989 - NoDesignatorList False
+ERROR 20:39:31,989 - Greska: Promenljiva y nije niz! na liniji 11

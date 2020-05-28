@@ -1,0 +1,75 @@
+INFO  17:32:35,834 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  17:32:35,934 - #2 program
+INFO  17:32:35,934 - #10 MJProgram
+INFO  17:32:35,934 - #10 int
+INFO  17:32:35,934 - #10 x
+INFO  17:32:35,934 - #6 ,
+INFO  17:32:35,950 - #10 y
+INFO  17:32:35,950 - #17 [
+INFO  17:32:35,950 - #18 ]
+INFO  17:32:35,950 - #5 ;
+INFO  17:32:35,950 - #8 const
+INFO  17:32:35,950 - #10 char
+INFO  17:32:35,950 - #10 a
+INFO  17:32:35,950 - #37 =
+INFO  17:32:35,950 - #11 a
+INFO  17:32:35,950 - #5 ;
+INFO  17:32:35,950 - #12 abstract
+INFO  17:32:35,950 - #13 class
+INFO  17:32:35,950 - #10 A
+INFO  17:32:35,950 - #26 extends
+INFO  17:32:35,950 - #10 B
+INFO  17:32:35,950 - #3 {
+INFO  17:32:35,950 - #3 {
+INFO  17:32:35,950 - #12 abstract
+INFO  17:32:35,950 - #16 void
+INFO  17:32:35,950 - #10 doIt
+INFO  17:32:35,950 - #14 (
+INFO  17:32:35,950 - #15 )
+INFO  17:32:35,950 - #5 ;
+INFO  17:32:35,950 - #4 }
+INFO  17:32:35,950 - #4 }
+INFO  17:32:35,950 - #3 {
+INFO  17:32:35,950 - #16 void
+INFO  17:32:35,950 - #10 main
+INFO  17:32:35,950 - #14 (
+INFO  17:32:35,950 - #15 )
+INFO  17:32:35,950 - #3 {
+INFO  17:32:35,950 - #10 y
+INFO  17:32:35,950 - #17 [
+INFO  17:32:35,950 - #9 2
+INFO  17:32:35,950 - #18 ]
+INFO  17:32:35,950 - #37 =
+INFO  17:32:35,950 - #9 4
+INFO  17:32:35,950 - #5 ;
+INFO  17:32:35,966 - #23 for
+INFO  17:32:35,966 - #14 (
+INFO  17:32:35,966 - #10 x
+INFO  17:32:35,966 - #37 =
+INFO  17:32:35,966 - #9 0
+INFO  17:32:35,966 - #5 ;
+INFO  17:32:35,966 - #10 x
+INFO  17:32:35,966 - #39 <
+INFO  17:32:35,966 - #9 3
+INFO  17:32:35,966 - #5 ;
+INFO  17:32:35,966 - #10 x
+INFO  17:32:35,966 - #31 ++
+INFO  17:32:35,966 - #15 )
+INFO  17:32:35,966 - #3 {
+INFO  17:32:35,966 - #10 y
+INFO  17:32:35,966 - #37 =
+INFO  17:32:35,966 - #9 3
+INFO  17:32:35,966 - #5 ;
+INFO  17:32:35,966 - #4 }
+INFO  17:32:35,966 - #4 }
+INFO  17:32:35,966 - #4 }
+INFO  17:32:35,981 - ===================================
+INFO  17:32:35,981 - Promenljiva x na liniji 2
+INFO  17:32:35,981 - Promenljiva y na liniji 2
+INFO  17:32:35,981 - Konstanta a na liniji 3
+INFO  17:32:35,981 - Niz na liniji 2
+INFO  17:32:35,981 - hasDesignatorList: true
+INFO  17:32:35,981 - hasDesignatorList: null
+INFO  17:32:35,981 - hasDesignatorList: null
+INFO  17:32:35,981 - hasDesignatorList: null
+INFO  17:32:35,981 - hasDesignatorList: null

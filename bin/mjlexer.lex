@@ -53,6 +53,10 @@ import java_cup.runtime.Symbol;
 "extends" 	{ return new_symbol(sym.EXTENDS, yytext()); }
 "continue" 	{ return new_symbol(sym.CONTINUE, yytext()); }
 
+'.' { return new_symbol(sym.CHARCONST, new Character(yytext().charAt(1))); }
+true|false {return new_symbol (sym.BOOLCONST, yytext()); }
+[0-9]+  { return new_symbol(sym.NUMCONST, new Integer (yytext())); }
+([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); }
 "=" 		{ return new_symbol(sym.EQUAL, yytext()); }
@@ -85,10 +89,7 @@ import java_cup.runtime.Symbol;
 <COMMENT> . {yybegin(COMMENT);}
 <COMMENT> "\r\n" { yybegin(YYINITIAL); }
 
-\"[a-z|A-Z|0-9|_]*\" {return new_symbol (sym.CHARCONST, yytext()); }
-true|false {return new_symbol (sym.BOOLCONST, yytext()); }
-[0-9]+  { return new_symbol(sym.NUMCONST, new Integer (yytext())); }
-([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
+
 
 
 

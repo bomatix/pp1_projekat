@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/4/2020 21:50:39
+// 26/4/2020 23:38:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -17,7 +17,7 @@ public interface Visitor {
     public void visit(CondTermList CondTermList);
     public void visit(TypeVoid TypeVoid);
     public void visit(EmptyBrackets EmptyBrackets);
-    public void visit(FormParItem FormParItem);
+    public void visit(ConstIdent ConstIdent);
     public void visit(StatementList StatementList);
     public void visit(Extends Extends);
     public void visit(Factor Factor);
@@ -26,9 +26,9 @@ public interface Visitor {
     public void visit(AbstractMethodDecl AbstractMethodDecl);
     public void visit(DeclList DeclList);
     public void visit(Designator Designator);
-    public void visit(OptionalExpr OptionalExpr);
+    public void visit(MethodName MethodName);
     public void visit(ConstIdents ConstIdents);
-    public void visit(Term Term);
+    public void visit(OptionalExpr OptionalExpr);
     public void visit(FormParsList FormParsList);
     public void visit(Condition Condition);
     public void visit(AssignExpr AssignExpr);
@@ -43,7 +43,6 @@ public interface Visitor {
     public void visit(ArrayDecl ArrayDecl);
     public void visit(FactorExpr FactorExpr);
     public void visit(VarDeclList VarDeclList);
-    public void visit(Expr Expr);
     public void visit(ForDesignatorStatement ForDesignatorStatement);
     public void visit(ActPars ActPars);
     public void visit(DesignatorList DesignatorList);
@@ -55,6 +54,7 @@ public interface Visitor {
     public void visit(Decl Decl);
     public void visit(OptionalDesignatorStatement OptionalDesignatorStatement);
     public void visit(Statement Statement);
+    public void visit(Expression Expression);
     public void visit(VarDecl VarDecl);
     public void visit(VarIdentList VarIdentList);
     public void visit(ClassDecl ClassDecl);
@@ -62,8 +62,8 @@ public interface Visitor {
     public void visit(CondFact CondFact);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(DesignatorStatementExpr DesignatorStatementExpr);
-    public void visit(Program Program);
     public void visit(AllMethodDecl AllMethodDecl);
+    public void visit(OptionalMinus OptionalMinus);
     public void visit(FormPars FormPars);
     public void visit(OptionalDesignatorStatementThird OptionalDesignatorStatementThird);
     public void visit(Mod Mod);
@@ -78,7 +78,7 @@ public interface Visitor {
     public void visit(NotEqual NotEqual);
     public void visit(Equal Equal);
     public void visit(Assign Assign);
-    public void visit(DesignatorExpr_ DesignatorExpr_);
+    public void visit(DesignatorArr DesignatorArr);
     public void visit(DesignatorDot DesignatorDot);
     public void visit(NoDesignatorList NoDesignatorList);
     public void visit(DesignatorsList DesignatorsList);
@@ -113,13 +113,14 @@ public interface Visitor {
     public void visit(ActParsList_ ActParsList_);
     public void visit(NoActPars NoActPars);
     public void visit(ActParsExpression_ ActParsExpression_);
-    public void visit(NoTermList NoTermList);
+    public void visit(TermFactor TermFactor);
     public void visit(TermList_ TermList_);
-    public void visit(Term_ Term_);
-    public void visit(NoExpressionList NoExpressionList);
-    public void visit(ExpressionList ExpressionList);
-    public void visit(ExprestionMinus ExprestionMinus);
-    public void visit(Expression Expression);
+    public void visit(Term Term);
+    public void visit(TermExpression TermExpression);
+    public void visit(AddExpression AddExpression);
+    public void visit(Expr Expr);
+    public void visit(NoMinus NoMinus);
+    public void visit(Minus Minus);
     public void visit(NoOptionalExpression NoOptionalExpression);
     public void visit(OptionalExpression OptionalExpression);
     public void visit(OptionalConditionError OptionalConditionError);
@@ -160,7 +161,7 @@ public interface Visitor {
     public void visit(AbstractMethodDeclaration AbstractMethodDeclaration);
     public void visit(NoEmptyBrackets NoEmptyBrackets);
     public void visit(EmptyBrackets_ EmptyBrackets_);
-    public void visit(FormParItem_ FormParItem_);
+    public void visit(FormParItem FormParItem);
     public void visit(FormParsListError FormParsListError);
     public void visit(NoFormParsList NoFormParsList);
     public void visit(FormParsListItem FormParsListItem);
@@ -169,6 +170,8 @@ public interface Visitor {
     public void visit(FormPars_ FormPars_);
     public void visit(NoVarDeclaration NoVarDeclaration);
     public void visit(VarDeclarations VarDeclarations);
+    public void visit(MethodNameType MethodNameType);
+    public void visit(MethodNameVoid MethodNameVoid);
     public void visit(MethodDeclaration MethodDeclaration);
     public void visit(NoMethodDeclarations NoMethodDeclarations);
     public void visit(MethodDeclarations MethodDeclarations);
@@ -176,15 +179,18 @@ public interface Visitor {
     public void visit(Type_ Type_);
     public void visit(NoArrayDeclaration NoArrayDeclaration);
     public void visit(ArrayDeclaration ArrayDeclaration);
+    public void visit(VarType VarType);
     public void visit(VarIdent_ VarIdent_);
     public void visit(NoVarIdentList NoVarIdentList);
     public void visit(VarIdentError VarIdentError);
     public void visit(VarIdentList_ VarIdentList_);
     public void visit(VarDeclError VarDeclError);
     public void visit(VarDeclaration_ VarDeclaration_);
+    public void visit(ConstType ConstType);
     public void visit(BoolConst BoolConst);
     public void visit(CharConst CharConst);
     public void visit(NumConst NumConst);
+    public void visit(ConstIdent_ ConstIdent_);
     public void visit(NoConstIdents NoConstIdents);
     public void visit(ConstIdents_ ConstIdents_);
     public void visit(ConstDeclaration_ ConstDeclaration_);
@@ -194,6 +200,7 @@ public interface Visitor {
     public void visit(ConstDeclaration ConstDeclaration);
     public void visit(NoDeclarationList NoDeclarationList);
     public void visit(Declarations Declarations);
-    public void visit(Program_ Program_);
+    public void visit(ProgName ProgName);
+    public void visit(Program Program);
 
 }

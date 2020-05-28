@@ -1,0 +1,79 @@
+INFO  14:12:47,299 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  14:12:47,383 - #2 program
+INFO  14:12:47,383 - #10 MJProgram
+INFO  14:12:47,383 - #10 int
+INFO  14:12:47,383 - #10 x
+INFO  14:12:47,383 - #6 ,
+INFO  14:12:47,383 - #10 y
+INFO  14:12:47,383 - #5 ;
+INFO  14:12:47,383 - #12 abstract
+INFO  14:12:47,383 - #13 class
+INFO  14:12:47,383 - #10 A
+INFO  14:12:47,383 - #26 extends
+INFO  14:12:47,383 - #10 B
+INFO  14:12:47,383 - #3 {
+INFO  14:12:47,383 - #3 {
+INFO  14:12:47,383 - #12 abstract
+INFO  14:12:47,383 - #16 void
+INFO  14:12:47,383 - #10 doIt
+INFO  14:12:47,383 - #14 (
+INFO  14:12:47,383 - #15 )
+INFO  14:12:47,383 - #5 ;
+INFO  14:12:47,383 - #4 }
+INFO  14:12:47,383 - #4 }
+INFO  14:12:47,383 - #3 {
+INFO  14:12:47,383 - #10 int
+INFO  14:12:47,399 - #10 funkcija
+INFO  14:12:47,399 - #14 (
+INFO  14:12:47,399 - #10 int
+INFO  14:12:47,399 - #10 broj
+INFO  14:12:47,399 - #6 ,
+INFO  14:12:47,399 - #10 int
+INFO  14:12:47,399 - #10 broj2
+INFO  14:12:47,399 - #6 ,
+INFO  14:12:47,399 - #10 int
+INFO  14:12:47,399 - #10 broj3
+INFO  14:12:47,399 - #15 )
+INFO  14:12:47,399 - #3 {
+INFO  14:12:47,399 - #25 return
+INFO  14:12:47,399 - #9 3
+INFO  14:12:47,399 - #5 ;
+INFO  14:12:47,399 - #4 }
+INFO  14:12:47,399 - #16 void
+INFO  14:12:47,399 - #10 main
+INFO  14:12:47,399 - #14 (
+INFO  14:12:47,399 - #15 )
+INFO  14:12:47,399 - #3 {
+INFO  14:12:47,399 - #10 y
+INFO  14:12:47,399 - #37 =
+INFO  14:12:47,399 - #9 4
+INFO  14:12:47,399 - #5 ;
+INFO  14:12:47,399 - #23 for
+INFO  14:12:47,399 - #14 (
+INFO  14:12:47,399 - #10 x
+INFO  14:12:47,399 - #37 =
+INFO  14:12:47,399 - #9 0
+INFO  14:12:47,399 - #5 ;
+INFO  14:12:47,399 - #10 x
+INFO  14:12:47,399 - #39 <
+INFO  14:12:47,399 - #9 3
+INFO  14:12:47,399 - #5 ;
+INFO  14:12:47,399 - #10 x
+INFO  14:12:47,415 - #31 ++
+INFO  14:12:47,415 - #15 )
+INFO  14:12:47,415 - #3 {
+INFO  14:12:47,415 - #10 y
+INFO  14:12:47,415 - #37 =
+INFO  14:12:47,415 - #9 3
+INFO  14:12:47,415 - #5 ;
+INFO  14:12:47,415 - #4 }
+INFO  14:12:47,415 - #4 }
+INFO  14:12:47,415 - #4 }
+INFO  14:12:47,421 - ===================================
+INFO  14:12:47,437 - Pronadjen tip int na liniji 2
+INFO  14:12:47,437 - Promenljiva x na liniji 2
+INFO  14:12:47,437 - Promenljiva y na liniji 2
+INFO  14:12:47,437 - Pronadjen tip int na liniji 9
+INFO  14:12:47,437 - Pronadjen tip int na liniji 9
+INFO  14:12:47,437 - Pronadjen tip int na liniji 9
+INFO  14:12:47,437 - Pronadjen tip int na liniji 9

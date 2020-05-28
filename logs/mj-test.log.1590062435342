@@ -1,0 +1,79 @@
+INFO  14:00:26,527 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  14:00:26,612 - #2 program
+INFO  14:00:26,612 - #10 MJProgram
+INFO  14:00:26,612 - #10 int
+INFO  14:00:26,612 - #10 x
+INFO  14:00:26,612 - #6 ,
+INFO  14:00:26,612 - #10 y
+INFO  14:00:26,612 - #5 ;
+INFO  14:00:26,612 - #12 abstract
+INFO  14:00:26,612 - #13 class
+INFO  14:00:26,612 - #10 A
+INFO  14:00:26,612 - #26 extends
+INFO  14:00:26,612 - #10 B
+INFO  14:00:26,612 - #3 {
+INFO  14:00:26,612 - #3 {
+INFO  14:00:26,612 - #12 abstract
+INFO  14:00:26,612 - #16 void
+INFO  14:00:26,612 - #10 doIt
+INFO  14:00:26,612 - #14 (
+INFO  14:00:26,612 - #15 )
+INFO  14:00:26,612 - #5 ;
+INFO  14:00:26,612 - #4 }
+INFO  14:00:26,612 - #4 }
+INFO  14:00:26,612 - #3 {
+INFO  14:00:26,612 - #10 int
+INFO  14:00:26,612 - #10 funkcija
+INFO  14:00:26,612 - #14 (
+INFO  14:00:26,612 - #10 int
+INFO  14:00:26,612 - #10 broj
+INFO  14:00:26,612 - #6 ,
+INFO  14:00:26,627 - #10 int
+INFO  14:00:26,627 - #10 broj2
+INFO  14:00:26,627 - #6 ,
+INFO  14:00:26,627 - #10 int
+INFO  14:00:26,627 - #10 broj3
+INFO  14:00:26,627 - #15 )
+INFO  14:00:26,627 - #3 {
+INFO  14:00:26,627 - #25 return
+INFO  14:00:26,627 - #9 3
+INFO  14:00:26,627 - #5 ;
+INFO  14:00:26,627 - #4 }
+INFO  14:00:26,627 - #16 void
+INFO  14:00:26,627 - #10 main
+INFO  14:00:26,627 - #14 (
+INFO  14:00:26,627 - #15 )
+INFO  14:00:26,627 - #3 {
+INFO  14:00:26,627 - #10 y
+INFO  14:00:26,627 - #37 =
+INFO  14:00:26,627 - #9 4
+INFO  14:00:26,627 - #5 ;
+INFO  14:00:26,627 - #23 for
+INFO  14:00:26,627 - #14 (
+INFO  14:00:26,627 - #10 x
+INFO  14:00:26,627 - #37 =
+INFO  14:00:26,627 - #9 0
+INFO  14:00:26,627 - #5 ;
+INFO  14:00:26,627 - #10 x
+INFO  14:00:26,627 - #39 <
+INFO  14:00:26,627 - #9 3
+INFO  14:00:26,627 - #5 ;
+INFO  14:00:26,627 - #10 x
+INFO  14:00:26,643 - #31 ++
+INFO  14:00:26,643 - #15 )
+INFO  14:00:26,643 - #3 {
+INFO  14:00:26,643 - #10 y
+INFO  14:00:26,643 - #37 =
+INFO  14:00:26,643 - #9 3
+INFO  14:00:26,643 - #5 ;
+INFO  14:00:26,643 - #4 }
+INFO  14:00:26,643 - #4 }
+INFO  14:00:26,643 - #4 }
+INFO  14:00:26,659 - ===================================
+INFO  14:00:26,659 - Pronadjen tip int na liniji 2
+INFO  14:00:26,659 - Promenljiva x na liniji 2
+INFO  14:00:26,659 - Promenljiva y na liniji 2
+INFO  14:00:26,659 - Pronadjen tip int na liniji 9
+INFO  14:00:26,659 - Pronadjen tip int na liniji 9
+INFO  14:00:26,659 - Pronadjen tip int na liniji 9
+INFO  14:00:26,659 - Pronadjen tip int na liniji 9

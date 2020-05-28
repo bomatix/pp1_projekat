@@ -45,27 +45,35 @@ scan with {:
 terminal PROG, LBRACE, RBRACE, SEMI, COMMA, BOOLCONST, CONST;
 terminal Integer NUMCONST;
 terminal String IDENT;
-terminal char CHARCONST;
+terminal Character CHARCONST;
 terminal ABSTRACT, CLASS, LPAREN, RPAREN, VOIDD, LBRACKET, RBRACKET, NEW;
 terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MINUS;
 terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQUAL, GRE, GREEQUAL;
 terminal AND, OR, ISNOTEQUAL;
 
-nonterminal Program, DeclList, MethodDeclList, VarIdentList, AssignExprSemi;
-nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl, Type;
+nonterminal DeclList, MethodDeclList, VarIdentList, AssignExprSemi;
+nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl;
 nonterminal ConstIdents, ConstValue, FormParsList;
-nonterminal ArrayDecl, VarIdent, TypeVoid, OptionalCondition;
+nonterminal ArrayDecl, TypeVoid, OptionalCondition;
 nonterminal AssignOp, RelOp, AddOp, MulOp, ForDesignatorStatement;
-nonterminal MethodDecl, VarDeclList, FormPars, FormParItem, EmptyBrackets;
+nonterminal MethodDecl, VarDeclList, FormPars, EmptyBrackets;
 nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList, OptionalDesignatorStatementThird;
-nonterminal AllMethodDecl, Statement, StatementList, Expr, OptionalExpr;
-nonterminal OptionalDesignatorStatement, OptionalPrintParam, Designator, DesignatorList, DesignatorExpr, DesignatorPars;
+nonterminal AllMethodDecl, Statement, StatementList, OptionalExpr, OptionalMinus;
+nonterminal OptionalDesignatorStatement, OptionalPrintParam, DesignatorPars;
 nonterminal CondFactExpr, CondFact, CondFactList, CondTerm, CondTermList, Condition, DesignatorStatement, DesignatorStatementExpr;
-nonterminal FactorExpr, Factor, ActPars, ActParsList, ActParsExpression, TermList, Term, ExprList, AssignExpr;
+nonterminal FactorExpr, ActPars, ActParsList, ActParsExpression, ExprList, AssignExpr;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Expr, Term, TermList;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct DesignatorList, Designator, ConstType, VarType;
 
 precedence left ELSE;
 
-Program ::= (Program_) PROG IDENT DeclList LBRACE MethodDeclList RBRACE;
+Program ::= (Program) PROG ProgName:p DeclList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
 
 DeclList ::= (Declarations) DeclList Decl | (NoDeclarationList);
 
@@ -74,13 +82,16 @@ Decl ::= (ConstDeclaration) ConstDecl |
 		(AbstractClassDeclaration_) AbstractClassDecl | 
 		(ClassDeclaration_) ClassDecl;
 
-ConstDecl ::= (ConstDeclaration_) CONST Type:varType IDENT:varName EQUAL ConstValue ConstIdents SEMI;
-ConstIdents ::= (ConstIdents_) ConstIdents COMMA IDENT EQUAL ConstValue | (NoConstIdents);
+ConstDecl ::= (ConstDeclaration_) CONST ConstType ConstIdent ConstIdents SEMI;
+ConstIdents ::= (ConstIdents_) ConstIdents COMMA ConstIdent | (NoConstIdents);
+ConstIdent ::= (ConstIdent_) IDENT:constName EQUAL ConstValue;
 ConstValue ::= (NumConst) NUMCONST | (CharConst) CHARCONST | (BoolConst) BOOLCONST;
+ConstType ::= (ConstType) Type;
 
-VarDecl ::= (VarDeclaration_) Type VarIdentList VarIdent SEMI | (VarDeclError) error SEMI;
+VarDecl ::= (VarDeclaration_) VarType VarIdentList VarIdent SEMI | (VarDeclError) error SEMI;
 VarIdentList ::= (VarIdentList_) VarIdentList VarIdent COMMA | (VarIdentError) error COMMA |(NoVarIdentList);
-VarIdent ::= (VarIdent_) IDENT ArrayDecl;
+VarIdent ::= (VarIdent_) IDENT:varIdent ArrayDecl;
+VarType ::= (VarType) Type;
 
 ArrayDecl ::= (ArrayDeclaration) ArrayDecl LBRACKET RBRACKET | (NoArrayDeclaration);
 
@@ -88,7 +99,8 @@ TypeVoid ::= (Type_) Type | (Voidd) VOIDD;
 
 
 MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl | (NoMethodDeclarations);
-MethodDecl ::= (MethodDeclaration) TypeVoid IDENT FormPars VarDeclList LBRACE StatementList RBRACE; 
+MethodDecl ::= (MethodDeclaration) MethodName FormPars VarDeclList LBRACE StatementList RBRACE; 
+MethodName ::= (MethodNameVoid) VOIDD IDENT:name | (MethodNameType) Type IDENT:name;
 
 VarDeclList ::= (VarDeclarations) VarDeclList VarDecl | (NoVarDeclaration);
 
@@ -102,7 +114,7 @@ FormParsList ::= (FormParsList_) FormParsList COMMA FormParItem |
 				 (FormParsListError) error COMMA:FormParsCommaError 
 				 {: parser.report_error("Izvrsen oporavak do , na liniji " + FormParsCommaErrorleft, null); :};
 				 
-FormParItem ::=  (FormParItem_) Type IDENT EmptyBrackets;
+FormParItem ::=  (FormParItem) Type IDENT:formParItem EmptyBrackets;
 
 
 EmptyBrackets ::= (EmptyBrackets_) LBRACKET RBRACKET | (NoEmptyBrackets);
@@ -111,7 +123,7 @@ AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDE
 					   (AbstractMethodDeclarationError) error SEMI:AbstractMethodDeclError
 					   {: parser.report_error("Izvrsen oporavak do ; na liniji " + AbstractMethodDeclErrorleft, null); :};
 
-Type ::= (Type) IDENT;
+Type ::= (Type) IDENT:typeName;
 
 
 AbstractClassDecl ::= (AbstractClassDeclaration) ABSTRACT CLASS IDENT Extends LBRACE VarDeclList LBRACE AllMethodsDeclList RBRACE RBRACE;
@@ -149,22 +161,20 @@ OptionalDesignatorStatementThird ::= (OptionalDesignatorStatementThird_) Designa
 OptionalCondition ::= (OptionalCondition_) Condition SEMI | (NoOptionalCondition) SEMI | (OptionalConditionError) error SEMI:ConditionError {: parser.report_error("Izvrsen oporavak do ; na liniji " + ConditionErrorleft, null);  :};
  
 OptionalExpr ::= (OptionalExpression) Expr | (NoOptionalExpression);
-Expr ::= (Expression) ExprList Term | (ExprestionMinus) MINUS ExprList Term;
+OptionalMinus ::= (Minus) MINUS | (NoMinus);
+Expr ::= (Expr) OptionalMinus Expression;
+Expression ::= (AddExpression) Expression:te AddOp Term:t | (TermExpression) Term:t;
 
-ExprList ::= (ExpressionList) ExprList Term AddOp | (NoExpressionList);
+Term ::= (Term) TermList; 
+TermList ::= (TermList_) TermList MulOp Factor | (TermFactor) Factor;
 
-Term ::= (Term_) TermList Factor; 
-TermList ::= (TermList_) TermList Factor MulOp | (NoTermList);
-
-ActParsExpression ::= (ActParsExpression_) Expr ActParsList | (NoActPars);
-ActParsList ::= (ActParsList_) ActParsList ActPars | (NoActParsList); 
-ActPars ::=  (ActPars_) COMMA Expr;
+ActParsList ::= (ActParsList_) ActParsList COMMA Expr| (ActPars_) Expr | (NoActParsList); 
 
 Factor ::= (FactorDesignator) DesignatorExpr DesignatorPars | (FactorNum) NUMCONST | (FactorChar) CHARCONST | (FactorBool) BOOLCONST | (FactorNew) NEW Type FactorExpr | (FactorExpr_) LPAREN Expr RPAREN;
 FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET;
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr DesignatorStatement; 
-DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsExpression RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
+DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
 
 AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr;
 AssignExprSemi ::= (AssignExprSemi_) AssignExpr SEMI | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
@@ -182,7 +192,7 @@ DesignatorPars ::= (DesignatorPars_) LPAREN ActParsExpression RPAREN | (NoDesign
 
 DesignatorExpr ::= (DesignatorExpression) IDENT:varName DesignatorList;
 DesignatorList ::= (DesignatorsList) DesignatorList Designator | (NoDesignatorList);
-Designator ::= (DesignatorDot) DOT IDENT | (DesignatorExpr_) LBRACKET Expr RBRACKET;
+Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBRACKET Expr:index RBRACKET;
 
 AssignOp ::= (Assign) EQUAL;
 RelOp ::= (Equal) ISEQUAL | (NotEqual) ISNOTEQUAL | (Greater) GRE | (GreaterEqual) GREEQUAL | (Less) LESS | (LessEqual) LESSEQUAL;

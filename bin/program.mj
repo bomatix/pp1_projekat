@@ -1,17 +1,25 @@
 program MJProgram
-int x, y;
-abstract class A extends == B{
+int x, y[];
+const char a = 'a';
+abstract class A extends B{
 	{
 		abstract void doIt();
 	}
 }
 {
-	int funkcija(int broj, int broj2, int broj3) {
-		return 3;
+
+	int funkcija(int aa) 
+	char s;
+	{
+		return 2;
 	}
 
-	void main() {
-		y = 4;
+	void main() 
+	int b;
+	{
+		y.x[2] = 4;
+		
+		funkcija(3);
 	
 		for(x = 0; x < 3 ; x++) {
 			y = 3;

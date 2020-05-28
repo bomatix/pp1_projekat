@@ -1,27 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 19/4/2020 21:50:39
+// 26/4/2020 23:38:6
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarIdent_ extends VarIdent {
 
-    private String I1;
+    private String varIdent;
     private ArrayDecl ArrayDecl;
 
-    public VarIdent_ (String I1, ArrayDecl ArrayDecl) {
-        this.I1=I1;
+    public VarIdent_ (String varIdent, ArrayDecl ArrayDecl) {
+        this.varIdent=varIdent;
         this.ArrayDecl=ArrayDecl;
         if(ArrayDecl!=null) ArrayDecl.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public String getVarIdent() {
+        return varIdent;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setVarIdent(String varIdent) {
+        this.varIdent=varIdent;
     }
 
     public ArrayDecl getArrayDecl() {
@@ -55,7 +55,7 @@ public class VarIdent_ extends VarIdent {
         buffer.append(tab);
         buffer.append("VarIdent_(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+varIdent);
         buffer.append("\n");
 
         if(ArrayDecl!=null)

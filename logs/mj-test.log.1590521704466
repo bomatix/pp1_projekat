@@ -1,0 +1,86 @@
+INFO  21:34:14,045 - Compiling source file: C:\repos\pp1\pp1_projekat\test\program.mj
+INFO  21:34:14,114 - #2 program
+INFO  21:34:14,114 - #10 MJProgram
+INFO  21:34:14,114 - #10 int
+INFO  21:34:14,114 - #10 x
+INFO  21:34:14,114 - #6 ,
+INFO  21:34:14,114 - #10 y
+INFO  21:34:14,114 - #17 [
+INFO  21:34:14,114 - #18 ]
+INFO  21:34:14,114 - #5 ;
+INFO  21:34:14,114 - #8 const
+INFO  21:34:14,114 - #10 char
+INFO  21:34:14,114 - #10 a
+INFO  21:34:14,129 - #37 =
+INFO  21:34:14,129 - #11 a
+INFO  21:34:14,129 - #5 ;
+INFO  21:34:14,129 - #12 abstract
+INFO  21:34:14,129 - #13 class
+INFO  21:34:14,129 - #10 A
+INFO  21:34:14,129 - #26 extends
+INFO  21:34:14,129 - #10 B
+INFO  21:34:14,129 - #3 {
+INFO  21:34:14,129 - #3 {
+INFO  21:34:14,129 - #12 abstract
+INFO  21:34:14,129 - #16 void
+INFO  21:34:14,129 - #10 doIt
+INFO  21:34:14,129 - #14 (
+INFO  21:34:14,129 - #15 )
+INFO  21:34:14,129 - #5 ;
+INFO  21:34:14,129 - #4 }
+INFO  21:34:14,129 - #4 }
+INFO  21:34:14,129 - #3 {
+INFO  21:34:14,129 - #10 int
+INFO  21:34:14,129 - #10 funkcija
+INFO  21:34:14,129 - #14 (
+INFO  21:34:14,129 - #15 )
+INFO  21:34:14,129 - #3 {
+INFO  21:34:14,129 - #25 return
+INFO  21:34:14,129 - #9 0
+INFO  21:34:14,129 - #5 ;
+INFO  21:34:14,129 - #4 }
+INFO  21:34:14,129 - #16 void
+INFO  21:34:14,129 - #10 main
+INFO  21:34:14,129 - #14 (
+INFO  21:34:14,129 - #15 )
+INFO  21:34:14,129 - #3 {
+INFO  21:34:14,129 - #10 y
+INFO  21:34:14,129 - #33 .
+INFO  21:34:14,129 - #10 x
+INFO  21:34:14,129 - #17 [
+INFO  21:34:14,129 - #9 2
+INFO  21:34:14,129 - #18 ]
+INFO  21:34:14,129 - #37 =
+INFO  21:34:14,129 - #9 4
+INFO  21:34:14,145 - #5 ;
+INFO  21:34:14,145 - #23 for
+INFO  21:34:14,145 - #14 (
+INFO  21:34:14,145 - #10 x
+INFO  21:34:14,145 - #37 =
+INFO  21:34:14,145 - #9 0
+INFO  21:34:14,145 - #5 ;
+INFO  21:34:14,145 - #10 x
+INFO  21:34:14,145 - #39 <
+INFO  21:34:14,145 - #9 3
+INFO  21:34:14,145 - #5 ;
+INFO  21:34:14,145 - #10 x
+INFO  21:34:14,145 - #31 ++
+INFO  21:34:14,145 - #15 )
+INFO  21:34:14,145 - #3 {
+INFO  21:34:14,145 - #10 y
+INFO  21:34:14,145 - #37 =
+INFO  21:34:14,145 - #9 3
+INFO  21:34:14,145 - #5 ;
+INFO  21:34:14,145 - #4 }
+INFO  21:34:14,145 - #4 }
+INFO  21:34:14,145 - #4 }
+INFO  21:34:14,161 - ===================================
+INFO  21:34:14,161 - Promenljiva x na liniji 2
+INFO  21:34:14,161 - Promenljiva y na liniji 2
+INFO  21:34:14,161 - Konstanta a na liniji 3
+ERROR 21:34:14,161 - Greska: Ne postoji identifikator x na liniji 16
+ERROR 21:34:14,161 - Greska: Promenljiva y nije deklarisana na liniji 16
+ERROR 21:34:14,161 - Greska: Promenljiva x nije deklarisana na liniji 18
+ERROR 21:34:14,161 - Greska: Promenljiva x nije deklarisana na liniji 18
+ERROR 21:34:14,161 - Greska: Promenljiva x nije deklarisana na liniji 18
+ERROR 21:34:14,161 - Greska: Promenljiva y nije deklarisana na liniji 19
