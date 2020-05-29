@@ -1,11 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/4/2020 14:17:57
+// 29/4/2020 15:9:45
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Subtract extends AddOp {
+public class Subtract extends AddopLeft {
 
     public Subtract () {
     }

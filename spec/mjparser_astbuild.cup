@@ -50,6 +50,7 @@ terminal ABSTRACT, CLASS, LPAREN, RPAREN, VOIDD, LBRACKET, RBRACKET, NEW;
 terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MINUS;
 terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQUAL, GRE, GREEQUAL;
 terminal AND, OR, ISNOTEQUAL;
+terminal PLUSEQUAL, MINUSEQUAL, MULEQUAL, DIVEQUAL, MODEQUAL;
 
 nonterminal DeclList DeclList;
 nonterminal MethodDeclList MethodDeclList;
@@ -98,6 +99,10 @@ nonterminal ActParsExpression ActParsExpression;
 nonterminal ExprList ExprList;
 nonterminal AssignExpr AssignExpr;
 nonterminal ActParsItem ActParsItem;
+nonterminal AddopLeft AddopLeft;
+nonterminal AddopRight AddopRight;
+nonterminal MulopLeft MulopLeft;
+nonterminal MulopRight MulopRight;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassName;
@@ -233,7 +238,14 @@ DesignatorExpr ::= (DesignatorExpr) IDENT:varName DesignatorList:D1 {: RESULT=ne
 DesignatorList ::= (DesignatorsList) DesignatorList:D1 Designator:D2 {: RESULT=new DesignatorsList(D1, D2); RESULT.setLine(D1left); :} | (NoDesignatorList) {: RESULT=new NoDesignatorList(); :};
 Designator ::= (DesignatorDot) DOT IDENT:fieldName {: RESULT=new DesignatorDot(fieldName); RESULT.setLine(fieldNameleft); :} | (DesignatorArr) LBRACKET Expr:index RBRACKET {: RESULT=new DesignatorArr(index); RESULT.setLine(indexleft); :};
 
-AssignOp ::= (Assign) EQUAL {: RESULT=new Assign(); :};
+AssignOp ::= (Assign) EQUAL {: RESULT=new Assign(); :} | (AddopRightAssign) AddopRight:A1 {: RESULT=new AddopRightAssign(A1); RESULT.setLine(A1left); :} | (MulopRightAssign) MulopRight:M1 {: RESULT=new MulopRightAssign(M1); RESULT.setLine(M1left); :};
+
+AddOp ::= (AddopLeft_) AddopLeft:A1 {: RESULT=new AddopLeft_(A1); RESULT.setLine(A1left); :} | (AddopRight_) AddopRight:A1 {: RESULT=new AddopRight_(A1); RESULT.setLine(A1left); :};
+AddopLeft ::= (Add) PLUS {: RESULT=new Add(); :} | (Subtract) MINUS {: RESULT=new Subtract(); :};
+AddopRight ::= (PlusEqual) PLUSEQUAL {: RESULT=new PlusEqual(); :} | (MinusEqual) MINUSEQUAL {: RESULT=new MinusEqual(); :};
+
+MulOp ::= (MulopLeft_) MulopLeft:M1 {: RESULT=new MulopLeft_(M1); RESULT.setLine(M1left); :} | (MulopRight_) MulopRight:M1 {: RESULT=new MulopRight_(M1); RESULT.setLine(M1left); :};
+MulopLeft ::= (Multiply) MUL {: RESULT=new Multiply(); :} | (Divide) DIV {: RESULT=new Divide(); :} | (Mod) MOD {: RESULT=new Mod(); :};
+MulopRight ::= (MulEqual) MULEQUAL {: RESULT=new MulEqual(); :} | (DivEqual) DIVEQUAL {: RESULT=new DivEqual(); :} | (ModEqual) MODEQUAL {: RESULT=new ModEqual(); :};
+
 RelOp ::= (Equal) ISEQUAL {: RESULT=new Equal(); :} | (NotEqual) ISNOTEQUAL {: RESULT=new NotEqual(); :} | (Greater) GRE {: RESULT=new Greater(); :} | (GreaterEqual) GREEQUAL {: RESULT=new GreaterEqual(); :} | (Less) LESS {: RESULT=new Less(); :} | (LessEqual) LESSEQUAL {: RESULT=new LessEqual(); :};
-AddOp ::= (Add) PLUS {: RESULT=new Add(); :} | (Subtract) MINUS {: RESULT=new Subtract(); :};
-MulOp ::= (Multiply) MUL {: RESULT=new Multiply(); :} | (Divide) DIV {: RESULT=new Divide(); :} | (Mod) MOD {: RESULT=new Mod(); :};

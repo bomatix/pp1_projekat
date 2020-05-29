@@ -63,6 +63,7 @@ nonterminal AllMethodDecl, Statement, StatementList, OptionalMinus;
 nonterminal OptionalDesignatorStatement, OptionalPrintParam, DesignatorPars;
 nonterminal CondFactExpr, DesignatorStatement, DesignatorStatementExpr, OpenFor, CloseFor;
 nonterminal FactorExpr, ActPars, ActParsList, ActParsExpression, ExprList, AssignExpr, ActParsItem;
+nonterminal AddopLeft, AddopRight, MulopLeft, MulopRight;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassName;
@@ -198,10 +199,14 @@ DesignatorExpr ::= (DesignatorExpr) IDENT:varName DesignatorList;
 DesignatorList ::= (DesignatorsList) DesignatorList Designator | (NoDesignatorList);
 Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBRACKET Expr:index RBRACKET;
 
-AssignOp ::= (Assign) EQUAL ;
+AssignOp ::= (Assign) EQUAL | (AddopRightAssign) AddopRight | (MulopRightAssign) MulopRight;
 
-AddOp ::= (Add) PLUS | (Subtract) MINUS;
+AddOp ::= (AddopLeft_) AddopLeft | (AddopRight_) AddopRight;
+AddopLeft ::= (Add) PLUS | (Subtract) MINUS;
+AddopRight ::= (PlusEqual) PLUSEQUAL | (MinusEqual) MINUSEQUAL;
 
-MulOp ::= (Multiply) MUL | (Divide) DIV | (Mod) MOD;
+MulOp ::= (MulopLeft_) MulopLeft | (MulopRight_) MulopRight;
+MulopLeft ::= (Multiply) MUL | (Divide) DIV | (Mod) MOD;
+MulopRight ::= (MulEqual) MULEQUAL | (DivEqual) DIVEQUAL | (ModEqual) MODEQUAL;
 
 RelOp ::= (Equal) ISEQUAL | (NotEqual) ISNOTEQUAL | (Greater) GRE | (GreaterEqual) GREEQUAL | (Less) LESS | (LessEqual) LESSEQUAL;

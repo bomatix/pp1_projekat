@@ -1,79 +1,94 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/4/2020 14:17:57
+// 29/4/2020 15:9:45
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
-    public void visit(MethodDecl MethodDecl) { }
-    public void visit(VarIdent VarIdent) { }
-    public void visit(AssignExprSemi AssignExprSemi) { }
-    public void visit(TermList TermList) { }
-    public void visit(ActParsExpression ActParsExpression) { }
-    public void visit(AllMethodsDeclList AllMethodsDeclList) { }
-    public void visit(TypeVoid TypeVoid) { }
-    public void visit(EmptyBrackets EmptyBrackets) { }
-    public void visit(ConstIdent ConstIdent) { }
-    public void visit(StatementList StatementList) { }
-    public void visit(Extends Extends) { }
+    public void visit(FormPars FormPars) { }
     public void visit(Factor Factor) { }
-    public void visit(CondTerm CondTerm) { }
+    public void visit(DesignatorPars DesignatorPars) { }
+    public void visit(Statement Statement) { }
+    public void visit(CondFactExpr CondFactExpr) { }
+    public void visit(DesignatorStatementExpr DesignatorStatementExpr) { }
+    public void visit(EmptyBrackets EmptyBrackets) { }
+    public void visit(MethodDecl MethodDecl) { }
+    public void visit(FactorExpr FactorExpr) { }
+    public void visit(ActParsExpression ActParsExpression) { }
+    public void visit(AddopLeft AddopLeft) { }
+    public void visit(AddopRight AddopRight) { }
+    public void visit(ExprList ExprList) { }
     public void visit(AbstractMethodDecl AbstractMethodDecl) { }
+    public void visit(MulopRight MulopRight) { }
     public void visit(DeclList DeclList) { }
-    public void visit(Designator Designator) { }
-    public void visit(OptionalExpr OptionalExpr) { }
-    public void visit(MethodName MethodName) { }
-    public void visit(ConstIdents ConstIdents) { }
-    public void visit(FormParsList FormParsList) { }
-    public void visit(Condition Condition) { }
-    public void visit(AssignExpr AssignExpr) { }
-    public void visit(ConstValue ConstValue) { }
-    public void visit(MulOp MulOp) { }
-    public void visit(ActParsList ActParsList) { }
+    public void visit(AllMethodsDeclList AllMethodsDeclList) { }
+    public void visit(MulopLeft MulopLeft) { }
+    public void visit(TypeVoid TypeVoid) { }
+    public void visit(OptionalDesignatorStatement OptionalDesignatorStatement) { }
+    public void visit(AbstractClassDecl AbstractClassDecl) { }
+    public void visit(VarDecl VarDecl) { }
     public void visit(OptionalPrintParam OptionalPrintParam) { }
     public void visit(RelOp RelOp) { }
-    public void visit(AssignOp AssignOp) { }
-    public void visit(ExprList ExprList) { }
-    public void visit(DesignatorPars DesignatorPars) { }
-    public void visit(ArrayDecl ArrayDecl) { }
-    public void visit(FactorExpr FactorExpr) { }
-    public void visit(VarDeclList VarDeclList) { }
-    public void visit(ForDesignatorStatement ForDesignatorStatement) { }
-    public void visit(ActPars ActPars) { }
-    public void visit(DesignatorList DesignatorList) { }
-    public void visit(AddOp AddOp) { }
-    public void visit(DesignatorStatement DesignatorStatement) { }
-    public void visit(AbstractClassDecl AbstractClassDecl) { }
-    public void visit(OptionalCondition OptionalCondition) { }
-    public void visit(CondFactExpr CondFactExpr) { }
-    public void visit(Decl Decl) { }
-    public void visit(OptionalDesignatorStatement OptionalDesignatorStatement) { }
-    public void visit(Statement Statement) { }
-    public void visit(Expression Expression) { }
-    public void visit(VarDecl VarDecl) { }
-    public void visit(VarIdentList VarIdentList) { }
-    public void visit(ClassDecl ClassDecl) { }
-    public void visit(ConstDecl ConstDecl) { }
-    public void visit(CondFact CondFact) { }
-    public void visit(MethodDeclList MethodDeclList) { }
-    public void visit(DesignatorStatementExpr DesignatorStatementExpr) { }
     public void visit(AllMethodDecl AllMethodDecl) { }
-    public void visit(OptionalMinus OptionalMinus) { }
-    public void visit(FormPars FormPars) { }
+    public void visit(FormParsList FormParsList) { }
+    public void visit(DesignatorList DesignatorList) { }
+    public void visit(AssignExprSemi AssignExprSemi) { }
+    public void visit(Condition Condition) { }
+    public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(OptionalDesignatorStatementThird OptionalDesignatorStatementThird) { }
-    public void visit(Mod Mod) { visit(); }
-    public void visit(Divide Divide) { visit(); }
-    public void visit(Multiply Multiply) { visit(); }
-    public void visit(Subtract Subtract) { visit(); }
-    public void visit(Add Add) { visit(); }
+    public void visit(ArrayDecl ArrayDecl) { }
+    public void visit(StatementList StatementList) { }
+    public void visit(ConstIdent ConstIdent) { }
+    public void visit(ConstDecl ConstDecl) { }
+    public void visit(ForDesignatorStatement ForDesignatorStatement) { }
+    public void visit(VarIdentList VarIdentList) { }
+    public void visit(MulOp MulOp) { }
+    public void visit(CondTerm CondTerm) { }
+    public void visit(ClassDecl ClassDecl) { }
+    public void visit(MethodDeclList MethodDeclList) { }
+    public void visit(AssignExpr AssignExpr) { }
+    public void visit(Expression Expression) { }
+    public void visit(AddOp AddOp) { }
+    public void visit(ConstValue ConstValue) { }
+    public void visit(VarIdent VarIdent) { }
+    public void visit(AssignOp AssignOp) { }
+    public void visit(TermList TermList) { }
+    public void visit(Extends Extends) { }
+    public void visit(OptionalCondition OptionalCondition) { }
+    public void visit(MethodName MethodName) { }
+    public void visit(ActPars ActPars) { }
+    public void visit(OptionalMinus OptionalMinus) { }
+    public void visit(Designator Designator) { }
+    public void visit(VarDeclList VarDeclList) { }
+    public void visit(CondFact CondFact) { }
+    public void visit(OptionalExpr OptionalExpr) { }
+    public void visit(ActParsList ActParsList) { }
+    public void visit(Decl Decl) { }
+    public void visit(ConstIdents ConstIdents) { }
     public void visit(LessEqual LessEqual) { visit(); }
     public void visit(Less Less) { visit(); }
     public void visit(GreaterEqual GreaterEqual) { visit(); }
     public void visit(Greater Greater) { visit(); }
     public void visit(NotEqual NotEqual) { visit(); }
     public void visit(Equal Equal) { visit(); }
+    public void visit(ModEqual ModEqual) { visit(); }
+    public void visit(DivEqual DivEqual) { visit(); }
+    public void visit(MulEqual MulEqual) { visit(); }
+    public void visit(Mod Mod) { visit(); }
+    public void visit(Divide Divide) { visit(); }
+    public void visit(Multiply Multiply) { visit(); }
+    public void visit(MulopRight_ MulopRight_) { visit(); }
+    public void visit(MulopLeft_ MulopLeft_) { visit(); }
+    public void visit(MinusEqual MinusEqual) { visit(); }
+    public void visit(PlusEqual PlusEqual) { visit(); }
+    public void visit(Subtract Subtract) { visit(); }
+    public void visit(Add Add) { visit(); }
+    public void visit(AddopRight_ AddopRight_) { visit(); }
+    public void visit(AddopLeft_ AddopLeft_) { visit(); }
+    public void visit(MulopRightAssign MulopRightAssign) { visit(); }
+    public void visit(AddopRightAssign AddopRightAssign) { visit(); }
     public void visit(Assign Assign) { visit(); }
     public void visit(DesignatorArr DesignatorArr) { visit(); }
     public void visit(DesignatorDot DesignatorDot) { visit(); }
