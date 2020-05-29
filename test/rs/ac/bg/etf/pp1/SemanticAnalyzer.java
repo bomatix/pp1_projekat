@@ -18,6 +18,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	private Obj currentMethod = null;
 	private int currentMethodParsCount = 0;
 	private ArrayList<Struct> currentPars = null;
+	private int forCount = 0;
 
 	public void report_error(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
@@ -93,9 +94,91 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	// End Global Vars
 	
-	public void visit(MethodDeclarations methodDeclarations) {
-		
+	// For	
+	
+	public void visit(OpenFor openFor) {
+		forCount++;
 	}
+	
+	public void visit(CloseFor closeFor) {
+		forCount--;
+	}
+	
+	public void visit(BreakSt breakSt) {
+		if(forCount == 0) 
+			report_error("Greska: break naredba se moze izvrsiti samo u okviru for petlje", breakSt);
+	}
+	
+	public void visit(ContinueSt continueSt) {
+		if(forCount == 0) 
+			report_error("Greska: continue naredba se moze izvrsiti samo u okviru for petlje", continueSt);
+	}
+	
+	// End For
+	
+	// Conditions
+	
+	public void visit(ConditionItem conditionItem) {
+		if(conditionItem.getCondTerm().struct == Tab.boolType) {
+			conditionItem.struct = Tab.boolType;
+		}
+	}
+	
+	public void visit(ConditionList conditionList) {
+		if(conditionList.getCondition().struct == Tab.boolType 
+				&& conditionList.getCondTerm().struct == Tab.boolType) {
+			conditionList.struct = Tab.boolType;
+		}
+	}
+	
+	public void visit(ConditionTermItem conditionTermItem) {
+		if(conditionTermItem.getCondFact().struct == Tab.boolType) {
+			conditionTermItem.struct = Tab.boolType;
+		}
+	}
+	
+	public void visit(ConditionTermList conditionTermList) {
+		if(conditionTermList.getCondTerm().struct == Tab.boolType 
+				&& conditionTermList.getCondFact().struct == Tab.boolType) {
+			conditionTermList.struct = Tab.boolType;
+		}
+	}
+	
+	public void visit(ConditionFactExpr conditionFactExpr) {
+		// What about x == 3 && 2 ? Should it work?
+//		if(conditionFactExpr instanceof ConditionFactExpr && 2) {
+//			
+//		}
+	}
+	
+	public void visit(ConditionFact conditionFact) {
+		Expr left = conditionFact.getExpr(), right = conditionFact.getExpr1();
+		if(left.struct != null && right.struct != null && left.struct.compatibleWith(right.struct)) {
+			if(left.struct.getKind() == Struct.Array || left.struct.getKind() == Struct.Class
+					|| right.struct.getKind() == Struct.Array || right.struct.getKind() == Struct.Class) {
+				
+				if(conditionFact.getRelOp() instanceof Equal || conditionFact.getRelOp() instanceof NotEqual) {
+					conditionFact.struct = Tab.boolType;
+					report_info("Tipovi su kompatiblni", conditionFact);
+				}
+				else {
+					report_error("Greska: Uz promenljive tipa klase ili niza, mogu se koristiti samo operatori != i ==", conditionFact);
+				}
+				
+			} 
+			else {
+				conditionFact.struct = Tab.boolType;
+				report_info("Tipovi su kompatiblni", conditionFact);
+			}
+		}
+		else {
+			report_error("Greska: Tipovi nisu kompatibilni", conditionFact);
+		}
+	}
+	
+	// End Conditions
+	
+	// Method Declaration
 	
 	public void visit(MethodDeclaration methodDeclaration) {
 		currentMethod.setLevel(currentMethodParsCount);
@@ -103,6 +186,25 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		currentMethod = null;
+	}
+	
+	public void visit(ReturnSt returnSt) {
+		if(currentMethod == null) {
+			report_error("Greska: return naredba se ne moze izvrsiti izvan tela metoda i funkcija", returnSt);
+		}
+		else {
+			if(currentMethod.getType() == Tab.noType) {
+				if(returnSt.getOptionalExpr() != null) 
+					report_error("Greska: Funkcija " + currentMethod.getName() + " je tipa void i ne moze imati povratni parametar", returnSt);
+			}
+			else if (currentMethod.getType() != returnSt.getOptionalExpr().struct) {
+				report_error("Greska: Povratni tip funkcije " + currentMethod.getName() + " se ne poklapa sa tipom u return naredbi", returnSt);
+			}
+		}
+	}
+	
+	public void visit(OptionalExpression optionalExpression) {
+		optionalExpression.struct = optionalExpression.getExpr().struct;
 	}
 	
 	public void visit(MethodNameVoid methodNameVoid) {
@@ -120,7 +222,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public void visit(MethodNameType methodNameType) {
 		Obj methodName = Tab.find(methodNameType.getName());
 		if(methodName == Tab.noObj) {			
-			methodNameType.obj = Tab.insert(Obj.Meth, methodNameType.getName(), Tab.noType);
+			methodNameType.obj = Tab.insert(Obj.Meth, methodNameType.getName(), methodNameType.getType().struct);
 			currentMethod = methodNameType.obj;
 			Tab.openScope();
 		}
@@ -129,9 +231,6 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 	}
 	
-	public void visit(FormPars_ formPars) {
-		
-	}
 	
 	public void visit(FormParItem formParItem) {
 		Struct type = formParItem.getType().struct;
@@ -155,6 +254,10 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			}
 		}
 	}
+	
+	// End Method Declaration
+	
+	// Method Call
 	
 	public void visit(DesignatorStatementExpression designatorStatementExpression) {
 //		Obj method = Tab.find(designatorStatementExpression.getDesignatorExpr())
@@ -217,7 +320,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 	
 	public void visit(FactorDesignator factorDesignator) {
-		
+		factorDesignator.struct = factorDesignator.getDesignatorExpr().obj.getType();
 	}
 	
 	public void visit(DesignatorExpr designatorExpression) {

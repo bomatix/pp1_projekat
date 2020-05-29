@@ -50,6 +50,7 @@ terminal ABSTRACT, CLASS, LPAREN, RPAREN, VOIDD, LBRACKET, RBRACKET, NEW;
 terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MINUS;
 terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQUAL, GRE, GREEQUAL;
 terminal AND, OR, ISNOTEQUAL;
+terminal PLUSEQUAL, MINUSEQUAL, MULEQUAL, DIVEQUAL, MODEQUAL;
 
 nonterminal DeclList, MethodDeclList, VarIdentList, AssignExprSemi;
 nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl;
@@ -58,9 +59,9 @@ nonterminal ArrayDecl, TypeVoid, OptionalCondition;
 nonterminal AssignOp, RelOp, AddOp, MulOp, ForDesignatorStatement;
 nonterminal MethodDecl, VarDeclList, FormPars, EmptyBrackets;
 nonterminal AbstractMethodDecl, Extends, AllMethodsDeclList, OptionalDesignatorStatementThird;
-nonterminal AllMethodDecl, Statement, StatementList, OptionalExpr, OptionalMinus;
+nonterminal AllMethodDecl, Statement, StatementList, OptionalMinus;
 nonterminal OptionalDesignatorStatement, OptionalPrintParam, DesignatorPars;
-nonterminal CondFactExpr, CondFact, CondFactList, CondTerm, CondTermList, Condition, DesignatorStatement, DesignatorStatementExpr;
+nonterminal CondFactExpr, DesignatorStatement, DesignatorStatementExpr, OpenFor, CloseFor;
 nonterminal FactorExpr, ActPars, ActParsList, ActParsExpression, ExprList, AssignExpr, ActParsItem;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
@@ -68,6 +69,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassNa
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Expr, Term, TermList;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct DesignatorList, Designator, ConstType, VarType;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, CondTerm, Condition, OptionalExpr;
 
 precedence left ELSE;
 
@@ -146,7 +148,7 @@ StatementList ::= (StatementList_) StatementList Statement | (NoStatementList);
 Statement ::= (DesignatorSt) DesignatorStatementExpr SEMI |
 			  (IfElseSt) IF LPAREN Condition RPAREN Statement ELSE Statement |
 			  (IfSt) IF LPAREN Condition RPAREN Statement |
-			  (ForSt) FOR LPAREN OptionalDesignatorStatement OptionalCondition OptionalDesignatorStatementThird RPAREN Statement |
+			  (ForSt) FOR LPAREN OptionalDesignatorStatement OptionalCondition OptionalDesignatorStatementThird RPAREN OpenFor Statement CloseFor |
 			  (BreakSt) BREAK SEMI |
 			  (AssignExpression) AssignExprSemi|
 			  (ContinueSt) CONTINUE SEMI |
@@ -154,6 +156,9 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr SEMI |
 			  (ReadSt) READ LPAREN DesignatorExpr RPAREN SEMI |
 			  (PrintSt) PRINT LPAREN Expr OptionalPrintParam RPAREN SEMI |
 			  (Statements) LBRACE StatementList RBRACE;
+			  
+OpenFor ::= (OpenFor);
+CloseFor ::= (CloseFor);
 			  
 
 OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST;
@@ -182,14 +187,10 @@ DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList RPAREN | (Designa
 AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr;
 AssignExprSemi ::= (AssignExprSemi_) AssignExpr SEMI | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
 
-Condition ::= (Condition_) CondTerm CondTermList;
-Condition ::= (ConditionTermList) CondTermList OR CondTerm | (CondTermItem) CondTerm ;
+Condition ::= (ConditionList) Condition OR CondTerm | (ConditionItem) CondTerm ;
+CondTerm ::= (ConditionTermList) CondTerm AND CondFact | (ConditionTermItem) CondFact;
+CondFact ::= (ConditionFact) Expr RelOp Expr | (ConditionFactExpr) Expr;
 
-CondTerm ::= (ConditionTerm) CondFact CondFactList;
-CondFactList ::= (ConditionFactList) CondFactList AND CondFact | (NoConditionFactList);
-
-CondFact ::= (ConditionFact) Expr CondFactExpr;
-CondFactExpr ::= (ConditionFactExpr) RelOp Expr | (NoConditionFactExpr);
 
 DesignatorPars ::= (DesignatorPars_) LPAREN ActParsList RPAREN | (NoDesignatorPars);
 
@@ -197,7 +198,10 @@ DesignatorExpr ::= (DesignatorExpr) IDENT:varName DesignatorList;
 DesignatorList ::= (DesignatorsList) DesignatorList Designator | (NoDesignatorList);
 Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBRACKET Expr:index RBRACKET;
 
-AssignOp ::= (Assign) EQUAL;
-RelOp ::= (Equal) ISEQUAL | (NotEqual) ISNOTEQUAL | (Greater) GRE | (GreaterEqual) GREEQUAL | (Less) LESS | (LessEqual) LESSEQUAL;
+AssignOp ::= (Assign) EQUAL ;
+
 AddOp ::= (Add) PLUS | (Subtract) MINUS;
+
 MulOp ::= (Multiply) MUL | (Divide) DIV | (Mod) MOD;
+
+RelOp ::= (Equal) ISEQUAL | (NotEqual) ISNOTEQUAL | (Greater) GRE | (GreaterEqual) GREEQUAL | (Less) LESS | (LessEqual) LESSEQUAL;

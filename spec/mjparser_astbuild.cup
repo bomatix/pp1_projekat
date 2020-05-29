@@ -82,19 +82,15 @@ nonterminal OptionalDesignatorStatementThird OptionalDesignatorStatementThird;
 nonterminal AllMethodDecl AllMethodDecl;
 nonterminal Statement Statement;
 nonterminal StatementList StatementList;
-nonterminal OptionalExpr OptionalExpr;
 nonterminal OptionalMinus OptionalMinus;
 nonterminal OptionalDesignatorStatement OptionalDesignatorStatement;
 nonterminal OptionalPrintParam OptionalPrintParam;
 nonterminal DesignatorPars DesignatorPars;
 nonterminal CondFactExpr CondFactExpr;
-nonterminal CondFact CondFact;
-nonterminal CondFactList CondFactList;
-nonterminal CondTerm CondTerm;
-nonterminal CondTermList CondTermList;
-nonterminal Condition Condition;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal DesignatorStatementExpr DesignatorStatementExpr;
+nonterminal OpenFor OpenFor;
+nonterminal CloseFor CloseFor;
 nonterminal FactorExpr FactorExpr;
 nonterminal ActPars ActPars;
 nonterminal ActParsList ActParsList;
@@ -108,6 +104,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassNa
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Expr, Term, TermList;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct DesignatorList, Designator, ConstType, VarType;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, CondTerm, Condition, OptionalExpr;
 
 precedence left ELSE;
 
@@ -186,7 +183,7 @@ StatementList ::= (StatementList_) StatementList:S1 Statement:S2 {: RESULT=new S
 Statement ::= (DesignatorSt) DesignatorStatementExpr:D1 SEMI {: RESULT=new DesignatorSt(D1); RESULT.setLine(D1left); :} |
 			  (IfElseSt) IF LPAREN Condition:C1 RPAREN Statement:S2 ELSE Statement:S3 {: RESULT=new IfElseSt(C1, S2, S3); RESULT.setLine(C1left); :} |
 			  (IfSt) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new IfSt(C1, S2); RESULT.setLine(C1left); :} |
-			  (ForSt) FOR LPAREN OptionalDesignatorStatement:O1 OptionalCondition:O2 OptionalDesignatorStatementThird:O3 RPAREN Statement:S4 {: RESULT=new ForSt(O1, O2, O3, S4); RESULT.setLine(O1left); :} |
+			  (ForSt) FOR LPAREN OptionalDesignatorStatement:O1 OptionalCondition:O2 OptionalDesignatorStatementThird:O3 RPAREN OpenFor:O4 Statement:S5 CloseFor:C6 {: RESULT=new ForSt(O1, O2, O3, O4, S5, C6); RESULT.setLine(O1left); :} |
 			  (BreakSt) BREAK SEMI {: RESULT=new BreakSt(); :} |
 			  (AssignExpression) AssignExprSemi:A1 {: RESULT=new AssignExpression(A1); RESULT.setLine(A1left); :}|
 			  (ContinueSt) CONTINUE SEMI {: RESULT=new ContinueSt(); :} |
@@ -194,6 +191,9 @@ Statement ::= (DesignatorSt) DesignatorStatementExpr:D1 SEMI {: RESULT=new Desig
 			  (ReadSt) READ LPAREN DesignatorExpr:D1 RPAREN SEMI {: RESULT=new ReadSt(D1); RESULT.setLine(D1left); :} |
 			  (PrintSt) PRINT LPAREN Expr:E1 OptionalPrintParam:O2 RPAREN SEMI {: RESULT=new PrintSt(E1, O2); RESULT.setLine(E1left); :} |
 			  (Statements) LBRACE StatementList:S1 RBRACE {: RESULT=new Statements(S1); RESULT.setLine(S1left); :};
+			  
+OpenFor ::= (OpenFor) {: RESULT=new OpenFor(); :};
+CloseFor ::= (CloseFor) {: RESULT=new CloseFor(); :};
 			  
 
 OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST:N1 {: RESULT=new OptionalPrintParam_(N1); RESULT.setLine(N1left); :};
@@ -222,14 +222,10 @@ DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList:A1 RPAREN {: RESU
 AssignExpr ::= (AssignExpr_) DesignatorExpr:D1 AssignOp:A2 Expr:E3 {: RESULT=new AssignExpr_(D1, A2, E3); RESULT.setLine(D1left); :};
 AssignExprSemi ::= (AssignExprSemi_) AssignExpr:A1 SEMI {: RESULT=new AssignExprSemi_(A1); RESULT.setLine(A1left); :} | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :} {: RESULT=new AssignExprSemiError(); :};
 
-Condition ::= (Condition_) CondTerm:C1 CondTermList:C2 {: RESULT=new Condition_(C1, C2); RESULT.setLine(C1left); :};
-CondTermList ::= (ConditionTermList) CondTermList:C1 OR CondTerm:C2 {: RESULT=new ConditionTermList(C1, C2); RESULT.setLine(C1left); :} | (NoConditionTermList) {: RESULT=new NoConditionTermList(); :} ;
+Condition ::= (ConditionList) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionList(C1, C2); RESULT.setLine(C1left); :} | (ConditionItem) CondTerm:C1 {: RESULT=new ConditionItem(C1); RESULT.setLine(C1left); :} ;
+CondTerm ::= (ConditionTermList) CondTerm:C1 AND CondFact:C2 {: RESULT=new ConditionTermList(C1, C2); RESULT.setLine(C1left); :} | (ConditionTermItem) CondFact:C1 {: RESULT=new ConditionTermItem(C1); RESULT.setLine(C1left); :};
+CondFact ::= (ConditionFact) Expr:E1 RelOp:R2 Expr:E3 {: RESULT=new ConditionFact(E1, R2, E3); RESULT.setLine(E1left); :} | (ConditionFactExpr) Expr:E1 {: RESULT=new ConditionFactExpr(E1); RESULT.setLine(E1left); :};
 
-CondTerm ::= (ConditionTerm) CondFact:C1 CondFactList:C2 {: RESULT=new ConditionTerm(C1, C2); RESULT.setLine(C1left); :};
-CondFactList ::= (ConditionFactList) CondFactList:C1 AND CondFact:C2 {: RESULT=new ConditionFactList(C1, C2); RESULT.setLine(C1left); :} | (NoConditionFactList) {: RESULT=new NoConditionFactList(); :};
-
-CondFact ::= (ConditionFact) Expr:E1 CondFactExpr:C2 {: RESULT=new ConditionFact(E1, C2); RESULT.setLine(E1left); :};
-CondFactExpr ::= (ConditionFactExpr) RelOp:R1 Expr:E2 {: RESULT=new ConditionFactExpr(R1, E2); RESULT.setLine(R1left); :} | (NoConditionFactExpr) {: RESULT=new NoConditionFactExpr(); :};
 
 DesignatorPars ::= (DesignatorPars_) LPAREN ActParsList:A1 RPAREN {: RESULT=new DesignatorPars_(A1); RESULT.setLine(A1left); :} | (NoDesignatorPars) {: RESULT=new NoDesignatorPars(); :};
 

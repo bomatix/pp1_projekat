@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/4/2020 19:33:50
+// 29/4/2020 14:17:57
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,7 +13,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(TermList TermList) { }
     public void visit(ActParsExpression ActParsExpression) { }
     public void visit(AllMethodsDeclList AllMethodsDeclList) { }
-    public void visit(CondTermList CondTermList) { }
     public void visit(TypeVoid TypeVoid) { }
     public void visit(EmptyBrackets EmptyBrackets) { }
     public void visit(ConstIdent ConstIdent) { }
@@ -21,13 +20,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Extends Extends) { }
     public void visit(Factor Factor) { }
     public void visit(CondTerm CondTerm) { }
-    public void visit(CondFactList CondFactList) { }
     public void visit(AbstractMethodDecl AbstractMethodDecl) { }
     public void visit(DeclList DeclList) { }
     public void visit(Designator Designator) { }
+    public void visit(OptionalExpr OptionalExpr) { }
     public void visit(MethodName MethodName) { }
     public void visit(ConstIdents ConstIdents) { }
-    public void visit(OptionalExpr OptionalExpr) { }
     public void visit(FormParsList FormParsList) { }
     public void visit(Condition Condition) { }
     public void visit(AssignExpr AssignExpr) { }
@@ -84,15 +82,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorExpr DesignatorExpr) { visit(); }
     public void visit(NoDesignatorPars NoDesignatorPars) { visit(); }
     public void visit(DesignatorPars_ DesignatorPars_) { visit(); }
-    public void visit(NoConditionFactExpr NoConditionFactExpr) { visit(); }
     public void visit(ConditionFactExpr ConditionFactExpr) { visit(); }
     public void visit(ConditionFact ConditionFact) { visit(); }
-    public void visit(NoConditionFactList NoConditionFactList) { visit(); }
-    public void visit(ConditionFactList ConditionFactList) { visit(); }
-    public void visit(ConditionTerm ConditionTerm) { visit(); }
-    public void visit(NoConditionTermList NoConditionTermList) { visit(); }
+    public void visit(ConditionTermItem ConditionTermItem) { visit(); }
     public void visit(ConditionTermList ConditionTermList) { visit(); }
-    public void visit(Condition_ Condition_) { visit(); }
+    public void visit(ConditionItem ConditionItem) { visit(); }
+    public void visit(ConditionList ConditionList) { visit(); }
     public void visit(AssignExprSemiError AssignExprSemiError) { visit(); }
     public void visit(AssignExprSemi_ AssignExprSemi_) { visit(); }
     public void visit(AssignExpr_ AssignExpr_) { visit(); }
@@ -131,6 +126,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoOptionalDesignatorStatement NoOptionalDesignatorStatement) { visit(); }
     public void visit(OptionalDesignatorStatement_ OptionalDesignatorStatement_) { visit(); }
     public void visit(OptionalPrintParam_ OptionalPrintParam_) { visit(); }
+    public void visit(CloseFor CloseFor) { visit(); }
+    public void visit(OpenFor OpenFor) { visit(); }
     public void visit(Statements Statements) { visit(); }
     public void visit(PrintSt PrintSt) { visit(); }
     public void visit(ReadSt ReadSt) { visit(); }

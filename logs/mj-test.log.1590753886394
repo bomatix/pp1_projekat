@@ -1,0 +1,132 @@
+INFO  14:04:22,374 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:04:22,407 - #2 program
+INFO  14:04:22,407 - #10 MJProgram
+INFO  14:04:22,407 - #10 int
+INFO  14:04:22,407 - #10 x
+INFO  14:04:22,408 - #6 ,
+INFO  14:04:22,409 - #10 y
+INFO  14:04:22,409 - #17 [
+INFO  14:04:22,409 - #18 ]
+INFO  14:04:22,409 - #6 ,
+INFO  14:04:22,409 - #10 z
+INFO  14:04:22,409 - #17 [
+INFO  14:04:22,409 - #18 ]
+INFO  14:04:22,409 - #5 ;
+INFO  14:04:22,409 - #8 const
+INFO  14:04:22,410 - #10 bool
+INFO  14:04:22,410 - #10 a
+INFO  14:04:22,410 - #37 =
+INFO  14:04:22,410 - #7 true
+INFO  14:04:22,410 - #5 ;
+INFO  14:04:22,411 - #12 abstract
+INFO  14:04:22,411 - #13 class
+INFO  14:04:22,411 - #10 A
+INFO  14:04:22,412 - #26 extends
+INFO  14:04:22,412 - #10 B
+INFO  14:04:22,412 - #3 {
+INFO  14:04:22,412 - #3 {
+INFO  14:04:22,412 - #12 abstract
+INFO  14:04:22,412 - #16 void
+INFO  14:04:22,412 - #10 doIt
+INFO  14:04:22,413 - #14 (
+INFO  14:04:22,413 - #15 )
+INFO  14:04:22,413 - #5 ;
+INFO  14:04:22,413 - #25 return
+ERROR 14:04:22,413 - 
+Sintaksna greska na liniji 7
+INFO  14:04:22,413 - #5 ;
+INFO  14:04:22,413 - #4 }
+INFO  14:04:22,413 - #4 }
+INFO  14:04:22,414 - #3 {
+ERROR 14:04:22,414 - Izvrsen oporavak do ; na liniji 6
+INFO  14:04:22,415 - #10 int
+INFO  14:04:22,415 - #10 funkcija
+INFO  14:04:22,415 - #14 (
+INFO  14:04:22,415 - #10 int
+INFO  14:04:22,415 - #10 aa
+INFO  14:04:22,415 - #15 )
+INFO  14:04:22,416 - #10 char
+INFO  14:04:22,416 - #10 s
+INFO  14:04:22,416 - #5 ;
+INFO  14:04:22,416 - #3 {
+INFO  14:04:22,416 - #25 return
+INFO  14:04:22,417 - #9 2
+INFO  14:04:22,417 - #5 ;
+INFO  14:04:22,417 - #4 }
+INFO  14:04:22,417 - #10 int
+INFO  14:04:22,418 - #10 bb
+INFO  14:04:22,418 - #14 (
+INFO  14:04:22,418 - #15 )
+INFO  14:04:22,418 - #3 {
+INFO  14:04:22,418 - #25 return
+INFO  14:04:22,418 - #9 3
+INFO  14:04:22,420 - #5 ;
+INFO  14:04:22,420 - #4 }
+INFO  14:04:22,420 - #16 void
+INFO  14:04:22,420 - #10 main
+INFO  14:04:22,420 - #14 (
+INFO  14:04:22,420 - #15 )
+INFO  14:04:22,421 - #10 int
+INFO  14:04:22,421 - #10 b
+INFO  14:04:22,421 - #5 ;
+INFO  14:04:22,421 - #3 {
+INFO  14:04:22,421 - #10 y
+INFO  14:04:22,421 - #33 .
+INFO  14:04:22,421 - #10 x
+INFO  14:04:22,421 - #17 [
+INFO  14:04:22,421 - #9 2
+INFO  14:04:22,421 - #18 ]
+INFO  14:04:22,421 - #37 =
+INFO  14:04:22,423 - #9 4
+INFO  14:04:22,423 - #5 ;
+INFO  14:04:22,423 - #20 if
+INFO  14:04:22,424 - #14 (
+INFO  14:04:22,424 - #9 3
+INFO  14:04:22,424 - #38 ==
+INFO  14:04:22,424 - #9 2
+INFO  14:04:22,424 - #15 )
+INFO  14:04:22,425 - #3 {
+INFO  14:04:22,425 - #10 x
+INFO  14:04:22,425 - #37 =
+INFO  14:04:22,425 - #9 0
+INFO  14:04:22,425 - #5 ;
+INFO  14:04:22,425 - #4 }
+INFO  14:04:22,425 - #10 funkcija
+INFO  14:04:22,425 - #14 (
+INFO  14:04:22,425 - #9 3
+INFO  14:04:22,425 - #15 )
+INFO  14:04:22,425 - #5 ;
+INFO  14:04:22,426 - #23 for
+INFO  14:04:22,426 - #14 (
+INFO  14:04:22,426 - #10 x
+INFO  14:04:22,426 - #37 =
+INFO  14:04:22,426 - #9 0
+INFO  14:04:22,426 - #5 ;
+INFO  14:04:22,426 - #10 z
+INFO  14:04:22,426 - #38 ==
+INFO  14:04:22,426 - #10 y
+INFO  14:04:22,426 - #5 ;
+INFO  14:04:22,426 - #10 x
+INFO  14:04:22,426 - #31 ++
+INFO  14:04:22,426 - #15 )
+INFO  14:04:22,426 - #3 {
+INFO  14:04:22,426 - #10 y
+INFO  14:04:22,426 - #37 =
+INFO  14:04:22,426 - #9 3
+INFO  14:04:22,426 - #5 ;
+INFO  14:04:22,426 - #24 continue
+INFO  14:04:22,426 - #5 ;
+INFO  14:04:22,426 - #4 }
+INFO  14:04:22,427 - #4 }
+INFO  14:04:22,427 - #4 }
+INFO  14:04:22,437 - ===================================
+INFO  14:04:22,439 - Promenljiva x na liniji 2
+INFO  14:04:22,439 - Promenljiva y na liniji 2
+INFO  14:04:22,439 - Promenljiva z na liniji 2
+INFO  14:04:22,439 - Konstanta a na liniji 3
+INFO  14:04:22,439 - Promenljiva s na liniji 13
+INFO  14:04:22,439 - Promenljiva b na liniji 23
+INFO  14:04:22,440 - Tipovi su kompatiblni na liniji 4
+INFO  14:04:22,440 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  14:04:22,440 - Poziv funkcije  na liniji 31
+INFO  14:04:22,440 - Tipovi su kompatiblni na liniji 11

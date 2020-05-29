@@ -1,0 +1,129 @@
+INFO  14:19:13,663 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:19:13,696 - #2 program
+INFO  14:19:13,696 - #10 MJProgram
+INFO  14:19:13,696 - #10 int
+INFO  14:19:13,697 - #10 x
+INFO  14:19:13,698 - #6 ,
+INFO  14:19:13,698 - #10 y
+INFO  14:19:13,698 - #17 [
+INFO  14:19:13,698 - #18 ]
+INFO  14:19:13,698 - #6 ,
+INFO  14:19:13,698 - #10 z
+INFO  14:19:13,698 - #17 [
+INFO  14:19:13,699 - #18 ]
+INFO  14:19:13,699 - #5 ;
+INFO  14:19:13,699 - #8 const
+INFO  14:19:13,699 - #10 bool
+INFO  14:19:13,699 - #10 a
+INFO  14:19:13,699 - #37 =
+INFO  14:19:13,699 - #7 true
+INFO  14:19:13,699 - #5 ;
+INFO  14:19:13,700 - #12 abstract
+INFO  14:19:13,700 - #13 class
+INFO  14:19:13,700 - #10 A
+INFO  14:19:13,701 - #26 extends
+INFO  14:19:13,701 - #10 B
+INFO  14:19:13,701 - #3 {
+INFO  14:19:13,701 - #3 {
+INFO  14:19:13,701 - #12 abstract
+INFO  14:19:13,701 - #16 void
+INFO  14:19:13,701 - #10 doIt
+INFO  14:19:13,702 - #14 (
+INFO  14:19:13,702 - #15 )
+INFO  14:19:13,702 - #5 ;
+INFO  14:19:13,702 - #4 }
+INFO  14:19:13,702 - #4 }
+INFO  14:19:13,702 - #3 {
+INFO  14:19:13,703 - #10 int
+INFO  14:19:13,703 - #10 funkcija
+INFO  14:19:13,703 - #14 (
+INFO  14:19:13,703 - #10 int
+INFO  14:19:13,703 - #10 aa
+INFO  14:19:13,703 - #15 )
+INFO  14:19:13,704 - #10 char
+INFO  14:19:13,704 - #10 s
+INFO  14:19:13,704 - #5 ;
+INFO  14:19:13,704 - #3 {
+INFO  14:19:13,704 - #25 return
+INFO  14:19:13,705 - #9 2
+INFO  14:19:13,705 - #5 ;
+INFO  14:19:13,706 - #4 }
+INFO  14:19:13,706 - #16 void
+INFO  14:19:13,707 - #10 bb
+INFO  14:19:13,707 - #14 (
+INFO  14:19:13,707 - #15 )
+INFO  14:19:13,707 - #3 {
+INFO  14:19:13,707 - #25 return
+INFO  14:19:13,707 - #9 3
+INFO  14:19:13,707 - #5 ;
+INFO  14:19:13,707 - #4 }
+INFO  14:19:13,707 - #16 void
+INFO  14:19:13,707 - #10 main
+INFO  14:19:13,709 - #14 (
+INFO  14:19:13,709 - #15 )
+INFO  14:19:13,710 - #10 int
+INFO  14:19:13,710 - #10 b
+INFO  14:19:13,710 - #5 ;
+INFO  14:19:13,710 - #3 {
+INFO  14:19:13,710 - #10 y
+INFO  14:19:13,710 - #33 .
+INFO  14:19:13,710 - #10 x
+INFO  14:19:13,710 - #17 [
+INFO  14:19:13,710 - #9 2
+INFO  14:19:13,710 - #18 ]
+INFO  14:19:13,710 - #37 =
+INFO  14:19:13,711 - #9 4
+INFO  14:19:13,711 - #5 ;
+INFO  14:19:13,712 - #20 if
+INFO  14:19:13,712 - #14 (
+INFO  14:19:13,712 - #9 3
+INFO  14:19:13,712 - #38 ==
+INFO  14:19:13,712 - #9 2
+INFO  14:19:13,712 - #15 )
+INFO  14:19:13,713 - #3 {
+INFO  14:19:13,713 - #10 x
+INFO  14:19:13,713 - #37 =
+INFO  14:19:13,713 - #9 0
+INFO  14:19:13,713 - #5 ;
+INFO  14:19:13,713 - #4 }
+INFO  14:19:13,713 - #10 funkcija
+INFO  14:19:13,713 - #14 (
+INFO  14:19:13,713 - #9 3
+INFO  14:19:13,713 - #15 )
+INFO  14:19:13,714 - #5 ;
+INFO  14:19:13,714 - #23 for
+INFO  14:19:13,714 - #14 (
+INFO  14:19:13,714 - #10 x
+INFO  14:19:13,714 - #37 =
+INFO  14:19:13,714 - #9 0
+INFO  14:19:13,714 - #5 ;
+INFO  14:19:13,714 - #10 z
+INFO  14:19:13,714 - #38 ==
+INFO  14:19:13,714 - #10 y
+INFO  14:19:13,714 - #5 ;
+INFO  14:19:13,715 - #10 x
+INFO  14:19:13,715 - #31 ++
+INFO  14:19:13,715 - #15 )
+INFO  14:19:13,715 - #3 {
+INFO  14:19:13,715 - #10 y
+INFO  14:19:13,715 - #37 =
+INFO  14:19:13,715 - #9 3
+INFO  14:19:13,715 - #5 ;
+INFO  14:19:13,716 - #24 continue
+INFO  14:19:13,716 - #5 ;
+INFO  14:19:13,716 - #4 }
+INFO  14:19:13,716 - #4 }
+INFO  14:19:13,716 - #4 }
+INFO  14:19:13,726 - ===================================
+INFO  14:19:13,728 - Promenljiva x na liniji 2
+INFO  14:19:13,728 - Promenljiva y na liniji 2
+INFO  14:19:13,728 - Promenljiva z na liniji 2
+INFO  14:19:13,728 - Konstanta a na liniji 3
+INFO  14:19:13,728 - Promenljiva s na liniji 12
+ERROR 14:19:13,728 - Greska: Povratni tip funkcije funkcija se ne poklapa sa tipom u return naredbi na liniji 2
+ERROR 14:19:13,728 - Greska: Funkcija bb je tipa void i ne moze imati povratni parametar na liniji 2
+INFO  14:19:13,728 - Promenljiva b na liniji 22
+INFO  14:19:13,728 - Tipovi su kompatiblni na liniji 4
+INFO  14:19:13,729 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  14:19:13,729 - Poziv funkcije  na liniji 30
+INFO  14:19:13,729 - Tipovi su kompatiblni na liniji 11

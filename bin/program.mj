@@ -1,5 +1,5 @@
 program MJProgram
-int x, y[];
+int x, y[], z[];
 const bool a = true;
 abstract class A extends B{
 	{
@@ -14,7 +14,7 @@ abstract class A extends B{
 		return 2;
 	}
 	
-	int bb() {
+	void bb() {
 		return 3;
 	}
 
@@ -23,10 +23,15 @@ abstract class A extends B{
 	{
 		y.x[2] = 4;
 		
-		funkcija(bb());
+		if(3==2) {
+			x = 0;
+		}
+		
+		funkcija(3);
 	
-		for(x = 0; x < 3 ; x++) {
+		for(x = 0; z == y ; x++) {
 			y = 3;
+			continue;
 		}
 	}
 }

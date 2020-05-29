@@ -60,6 +60,13 @@ true|false {return new_symbol (sym.BOOLCONST, yytext()); }
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); }
 "=" 		{ return new_symbol(sym.EQUAL, yytext()); }
+
+"+=" 		{ return new_symbol(sym.PLUSEQUAL, yytext()); }
+"-=" 		{ return new_symbol(sym.MINUSEQUAL, yytext()); }
+"*=" 		{ return new_symbol(sym.MULEQUAL, yytext()); }
+"/=" 		{ return new_symbol(sym.DIVEQUAL, yytext()); }
+"%=" 		{ return new_symbol(sym.MODEQUAL, yytext()); }
+
 ";" 		{ return new_symbol(sym.SEMI, yytext()); }
 "," 		{ return new_symbol(sym.COMMA, yytext()); }
 "(" 		{ return new_symbol(sym.LPAREN, yytext()); }

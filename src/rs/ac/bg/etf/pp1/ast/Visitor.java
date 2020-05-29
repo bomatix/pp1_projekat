@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/4/2020 19:33:50
+// 29/4/2020 14:17:57
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,7 +13,6 @@ public interface Visitor {
     public void visit(TermList TermList);
     public void visit(ActParsExpression ActParsExpression);
     public void visit(AllMethodsDeclList AllMethodsDeclList);
-    public void visit(CondTermList CondTermList);
     public void visit(TypeVoid TypeVoid);
     public void visit(EmptyBrackets EmptyBrackets);
     public void visit(ConstIdent ConstIdent);
@@ -21,13 +20,12 @@ public interface Visitor {
     public void visit(Extends Extends);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
-    public void visit(CondFactList CondFactList);
     public void visit(AbstractMethodDecl AbstractMethodDecl);
     public void visit(DeclList DeclList);
     public void visit(Designator Designator);
+    public void visit(OptionalExpr OptionalExpr);
     public void visit(MethodName MethodName);
     public void visit(ConstIdents ConstIdents);
-    public void visit(OptionalExpr OptionalExpr);
     public void visit(FormParsList FormParsList);
     public void visit(Condition Condition);
     public void visit(AssignExpr AssignExpr);
@@ -84,15 +82,12 @@ public interface Visitor {
     public void visit(DesignatorExpr DesignatorExpr);
     public void visit(NoDesignatorPars NoDesignatorPars);
     public void visit(DesignatorPars_ DesignatorPars_);
-    public void visit(NoConditionFactExpr NoConditionFactExpr);
     public void visit(ConditionFactExpr ConditionFactExpr);
     public void visit(ConditionFact ConditionFact);
-    public void visit(NoConditionFactList NoConditionFactList);
-    public void visit(ConditionFactList ConditionFactList);
-    public void visit(ConditionTerm ConditionTerm);
-    public void visit(NoConditionTermList NoConditionTermList);
+    public void visit(ConditionTermItem ConditionTermItem);
     public void visit(ConditionTermList ConditionTermList);
-    public void visit(Condition_ Condition_);
+    public void visit(ConditionItem ConditionItem);
+    public void visit(ConditionList ConditionList);
     public void visit(AssignExprSemiError AssignExprSemiError);
     public void visit(AssignExprSemi_ AssignExprSemi_);
     public void visit(AssignExpr_ AssignExpr_);
@@ -131,6 +126,8 @@ public interface Visitor {
     public void visit(NoOptionalDesignatorStatement NoOptionalDesignatorStatement);
     public void visit(OptionalDesignatorStatement_ OptionalDesignatorStatement_);
     public void visit(OptionalPrintParam_ OptionalPrintParam_);
+    public void visit(CloseFor CloseFor);
+    public void visit(OpenFor OpenFor);
     public void visit(Statements Statements);
     public void visit(PrintSt PrintSt);
     public void visit(ReadSt ReadSt);
