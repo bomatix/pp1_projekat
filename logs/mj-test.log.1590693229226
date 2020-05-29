@@ -1,0 +1,95 @@
+INFO  21:07:03,246 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:07:03,281 - #2 program
+INFO  21:07:03,281 - #10 MJProgram
+INFO  21:07:03,281 - #10 int
+INFO  21:07:03,282 - #10 x
+INFO  21:07:03,283 - #6 ,
+INFO  21:07:03,283 - #10 y
+INFO  21:07:03,283 - #17 [
+INFO  21:07:03,283 - #18 ]
+INFO  21:07:03,283 - #5 ;
+INFO  21:07:03,284 - #8 const
+INFO  21:07:03,284 - #10 bool
+INFO  21:07:03,284 - #10 a
+INFO  21:07:03,284 - #37 =
+INFO  21:07:03,284 - #7 true
+INFO  21:07:03,284 - #5 ;
+INFO  21:07:03,285 - #12 abstract
+INFO  21:07:03,285 - #13 class
+INFO  21:07:03,285 - #10 A
+INFO  21:07:03,285 - #26 extends
+INFO  21:07:03,285 - #10 B
+INFO  21:07:03,285 - #3 {
+INFO  21:07:03,286 - #3 {
+INFO  21:07:03,286 - #12 abstract
+INFO  21:07:03,287 - #16 void
+INFO  21:07:03,287 - #10 doIt
+INFO  21:07:03,287 - #14 (
+INFO  21:07:03,287 - #15 )
+INFO  21:07:03,288 - #5 ;
+INFO  21:07:03,288 - #4 }
+INFO  21:07:03,288 - #4 }
+INFO  21:07:03,288 - #3 {
+INFO  21:07:03,288 - #10 int
+INFO  21:07:03,288 - #10 funkcija
+INFO  21:07:03,288 - #14 (
+INFO  21:07:03,289 - #15 )
+INFO  21:07:03,289 - #10 char
+INFO  21:07:03,289 - #10 s
+INFO  21:07:03,289 - #5 ;
+INFO  21:07:03,289 - #3 {
+INFO  21:07:03,289 - #25 return
+INFO  21:07:03,289 - #9 2
+INFO  21:07:03,290 - #5 ;
+INFO  21:07:03,291 - #4 }
+INFO  21:07:03,291 - #16 void
+INFO  21:07:03,291 - #10 main
+INFO  21:07:03,291 - #14 (
+INFO  21:07:03,291 - #15 )
+INFO  21:07:03,291 - #10 int
+INFO  21:07:03,291 - #10 b
+INFO  21:07:03,291 - #5 ;
+INFO  21:07:03,291 - #3 {
+INFO  21:07:03,291 - #10 y
+INFO  21:07:03,291 - #33 .
+INFO  21:07:03,292 - #10 x
+INFO  21:07:03,292 - #17 [
+INFO  21:07:03,292 - #9 2
+INFO  21:07:03,292 - #18 ]
+INFO  21:07:03,292 - #37 =
+INFO  21:07:03,292 - #9 4
+INFO  21:07:03,293 - #5 ;
+INFO  21:07:03,296 - #10 funkcija
+INFO  21:07:03,296 - #14 (
+INFO  21:07:03,296 - #15 )
+INFO  21:07:03,297 - #5 ;
+INFO  21:07:03,297 - #23 for
+INFO  21:07:03,297 - #14 (
+INFO  21:07:03,297 - #10 x
+INFO  21:07:03,297 - #37 =
+INFO  21:07:03,297 - #9 0
+INFO  21:07:03,297 - #5 ;
+INFO  21:07:03,297 - #10 x
+INFO  21:07:03,297 - #39 <
+INFO  21:07:03,297 - #9 3
+INFO  21:07:03,298 - #5 ;
+INFO  21:07:03,299 - #10 x
+INFO  21:07:03,299 - #31 ++
+INFO  21:07:03,299 - #15 )
+INFO  21:07:03,299 - #3 {
+INFO  21:07:03,299 - #10 y
+INFO  21:07:03,299 - #37 =
+INFO  21:07:03,299 - #9 3
+INFO  21:07:03,299 - #5 ;
+INFO  21:07:03,300 - #4 }
+INFO  21:07:03,300 - #4 }
+INFO  21:07:03,300 - #4 }
+INFO  21:07:03,309 - ===================================
+INFO  21:07:03,311 - Promenljiva x na liniji 2
+INFO  21:07:03,312 - Promenljiva y na liniji 2
+ERROR 21:07:03,312 - Nije pronadjen tip bool u tabeli simbola!
+INFO  21:07:03,312 - Konstanta a na liniji 3
+INFO  21:07:03,312 - Promenljiva s na liniji 12
+INFO  21:07:03,312 - Promenljiva b na liniji 18
+INFO  21:07:03,312 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  21:07:03,312 - Poziv funkcije  na liniji 22

@@ -1,0 +1,99 @@
+INFO  19:34:19,156 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  19:34:19,188 - #2 program
+INFO  19:34:19,188 - #10 MJProgram
+INFO  19:34:19,188 - #10 int
+INFO  19:34:19,188 - #10 x
+INFO  19:34:19,189 - #6 ,
+INFO  19:34:19,190 - #10 y
+INFO  19:34:19,190 - #17 [
+INFO  19:34:19,190 - #18 ]
+INFO  19:34:19,190 - #5 ;
+INFO  19:34:19,190 - #8 const
+INFO  19:34:19,190 - #10 char
+INFO  19:34:19,190 - #10 a
+INFO  19:34:19,191 - #37 =
+INFO  19:34:19,191 - #11 a
+INFO  19:34:19,191 - #5 ;
+INFO  19:34:19,192 - #12 abstract
+INFO  19:34:19,192 - #13 class
+INFO  19:34:19,192 - #10 A
+INFO  19:34:19,192 - #26 extends
+INFO  19:34:19,192 - #10 B
+INFO  19:34:19,192 - #3 {
+INFO  19:34:19,192 - #3 {
+INFO  19:34:19,193 - #12 abstract
+INFO  19:34:19,193 - #16 void
+INFO  19:34:19,193 - #10 doIt
+INFO  19:34:19,193 - #14 (
+INFO  19:34:19,193 - #15 )
+INFO  19:34:19,194 - #5 ;
+INFO  19:34:19,194 - #4 }
+INFO  19:34:19,194 - #4 }
+INFO  19:34:19,194 - #3 {
+INFO  19:34:19,194 - #10 int
+INFO  19:34:19,195 - #10 funkcija
+INFO  19:34:19,195 - #14 (
+INFO  19:34:19,195 - #10 int
+INFO  19:34:19,195 - #10 aa
+INFO  19:34:19,195 - #15 )
+INFO  19:34:19,196 - #10 char
+INFO  19:34:19,196 - #10 s
+INFO  19:34:19,196 - #5 ;
+INFO  19:34:19,196 - #3 {
+INFO  19:34:19,196 - #25 return
+INFO  19:34:19,196 - #9 2
+INFO  19:34:19,197 - #5 ;
+INFO  19:34:19,198 - #4 }
+INFO  19:34:19,198 - #16 void
+INFO  19:34:19,198 - #10 main
+INFO  19:34:19,198 - #14 (
+INFO  19:34:19,198 - #15 )
+INFO  19:34:19,198 - #10 int
+INFO  19:34:19,198 - #10 b
+INFO  19:34:19,198 - #5 ;
+INFO  19:34:19,198 - #3 {
+INFO  19:34:19,198 - #10 y
+INFO  19:34:19,199 - #33 .
+INFO  19:34:19,199 - #10 x
+INFO  19:34:19,199 - #17 [
+INFO  19:34:19,199 - #9 2
+INFO  19:34:19,199 - #18 ]
+INFO  19:34:19,199 - #37 =
+INFO  19:34:19,202 - #9 4
+INFO  19:34:19,203 - #5 ;
+INFO  19:34:19,203 - #10 funkcija
+INFO  19:34:19,203 - #14 (
+INFO  19:34:19,203 - #9 3
+INFO  19:34:19,203 - #6 ,
+INFO  19:34:19,203 - #9 3
+INFO  19:34:19,204 - #15 )
+INFO  19:34:19,204 - #5 ;
+INFO  19:34:19,204 - #23 for
+INFO  19:34:19,204 - #14 (
+INFO  19:34:19,204 - #10 x
+INFO  19:34:19,204 - #37 =
+INFO  19:34:19,204 - #9 0
+INFO  19:34:19,204 - #5 ;
+INFO  19:34:19,204 - #10 x
+INFO  19:34:19,204 - #39 <
+INFO  19:34:19,205 - #9 3
+INFO  19:34:19,205 - #5 ;
+INFO  19:34:19,206 - #10 x
+INFO  19:34:19,206 - #31 ++
+INFO  19:34:19,206 - #15 )
+INFO  19:34:19,207 - #3 {
+INFO  19:34:19,207 - #10 y
+INFO  19:34:19,207 - #37 =
+INFO  19:34:19,207 - #9 3
+INFO  19:34:19,207 - #5 ;
+INFO  19:34:19,207 - #4 }
+INFO  19:34:19,207 - #4 }
+INFO  19:34:19,207 - #4 }
+INFO  19:34:19,216 - ===================================
+INFO  19:34:19,218 - Promenljiva x na liniji 2
+INFO  19:34:19,218 - Promenljiva y na liniji 2
+INFO  19:34:19,218 - Konstanta a na liniji 3
+INFO  19:34:19,218 - Promenljiva s na liniji 12
+INFO  19:34:19,218 - Promenljiva b na liniji 18
+ERROR 19:34:19,219 - Greska: Navedeni argumenti se ne poklapaju sa parametrima funkcije funkcija na liniji 22
+INFO  19:34:19,219 - Poziv funkcije  na liniji 22

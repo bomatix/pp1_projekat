@@ -16,6 +16,8 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	private ArrayList<SyntaxNode> nodes = null;
 	private Boolean hasDesignatorList = null;
 	private Obj currentMethod = null;
+	private int currentMethodParsCount = 0;
+	private ArrayList<Struct> currentPars = null;
 
 	public void report_error(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
@@ -33,10 +35,11 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		log.info(msg.toString());
 	}
 	
-	public void visit(VarType varType) {
-		varType.struct = varType.getType().struct;
-		currentType = varType.struct;
-	}
+	
+	
+	
+	
+	// Global Consts
 	
 	public void visit(ConstType constType) {
 		constType.struct = constType.getType().struct;
@@ -59,6 +62,15 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		
 	}
 	
+	//End Global Consts
+	
+	//Global Vars
+	
+	public void visit(VarType varType) {
+		varType.struct = varType.getType().struct;
+		currentType = varType.struct;
+	}
+	
 	public void visit(VarDeclaration_ varDecl) {
 		currentType = null;
 	}
@@ -79,13 +91,15 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 	}
 	
+	// End Global Vars
 	
 	public void visit(MethodDeclarations methodDeclarations) {
 		
 	}
 	
 	public void visit(MethodDeclaration methodDeclaration) {
-//		currentMethod.setLevel(level);
+		currentMethod.setLevel(currentMethodParsCount);
+		currentMethodParsCount = 0;
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		currentMethod = null;
@@ -124,6 +138,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		Obj param = Tab.find(formParItem.getFormParItem());
 		if(param == Tab.noObj) {
 			formParItem.obj = Tab.insert(Obj.Var, formParItem.getFormParItem(), type);
+			formParItem.obj.setFpPos(currentMethodParsCount++);
 		}
 		else {
 			if(param.getKind() != Obj.Var && param.getKind() != Obj.Con) {
@@ -133,6 +148,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 				else {
 					formParItem.obj = Tab.insert(Obj.Var, formParItem.getFormParItem(), new Struct(Struct.Array, type));
 				}
+				formParItem.obj.setFpPos(currentMethodParsCount++);
 			}
 			else {
 				log.error("Greska: Identifikator " + formParItem.getFormParItem() + " je vec deklarisan.");
@@ -141,25 +157,47 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 	
 	public void visit(DesignatorStatementExpression designatorStatementExpression) {
+//		Obj method = Tab.find(designatorStatementExpression.getDesignatorExpr())
 		if(designatorStatementExpression.getDesignatorStatement() instanceof DesignatorActPars) {
+			String name = designatorStatementExpression.getDesignatorExpr().getVarName();
+			Obj method = Tab.find(name);
+			if(method != Tab.noObj) {
+				if(method.getKind() == Obj.Meth) {
+					DesignatorStatement designatorStatement = designatorStatementExpression.getDesignatorStatement();
+					if(designatorStatement instanceof DesignatorActPars) {
+						ActParsList actPars = ((DesignatorActPars) designatorStatement).getActParsList();
+						if(actPars instanceof ActParsList_ || actPars instanceof ActPars_) {
+							ArrayList<Obj> vars = new ArrayList(method.getLocalSymbols());
+							for(int i = 0; i < currentPars.size(); i++) {
+								if(currentPars.get(i) == null || i >= method.getLevel()) {
+									report_error("Greska: Navedeni argumenti se ne poklapaju sa parametrima funkcije " + name, designatorStatementExpression);
+								}
+								else if(!currentPars.get(i).assignableTo(vars.get(i).getType())) {
+									report_error("Greska: Nisu istog tipa", designatorStatementExpression);
+								}
+								else {
+									report_info("Uspesan poziv funkcije: " + name, designatorStatement);
+								}
+							}
+						}
+						else if(actPars instanceof NoActParsList && currentPars == null && method.getLevel() == 0) {
+							report_info("Uspesan poziv funkcije: " + name, designatorStatement);
+						}
+					}
+					method.getLocalSymbols();
+				}
+			}
+			else {
+				report_error("Greska: Funkcija " + name + " nije definisana.", designatorStatementExpression);
+			}
 			report_info("Poziv funkcije ", designatorStatementExpression);
+			currentPars = null;
 		}
 	}
 	
-	public void visit(DesignatorActPars designatorActPars) {
-		
-	}
-	
-	public void visit(ActParsList_ actParsList) {
-		
-	}
-	
-	public void visit(ActPars_ actPars) {
-		
-	}
-	
-	public void visit(NoActParsList noActParsList) {
-		
+	public void visit(ActParsItem actPars) {
+		if(currentPars == null) currentPars = new ArrayList();
+		currentPars.add(actPars.getExpr().struct);
 	}
 	
 	public void visit(FactorBool factorBool) {
@@ -182,7 +220,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		
 	}
 	
-	public void visit(DesignatorExpression designatorExpression) {
+	public void visit(DesignatorExpr designatorExpression) {
 		Obj name = Tab.find(designatorExpression.getVarName());
 		if(name == Tab.noObj) {
 			designatorExpression.obj = Tab.noObj;

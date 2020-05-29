@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/4/2020 23:38:6
+// 28/4/2020 19:33:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,7 +10,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDecl MethodDecl) { }
     public void visit(VarIdent VarIdent) { }
     public void visit(AssignExprSemi AssignExprSemi) { }
-    public void visit(DesignatorExpr DesignatorExpr) { }
     public void visit(TermList TermList) { }
     public void visit(ActParsExpression ActParsExpression) { }
     public void visit(AllMethodsDeclList AllMethodsDeclList) { }
@@ -82,7 +81,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorDot DesignatorDot) { visit(); }
     public void visit(NoDesignatorList NoDesignatorList) { visit(); }
     public void visit(DesignatorsList DesignatorsList) { visit(); }
-    public void visit(DesignatorExpression DesignatorExpression) { visit(); }
+    public void visit(DesignatorExpr DesignatorExpr) { visit(); }
     public void visit(NoDesignatorPars NoDesignatorPars) { visit(); }
     public void visit(DesignatorPars_ DesignatorPars_) { visit(); }
     public void visit(NoConditionFactExpr NoConditionFactExpr) { visit(); }
@@ -108,11 +107,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FactorChar FactorChar) { visit(); }
     public void visit(FactorNum FactorNum) { visit(); }
     public void visit(FactorDesignator FactorDesignator) { visit(); }
-    public void visit(ActPars_ ActPars_) { visit(); }
+    public void visit(ActParsItem ActParsItem) { visit(); }
     public void visit(NoActParsList NoActParsList) { visit(); }
+    public void visit(ActPars_ ActPars_) { visit(); }
     public void visit(ActParsList_ ActParsList_) { visit(); }
-    public void visit(NoActPars NoActPars) { visit(); }
-    public void visit(ActParsExpression_ ActParsExpression_) { visit(); }
     public void visit(TermFactor TermFactor) { visit(); }
     public void visit(TermList_ TermList_) { visit(); }
     public void visit(Term Term) { visit(); }
@@ -146,6 +144,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorSt DesignatorSt) { visit(); }
     public void visit(NoStatementList NoStatementList) { visit(); }
     public void visit(StatementList_ StatementList_) { visit(); }
+    public void visit(ClassName ClassName) { visit(); }
     public void visit(ClassDeclaration ClassDeclaration) { visit(); }
     public void visit(AbstractMethodDeclaration_ AbstractMethodDeclaration_) { visit(); }
     public void visit(MethodDeclaration_ MethodDeclaration_) { visit(); }

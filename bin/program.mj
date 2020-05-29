@@ -1,6 +1,6 @@
 program MJProgram
 int x, y[];
-const char a = 'a';
+const bool a = true;
 abstract class A extends B{
 	{
 		abstract void doIt();
@@ -13,13 +13,17 @@ abstract class A extends B{
 	{
 		return 2;
 	}
+	
+	int bb() {
+		return 3;
+	}
 
 	void main() 
 	int b;
 	{
 		y.x[2] = 4;
 		
-		funkcija(3);
+		funkcija(bb());
 	
 		for(x = 0; x < 3 ; x++) {
 			y = 3;

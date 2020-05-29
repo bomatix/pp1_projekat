@@ -1,20 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/4/2020 23:38:6
+// 28/4/2020 19:33:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ActParsExpression_ extends ActParsExpression {
+public class ActParsItem implements SyntaxNode {
 
+    private SyntaxNode parent;
+    private int line;
     private Expr Expr;
-    private ActParsList ActParsList;
 
-    public ActParsExpression_ (Expr Expr, ActParsList ActParsList) {
+    public ActParsItem (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
-        this.ActParsList=ActParsList;
-        if(ActParsList!=null) ActParsList.setParent(this);
     }
 
     public Expr getExpr() {
@@ -25,12 +24,20 @@ public class ActParsExpression_ extends ActParsExpression {
         this.Expr=Expr;
     }
 
-    public ActParsList getActParsList() {
-        return ActParsList;
+    public SyntaxNode getParent() {
+        return parent;
     }
 
-    public void setActParsList(ActParsList ActParsList) {
-        this.ActParsList=ActParsList;
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
     }
 
     public void accept(Visitor visitor) {
@@ -39,25 +46,22 @@ public class ActParsExpression_ extends ActParsExpression {
 
     public void childrenAccept(Visitor visitor) {
         if(Expr!=null) Expr.accept(visitor);
-        if(ActParsList!=null) ActParsList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
-        if(ActParsList!=null) ActParsList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Expr!=null) Expr.traverseBottomUp(visitor);
-        if(ActParsList!=null) ActParsList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ActParsExpression_(\n");
+        buffer.append("ActParsItem(\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
@@ -65,14 +69,8 @@ public class ActParsExpression_ extends ActParsExpression {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(ActParsList!=null)
-            buffer.append(ActParsList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
         buffer.append(tab);
-        buffer.append(") [ActParsExpression_]");
+        buffer.append(") [ActParsItem]");
         return buffer.toString();
     }
 }

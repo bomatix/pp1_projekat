@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/4/2020 23:38:6
+// 28/4/2020 19:33:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,7 +10,6 @@ public interface Visitor {
     public void visit(MethodDecl MethodDecl);
     public void visit(VarIdent VarIdent);
     public void visit(AssignExprSemi AssignExprSemi);
-    public void visit(DesignatorExpr DesignatorExpr);
     public void visit(TermList TermList);
     public void visit(ActParsExpression ActParsExpression);
     public void visit(AllMethodsDeclList AllMethodsDeclList);
@@ -82,7 +81,7 @@ public interface Visitor {
     public void visit(DesignatorDot DesignatorDot);
     public void visit(NoDesignatorList NoDesignatorList);
     public void visit(DesignatorsList DesignatorsList);
-    public void visit(DesignatorExpression DesignatorExpression);
+    public void visit(DesignatorExpr DesignatorExpr);
     public void visit(NoDesignatorPars NoDesignatorPars);
     public void visit(DesignatorPars_ DesignatorPars_);
     public void visit(NoConditionFactExpr NoConditionFactExpr);
@@ -108,11 +107,10 @@ public interface Visitor {
     public void visit(FactorChar FactorChar);
     public void visit(FactorNum FactorNum);
     public void visit(FactorDesignator FactorDesignator);
-    public void visit(ActPars_ ActPars_);
+    public void visit(ActParsItem ActParsItem);
     public void visit(NoActParsList NoActParsList);
+    public void visit(ActPars_ ActPars_);
     public void visit(ActParsList_ ActParsList_);
-    public void visit(NoActPars NoActPars);
-    public void visit(ActParsExpression_ ActParsExpression_);
     public void visit(TermFactor TermFactor);
     public void visit(TermList_ TermList_);
     public void visit(Term Term);
@@ -146,6 +144,7 @@ public interface Visitor {
     public void visit(DesignatorSt DesignatorSt);
     public void visit(NoStatementList NoStatementList);
     public void visit(StatementList_ StatementList_);
+    public void visit(ClassName ClassName);
     public void visit(ClassDeclaration ClassDeclaration);
     public void visit(AbstractMethodDeclaration_ AbstractMethodDeclaration_);
     public void visit(MethodDeclaration_ MethodDeclaration_);
