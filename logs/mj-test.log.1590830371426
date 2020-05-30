@@ -1,0 +1,132 @@
+INFO  11:18:53,456 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:18:53,493 - #2 program
+INFO  11:18:53,493 - #9 MJProgram
+INFO  11:18:53,493 - #9 int
+INFO  11:18:53,494 - #9 x
+INFO  11:18:53,494 - #6 ,
+INFO  11:18:53,495 - #9 y
+INFO  11:18:53,495 - #17 [
+INFO  11:18:53,495 - #18 ]
+INFO  11:18:53,495 - #6 ,
+INFO  11:18:53,495 - #9 z
+INFO  11:18:53,495 - #17 [
+INFO  11:18:53,495 - #18 ]
+INFO  11:18:53,495 - #5 ;
+INFO  11:18:53,495 - #7 const
+INFO  11:18:53,496 - #9 bool
+INFO  11:18:53,496 - #9 a
+INFO  11:18:53,496 - #37 =
+INFO  11:18:53,496 - #10 true
+INFO  11:18:53,496 - #5 ;
+INFO  11:18:53,497 - #12 abstract
+INFO  11:18:53,497 - #13 class
+INFO  11:18:53,497 - #9 A
+INFO  11:18:53,497 - #26 extends
+INFO  11:18:53,497 - #9 B
+INFO  11:18:53,497 - #3 {
+INFO  11:18:53,498 - #3 {
+INFO  11:18:53,498 - #12 abstract
+INFO  11:18:53,498 - #16 void
+INFO  11:18:53,498 - #9 doIt
+INFO  11:18:53,499 - #14 (
+INFO  11:18:53,499 - #15 )
+INFO  11:18:53,499 - #5 ;
+INFO  11:18:53,499 - #4 }
+INFO  11:18:53,499 - #4 }
+INFO  11:18:53,499 - #3 {
+INFO  11:18:53,499 - #9 int
+INFO  11:18:53,500 - #9 funkcija
+INFO  11:18:53,500 - #14 (
+INFO  11:18:53,500 - #9 int
+INFO  11:18:53,500 - #9 aa
+INFO  11:18:53,500 - #15 )
+INFO  11:18:53,501 - #9 char
+INFO  11:18:53,501 - #9 s
+INFO  11:18:53,501 - #5 ;
+INFO  11:18:53,501 - #3 {
+INFO  11:18:53,501 - #25 return
+INFO  11:18:53,501 - #8 2
+INFO  11:18:53,502 - #5 ;
+INFO  11:18:53,503 - #4 }
+INFO  11:18:53,503 - #16 void
+INFO  11:18:53,503 - #9 bb
+INFO  11:18:53,503 - #14 (
+INFO  11:18:53,503 - #15 )
+INFO  11:18:53,503 - #3 {
+INFO  11:18:53,503 - #25 return
+INFO  11:18:53,503 - #5 ;
+INFO  11:18:53,504 - #4 }
+INFO  11:18:53,504 - #16 void
+INFO  11:18:53,504 - #9 main
+INFO  11:18:53,507 - #14 (
+INFO  11:18:53,507 - #15 )
+INFO  11:18:53,507 - #9 int
+INFO  11:18:53,507 - #9 b
+INFO  11:18:53,507 - #5 ;
+INFO  11:18:53,507 - #3 {
+INFO  11:18:53,507 - #9 y
+INFO  11:18:53,507 - #33 .
+INFO  11:18:53,507 - #9 x
+INFO  11:18:53,507 - #17 [
+INFO  11:18:53,508 - #8 2
+INFO  11:18:53,508 - #18 ]
+INFO  11:18:53,508 - #37 =
+INFO  11:18:53,508 - #8 4
+INFO  11:18:53,508 - #5 ;
+INFO  11:18:53,509 - #27 print
+INFO  11:18:53,509 - #14 (
+INFO  11:18:53,509 - #8 2
+INFO  11:18:53,509 - #15 )
+INFO  11:18:53,509 - #5 ;
+INFO  11:18:53,509 - #20 if
+INFO  11:18:53,509 - #14 (
+INFO  11:18:53,509 - #8 3
+INFO  11:18:53,509 - #38 ==
+INFO  11:18:53,509 - #8 2
+INFO  11:18:53,510 - #15 )
+INFO  11:18:53,510 - #3 {
+INFO  11:18:53,510 - #9 x
+INFO  11:18:53,510 - #37 =
+INFO  11:18:53,510 - #8 0
+INFO  11:18:53,510 - #5 ;
+INFO  11:18:53,510 - #4 }
+INFO  11:18:53,510 - #9 funkcija
+INFO  11:18:53,511 - #14 (
+INFO  11:18:53,511 - #8 3
+INFO  11:18:53,511 - #15 )
+INFO  11:18:53,511 - #5 ;
+INFO  11:18:53,511 - #23 for
+INFO  11:18:53,512 - #14 (
+INFO  11:18:53,512 - #9 x
+INFO  11:18:53,512 - #37 =
+INFO  11:18:53,512 - #8 0
+INFO  11:18:53,512 - #5 ;
+INFO  11:18:53,512 - #9 z
+INFO  11:18:53,512 - #38 ==
+INFO  11:18:53,512 - #9 y
+INFO  11:18:53,512 - #5 ;
+INFO  11:18:53,513 - #9 x
+INFO  11:18:53,513 - #31 ++
+INFO  11:18:53,513 - #15 )
+INFO  11:18:53,513 - #3 {
+INFO  11:18:53,513 - #9 y
+INFO  11:18:53,513 - #37 =
+INFO  11:18:53,513 - #8 3
+INFO  11:18:53,513 - #5 ;
+INFO  11:18:53,513 - #24 continue
+INFO  11:18:53,514 - #5 ;
+INFO  11:18:53,514 - #4 }
+INFO  11:18:53,514 - #4 }
+INFO  11:18:53,514 - #4 }
+INFO  11:18:53,523 - ===================================
+INFO  11:18:53,526 - Promenljiva x na liniji 2
+INFO  11:18:53,526 - Promenljiva y na liniji 2
+INFO  11:18:53,526 - Promenljiva z na liniji 2
+INFO  11:18:53,527 - Konstanta a na liniji 3
+INFO  11:18:53,527 - Promenljiva s na liniji 12
+INFO  11:18:53,527 - Promenljiva b na liniji 22
+INFO  11:18:53,527 - Tipovi su kompatiblni na liniji 4
+INFO  11:18:53,527 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  11:18:53,527 - Poziv funkcije  na liniji 32
+INFO  11:18:53,527 - Tipovi su kompatiblni na liniji 11
+INFO  11:18:53,530 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,84 @@
+INFO  11:34:19,020 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:34:19,057 - #2 program
+INFO  11:34:19,057 - #9 MJProgram
+INFO  11:34:19,057 - #9 int
+INFO  11:34:19,058 - #9 x
+INFO  11:34:19,059 - #6 ,
+INFO  11:34:19,059 - #9 y
+INFO  11:34:19,059 - #17 [
+INFO  11:34:19,059 - #18 ]
+INFO  11:34:19,060 - #6 ,
+INFO  11:34:19,060 - #9 z
+INFO  11:34:19,060 - #17 [
+INFO  11:34:19,060 - #18 ]
+INFO  11:34:19,060 - #5 ;
+INFO  11:34:19,060 - #7 const
+INFO  11:34:19,060 - #9 bool
+INFO  11:34:19,060 - #9 a
+INFO  11:34:19,060 - #37 =
+INFO  11:34:19,061 - #10 true
+INFO  11:34:19,061 - #5 ;
+INFO  11:34:19,061 - #12 abstract
+INFO  11:34:19,061 - #13 class
+INFO  11:34:19,061 - #9 A
+INFO  11:34:19,061 - #26 extends
+INFO  11:34:19,062 - #9 B
+INFO  11:34:19,062 - #3 {
+INFO  11:34:19,062 - #3 {
+INFO  11:34:19,062 - #12 abstract
+INFO  11:34:19,062 - #16 void
+INFO  11:34:19,062 - #9 doIt
+INFO  11:34:19,063 - #14 (
+INFO  11:34:19,063 - #15 )
+INFO  11:34:19,063 - #5 ;
+INFO  11:34:19,063 - #4 }
+INFO  11:34:19,063 - #4 }
+INFO  11:34:19,064 - #3 {
+INFO  11:34:19,064 - #9 int
+INFO  11:34:19,064 - #9 funkcija
+INFO  11:34:19,064 - #14 (
+INFO  11:34:19,064 - #9 int
+INFO  11:34:19,064 - #9 aa
+INFO  11:34:19,064 - #15 )
+INFO  11:34:19,065 - #9 char
+INFO  11:34:19,065 - #9 s
+INFO  11:34:19,065 - #5 ;
+INFO  11:34:19,065 - #3 {
+INFO  11:34:19,065 - #25 return
+INFO  11:34:19,066 - #8 2
+INFO  11:34:19,066 - #5 ;
+INFO  11:34:19,067 - #4 }
+INFO  11:34:19,067 - #16 void
+INFO  11:34:19,068 - #9 bb
+INFO  11:34:19,068 - #14 (
+INFO  11:34:19,068 - #15 )
+INFO  11:34:19,068 - #3 {
+INFO  11:34:19,068 - #25 return
+INFO  11:34:19,068 - #5 ;
+INFO  11:34:19,068 - #4 }
+INFO  11:34:19,068 - #16 void
+INFO  11:34:19,068 - #9 main
+INFO  11:34:19,071 - #14 (
+INFO  11:34:19,071 - #15 )
+INFO  11:34:19,071 - #9 int
+INFO  11:34:19,071 - #9 b
+INFO  11:34:19,071 - #5 ;
+INFO  11:34:19,071 - #3 {
+INFO  11:34:19,071 - #27 print
+INFO  11:34:19,071 - #14 (
+INFO  11:34:19,071 - #8 6
+INFO  11:34:19,071 - #29 +
+INFO  11:34:19,071 - #8 3
+INFO  11:34:19,072 - #15 )
+INFO  11:34:19,072 - #5 ;
+INFO  11:34:19,072 - #4 }
+INFO  11:34:19,072 - #4 }
+INFO  11:34:19,082 - ===================================
+INFO  11:34:19,085 - Promenljiva x na liniji 2
+INFO  11:34:19,085 - Promenljiva y na liniji 2
+INFO  11:34:19,085 - Promenljiva z na liniji 2
+INFO  11:34:19,085 - Konstanta a na liniji 3
+INFO  11:34:19,085 - Promenljiva s na liniji 12
+INFO  11:34:19,085 - Promenljiva b na liniji 22
+INFO  11:34:19,085 - Validno sabiranje na liniji 24
+INFO  11:34:19,088 - Parsiranje uspesno zavrseno!

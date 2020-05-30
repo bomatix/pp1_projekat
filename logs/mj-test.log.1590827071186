@@ -1,0 +1,128 @@
+INFO  10:23:32,953 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  10:23:32,989 - #2 program
+INFO  10:23:32,989 - #10 MJProgram
+INFO  10:23:32,989 - #10 int
+INFO  10:23:32,990 - #10 x
+INFO  10:23:32,991 - #6 ,
+INFO  10:23:32,991 - #10 y
+INFO  10:23:32,991 - #17 [
+INFO  10:23:32,992 - #18 ]
+INFO  10:23:32,992 - #6 ,
+INFO  10:23:32,992 - #10 z
+INFO  10:23:32,992 - #17 [
+INFO  10:23:32,992 - #18 ]
+INFO  10:23:32,992 - #5 ;
+INFO  10:23:32,992 - #8 const
+INFO  10:23:32,992 - #10 bool
+INFO  10:23:32,992 - #10 a
+INFO  10:23:32,993 - #37 =
+INFO  10:23:32,993 - #7 true
+INFO  10:23:32,993 - #5 ;
+INFO  10:23:32,994 - #12 abstract
+INFO  10:23:32,994 - #13 class
+INFO  10:23:32,994 - #10 A
+INFO  10:23:32,994 - #26 extends
+INFO  10:23:32,994 - #10 B
+INFO  10:23:32,994 - #3 {
+INFO  10:23:32,994 - #3 {
+INFO  10:23:32,995 - #12 abstract
+INFO  10:23:32,995 - #16 void
+INFO  10:23:32,995 - #10 doIt
+INFO  10:23:32,995 - #14 (
+INFO  10:23:32,995 - #15 )
+INFO  10:23:32,996 - #5 ;
+INFO  10:23:32,996 - #4 }
+INFO  10:23:32,996 - #4 }
+INFO  10:23:32,996 - #3 {
+INFO  10:23:32,996 - #10 int
+INFO  10:23:32,996 - #10 funkcija
+INFO  10:23:32,996 - #14 (
+INFO  10:23:32,997 - #10 int
+INFO  10:23:32,997 - #10 aa
+INFO  10:23:32,997 - #15 )
+INFO  10:23:32,998 - #10 char
+INFO  10:23:32,998 - #10 s
+INFO  10:23:32,998 - #5 ;
+INFO  10:23:32,998 - #3 {
+INFO  10:23:32,998 - #25 return
+INFO  10:23:32,998 - #9 2
+INFO  10:23:32,999 - #5 ;
+INFO  10:23:33,000 - #4 }
+INFO  10:23:33,000 - #16 void
+INFO  10:23:33,001 - #10 bb
+INFO  10:23:33,001 - #14 (
+INFO  10:23:33,001 - #15 )
+INFO  10:23:33,001 - #3 {
+INFO  10:23:33,001 - #25 return
+INFO  10:23:33,001 - #5 ;
+INFO  10:23:33,001 - #4 }
+INFO  10:23:33,001 - #16 void
+INFO  10:23:33,001 - #10 main
+INFO  10:23:33,001 - #14 (
+INFO  10:23:33,001 - #15 )
+INFO  10:23:33,001 - #10 int
+INFO  10:23:33,001 - #10 b
+INFO  10:23:33,001 - #5 ;
+INFO  10:23:33,002 - #3 {
+INFO  10:23:33,002 - #10 y
+INFO  10:23:33,002 - #33 .
+INFO  10:23:33,002 - #10 x
+INFO  10:23:33,002 - #17 [
+INFO  10:23:33,002 - #9 2
+INFO  10:23:33,002 - #18 ]
+INFO  10:23:33,002 - #37 =
+INFO  10:23:33,003 - #9 4
+INFO  10:23:33,003 - #5 ;
+INFO  10:23:33,003 - #20 if
+INFO  10:23:33,003 - #14 (
+INFO  10:23:33,003 - #9 3
+INFO  10:23:33,003 - #38 ==
+INFO  10:23:33,003 - #9 2
+INFO  10:23:33,004 - #15 )
+INFO  10:23:33,004 - #3 {
+INFO  10:23:33,004 - #10 x
+INFO  10:23:33,004 - #37 =
+INFO  10:23:33,004 - #9 0
+INFO  10:23:33,004 - #5 ;
+INFO  10:23:33,004 - #4 }
+INFO  10:23:33,004 - #10 funkcija
+INFO  10:23:33,005 - #14 (
+INFO  10:23:33,005 - #9 3
+INFO  10:23:33,005 - #15 )
+INFO  10:23:33,005 - #5 ;
+INFO  10:23:33,006 - #23 for
+INFO  10:23:33,006 - #14 (
+INFO  10:23:33,006 - #10 x
+INFO  10:23:33,006 - #37 =
+INFO  10:23:33,006 - #9 0
+INFO  10:23:33,006 - #5 ;
+INFO  10:23:33,006 - #10 z
+INFO  10:23:33,006 - #38 ==
+INFO  10:23:33,006 - #10 y
+INFO  10:23:33,006 - #5 ;
+INFO  10:23:33,007 - #10 x
+INFO  10:23:33,007 - #31 ++
+INFO  10:23:33,007 - #15 )
+INFO  10:23:33,007 - #3 {
+INFO  10:23:33,007 - #10 y
+INFO  10:23:33,007 - #37 =
+INFO  10:23:33,007 - #9 3
+INFO  10:23:33,008 - #5 ;
+INFO  10:23:33,008 - #24 continue
+INFO  10:23:33,008 - #5 ;
+INFO  10:23:33,008 - #4 }
+INFO  10:23:33,008 - #4 }
+INFO  10:23:33,008 - #4 }
+INFO  10:23:33,018 - ===================================
+INFO  10:23:33,020 - Promenljiva x na liniji 2
+INFO  10:23:33,020 - Promenljiva y na liniji 2
+INFO  10:23:33,020 - Promenljiva z na liniji 2
+INFO  10:23:33,020 - Konstanta a na liniji 3
+INFO  10:23:33,021 - Promenljiva s na liniji 12
+ERROR 10:23:33,021 - Greska: Funkcija bb je tipa void i ne moze imati povratni parametar na liniji 2
+INFO  10:23:33,021 - Promenljiva b na liniji 22
+INFO  10:23:33,024 - Tipovi su kompatiblni na liniji 4
+INFO  10:23:33,024 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  10:23:33,024 - Poziv funkcije  na liniji 30
+INFO  10:23:33,024 - Tipovi su kompatiblni na liniji 11
+ERROR 10:23:33,024 - Parsiranje NIJE uspesno zavrseno!

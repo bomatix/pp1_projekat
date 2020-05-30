@@ -1,0 +1,95 @@
+INFO  15:55:43,998 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:55:44,038 - #2 program
+INFO  15:55:44,038 - #9 MJProgram
+INFO  15:55:44,038 - #9 int
+INFO  15:55:44,038 - #9 x
+INFO  15:55:44,038 - #6 ,
+INFO  15:55:44,038 - #9 y
+INFO  15:55:44,038 - #6 ,
+INFO  15:55:44,038 - #9 z
+INFO  15:55:44,038 - #17 [
+INFO  15:55:44,038 - #18 ]
+INFO  15:55:44,038 - #5 ;
+INFO  15:55:44,038 - #7 const
+INFO  15:55:44,038 - #9 bool
+INFO  15:55:44,038 - #9 a
+INFO  15:55:44,045 - #37 =
+INFO  15:55:44,045 - #10 true
+INFO  15:55:44,045 - #5 ;
+INFO  15:55:44,045 - #3 {
+INFO  15:55:44,045 - #16 void
+INFO  15:55:44,045 - #9 funkcija
+INFO  15:55:44,045 - #14 (
+INFO  15:55:44,045 - #9 int
+INFO  15:55:44,045 - #9 c
+INFO  15:55:44,045 - #6 ,
+INFO  15:55:44,045 - #9 int
+INFO  15:55:44,045 - #9 g
+INFO  15:55:44,048 - #15 )
+INFO  15:55:44,048 - #9 char
+INFO  15:55:44,048 - #9 s
+INFO  15:55:44,048 - #5 ;
+INFO  15:55:44,048 - #3 {
+INFO  15:55:44,048 - #27 print
+INFO  15:55:44,048 - #14 (
+INFO  15:55:44,048 - #9 c
+INFO  15:55:44,048 - #15 )
+INFO  15:55:44,048 - #5 ;
+INFO  15:55:44,048 - #27 print
+INFO  15:55:44,048 - #14 (
+INFO  15:55:44,048 - #9 g
+INFO  15:55:44,048 - #15 )
+INFO  15:55:44,048 - #5 ;
+INFO  15:55:44,048 - #25 return
+INFO  15:55:44,048 - #5 ;
+INFO  15:55:44,048 - #4 }
+INFO  15:55:44,048 - #16 void
+INFO  15:55:44,048 - #9 main
+INFO  15:55:44,048 - #14 (
+INFO  15:55:44,048 - #15 )
+INFO  15:55:44,048 - #9 int
+INFO  15:55:44,048 - #9 b
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,053 - #3 {
+INFO  15:55:44,053 - #9 x
+INFO  15:55:44,053 - #37 =
+INFO  15:55:44,053 - #8 5
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,053 - #9 x
+INFO  15:55:44,053 - #32 --
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,053 - #9 z
+INFO  15:55:44,053 - #37 =
+INFO  15:55:44,053 - #19 new
+INFO  15:55:44,053 - #9 int
+INFO  15:55:44,053 - #17 [
+INFO  15:55:44,053 - #8 2
+INFO  15:55:44,053 - #18 ]
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,053 - #9 z
+INFO  15:55:44,053 - #17 [
+INFO  15:55:44,053 - #8 0
+INFO  15:55:44,053 - #18 ]
+INFO  15:55:44,053 - #37 =
+INFO  15:55:44,053 - #8 1
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,053 - #27 print
+INFO  15:55:44,053 - #14 (
+INFO  15:55:44,053 - #9 z
+INFO  15:55:44,053 - #17 [
+INFO  15:55:44,053 - #8 0
+INFO  15:55:44,053 - #18 ]
+INFO  15:55:44,053 - #15 )
+INFO  15:55:44,053 - #5 ;
+INFO  15:55:44,058 - #4 }
+INFO  15:55:44,058 - #4 }
+INFO  15:55:44,058 - ===================================
+INFO  15:55:44,068 - Promenljiva x na liniji 2
+INFO  15:55:44,068 - Promenljiva y na liniji 2
+INFO  15:55:44,068 - Promenljiva z na liniji 2
+INFO  15:55:44,068 - Konstanta a na liniji 3
+INFO  15:55:44,068 - Promenljiva s na liniji 7
+INFO  15:55:44,068 - Promenljiva b na liniji 15
+INFO  15:55:44,068 - Pristup nizu validan na liniji 22
+INFO  15:55:44,068 - Pristup nizu validan na liniji 24
+INFO  15:55:44,068 - Parsiranje uspesno zavrseno!

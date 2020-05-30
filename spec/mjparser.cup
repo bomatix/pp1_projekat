@@ -8,6 +8,8 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
+	boolean errorDetected = false;
+
 	Logger log = Logger.getLogger(getClass());
    
    
@@ -27,6 +29,7 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
+    	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
@@ -42,9 +45,9 @@ scan with {:
 	return s;
 :}
 
-terminal PROG, LBRACE, RBRACE, SEMI, COMMA, BOOLCONST, CONST;
+terminal PROG, LBRACE, RBRACE, SEMI, COMMA, CONST;
 terminal Integer NUMCONST;
-terminal String IDENT;
+terminal String IDENT, BOOLCONST;
 terminal Character CHARCONST;
 terminal ABSTRACT, CLASS, LPAREN, RPAREN, VOIDD, LBRACKET, RBRACKET, NEW;
 terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MINUS;
@@ -162,7 +165,7 @@ OpenFor ::= (OpenFor);
 CloseFor ::= (CloseFor);
 			  
 
-OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST;
+OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST | (NoOptionalPrintParam);
 OptionalDesignatorStatement ::= (OptionalDesignatorStatement_) DesignatorStatementExpr SEMI | (NoOptionalDesignatorStatement) SEMI | (OptionalAssignStatement) AssignExprSemi;
 OptionalDesignatorStatementThird ::= (OptionalDesignatorStatementThird_) DesignatorStatementExpr | (NoOptionalDesignatorStatementThird) | (OptionalAssignStatementThird) AssignExpr;
 
@@ -180,7 +183,7 @@ ActParsList ::= (ActParsList_) ActParsList COMMA ActParsItem| (ActPars_) ActPars
 ActParsItem ::= (ActParsItem) Expr;
 
 Factor ::= (FactorDesignator) DesignatorExpr DesignatorPars | (FactorNum) NUMCONST | (FactorChar) CHARCONST | (FactorBool) BOOLCONST | (FactorNew) NEW Type FactorExpr | (FactorExpr_) LPAREN Expr RPAREN;
-FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET;
+FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET | (NoFactorExpression);
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr DesignatorStatement; 
 DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList RPAREN | (DesignatorPlusPlus) PLUSPLUS | (DesignatorMinusMinus) MINUSMINUS;
@@ -188,7 +191,7 @@ DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList RPAREN | (Designa
 AssignExpr ::= (AssignExpr_) DesignatorExpr AssignOp Expr;
 AssignExprSemi ::= (AssignExprSemi_) AssignExpr SEMI | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :};
 
-Condition ::= (ConditionList) Condition OR CondTerm | (ConditionItem) CondTerm ;
+Condition ::= (ConditionList) Condition OR CondTerm | (ConditionItem) CondTerm;
 CondTerm ::= (ConditionTermList) CondTerm AND CondFact | (ConditionTermItem) CondFact;
 CondFact ::= (ConditionFact) Expr RelOp Expr | (ConditionFactExpr) Expr;
 

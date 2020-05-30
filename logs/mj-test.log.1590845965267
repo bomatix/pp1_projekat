@@ -1,0 +1,80 @@
+INFO  15:38:43,946 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:38:43,986 - #2 program
+INFO  15:38:43,986 - #9 MJProgram
+INFO  15:38:43,986 - #9 int
+INFO  15:38:43,986 - #9 x
+INFO  15:38:43,986 - #6 ,
+INFO  15:38:43,986 - #9 y
+INFO  15:38:43,986 - #6 ,
+INFO  15:38:43,986 - #9 z
+INFO  15:38:43,986 - #17 [
+INFO  15:38:43,986 - #18 ]
+INFO  15:38:43,986 - #5 ;
+INFO  15:38:43,986 - #7 const
+INFO  15:38:43,986 - #9 bool
+INFO  15:38:43,986 - #9 a
+INFO  15:38:43,986 - #37 =
+INFO  15:38:43,986 - #10 true
+INFO  15:38:43,986 - #5 ;
+INFO  15:38:43,986 - #3 {
+INFO  15:38:43,986 - #16 void
+INFO  15:38:43,986 - #9 funkcija
+INFO  15:38:43,986 - #14 (
+INFO  15:38:43,986 - #9 int
+INFO  15:38:43,986 - #9 c
+INFO  15:38:43,986 - #6 ,
+INFO  15:38:43,986 - #9 int
+INFO  15:38:43,986 - #9 g
+INFO  15:38:43,986 - #15 )
+INFO  15:38:43,997 - #9 char
+INFO  15:38:43,997 - #9 s
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #3 {
+INFO  15:38:43,997 - #27 print
+INFO  15:38:43,997 - #14 (
+INFO  15:38:43,997 - #9 c
+INFO  15:38:43,997 - #15 )
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #27 print
+INFO  15:38:43,997 - #14 (
+INFO  15:38:43,997 - #9 g
+INFO  15:38:43,997 - #15 )
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #25 return
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #4 }
+INFO  15:38:43,997 - #16 void
+INFO  15:38:43,997 - #9 main
+INFO  15:38:43,997 - #14 (
+INFO  15:38:43,997 - #15 )
+INFO  15:38:43,997 - #9 int
+INFO  15:38:43,997 - #9 b
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #3 {
+INFO  15:38:43,997 - #9 x
+INFO  15:38:43,997 - #37 =
+INFO  15:38:43,997 - #8 5
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #9 x
+INFO  15:38:43,997 - #32 --
+INFO  15:38:43,997 - #5 ;
+INFO  15:38:43,997 - #9 z
+INFO  15:38:43,997 - #37 =
+INFO  15:38:43,997 - #19 new
+INFO  15:38:43,997 - #9 int
+INFO  15:38:44,006 - #17 [
+INFO  15:38:44,006 - #18 ]
+ERROR 15:38:44,006 - 
+Sintaksna greska na liniji 20
+INFO  15:38:44,006 - #5 ;
+INFO  15:38:44,006 - #4 }
+INFO  15:38:44,006 - #4 }
+ERROR 15:38:44,006 - Izvrsen oporavak do ; na liniji 20
+INFO  15:38:44,006 - ===================================
+INFO  15:38:44,017 - Promenljiva x na liniji 2
+INFO  15:38:44,017 - Promenljiva y na liniji 2
+INFO  15:38:44,017 - Promenljiva z na liniji 2
+INFO  15:38:44,017 - Konstanta a na liniji 3
+INFO  15:38:44,017 - Promenljiva s na liniji 7
+INFO  15:38:44,017 - Promenljiva b na liniji 15
+ERROR 15:38:44,017 - Parsiranje NIJE uspesno zavrseno!

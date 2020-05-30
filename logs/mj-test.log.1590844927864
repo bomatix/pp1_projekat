@@ -1,0 +1,83 @@
+INFO  15:21:59,638 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:21:59,670 - #2 program
+INFO  15:21:59,670 - #9 MJProgram
+INFO  15:21:59,670 - #9 int
+INFO  15:21:59,670 - #9 x
+INFO  15:21:59,670 - #6 ,
+INFO  15:21:59,670 - #9 y
+INFO  15:21:59,670 - #5 ;
+INFO  15:21:59,670 - #7 const
+INFO  15:21:59,685 - #9 bool
+INFO  15:21:59,685 - #9 a
+INFO  15:21:59,685 - #37 =
+INFO  15:21:59,685 - #10 true
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #3 {
+INFO  15:21:59,685 - #16 void
+INFO  15:21:59,685 - #9 funkcija
+INFO  15:21:59,685 - #14 (
+INFO  15:21:59,685 - #9 int
+INFO  15:21:59,685 - #9 c
+INFO  15:21:59,685 - #6 ,
+INFO  15:21:59,685 - #9 int
+INFO  15:21:59,685 - #9 g
+INFO  15:21:59,685 - #15 )
+INFO  15:21:59,685 - #9 char
+INFO  15:21:59,685 - #9 s
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #3 {
+INFO  15:21:59,685 - #27 print
+INFO  15:21:59,685 - #14 (
+INFO  15:21:59,685 - #9 c
+INFO  15:21:59,685 - #15 )
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #27 print
+INFO  15:21:59,685 - #14 (
+INFO  15:21:59,685 - #9 g
+INFO  15:21:59,685 - #15 )
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #25 return
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #4 }
+INFO  15:21:59,685 - #16 void
+INFO  15:21:59,685 - #9 main
+INFO  15:21:59,685 - #14 (
+INFO  15:21:59,685 - #15 )
+INFO  15:21:59,685 - #9 int
+INFO  15:21:59,685 - #9 b
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #3 {
+INFO  15:21:59,685 - #9 x
+INFO  15:21:59,685 - #37 =
+INFO  15:21:59,685 - #8 5
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #9 x
+INFO  15:21:59,685 - #32 --
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #9 y
+INFO  15:21:59,685 - #37 =
+INFO  15:21:59,685 - #8 1
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #9 y
+INFO  15:21:59,685 - #47 -=
+INFO  15:21:59,685 - #8 3
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #9 funkcija
+INFO  15:21:59,685 - #14 (
+INFO  15:21:59,685 - #9 x
+INFO  15:21:59,685 - #6 ,
+INFO  15:21:59,685 - #9 y
+INFO  15:21:59,685 - #15 )
+INFO  15:21:59,685 - #5 ;
+INFO  15:21:59,685 - #4 }
+INFO  15:21:59,685 - #4 }
+INFO  15:21:59,701 - ===================================
+INFO  15:21:59,701 - Promenljiva x na liniji 2
+INFO  15:21:59,701 - Promenljiva y na liniji 2
+INFO  15:21:59,701 - Konstanta a na liniji 3
+INFO  15:21:59,701 - Promenljiva s na liniji 7
+INFO  15:21:59,701 - Promenljiva b na liniji 15
+INFO  15:21:59,701 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  15:21:59,701 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  15:21:59,701 - Poziv funkcije  na liniji 24
+INFO  15:21:59,701 - Parsiranje uspesno zavrseno!

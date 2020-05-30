@@ -8,6 +8,8 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
+	boolean errorDetected = false;
+
 	Logger log = Logger.getLogger(getClass());
    
    
@@ -27,6 +29,7 @@ parser code {:
     }
 
     public void report_error(String message, Object info) {
+    	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
@@ -42,9 +45,9 @@ scan with {:
 	return s;
 :}
 
-terminal PROG, LBRACE, RBRACE, SEMI, COMMA, BOOLCONST, CONST;
+terminal PROG, LBRACE, RBRACE, SEMI, COMMA, CONST;
 terminal Integer NUMCONST;
-terminal String IDENT;
+terminal String IDENT, BOOLCONST;
 terminal Character CHARCONST;
 terminal ABSTRACT, CLASS, LPAREN, RPAREN, VOIDD, LBRACKET, RBRACKET, NEW;
 terminal IF, BREAK, ELSE, FOR, CONTINUE, RETURN, EXTENDS, PRINT, READ, PLUS, MINUS;
@@ -127,7 +130,7 @@ Decl ::= (ConstDeclaration) ConstDecl:C1 {: RESULT=new ConstDeclaration(C1); RES
 ConstDecl ::= (ConstDeclaration_) CONST ConstType:C1 ConstIdent:C2 ConstIdents:C3 SEMI {: RESULT=new ConstDeclaration_(C1, C2, C3); RESULT.setLine(C1left); :};
 ConstIdents ::= (ConstIdents_) ConstIdents:C1 COMMA ConstIdent:C2 {: RESULT=new ConstIdents_(C1, C2); RESULT.setLine(C1left); :} | (NoConstIdents) {: RESULT=new NoConstIdents(); :};
 ConstIdent ::= (ConstIdent_) IDENT:constName EQUAL ConstValue:C1 {: RESULT=new ConstIdent_(constName, C1); RESULT.setLine(constNameleft); :};
-ConstValue ::= (NumConst) NUMCONST:N1 {: RESULT=new NumConst(N1); RESULT.setLine(N1left); :} | (CharConst) CHARCONST:C1 {: RESULT=new CharConst(C1); RESULT.setLine(C1left); :} | (BoolConst) BOOLCONST {: RESULT=new BoolConst(); :};
+ConstValue ::= (NumConst) NUMCONST:N1 {: RESULT=new NumConst(N1); RESULT.setLine(N1left); :} | (CharConst) CHARCONST:C1 {: RESULT=new CharConst(C1); RESULT.setLine(C1left); :} | (BoolConst) BOOLCONST:B1 {: RESULT=new BoolConst(B1); RESULT.setLine(B1left); :};
 ConstType ::= (ConstType) Type:T1 {: RESULT=new ConstType(T1); RESULT.setLine(T1left); :};
 
 VarDecl ::= (VarDeclaration_) VarType:V1 VarIdentList:V2 VarIdent:V3 SEMI {: RESULT=new VarDeclaration_(V1, V2, V3); RESULT.setLine(V1left); :} | (VarDeclError) error SEMI {: RESULT=new VarDeclError(); :};
@@ -201,7 +204,7 @@ OpenFor ::= (OpenFor) {: RESULT=new OpenFor(); :};
 CloseFor ::= (CloseFor) {: RESULT=new CloseFor(); :};
 			  
 
-OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST:N1 {: RESULT=new OptionalPrintParam_(N1); RESULT.setLine(N1left); :};
+OptionalPrintParam ::= (OptionalPrintParam_) COMMA NUMCONST:N1 {: RESULT=new OptionalPrintParam_(N1); RESULT.setLine(N1left); :} | (NoOptionalPrintParam) {: RESULT=new NoOptionalPrintParam(); :};
 OptionalDesignatorStatement ::= (OptionalDesignatorStatement_) DesignatorStatementExpr:D1 SEMI {: RESULT=new OptionalDesignatorStatement_(D1); RESULT.setLine(D1left); :} | (NoOptionalDesignatorStatement) SEMI {: RESULT=new NoOptionalDesignatorStatement(); :} | (OptionalAssignStatement) AssignExprSemi:A1 {: RESULT=new OptionalAssignStatement(A1); RESULT.setLine(A1left); :};
 OptionalDesignatorStatementThird ::= (OptionalDesignatorStatementThird_) DesignatorStatementExpr:D1 {: RESULT=new OptionalDesignatorStatementThird_(D1); RESULT.setLine(D1left); :} | (NoOptionalDesignatorStatementThird) {: RESULT=new NoOptionalDesignatorStatementThird(); :} | (OptionalAssignStatementThird) AssignExpr:A1 {: RESULT=new OptionalAssignStatementThird(A1); RESULT.setLine(A1left); :};
 
@@ -218,8 +221,8 @@ TermList ::= (TermList_) TermList:T1 MulOp:M2 Factor:F3 {: RESULT=new TermList_(
 ActParsList ::= (ActParsList_) ActParsList:A1 COMMA ActParsItem:A2 {: RESULT=new ActParsList_(A1, A2); RESULT.setLine(A1left); :}| (ActPars_) ActParsItem:A1 {: RESULT=new ActPars_(A1); RESULT.setLine(A1left); :} | (NoActParsList) {: RESULT=new NoActParsList(); :}; 
 ActParsItem ::= (ActParsItem) Expr:E1 {: RESULT=new ActParsItem(E1); RESULT.setLine(E1left); :};
 
-Factor ::= (FactorDesignator) DesignatorExpr:D1 DesignatorPars:D2 {: RESULT=new FactorDesignator(D1, D2); RESULT.setLine(D1left); :} | (FactorNum) NUMCONST:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1left); :} | (FactorChar) CHARCONST:C1 {: RESULT=new FactorChar(C1); RESULT.setLine(C1left); :} | (FactorBool) BOOLCONST {: RESULT=new FactorBool(); :} | (FactorNew) NEW Type:T1 FactorExpr:F2 {: RESULT=new FactorNew(T1, F2); RESULT.setLine(T1left); :} | (FactorExpr_) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr_(E1); RESULT.setLine(E1left); :};
-FactorExpr ::= (FactorExpression) LBRACKET Expr:E1 RBRACKET {: RESULT=new FactorExpression(E1); RESULT.setLine(E1left); :};
+Factor ::= (FactorDesignator) DesignatorExpr:D1 DesignatorPars:D2 {: RESULT=new FactorDesignator(D1, D2); RESULT.setLine(D1left); :} | (FactorNum) NUMCONST:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1left); :} | (FactorChar) CHARCONST:C1 {: RESULT=new FactorChar(C1); RESULT.setLine(C1left); :} | (FactorBool) BOOLCONST:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :} | (FactorNew) NEW Type:T1 FactorExpr:F2 {: RESULT=new FactorNew(T1, F2); RESULT.setLine(T1left); :} | (FactorExpr_) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr_(E1); RESULT.setLine(E1left); :};
+FactorExpr ::= (FactorExpression) LBRACKET Expr:E1 RBRACKET {: RESULT=new FactorExpression(E1); RESULT.setLine(E1left); :} | (NoFactorExpression) {: RESULT=new NoFactorExpression(); :};
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr:D1 DesignatorStatement:D2 {: RESULT=new DesignatorStatementExpression(D1, D2); RESULT.setLine(D1left); :}; 
 DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList:A1 RPAREN {: RESULT=new DesignatorActPars(A1); RESULT.setLine(A1left); :} | (DesignatorPlusPlus) PLUSPLUS {: RESULT=new DesignatorPlusPlus(); :} | (DesignatorMinusMinus) MINUSMINUS {: RESULT=new DesignatorMinusMinus(); :};
@@ -227,7 +230,7 @@ DesignatorStatement ::= (DesignatorActPars) LPAREN ActParsList:A1 RPAREN {: RESU
 AssignExpr ::= (AssignExpr_) DesignatorExpr:D1 AssignOp:A2 Expr:E3 {: RESULT=new AssignExpr_(D1, A2, E3); RESULT.setLine(D1left); :};
 AssignExprSemi ::= (AssignExprSemi_) AssignExpr:A1 SEMI {: RESULT=new AssignExprSemi_(A1); RESULT.setLine(A1left); :} | (AssignExprSemiError) error SEMI:AError {: parser.report_error("Izvrsen oporavak do ; na liniji " + AErrorleft, null); :} {: RESULT=new AssignExprSemiError(); :};
 
-Condition ::= (ConditionList) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionList(C1, C2); RESULT.setLine(C1left); :} | (ConditionItem) CondTerm:C1 {: RESULT=new ConditionItem(C1); RESULT.setLine(C1left); :} ;
+Condition ::= (ConditionList) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionList(C1, C2); RESULT.setLine(C1left); :} | (ConditionItem) CondTerm:C1 {: RESULT=new ConditionItem(C1); RESULT.setLine(C1left); :};
 CondTerm ::= (ConditionTermList) CondTerm:C1 AND CondFact:C2 {: RESULT=new ConditionTermList(C1, C2); RESULT.setLine(C1left); :} | (ConditionTermItem) CondFact:C1 {: RESULT=new ConditionTermItem(C1); RESULT.setLine(C1left); :};
 CondFact ::= (ConditionFact) Expr:E1 RelOp:R2 Expr:E3 {: RESULT=new ConditionFact(E1, R2, E3); RESULT.setLine(E1left); :} | (ConditionFactExpr) Expr:E1 {: RESULT=new ConditionFactExpr(E1); RESULT.setLine(E1left); :};
 

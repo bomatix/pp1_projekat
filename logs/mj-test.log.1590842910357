@@ -1,0 +1,69 @@
+INFO  14:47:42,580 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:47:42,618 - #2 program
+INFO  14:47:42,618 - #9 MJProgram
+INFO  14:47:42,618 - #9 int
+INFO  14:47:42,618 - #9 x
+INFO  14:47:42,618 - #5 ;
+INFO  14:47:42,618 - #7 const
+INFO  14:47:42,618 - #9 bool
+INFO  14:47:42,618 - #9 a
+INFO  14:47:42,618 - #37 =
+INFO  14:47:42,618 - #10 true
+INFO  14:47:42,618 - #5 ;
+INFO  14:47:42,618 - #3 {
+INFO  14:47:42,618 - #16 void
+INFO  14:47:42,618 - #9 funkcija
+INFO  14:47:42,618 - #14 (
+INFO  14:47:42,618 - #9 int
+INFO  14:47:42,618 - #9 c
+INFO  14:47:42,618 - #6 ,
+INFO  14:47:42,618 - #9 int
+INFO  14:47:42,618 - #9 g
+INFO  14:47:42,618 - #15 )
+INFO  14:47:42,618 - #9 char
+INFO  14:47:42,618 - #9 s
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #3 {
+INFO  14:47:42,634 - #27 print
+INFO  14:47:42,634 - #14 (
+INFO  14:47:42,634 - #9 c
+INFO  14:47:42,634 - #15 )
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #27 print
+INFO  14:47:42,634 - #14 (
+INFO  14:47:42,634 - #9 g
+INFO  14:47:42,634 - #15 )
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #4 }
+INFO  14:47:42,634 - #16 void
+INFO  14:47:42,634 - #9 main
+INFO  14:47:42,634 - #14 (
+INFO  14:47:42,634 - #15 )
+INFO  14:47:42,634 - #9 int
+INFO  14:47:42,634 - #9 b
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #3 {
+INFO  14:47:42,634 - #9 x
+INFO  14:47:42,634 - #37 =
+INFO  14:47:42,634 - #8 5
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #9 x
+INFO  14:47:42,634 - #31 ++
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #27 print
+INFO  14:47:42,634 - #14 (
+INFO  14:47:42,634 - #9 x
+INFO  14:47:42,634 - #31 ++
+ERROR 14:47:42,634 - 
+Sintaksna greska na liniji 19
+INFO  14:47:42,634 - #15 )
+INFO  14:47:42,634 - #5 ;
+INFO  14:47:42,634 - #4 }
+INFO  14:47:42,634 - #4 }
+ERROR 14:47:42,634 - Izvrsen oporavak do ; na liniji 19
+INFO  14:47:42,634 - ===================================
+INFO  14:47:42,649 - Promenljiva x na liniji 2
+INFO  14:47:42,649 - Konstanta a na liniji 3
+INFO  14:47:42,649 - Promenljiva s na liniji 7
+INFO  14:47:42,649 - Promenljiva b na liniji 14
+ERROR 14:47:42,649 - Parsiranje NIJE uspesno zavrseno!

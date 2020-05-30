@@ -1,0 +1,96 @@
+INFO  13:03:03,782 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  13:03:03,818 - #2 program
+INFO  13:03:03,818 - #9 MJProgram
+INFO  13:03:03,818 - #9 int
+INFO  13:03:03,818 - #9 x
+INFO  13:03:03,819 - #6 ,
+INFO  13:03:03,820 - #9 y
+INFO  13:03:03,820 - #17 [
+INFO  13:03:03,820 - #18 ]
+INFO  13:03:03,820 - #6 ,
+INFO  13:03:03,820 - #9 z
+INFO  13:03:03,820 - #17 [
+INFO  13:03:03,820 - #18 ]
+INFO  13:03:03,820 - #5 ;
+INFO  13:03:03,820 - #7 const
+INFO  13:03:03,820 - #9 bool
+INFO  13:03:03,821 - #9 a
+INFO  13:03:03,821 - #37 =
+INFO  13:03:03,821 - #10 true
+INFO  13:03:03,821 - #5 ;
+INFO  13:03:03,821 - #12 abstract
+INFO  13:03:03,822 - #13 class
+INFO  13:03:03,822 - #9 A
+INFO  13:03:03,822 - #26 extends
+INFO  13:03:03,822 - #9 B
+INFO  13:03:03,822 - #3 {
+INFO  13:03:03,822 - #3 {
+INFO  13:03:03,822 - #12 abstract
+INFO  13:03:03,823 - #16 void
+INFO  13:03:03,823 - #9 doIt
+INFO  13:03:03,823 - #14 (
+INFO  13:03:03,823 - #15 )
+INFO  13:03:03,823 - #5 ;
+INFO  13:03:03,823 - #4 }
+INFO  13:03:03,824 - #4 }
+INFO  13:03:03,824 - #3 {
+INFO  13:03:03,824 - #9 int
+INFO  13:03:03,824 - #9 funkcija
+INFO  13:03:03,824 - #14 (
+INFO  13:03:03,824 - #15 )
+INFO  13:03:03,824 - #9 char
+INFO  13:03:03,824 - #9 s
+INFO  13:03:03,825 - #5 ;
+INFO  13:03:03,825 - #3 {
+INFO  13:03:03,825 - #27 print
+INFO  13:03:03,825 - #14 (
+INFO  13:03:03,825 - #8 2
+INFO  13:03:03,826 - #15 )
+INFO  13:03:03,827 - #5 ;
+INFO  13:03:03,827 - #25 return
+INFO  13:03:03,827 - #8 2
+INFO  13:03:03,827 - #5 ;
+INFO  13:03:03,827 - #4 }
+INFO  13:03:03,827 - #16 void
+INFO  13:03:03,828 - #9 bb
+INFO  13:03:03,828 - #14 (
+INFO  13:03:03,828 - #15 )
+INFO  13:03:03,828 - #3 {
+INFO  13:03:03,828 - #25 return
+INFO  13:03:03,828 - #5 ;
+INFO  13:03:03,830 - #4 }
+INFO  13:03:03,831 - #16 void
+INFO  13:03:03,831 - #9 main1
+INFO  13:03:03,831 - #14 (
+INFO  13:03:03,831 - #15 )
+INFO  13:03:03,831 - #9 int
+INFO  13:03:03,831 - #9 b
+INFO  13:03:03,831 - #5 ;
+INFO  13:03:03,831 - #3 {
+INFO  13:03:03,831 - #27 print
+INFO  13:03:03,831 - #14 (
+INFO  13:03:03,831 - #8 3
+INFO  13:03:03,831 - #30 -
+INFO  13:03:03,831 - #8 2
+INFO  13:03:03,832 - #34 *
+INFO  13:03:03,832 - #8 3
+INFO  13:03:03,833 - #15 )
+INFO  13:03:03,834 - #5 ;
+INFO  13:03:03,834 - #9 funkcija
+INFO  13:03:03,834 - #14 (
+INFO  13:03:03,836 - #15 )
+INFO  13:03:03,837 - #5 ;
+INFO  13:03:03,837 - #4 }
+INFO  13:03:03,837 - #4 }
+INFO  13:03:03,841 - ===================================
+INFO  13:03:03,844 - Promenljiva x na liniji 2
+INFO  13:03:03,844 - Promenljiva y na liniji 2
+INFO  13:03:03,844 - Promenljiva z na liniji 2
+INFO  13:03:03,844 - Konstanta a na liniji 3
+INFO  13:03:03,844 - Promenljiva s na liniji 12
+INFO  13:03:03,844 - Promenljiva b na liniji 23
+INFO  13:03:03,844 - Validan termList na liniji 26
+INFO  13:03:03,844 - Validno sabiranje na liniji 26
+INFO  13:03:03,844 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  13:03:03,845 - Poziv funkcije  na liniji 27
+INFO  13:03:03,848 - Parsiranje uspesno zavrseno!

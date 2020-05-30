@@ -1,37 +1,27 @@
 program MJProgram
-int x, y[], z[];
+int x, y, z[];
 const bool a = true;
-abstract class A extends B{
-	{
-		abstract void doIt();
-	}
-}
 {
 
-	int funkcija(int aa) 
+	void funkcija(int c, int g) 
 	char s;
 	{
-		return 2;
-	}
-	
-	void bb() {
-		return 3;
+		print(c);
+		print(g);
+		return;
 	}
 
 	void main() 
 	int b;
-	{
-		y.x[2] = 4;
+	{		
+		x = 5;
+		x--;
 		
-		if(3==2) {
-			x = 0;
-		}
+		z = new int[2];
 		
-		funkcija(3);
-	
-		for(x = 0; z == y ; x++) {
-			y = 3;
-			continue;
-		}
+		z[0] = 1;
+		
+		print(z[0]);
+		
 	}
 }

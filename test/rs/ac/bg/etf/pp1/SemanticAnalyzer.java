@@ -19,8 +19,21 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	private int currentMethodParsCount = 0;
 	private ArrayList<Struct> currentPars = null;
 	private int forCount = 0;
+	private boolean main;
+	
+	private boolean errorDetected;
+	private int varCount;
+	
+	public boolean isErrorDetected() {
+		return errorDetected;
+	}
+	
+	public int getVarCount() {
+		return varCount;
+	}
 
 	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
 		StringBuilder msg = new StringBuilder(message);
 		int line = (info == null) ? 0: info.getLine();
 		if (line != 0)
@@ -35,9 +48,6 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			msg.append (" na liniji ").append(line);
 		log.info(msg.toString());
 	}
-	
-	
-	
 	
 	
 	// Global Consts
@@ -91,6 +101,13 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			report_error("Greska: Identifikator " + varIdent.getVarIdent() + " je vec definisan!", varIdent);
 		}
 	}
+	
+	public void visit(FactorExpression expression) {
+		if(expression.getExpr().struct != Tab.intType) {
+			report_error("Greska: Tip unutar [] mora biti int", expression);
+		}
+	}
+	
 	
 	// End Global Vars
 	
@@ -194,7 +211,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 		else {
 			if(currentMethod.getType() == Tab.noType) {
-				if(returnSt.getOptionalExpr() != null) 
+				if(!(returnSt.getOptionalExpr() instanceof NoOptionalExpression)) 
 					report_error("Greska: Funkcija " + currentMethod.getName() + " je tipa void i ne moze imati povratni parametar", returnSt);
 			}
 			else if (currentMethod.getType() != returnSt.getOptionalExpr().struct) {
@@ -213,6 +230,9 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 			methodNameVoid.obj = Tab.insert(Obj.Meth, methodNameVoid.getName(), Tab.noType);
 			currentMethod = methodNameVoid.obj;
 			Tab.openScope();
+			if(methodNameVoid.getName().equals("main")) {
+				main = true;
+			}
 		}
 		else {
 			report_error("Greska: Metoda " + methodNameVoid.getName() + " je vec deklarisana", methodNameVoid);
@@ -441,8 +461,13 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 
 	public void visit(Program program) {
+		varCount = Tab.currentScope.getnVars();
 		Tab.chainLocalSymbols(program.getProgName().obj);
 		Tab.closeScope();
+		if(!main) {
+			errorDetected = true;
+			log.error("Greska: Program nema main metodu");
+		}
 	}
 	
 	public void visit(Type type) {

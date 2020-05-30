@@ -1,0 +1,65 @@
+INFO  14:34:38,635 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:34:38,673 - #2 program
+INFO  14:34:38,673 - #9 MJProgram
+INFO  14:34:38,673 - #9 int
+INFO  14:34:38,673 - #9 x
+INFO  14:34:38,673 - #5 ;
+INFO  14:34:38,673 - #7 const
+INFO  14:34:38,673 - #9 bool
+INFO  14:34:38,673 - #9 a
+INFO  14:34:38,673 - #37 =
+INFO  14:34:38,673 - #10 true
+INFO  14:34:38,673 - #5 ;
+INFO  14:34:38,673 - #3 {
+INFO  14:34:38,673 - #16 void
+INFO  14:34:38,673 - #9 funkcija
+INFO  14:34:38,673 - #14 (
+INFO  14:34:38,673 - #9 int
+INFO  14:34:38,673 - #9 c
+INFO  14:34:38,673 - #6 ,
+INFO  14:34:38,673 - #9 int
+INFO  14:34:38,673 - #9 g
+INFO  14:34:38,673 - #15 )
+INFO  14:34:38,673 - #9 char
+INFO  14:34:38,673 - #9 s
+INFO  14:34:38,673 - #5 ;
+INFO  14:34:38,673 - #3 {
+INFO  14:34:38,673 - #27 print
+INFO  14:34:38,673 - #14 (
+INFO  14:34:38,673 - #9 c
+INFO  14:34:38,673 - #15 )
+INFO  14:34:38,673 - #5 ;
+INFO  14:34:38,689 - #27 print
+INFO  14:34:38,689 - #14 (
+INFO  14:34:38,689 - #9 g
+INFO  14:34:38,689 - #15 )
+INFO  14:34:38,689 - #5 ;
+INFO  14:34:38,689 - #4 }
+INFO  14:34:38,689 - #16 void
+INFO  14:34:38,689 - #9 main
+INFO  14:34:38,689 - #14 (
+INFO  14:34:38,689 - #15 )
+INFO  14:34:38,689 - #9 int
+INFO  14:34:38,689 - #9 b
+INFO  14:34:38,689 - #5 ;
+INFO  14:34:38,689 - #3 {
+INFO  14:34:38,689 - #9 x
+INFO  14:34:38,689 - #37 =
+INFO  14:34:38,689 - #8 5
+INFO  14:34:38,689 - #5 ;
+INFO  14:34:38,689 - #9 x
+INFO  14:34:38,689 - #31 ++
+INFO  14:34:38,689 - #5 ;
+INFO  14:34:38,689 - #27 print
+INFO  14:34:38,689 - #14 (
+INFO  14:34:38,689 - #9 x
+INFO  14:34:38,689 - #15 )
+INFO  14:34:38,689 - #5 ;
+INFO  14:34:38,689 - #4 }
+INFO  14:34:38,689 - #4 }
+INFO  14:34:38,689 - ===================================
+INFO  14:34:38,704 - Promenljiva x na liniji 2
+INFO  14:34:38,704 - Konstanta a na liniji 3
+INFO  14:34:38,704 - Promenljiva s na liniji 7
+INFO  14:34:38,704 - Promenljiva b na liniji 14
+INFO  14:34:38,704 - Parsiranje uspesno zavrseno!

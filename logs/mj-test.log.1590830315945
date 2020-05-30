@@ -1,0 +1,135 @@
+INFO  10:57:44,204 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  10:57:44,241 - #2 program
+INFO  10:57:44,241 - #9 MJProgram
+INFO  10:57:44,241 - #9 int
+INFO  10:57:44,242 - #9 x
+INFO  10:57:44,243 - #6 ,
+INFO  10:57:44,243 - #9 y
+INFO  10:57:44,243 - #17 [
+INFO  10:57:44,244 - #18 ]
+INFO  10:57:44,244 - #6 ,
+INFO  10:57:44,244 - #9 z
+INFO  10:57:44,244 - #17 [
+INFO  10:57:44,244 - #18 ]
+INFO  10:57:44,244 - #5 ;
+INFO  10:57:44,244 - #7 const
+INFO  10:57:44,244 - #9 bool
+INFO  10:57:44,244 - #9 a
+INFO  10:57:44,245 - #37 =
+INFO  10:57:44,245 - #10 true
+INFO  10:57:44,245 - #5 ;
+INFO  10:57:44,245 - #12 abstract
+INFO  10:57:44,245 - #13 class
+INFO  10:57:44,245 - #9 A
+INFO  10:57:44,245 - #26 extends
+INFO  10:57:44,246 - #9 B
+INFO  10:57:44,246 - #3 {
+INFO  10:57:44,246 - #3 {
+INFO  10:57:44,246 - #12 abstract
+INFO  10:57:44,247 - #16 void
+INFO  10:57:44,247 - #9 doIt
+INFO  10:57:44,247 - #14 (
+INFO  10:57:44,247 - #15 )
+INFO  10:57:44,247 - #5 ;
+INFO  10:57:44,248 - #4 }
+INFO  10:57:44,248 - #4 }
+INFO  10:57:44,248 - #3 {
+INFO  10:57:44,248 - #9 int
+INFO  10:57:44,248 - #9 funkcija
+INFO  10:57:44,248 - #14 (
+INFO  10:57:44,249 - #9 int
+INFO  10:57:44,249 - #9 aa
+INFO  10:57:44,249 - #15 )
+INFO  10:57:44,250 - #9 char
+INFO  10:57:44,250 - #9 s
+INFO  10:57:44,250 - #5 ;
+INFO  10:57:44,250 - #3 {
+INFO  10:57:44,250 - #25 return
+INFO  10:57:44,250 - #8 2
+INFO  10:57:44,251 - #5 ;
+INFO  10:57:44,252 - #4 }
+INFO  10:57:44,252 - #16 void
+INFO  10:57:44,252 - #9 bb
+INFO  10:57:44,252 - #14 (
+INFO  10:57:44,252 - #15 )
+INFO  10:57:44,252 - #3 {
+INFO  10:57:44,252 - #25 return
+INFO  10:57:44,252 - #5 ;
+INFO  10:57:44,253 - #4 }
+INFO  10:57:44,253 - #16 void
+INFO  10:57:44,253 - #9 main
+INFO  10:57:44,255 - #14 (
+INFO  10:57:44,255 - #15 )
+INFO  10:57:44,255 - #9 int
+INFO  10:57:44,255 - #9 b
+INFO  10:57:44,255 - #5 ;
+INFO  10:57:44,255 - #3 {
+INFO  10:57:44,255 - #9 y
+INFO  10:57:44,255 - #33 .
+INFO  10:57:44,255 - #9 x
+INFO  10:57:44,255 - #17 [
+INFO  10:57:44,255 - #8 2
+INFO  10:57:44,256 - #18 ]
+INFO  10:57:44,256 - #37 =
+INFO  10:57:44,256 - #8 4
+INFO  10:57:44,256 - #5 ;
+INFO  10:57:44,256 - #27 print
+INFO  10:57:44,257 - #14 (
+INFO  10:57:44,257 - #8 2
+INFO  10:57:44,257 - #15 )
+ERROR 10:57:44,257 - 
+Sintaksna greska na liniji 26
+INFO  10:57:44,257 - #5 ;
+INFO  10:57:44,257 - #20 if
+INFO  10:57:44,257 - #14 (
+INFO  10:57:44,257 - #8 3
+ERROR 10:57:44,257 - Izvrsen oporavak do ; na liniji 26
+INFO  10:57:44,258 - #38 ==
+INFO  10:57:44,258 - #8 2
+INFO  10:57:44,258 - #15 )
+INFO  10:57:44,258 - #3 {
+INFO  10:57:44,258 - #9 x
+INFO  10:57:44,258 - #37 =
+INFO  10:57:44,258 - #8 0
+INFO  10:57:44,259 - #5 ;
+INFO  10:57:44,259 - #4 }
+INFO  10:57:44,259 - #9 funkcija
+INFO  10:57:44,259 - #14 (
+INFO  10:57:44,259 - #8 3
+INFO  10:57:44,259 - #15 )
+INFO  10:57:44,259 - #5 ;
+INFO  10:57:44,259 - #23 for
+INFO  10:57:44,259 - #14 (
+INFO  10:57:44,260 - #9 x
+INFO  10:57:44,260 - #37 =
+INFO  10:57:44,260 - #8 0
+INFO  10:57:44,260 - #5 ;
+INFO  10:57:44,260 - #9 z
+INFO  10:57:44,260 - #38 ==
+INFO  10:57:44,260 - #9 y
+INFO  10:57:44,260 - #5 ;
+INFO  10:57:44,260 - #9 x
+INFO  10:57:44,260 - #31 ++
+INFO  10:57:44,260 - #15 )
+INFO  10:57:44,261 - #3 {
+INFO  10:57:44,261 - #9 y
+INFO  10:57:44,261 - #37 =
+INFO  10:57:44,261 - #8 3
+INFO  10:57:44,261 - #5 ;
+INFO  10:57:44,261 - #24 continue
+INFO  10:57:44,262 - #5 ;
+INFO  10:57:44,262 - #4 }
+INFO  10:57:44,262 - #4 }
+INFO  10:57:44,262 - #4 }
+INFO  10:57:44,271 - ===================================
+INFO  10:57:44,273 - Promenljiva x na liniji 2
+INFO  10:57:44,273 - Promenljiva y na liniji 2
+INFO  10:57:44,273 - Promenljiva z na liniji 2
+INFO  10:57:44,273 - Konstanta a na liniji 3
+INFO  10:57:44,274 - Promenljiva s na liniji 12
+INFO  10:57:44,274 - Promenljiva b na liniji 22
+INFO  10:57:44,274 - Tipovi su kompatiblni na liniji 4
+INFO  10:57:44,274 - Uspesan poziv funkcije: funkcija na liniji 10
+INFO  10:57:44,274 - Poziv funkcije  na liniji 32
+INFO  10:57:44,274 - Tipovi su kompatiblni na liniji 11
+ERROR 10:57:44,275 - Parsiranje NIJE uspesno zavrseno!

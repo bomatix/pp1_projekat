@@ -1,0 +1,71 @@
+INFO  14:43:26,580 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:43:26,611 - #2 program
+INFO  14:43:26,618 - #9 MJProgram
+INFO  14:43:26,618 - #9 int
+INFO  14:43:26,618 - #9 x
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #7 const
+INFO  14:43:26,618 - #9 bool
+INFO  14:43:26,618 - #9 a
+INFO  14:43:26,618 - #37 =
+INFO  14:43:26,618 - #10 true
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #3 {
+INFO  14:43:26,618 - #16 void
+INFO  14:43:26,618 - #9 funkcija
+INFO  14:43:26,618 - #14 (
+INFO  14:43:26,618 - #9 int
+INFO  14:43:26,618 - #9 c
+INFO  14:43:26,618 - #6 ,
+INFO  14:43:26,618 - #9 int
+INFO  14:43:26,618 - #9 g
+INFO  14:43:26,618 - #15 )
+INFO  14:43:26,618 - #9 char
+INFO  14:43:26,618 - #9 s
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #3 {
+INFO  14:43:26,618 - #27 print
+INFO  14:43:26,618 - #14 (
+INFO  14:43:26,618 - #9 c
+INFO  14:43:26,618 - #15 )
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #27 print
+INFO  14:43:26,618 - #14 (
+INFO  14:43:26,618 - #9 g
+INFO  14:43:26,618 - #15 )
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #4 }
+INFO  14:43:26,618 - #16 void
+INFO  14:43:26,618 - #9 main
+INFO  14:43:26,618 - #14 (
+INFO  14:43:26,618 - #15 )
+INFO  14:43:26,618 - #9 int
+INFO  14:43:26,618 - #9 b
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #3 {
+INFO  14:43:26,618 - #9 x
+INFO  14:43:26,618 - #37 =
+INFO  14:43:26,618 - #8 5
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #9 x
+INFO  14:43:26,618 - #31 ++
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #27 print
+INFO  14:43:26,618 - #14 (
+INFO  14:43:26,618 - #9 x
+INFO  14:43:26,618 - #15 )
+INFO  14:43:26,618 - #5 ;
+INFO  14:43:26,618 - #4 }
+INFO  14:43:26,618 - #4 }
+INFO  14:43:26,634 - ===================================
+INFO  14:43:26,634 - Promenljiva x na liniji 2
+INFO  14:43:26,634 - Konstanta a na liniji 3
+INFO  14:43:26,634 - Promenljiva s na liniji 7
+INFO  14:43:26,634 - Promenljiva b na liniji 14
+INFO  14:43:26,634 - DesignatorExpr: getstatic
+INFO  14:43:26,634 - DesignatorExpr: getstatic
+INFO  14:43:26,634 - DesignatorExpr: getstatic
+INFO  14:43:26,634 - AssignExpr_: putstatic
+INFO  14:43:26,634 - DesignatorStatementExpression
+INFO  14:43:26,634 - DesignatorExpr: getstatic
+INFO  14:43:26,634 - Parsiranje uspesno zavrseno!

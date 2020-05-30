@@ -1,0 +1,87 @@
+INFO  12:29:04,283 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  12:29:04,320 - #2 program
+INFO  12:29:04,320 - #9 MJProgram
+INFO  12:29:04,320 - #9 int
+INFO  12:29:04,321 - #9 x
+INFO  12:29:04,322 - #6 ,
+INFO  12:29:04,322 - #9 y
+INFO  12:29:04,322 - #17 [
+INFO  12:29:04,322 - #18 ]
+INFO  12:29:04,322 - #6 ,
+INFO  12:29:04,322 - #9 z
+INFO  12:29:04,322 - #17 [
+INFO  12:29:04,322 - #18 ]
+INFO  12:29:04,323 - #5 ;
+INFO  12:29:04,323 - #7 const
+INFO  12:29:04,323 - #9 bool
+INFO  12:29:04,323 - #9 a
+INFO  12:29:04,323 - #37 =
+INFO  12:29:04,323 - #10 true
+INFO  12:29:04,323 - #5 ;
+INFO  12:29:04,324 - #12 abstract
+INFO  12:29:04,324 - #13 class
+INFO  12:29:04,324 - #9 A
+INFO  12:29:04,324 - #26 extends
+INFO  12:29:04,324 - #9 B
+INFO  12:29:04,324 - #3 {
+INFO  12:29:04,325 - #3 {
+INFO  12:29:04,326 - #12 abstract
+INFO  12:29:04,326 - #16 void
+INFO  12:29:04,326 - #9 doIt
+INFO  12:29:04,326 - #14 (
+INFO  12:29:04,326 - #15 )
+INFO  12:29:04,326 - #5 ;
+INFO  12:29:04,326 - #4 }
+INFO  12:29:04,327 - #4 }
+INFO  12:29:04,327 - #3 {
+INFO  12:29:04,327 - #9 int
+INFO  12:29:04,327 - #9 funkcija
+INFO  12:29:04,327 - #14 (
+INFO  12:29:04,327 - #9 int
+INFO  12:29:04,327 - #9 aa
+INFO  12:29:04,327 - #15 )
+INFO  12:29:04,328 - #9 char
+INFO  12:29:04,328 - #9 s
+INFO  12:29:04,328 - #5 ;
+INFO  12:29:04,328 - #3 {
+INFO  12:29:04,329 - #25 return
+INFO  12:29:04,329 - #8 2
+INFO  12:29:04,329 - #5 ;
+INFO  12:29:04,330 - #4 }
+INFO  12:29:04,330 - #16 void
+INFO  12:29:04,331 - #9 bb
+INFO  12:29:04,331 - #14 (
+INFO  12:29:04,331 - #15 )
+INFO  12:29:04,331 - #3 {
+INFO  12:29:04,331 - #25 return
+INFO  12:29:04,331 - #5 ;
+INFO  12:29:04,331 - #4 }
+INFO  12:29:04,331 - #16 void
+INFO  12:29:04,331 - #9 main
+INFO  12:29:04,334 - #14 (
+INFO  12:29:04,334 - #15 )
+INFO  12:29:04,334 - #9 int
+INFO  12:29:04,334 - #9 b
+INFO  12:29:04,334 - #5 ;
+INFO  12:29:04,334 - #3 {
+INFO  12:29:04,334 - #27 print
+INFO  12:29:04,334 - #14 (
+INFO  12:29:04,334 - #8 2
+INFO  12:29:04,334 - #29 +
+INFO  12:29:04,334 - #8 2
+INFO  12:29:04,335 - #34 *
+INFO  12:29:04,335 - #8 3
+INFO  12:29:04,335 - #15 )
+INFO  12:29:04,336 - #5 ;
+INFO  12:29:04,336 - #4 }
+INFO  12:29:04,336 - #4 }
+INFO  12:29:04,340 - ===================================
+INFO  12:29:04,342 - Promenljiva x na liniji 2
+INFO  12:29:04,342 - Promenljiva y na liniji 2
+INFO  12:29:04,342 - Promenljiva z na liniji 2
+INFO  12:29:04,343 - Konstanta a na liniji 3
+INFO  12:29:04,343 - Promenljiva s na liniji 12
+INFO  12:29:04,343 - Promenljiva b na liniji 22
+INFO  12:29:04,343 - Validan termList na liniji 24
+INFO  12:29:04,343 - Validno sabiranje na liniji 24
+INFO  12:29:04,346 - Parsiranje uspesno zavrseno!
