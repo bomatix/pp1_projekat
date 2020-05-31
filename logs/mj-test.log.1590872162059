@@ -1,0 +1,100 @@
+INFO  22:55:46,696 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:55:46,727 - #2 program
+INFO  22:55:46,727 - #9 MJProgram
+INFO  22:55:46,727 - #9 int
+INFO  22:55:46,727 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #6 ,
+INFO  22:55:46,742 - #9 x
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #3 {
+INFO  22:55:46,742 - #16 void
+INFO  22:55:46,742 - #9 main
+INFO  22:55:46,742 - #14 (
+INFO  22:55:46,742 - #15 )
+INFO  22:55:46,742 - #3 {
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #37 =
+INFO  22:55:46,742 - #19 new
+INFO  22:55:46,742 - #9 int
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 2
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 0
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #37 =
+INFO  22:55:46,742 - #8 5
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 1
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #37 =
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 0
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #30 -
+INFO  22:55:46,742 - #8 1
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 0
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #31 ++
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #27 print
+INFO  22:55:46,742 - #14 (
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 0
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #15 )
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #27 print
+INFO  22:55:46,742 - #14 (
+INFO  22:55:46,742 - #9 z
+INFO  22:55:46,742 - #17 [
+INFO  22:55:46,742 - #8 1
+INFO  22:55:46,742 - #18 ]
+INFO  22:55:46,742 - #15 )
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #27 print
+INFO  22:55:46,742 - #14 (
+INFO  22:55:46,742 - #30 -
+INFO  22:55:46,742 - #8 2
+INFO  22:55:46,742 - #30 -
+INFO  22:55:46,742 - #8 2
+INFO  22:55:46,742 - #15 )
+INFO  22:55:46,742 - #9 x
+ERROR 22:55:46,742 - 
+Sintaksna greska na liniji 19
+INFO  22:55:46,742 - #37 =
+INFO  22:55:46,742 - #8 2
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #9 x
+INFO  22:55:46,742 - #31 ++
+INFO  22:55:46,742 - #5 ;
+ERROR 22:55:46,742 - Izvrsen oporavak do ; na liniji 17
+INFO  22:55:46,742 - #27 print
+INFO  22:55:46,742 - #14 (
+INFO  22:55:46,742 - #9 x
+INFO  22:55:46,742 - #15 )
+INFO  22:55:46,742 - #5 ;
+INFO  22:55:46,742 - #4 }
+INFO  22:55:46,742 - #4 }
+INFO  22:55:46,758 - ===================================
+INFO  22:55:46,758 - Promenljiva z na liniji 2
+INFO  22:55:46,758 - Promenljiva x na liniji 2
+INFO  22:55:46,758 - Pristup nizu validan na liniji 8
+INFO  22:55:46,758 - Pristup nizu validan na liniji 10
+INFO  22:55:46,758 - Pristup nizu validan na liniji 10
+INFO  22:55:46,758 - Validno sabiranje na liniji 10
+INFO  22:55:46,758 - Pristup nizu validan na liniji 12
+INFO  22:55:46,758 - Pristup nizu validan na liniji 14
+INFO  22:55:46,758 - Pristup nizu validan na liniji 15
+ERROR 22:55:46,758 - Parsiranje NIJE uspesno zavrseno!

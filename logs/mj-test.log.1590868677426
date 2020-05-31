@@ -1,0 +1,78 @@
+INFO  21:46:11,939 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:46:11,986 - #2 program
+INFO  21:46:11,986 - #9 MJProgram
+INFO  21:46:11,986 - #9 int
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #6 ,
+INFO  21:46:11,986 - #9 x
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #3 {
+INFO  21:46:11,986 - #16 void
+INFO  21:46:11,986 - #9 main
+INFO  21:46:11,986 - #14 (
+INFO  21:46:11,986 - #15 )
+INFO  21:46:11,986 - #3 {
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #37 =
+INFO  21:46:11,986 - #19 new
+INFO  21:46:11,986 - #9 int
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #8 2
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #8 0
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #37 =
+INFO  21:46:11,986 - #8 5
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #8 1
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #37 =
+INFO  21:46:11,986 - #8 2
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #8 0
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #31 ++
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #27 print
+INFO  21:46:11,986 - #14 (
+INFO  21:46:11,986 - #9 z
+INFO  21:46:11,986 - #17 [
+INFO  21:46:11,986 - #8 0
+INFO  21:46:11,986 - #18 ]
+INFO  21:46:11,986 - #15 )
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #9 x
+INFO  21:46:11,986 - #37 =
+INFO  21:46:11,986 - #8 2
+INFO  21:46:11,986 - #5 ;
+INFO  21:46:11,986 - #9 x
+INFO  21:46:11,986 - #37 =
+INFO  21:46:11,986 - #9 x
+INFO  21:46:11,986 - #29 +
+INFO  21:46:11,986 - #8 1
+INFO  21:46:12,002 - #5 ;
+INFO  21:46:12,002 - #27 print
+INFO  21:46:12,002 - #14 (
+INFO  21:46:12,002 - #9 x
+INFO  21:46:12,002 - #15 )
+INFO  21:46:12,002 - #5 ;
+INFO  21:46:12,002 - #4 }
+INFO  21:46:12,002 - #4 }
+INFO  21:46:12,002 - ===================================
+INFO  21:46:12,002 - Promenljiva z na liniji 2
+INFO  21:46:12,002 - Promenljiva x na liniji 2
+INFO  21:46:12,002 - Pristup nizu validan na liniji 8
+INFO  21:46:12,002 - Pristup nizu validan na liniji 10
+INFO  21:46:12,002 - Pristup nizu validan na liniji 12
+INFO  21:46:12,002 - Pristup nizu validan na liniji 14
+INFO  21:46:12,002 - Validno sabiranje na liniji 18
+INFO  21:46:12,002 - Parsiranje uspesno zavrseno!

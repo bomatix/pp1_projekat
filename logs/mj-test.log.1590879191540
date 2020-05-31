@@ -1,0 +1,58 @@
+INFO  00:51:32,841 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:51:32,888 - #2 program
+INFO  00:51:32,888 - #9 MJProgram
+INFO  00:51:32,888 - #9 int
+INFO  00:51:32,888 - #9 x
+INFO  00:51:32,888 - #6 ,
+INFO  00:51:32,888 - #9 y
+INFO  00:51:32,888 - #6 ,
+INFO  00:51:32,888 - #9 z
+INFO  00:51:32,888 - #17 [
+INFO  00:51:32,888 - #18 ]
+INFO  00:51:32,888 - #5 ;
+INFO  00:51:32,888 - #3 {
+INFO  00:51:32,888 - #16 void
+INFO  00:51:32,888 - #9 main
+INFO  00:51:32,888 - #14 (
+INFO  00:51:32,888 - #15 )
+INFO  00:51:32,888 - #3 {
+INFO  00:51:32,888 - #9 z
+INFO  00:51:32,888 - #37 =
+INFO  00:51:32,888 - #19 new
+INFO  00:51:32,888 - #9 int
+INFO  00:51:32,888 - #17 [
+INFO  00:51:32,888 - #8 2
+INFO  00:51:32,888 - #18 ]
+INFO  00:51:32,888 - #5 ;
+INFO  00:51:32,888 - #9 z
+INFO  00:51:32,888 - #17 [
+INFO  00:51:32,888 - #8 0
+INFO  00:51:32,888 - #18 ]
+INFO  00:51:32,888 - #37 =
+INFO  00:51:32,888 - #8 1
+INFO  00:51:32,888 - #5 ;
+INFO  00:51:32,888 - #9 z
+INFO  00:51:32,888 - #17 [
+INFO  00:51:32,888 - #8 0
+INFO  00:51:32,888 - #18 ]
+INFO  00:51:32,888 - #46 +=
+INFO  00:51:32,888 - #8 1
+INFO  00:51:32,888 - #5 ;
+INFO  00:51:32,888 - #27 print
+INFO  00:51:32,888 - #14 (
+INFO  00:51:32,888 - #9 z
+INFO  00:51:32,888 - #17 [
+INFO  00:51:32,888 - #8 0
+INFO  00:51:32,888 - #18 ]
+INFO  00:51:32,888 - #15 )
+INFO  00:51:32,888 - #5 ;
+INFO  00:51:32,888 - #4 }
+INFO  00:51:32,888 - #4 }
+INFO  00:51:32,904 - ===================================
+INFO  00:51:32,904 - Promenljiva x na liniji 2
+INFO  00:51:32,904 - Promenljiva y na liniji 2
+INFO  00:51:32,904 - Promenljiva z na liniji 2
+INFO  00:51:32,904 - Pristup nizu validan na liniji 7
+INFO  00:51:32,904 - Pristup nizu validan na liniji 9
+INFO  00:51:32,904 - Pristup nizu validan na liniji 11
+INFO  00:51:32,904 - Parsiranje uspesno zavrseno!

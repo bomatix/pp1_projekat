@@ -1,0 +1,47 @@
+INFO  16:55:19,973 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  16:55:20,002 - #2 program
+INFO  16:55:20,002 - #9 MJProgram
+INFO  16:55:20,008 - #9 int
+INFO  16:55:20,008 - #9 z
+INFO  16:55:20,008 - #17 [
+INFO  16:55:20,008 - #18 ]
+INFO  16:55:20,008 - #5 ;
+INFO  16:55:20,008 - #3 {
+INFO  16:55:20,008 - #16 void
+INFO  16:55:20,008 - #9 main
+INFO  16:55:20,008 - #14 (
+INFO  16:55:20,008 - #15 )
+INFO  16:55:20,008 - #3 {
+INFO  16:55:20,008 - #9 z
+INFO  16:55:20,008 - #37 =
+INFO  16:55:20,008 - #19 new
+INFO  16:55:20,013 - #9 int
+INFO  16:55:20,013 - #17 [
+INFO  16:55:20,013 - #8 2
+INFO  16:55:20,013 - #18 ]
+INFO  16:55:20,013 - #5 ;
+INFO  16:55:20,013 - #9 z
+INFO  16:55:20,013 - #17 [
+INFO  16:55:20,013 - #8 0
+INFO  16:55:20,013 - #18 ]
+INFO  16:55:20,013 - #37 =
+INFO  16:55:20,013 - #8 1
+INFO  16:55:20,013 - #5 ;
+INFO  16:55:20,013 - #27 print
+INFO  16:55:20,013 - #14 (
+INFO  16:55:20,013 - #9 z
+INFO  16:55:20,013 - #17 [
+INFO  16:55:20,013 - #8 0
+INFO  16:55:20,013 - #18 ]
+INFO  16:55:20,013 - #15 )
+INFO  16:55:20,013 - #5 ;
+INFO  16:55:20,013 - #4 }
+INFO  16:55:20,013 - #4 }
+INFO  16:55:20,023 - ===================================
+INFO  16:55:20,023 - Promenljiva z na liniji 2
+INFO  16:55:20,023 - Pristup nizu validan na liniji 8
+INFO  16:55:20,023 - Pristup nizu validan na liniji 10
+INFO  16:55:20,023 - niz
+INFO  16:55:20,023 - niz
+INFO  16:55:20,023 - niz
+INFO  16:55:20,023 - Parsiranje uspesno zavrseno!

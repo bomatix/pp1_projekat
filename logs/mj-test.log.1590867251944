@@ -1,0 +1,67 @@
+INFO  21:27:17,608 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:27:17,639 - #2 program
+INFO  21:27:17,639 - #9 MJProgram
+INFO  21:27:17,639 - #9 int
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #5 ;
+INFO  21:27:17,639 - #3 {
+INFO  21:27:17,639 - #16 void
+INFO  21:27:17,639 - #9 main
+INFO  21:27:17,639 - #14 (
+INFO  21:27:17,639 - #15 )
+INFO  21:27:17,639 - #3 {
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #37 =
+INFO  21:27:17,639 - #19 new
+INFO  21:27:17,639 - #9 int
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #8 2
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #5 ;
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #8 0
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #37 =
+INFO  21:27:17,639 - #8 5
+INFO  21:27:17,639 - #5 ;
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #8 1
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #37 =
+INFO  21:27:17,639 - #8 2
+INFO  21:27:17,639 - #5 ;
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #8 0
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #37 =
+INFO  21:27:17,639 - #9 z
+INFO  21:27:17,639 - #17 [
+INFO  21:27:17,639 - #8 0
+INFO  21:27:17,639 - #18 ]
+INFO  21:27:17,639 - #29 +
+INFO  21:27:17,639 - #8 1
+INFO  21:27:17,655 - #5 ;
+INFO  21:27:17,655 - #27 print
+INFO  21:27:17,655 - #14 (
+INFO  21:27:17,655 - #9 z
+INFO  21:27:17,655 - #17 [
+INFO  21:27:17,655 - #8 0
+INFO  21:27:17,655 - #18 ]
+INFO  21:27:17,655 - #15 )
+INFO  21:27:17,655 - #5 ;
+INFO  21:27:17,655 - #4 }
+INFO  21:27:17,655 - #4 }
+INFO  21:27:17,655 - ===================================
+INFO  21:27:17,655 - Promenljiva z na liniji 2
+INFO  21:27:17,655 - Pristup nizu validan na liniji 8
+INFO  21:27:17,655 - Pristup nizu validan na liniji 10
+INFO  21:27:17,670 - Pristup nizu validan na liniji 12
+INFO  21:27:17,670 - Pristup nizu validan na liniji 12
+ERROR 21:27:17,670 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+INFO  21:27:17,670 - Pristup nizu validan na liniji 14
+ERROR 21:27:17,670 - Parsiranje NIJE uspesno zavrseno!

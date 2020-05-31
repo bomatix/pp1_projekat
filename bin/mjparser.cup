@@ -68,7 +68,7 @@ nonterminal CondFactExpr, DesignatorStatement, DesignatorStatementExpr, OpenFor,
 nonterminal FactorExpr, ActPars, ActParsList, ActParsExpression, ExprList, AssignExpr, ActParsItem;
 nonterminal AddopLeft, AddopRight, MulopLeft, MulopRight;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr, DesignatorName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Expr, Term, TermList;
@@ -173,8 +173,8 @@ OptionalCondition ::= (OptionalCondition_) Condition SEMI | (NoOptionalCondition
  
 OptionalExpr ::= (OptionalExpression) Expr | (NoOptionalExpression);
 OptionalMinus ::= (Minus) MINUS | (NoMinus);
-Expr ::= (Expr) OptionalMinus Expression;
-Expression ::= (AddExpression) Expression:te AddOp Term:t | (TermExpression) Term:t;
+Expr ::= (Expr) Expression;
+Expression ::= (AddExpression) Expression:te AddOp Term:t | (TermExpression) Term:t | (NegativeTermExpression) MINUS Term;
 
 Term ::= (Term) TermList; 
 TermList ::= (TermList_) TermList MulOp Factor | (TermFactor) Factor;
@@ -198,7 +198,8 @@ CondFact ::= (ConditionFact) Expr RelOp Expr | (ConditionFactExpr) Expr;
 
 DesignatorPars ::= (DesignatorPars_) LPAREN ActParsList RPAREN | (NoDesignatorPars);
 
-DesignatorExpr ::= (DesignatorExpr) IDENT:varName DesignatorList;
+DesignatorExpr ::= (DesignatorExpr) DesignatorName DesignatorList;
+DesignatorName ::= (DesignatorName) IDENT:varName;
 DesignatorList ::= (DesignatorsList) DesignatorList Designator | (NoDesignatorList);
 Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBRACKET Expr:index RBRACKET;
 

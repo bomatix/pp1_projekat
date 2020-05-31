@@ -1,0 +1,70 @@
+INFO  21:35:41,393 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:35:41,440 - #2 program
+INFO  21:35:41,440 - #9 MJProgram
+INFO  21:35:41,440 - #9 int
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #6 ,
+INFO  21:35:41,440 - #9 x
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #3 {
+INFO  21:35:41,440 - #16 void
+INFO  21:35:41,440 - #9 main
+INFO  21:35:41,440 - #14 (
+INFO  21:35:41,440 - #15 )
+INFO  21:35:41,440 - #3 {
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #37 =
+INFO  21:35:41,440 - #19 new
+INFO  21:35:41,440 - #9 int
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 2
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 0
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #37 =
+INFO  21:35:41,440 - #8 5
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 1
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #37 =
+INFO  21:35:41,440 - #8 2
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 0
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #37 =
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 0
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #29 +
+INFO  21:35:41,440 - #8 1
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #27 print
+INFO  21:35:41,440 - #14 (
+INFO  21:35:41,440 - #9 z
+INFO  21:35:41,440 - #17 [
+INFO  21:35:41,440 - #8 0
+INFO  21:35:41,440 - #18 ]
+INFO  21:35:41,440 - #15 )
+INFO  21:35:41,440 - #5 ;
+INFO  21:35:41,440 - #4 }
+INFO  21:35:41,440 - #4 }
+INFO  21:35:41,455 - ===================================
+INFO  21:35:41,455 - Promenljiva z na liniji 2
+INFO  21:35:41,455 - Promenljiva x na liniji 2
+INFO  21:35:41,455 - Pristup nizu validan na liniji 8
+INFO  21:35:41,455 - Pristup nizu validan na liniji 10
+INFO  21:35:41,455 - Pristup nizu validan na liniji 12
+INFO  21:35:41,455 - Pristup nizu validan na liniji 12
+ERROR 21:35:41,455 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+INFO  21:35:41,455 - Pristup nizu validan na liniji 14
+ERROR 21:35:41,455 - Parsiranje NIJE uspesno zavrseno!

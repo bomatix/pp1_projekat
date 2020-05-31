@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/4/2020 15:47:30
+// 30/4/2020 22:50:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,22 +11,11 @@ public class Expr implements SyntaxNode {
     private int line;
     public rs.etf.pp1.symboltable.concepts.Struct struct = null;
 
-    private OptionalMinus OptionalMinus;
     private Expression Expression;
 
-    public Expr (OptionalMinus OptionalMinus, Expression Expression) {
-        this.OptionalMinus=OptionalMinus;
-        if(OptionalMinus!=null) OptionalMinus.setParent(this);
+    public Expr (Expression Expression) {
         this.Expression=Expression;
         if(Expression!=null) Expression.setParent(this);
-    }
-
-    public OptionalMinus getOptionalMinus() {
-        return OptionalMinus;
-    }
-
-    public void setOptionalMinus(OptionalMinus OptionalMinus) {
-        this.OptionalMinus=OptionalMinus;
     }
 
     public Expression getExpression() {
@@ -58,18 +47,15 @@ public class Expr implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(OptionalMinus!=null) OptionalMinus.accept(visitor);
         if(Expression!=null) Expression.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(OptionalMinus!=null) OptionalMinus.traverseTopDown(visitor);
         if(Expression!=null) Expression.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(OptionalMinus!=null) OptionalMinus.traverseBottomUp(visitor);
         if(Expression!=null) Expression.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -78,12 +64,6 @@ public class Expr implements SyntaxNode {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("Expr(\n");
-
-        if(OptionalMinus!=null)
-            buffer.append(OptionalMinus.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
 
         if(Expression!=null)
             buffer.append(Expression.toString("  "+tab));

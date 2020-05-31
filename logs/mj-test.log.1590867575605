@@ -1,0 +1,86 @@
+INFO  21:39:27,092 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:39:27,138 - #2 program
+INFO  21:39:27,138 - #9 MJProgram
+INFO  21:39:27,138 - #9 int
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #6 ,
+INFO  21:39:27,138 - #9 x
+INFO  21:39:27,138 - #5 ;
+INFO  21:39:27,138 - #3 {
+INFO  21:39:27,138 - #16 void
+INFO  21:39:27,138 - #9 main
+INFO  21:39:27,138 - #14 (
+INFO  21:39:27,138 - #15 )
+INFO  21:39:27,138 - #3 {
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #37 =
+INFO  21:39:27,138 - #19 new
+INFO  21:39:27,138 - #9 int
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 2
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #5 ;
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 0
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #37 =
+INFO  21:39:27,138 - #8 5
+INFO  21:39:27,138 - #5 ;
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 1
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #37 =
+INFO  21:39:27,138 - #8 2
+INFO  21:39:27,138 - #5 ;
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 0
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #37 =
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 0
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #29 +
+INFO  21:39:27,138 - #8 1
+INFO  21:39:27,138 - #5 ;
+INFO  21:39:27,138 - #27 print
+INFO  21:39:27,138 - #14 (
+INFO  21:39:27,138 - #9 z
+INFO  21:39:27,138 - #17 [
+INFO  21:39:27,138 - #8 0
+INFO  21:39:27,138 - #18 ]
+INFO  21:39:27,138 - #15 )
+INFO  21:39:27,154 - #5 ;
+INFO  21:39:27,154 - #9 x
+INFO  21:39:27,154 - #37 =
+INFO  21:39:27,154 - #8 2
+INFO  21:39:27,154 - #5 ;
+INFO  21:39:27,154 - #9 x
+INFO  21:39:27,154 - #37 =
+INFO  21:39:27,154 - #9 x
+INFO  21:39:27,154 - #29 +
+INFO  21:39:27,154 - #8 1
+INFO  21:39:27,154 - #5 ;
+INFO  21:39:27,154 - #27 print
+INFO  21:39:27,154 - #14 (
+INFO  21:39:27,154 - #9 x
+INFO  21:39:27,154 - #15 )
+INFO  21:39:27,154 - #5 ;
+INFO  21:39:27,154 - #4 }
+INFO  21:39:27,154 - #4 }
+INFO  21:39:27,154 - ===================================
+INFO  21:39:27,154 - Promenljiva z na liniji 2
+INFO  21:39:27,154 - Promenljiva x na liniji 2
+INFO  21:39:27,170 - Pristup nizu validan na liniji 8
+INFO  21:39:27,170 - Pristup nizu validan na liniji 10
+INFO  21:39:27,170 - Pristup nizu validan na liniji 12
+INFO  21:39:27,170 - Pristup nizu validan na liniji 12
+ERROR 21:39:27,170 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+INFO  21:39:27,170 - Pristup nizu validan na liniji 14
+INFO  21:39:27,170 - Validno sabiranje na liniji 18
+ERROR 21:39:27,170 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,71 @@
+INFO  11:24:37,254 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:24:37,292 - #2 program
+INFO  11:24:37,292 - #9 MJProgram
+INFO  11:24:37,292 - #9 int
+INFO  11:24:37,292 - #9 x
+INFO  11:24:37,293 - #6 ,
+INFO  11:24:37,294 - #9 y
+INFO  11:24:37,294 - #6 ,
+INFO  11:24:37,294 - #9 z
+INFO  11:24:37,294 - #17 [
+INFO  11:24:37,294 - #18 ]
+INFO  11:24:37,294 - #5 ;
+INFO  11:24:37,294 - #3 {
+INFO  11:24:37,295 - #16 void
+INFO  11:24:37,295 - #9 main
+INFO  11:24:37,295 - #14 (
+INFO  11:24:37,296 - #15 )
+INFO  11:24:37,296 - #3 {
+INFO  11:24:37,297 - #9 z
+INFO  11:24:37,297 - #37 =
+INFO  11:24:37,298 - #19 new
+INFO  11:24:37,298 - #9 int
+INFO  11:24:37,298 - #17 [
+INFO  11:24:37,298 - #8 2
+INFO  11:24:37,299 - #18 ]
+INFO  11:24:37,299 - #5 ;
+INFO  11:24:37,300 - #9 z
+INFO  11:24:37,300 - #17 [
+INFO  11:24:37,300 - #8 0
+INFO  11:24:37,300 - #18 ]
+INFO  11:24:37,300 - #37 =
+INFO  11:24:37,300 - #8 1
+INFO  11:24:37,300 - #5 ;
+INFO  11:24:37,300 - #9 y
+INFO  11:24:37,300 - #37 =
+INFO  11:24:37,300 - #8 3
+INFO  11:24:37,300 - #5 ;
+INFO  11:24:37,300 - #9 x
+INFO  11:24:37,301 - #37 =
+INFO  11:24:37,301 - #8 1
+INFO  11:24:37,301 - #9 x
+ERROR 11:24:37,301 - 
+Sintaksna greska na liniji 13
+INFO  11:24:37,301 - #46 +=
+INFO  11:24:37,301 - #9 y
+INFO  11:24:37,301 - #46 +=
+INFO  11:24:37,301 - #8 2
+INFO  11:24:37,302 - #34 *
+INFO  11:24:37,302 - #8 4
+INFO  11:24:37,302 - #29 +
+INFO  11:24:37,302 - #8 1
+INFO  11:24:37,302 - #5 ;
+INFO  11:24:37,302 - #27 print
+INFO  11:24:37,302 - #14 (
+INFO  11:24:37,302 - #9 y
+ERROR 11:24:37,302 - Izvrsen oporavak do ; na liniji 11
+INFO  11:24:37,308 - #15 )
+INFO  11:24:37,309 - #5 ;
+INFO  11:24:37,309 - #27 print
+INFO  11:24:37,309 - #14 (
+INFO  11:24:37,309 - #9 x
+INFO  11:24:37,311 - #15 )
+INFO  11:24:37,311 - #5 ;
+INFO  11:24:37,311 - #4 }
+INFO  11:24:37,311 - #4 }
+INFO  11:24:37,320 - ===================================
+INFO  11:24:37,323 - Promenljiva x na liniji 2
+INFO  11:24:37,323 - Promenljiva y na liniji 2
+INFO  11:24:37,323 - Promenljiva z na liniji 2
+INFO  11:24:37,323 - Pristup nizu validan na liniji 8
+ERROR 11:24:37,324 - Parsiranje NIJE uspesno zavrseno!

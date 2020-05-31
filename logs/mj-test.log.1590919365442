@@ -1,0 +1,60 @@
+INFO  12:02:24,809 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  12:02:24,845 - #2 program
+INFO  12:02:24,845 - #9 MJProgram
+INFO  12:02:24,845 - #9 int
+INFO  12:02:24,846 - #9 x
+INFO  12:02:24,847 - #6 ,
+INFO  12:02:24,847 - #9 y
+INFO  12:02:24,848 - #6 ,
+INFO  12:02:24,848 - #9 z
+INFO  12:02:24,848 - #17 [
+INFO  12:02:24,848 - #18 ]
+INFO  12:02:24,848 - #5 ;
+INFO  12:02:24,848 - #3 {
+INFO  12:02:24,848 - #16 void
+INFO  12:02:24,848 - #9 main
+INFO  12:02:24,848 - #14 (
+INFO  12:02:24,849 - #15 )
+INFO  12:02:24,849 - #3 {
+INFO  12:02:24,849 - #9 y
+INFO  12:02:24,850 - #37 =
+INFO  12:02:24,851 - #8 1
+INFO  12:02:24,851 - #5 ;
+INFO  12:02:24,852 - #9 x
+INFO  12:02:24,852 - #37 =
+INFO  12:02:24,853 - #8 1
+INFO  12:02:24,853 - #5 ;
+INFO  12:02:24,853 - #9 x
+INFO  12:02:24,853 - #46 +=
+INFO  12:02:24,853 - #9 y
+INFO  12:02:24,853 - #46 +=
+INFO  12:02:24,854 - #8 3
+INFO  12:02:24,854 - #29 +
+INFO  12:02:24,854 - #8 1
+INFO  12:02:24,855 - #29 +
+INFO  12:02:24,855 - #8 1
+INFO  12:02:24,855 - #29 +
+INFO  12:02:24,855 - #8 1
+INFO  12:02:24,855 - #5 ;
+INFO  12:02:24,855 - #27 print
+INFO  12:02:24,855 - #14 (
+INFO  12:02:24,855 - #9 x
+INFO  12:02:24,855 - #15 )
+INFO  12:02:24,855 - #5 ;
+INFO  12:02:24,855 - #27 print
+INFO  12:02:24,855 - #14 (
+INFO  12:02:24,856 - #9 y
+INFO  12:02:24,856 - #15 )
+INFO  12:02:24,856 - #5 ;
+INFO  12:02:24,856 - #4 }
+INFO  12:02:24,856 - #4 }
+INFO  12:02:24,865 - ===================================
+INFO  12:02:24,867 - Promenljiva x na liniji 2
+INFO  12:02:24,867 - Promenljiva y na liniji 2
+INFO  12:02:24,867 - Promenljiva z na liniji 2
+INFO  12:02:24,867 - Validno sabiranje na liniji 10
+INFO  12:02:24,867 - Validno sabiranje na liniji 10
+INFO  12:02:24,868 - Validno sabiranje na liniji 10
+INFO  12:02:24,868 - Validno sabiranje na liniji 10
+INFO  12:02:24,872 - Plus
+INFO  12:02:24,873 - Parsiranje uspesno zavrseno!

@@ -107,7 +107,7 @@ nonterminal AddopRight AddopRight;
 nonterminal MulopLeft MulopLeft;
 nonterminal MulopRight MulopRight;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, VarIdent, ConstIdent, DesignatorExpr, DesignatorName;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodName, FormParItem, ClassName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Expression, Factor, Expr, Term, TermList;
@@ -212,8 +212,8 @@ OptionalCondition ::= (OptionalCondition_) Condition:C1 SEMI {: RESULT=new Optio
  
 OptionalExpr ::= (OptionalExpression) Expr:E1 {: RESULT=new OptionalExpression(E1); RESULT.setLine(E1left); :} | (NoOptionalExpression) {: RESULT=new NoOptionalExpression(); :};
 OptionalMinus ::= (Minus) MINUS {: RESULT=new Minus(); :} | (NoMinus) {: RESULT=new NoMinus(); :};
-Expr ::= (Expr) OptionalMinus:O1 Expression:E2 {: RESULT=new Expr(O1, E2); RESULT.setLine(O1left); :};
-Expression ::= (AddExpression) Expression:te AddOp:A1 Term:t {: RESULT=new AddExpression(te, A1, t); RESULT.setLine(teleft); :} | (TermExpression) Term:t {: RESULT=new TermExpression(t); RESULT.setLine(tleft); :};
+Expr ::= (Expr) Expression:E1 {: RESULT=new Expr(E1); RESULT.setLine(E1left); :};
+Expression ::= (AddExpression) Expression:te AddOp:A1 Term:t {: RESULT=new AddExpression(te, A1, t); RESULT.setLine(teleft); :} | (TermExpression) Term:t {: RESULT=new TermExpression(t); RESULT.setLine(tleft); :} | (NegativeTermExpression) MINUS Term:T1 {: RESULT=new NegativeTermExpression(T1); RESULT.setLine(T1left); :};
 
 Term ::= (Term) TermList:T1 {: RESULT=new Term(T1); RESULT.setLine(T1left); :}; 
 TermList ::= (TermList_) TermList:T1 MulOp:M2 Factor:F3 {: RESULT=new TermList_(T1, M2, F3); RESULT.setLine(T1left); :} | (TermFactor) Factor:F1 {: RESULT=new TermFactor(F1); RESULT.setLine(F1left); :};
@@ -237,7 +237,8 @@ CondFact ::= (ConditionFact) Expr:E1 RelOp:R2 Expr:E3 {: RESULT=new ConditionFac
 
 DesignatorPars ::= (DesignatorPars_) LPAREN ActParsList:A1 RPAREN {: RESULT=new DesignatorPars_(A1); RESULT.setLine(A1left); :} | (NoDesignatorPars) {: RESULT=new NoDesignatorPars(); :};
 
-DesignatorExpr ::= (DesignatorExpr) IDENT:varName DesignatorList:D1 {: RESULT=new DesignatorExpr(varName, D1); RESULT.setLine(varNameleft); :};
+DesignatorExpr ::= (DesignatorExpr) DesignatorName:D1 DesignatorList:D2 {: RESULT=new DesignatorExpr(D1, D2); RESULT.setLine(D1left); :};
+DesignatorName ::= (DesignatorName) IDENT:varName {: RESULT=new DesignatorName(varName); RESULT.setLine(varNameleft); :};
 DesignatorList ::= (DesignatorsList) DesignatorList:D1 Designator:D2 {: RESULT=new DesignatorsList(D1, D2); RESULT.setLine(D1left); :} | (NoDesignatorList) {: RESULT=new NoDesignatorList(); :};
 Designator ::= (DesignatorDot) DOT IDENT:fieldName {: RESULT=new DesignatorDot(fieldName); RESULT.setLine(fieldNameleft); :} | (DesignatorArr) LBRACKET Expr:index RBRACKET {: RESULT=new DesignatorArr(index); RESULT.setLine(indexleft); :};
 

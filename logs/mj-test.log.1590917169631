@@ -1,0 +1,71 @@
+INFO  11:25:14,842 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:25:14,880 - #2 program
+INFO  11:25:14,880 - #9 MJProgram
+INFO  11:25:14,881 - #9 int
+INFO  11:25:14,881 - #9 x
+INFO  11:25:14,882 - #6 ,
+INFO  11:25:14,883 - #9 y
+INFO  11:25:14,883 - #6 ,
+INFO  11:25:14,883 - #9 z
+INFO  11:25:14,883 - #17 [
+INFO  11:25:14,883 - #18 ]
+INFO  11:25:14,883 - #5 ;
+INFO  11:25:14,883 - #3 {
+INFO  11:25:14,884 - #16 void
+INFO  11:25:14,884 - #9 main
+INFO  11:25:14,884 - #14 (
+INFO  11:25:14,884 - #15 )
+INFO  11:25:14,885 - #3 {
+INFO  11:25:14,885 - #9 z
+INFO  11:25:14,885 - #37 =
+INFO  11:25:14,886 - #19 new
+INFO  11:25:14,887 - #9 int
+INFO  11:25:14,887 - #17 [
+INFO  11:25:14,887 - #8 2
+INFO  11:25:14,887 - #18 ]
+INFO  11:25:14,888 - #5 ;
+INFO  11:25:14,888 - #9 z
+INFO  11:25:14,889 - #17 [
+INFO  11:25:14,889 - #8 0
+INFO  11:25:14,889 - #18 ]
+INFO  11:25:14,889 - #37 =
+INFO  11:25:14,889 - #8 1
+INFO  11:25:14,889 - #5 ;
+INFO  11:25:14,889 - #9 y
+INFO  11:25:14,889 - #37 =
+INFO  11:25:14,889 - #8 3
+INFO  11:25:14,889 - #5 ;
+INFO  11:25:14,889 - #9 x
+INFO  11:25:14,889 - #37 =
+INFO  11:25:14,889 - #8 1
+INFO  11:25:14,889 - #5 ;
+INFO  11:25:14,890 - #9 x
+INFO  11:25:14,890 - #46 +=
+INFO  11:25:14,890 - #9 y
+INFO  11:25:14,890 - #46 +=
+INFO  11:25:14,891 - #8 2
+INFO  11:25:14,891 - #34 *
+INFO  11:25:14,891 - #8 4
+INFO  11:25:14,892 - #29 +
+INFO  11:25:14,892 - #8 1
+INFO  11:25:14,893 - #5 ;
+INFO  11:25:14,893 - #27 print
+INFO  11:25:14,893 - #14 (
+INFO  11:25:14,893 - #9 y
+INFO  11:25:14,893 - #15 )
+INFO  11:25:14,894 - #5 ;
+INFO  11:25:14,894 - #27 print
+INFO  11:25:14,894 - #14 (
+INFO  11:25:14,894 - #9 x
+INFO  11:25:14,894 - #15 )
+INFO  11:25:14,897 - #5 ;
+INFO  11:25:14,897 - #4 }
+INFO  11:25:14,897 - #4 }
+INFO  11:25:14,902 - ===================================
+INFO  11:25:14,904 - Promenljiva x na liniji 2
+INFO  11:25:14,904 - Promenljiva y na liniji 2
+INFO  11:25:14,905 - Promenljiva z na liniji 2
+INFO  11:25:14,905 - Pristup nizu validan na liniji 8
+INFO  11:25:14,905 - Validan termList na liniji 13
+INFO  11:25:14,905 - Validno sabiranje na liniji 13
+INFO  11:25:14,905 - Validno sabiranje na liniji 13

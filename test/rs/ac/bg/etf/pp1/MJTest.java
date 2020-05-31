@@ -24,6 +24,10 @@ public class MJTest {
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
 	}
 	
+	/**
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		Logger log = Logger.getLogger(MJTest.class);
 		
@@ -44,7 +48,6 @@ public class MJTest {
 	        
 	        Tab.init();
 			// ispis sintaksnog stabla
-//			log.info(prog.toString(""));
 			log.info("===================================");
 
 			// ispis prepoznatih programskih konstrukcija
@@ -53,9 +56,6 @@ public class MJTest {
 			
 			Tab.dump();
 	      
-//			log.info(" Print count calls = " + v.printCallCount);
-//
-//			log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
 			if(!p.errorDetected && !sa.isErrorDetected()) {
 				File objFile = new File("test/program.obj");
 				if(objFile.exists()) objFile.delete();

@@ -1,0 +1,73 @@
+INFO  00:54:13,884 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:54:13,931 - #2 program
+INFO  00:54:13,931 - #9 MJProgram
+INFO  00:54:13,931 - #9 int
+INFO  00:54:13,931 - #9 x
+INFO  00:54:13,931 - #6 ,
+INFO  00:54:13,931 - #9 y
+INFO  00:54:13,931 - #6 ,
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #3 {
+INFO  00:54:13,931 - #16 void
+INFO  00:54:13,931 - #9 main
+INFO  00:54:13,931 - #14 (
+INFO  00:54:13,931 - #15 )
+INFO  00:54:13,931 - #3 {
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #37 =
+INFO  00:54:13,931 - #19 new
+INFO  00:54:13,931 - #9 int
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #8 2
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #8 0
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #37 =
+INFO  00:54:13,931 - #8 1
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #9 y
+INFO  00:54:13,931 - #37 =
+INFO  00:54:13,931 - #8 3
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #8 0
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #46 +=
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #8 0
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #46 +=
+INFO  00:54:13,931 - #8 2
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #27 print
+INFO  00:54:13,931 - #14 (
+INFO  00:54:13,931 - #9 y
+INFO  00:54:13,931 - #15 )
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #27 print
+INFO  00:54:13,931 - #14 (
+INFO  00:54:13,931 - #9 z
+INFO  00:54:13,931 - #17 [
+INFO  00:54:13,931 - #8 0
+INFO  00:54:13,931 - #18 ]
+INFO  00:54:13,931 - #15 )
+INFO  00:54:13,931 - #5 ;
+INFO  00:54:13,931 - #4 }
+INFO  00:54:13,931 - #4 }
+INFO  00:54:13,946 - ===================================
+INFO  00:54:13,946 - Promenljiva x na liniji 2
+INFO  00:54:13,946 - Promenljiva y na liniji 2
+INFO  00:54:13,946 - Promenljiva z na liniji 2
+INFO  00:54:13,946 - Pristup nizu validan na liniji 8
+INFO  00:54:13,946 - Pristup nizu validan na liniji 12
+INFO  00:54:13,946 - Pristup nizu validan na liniji 12
+INFO  00:54:13,946 - Validno sabiranje na liniji 12
+INFO  00:54:13,946 - Pristup nizu validan na liniji 15

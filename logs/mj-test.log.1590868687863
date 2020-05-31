@@ -1,0 +1,74 @@
+INFO  21:57:57,441 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:57:57,472 - #2 program
+INFO  21:57:57,472 - #9 MJProgram
+INFO  21:57:57,472 - #9 int
+INFO  21:57:57,472 - #9 z
+INFO  21:57:57,472 - #17 [
+INFO  21:57:57,472 - #18 ]
+INFO  21:57:57,472 - #6 ,
+INFO  21:57:57,472 - #9 x
+INFO  21:57:57,472 - #5 ;
+INFO  21:57:57,472 - #3 {
+INFO  21:57:57,472 - #16 void
+INFO  21:57:57,472 - #9 main
+INFO  21:57:57,472 - #14 (
+INFO  21:57:57,472 - #15 )
+INFO  21:57:57,472 - #3 {
+INFO  21:57:57,472 - #9 z
+INFO  21:57:57,472 - #37 =
+INFO  21:57:57,472 - #19 new
+INFO  21:57:57,472 - #9 int
+INFO  21:57:57,472 - #17 [
+INFO  21:57:57,472 - #8 2
+INFO  21:57:57,472 - #18 ]
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #9 z
+INFO  21:57:57,488 - #17 [
+INFO  21:57:57,488 - #8 0
+INFO  21:57:57,488 - #18 ]
+INFO  21:57:57,488 - #37 =
+INFO  21:57:57,488 - #8 5
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #9 z
+INFO  21:57:57,488 - #17 [
+INFO  21:57:57,488 - #8 1
+INFO  21:57:57,488 - #18 ]
+INFO  21:57:57,488 - #37 =
+INFO  21:57:57,488 - #8 2
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #9 z
+INFO  21:57:57,488 - #17 [
+INFO  21:57:57,488 - #8 0
+INFO  21:57:57,488 - #18 ]
+INFO  21:57:57,488 - #31 ++
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #27 print
+INFO  21:57:57,488 - #14 (
+INFO  21:57:57,488 - #9 z
+INFO  21:57:57,488 - #17 [
+INFO  21:57:57,488 - #8 0
+INFO  21:57:57,488 - #18 ]
+INFO  21:57:57,488 - #15 )
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #9 x
+INFO  21:57:57,488 - #37 =
+INFO  21:57:57,488 - #8 2
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #9 x
+INFO  21:57:57,488 - #31 ++
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #27 print
+INFO  21:57:57,488 - #14 (
+INFO  21:57:57,488 - #9 x
+INFO  21:57:57,488 - #15 )
+INFO  21:57:57,488 - #5 ;
+INFO  21:57:57,488 - #4 }
+INFO  21:57:57,488 - #4 }
+INFO  21:57:57,504 - ===================================
+INFO  21:57:57,504 - Promenljiva z na liniji 2
+INFO  21:57:57,504 - Promenljiva x na liniji 2
+INFO  21:57:57,504 - Pristup nizu validan na liniji 8
+INFO  21:57:57,504 - Pristup nizu validan na liniji 10
+INFO  21:57:57,504 - Pristup nizu validan na liniji 12
+INFO  21:57:57,504 - Pristup nizu validan na liniji 14
+INFO  21:57:57,504 - Parsiranje uspesno zavrseno!

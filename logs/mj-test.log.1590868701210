@@ -1,0 +1,67 @@
+INFO  21:58:07,863 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  21:58:07,910 - #2 program
+INFO  21:58:07,910 - #9 MJProgram
+INFO  21:58:07,910 - #9 int
+INFO  21:58:07,910 - #9 z
+INFO  21:58:07,910 - #17 [
+INFO  21:58:07,910 - #18 ]
+INFO  21:58:07,910 - #6 ,
+INFO  21:58:07,910 - #9 x
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #3 {
+INFO  21:58:07,910 - #16 void
+INFO  21:58:07,910 - #9 main
+INFO  21:58:07,910 - #14 (
+INFO  21:58:07,910 - #15 )
+INFO  21:58:07,910 - #3 {
+INFO  21:58:07,910 - #9 z
+INFO  21:58:07,910 - #37 =
+INFO  21:58:07,910 - #19 new
+INFO  21:58:07,910 - #9 int
+INFO  21:58:07,910 - #17 [
+INFO  21:58:07,910 - #8 2
+INFO  21:58:07,910 - #18 ]
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #9 z
+INFO  21:58:07,910 - #17 [
+INFO  21:58:07,910 - #8 0
+INFO  21:58:07,910 - #18 ]
+INFO  21:58:07,910 - #37 =
+INFO  21:58:07,910 - #8 5
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #9 z
+INFO  21:58:07,910 - #17 [
+INFO  21:58:07,910 - #8 1
+INFO  21:58:07,910 - #18 ]
+INFO  21:58:07,910 - #37 =
+INFO  21:58:07,910 - #8 2
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #27 print
+INFO  21:58:07,910 - #14 (
+INFO  21:58:07,910 - #9 z
+INFO  21:58:07,910 - #17 [
+INFO  21:58:07,910 - #8 0
+INFO  21:58:07,910 - #18 ]
+INFO  21:58:07,910 - #15 )
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #9 x
+INFO  21:58:07,910 - #37 =
+INFO  21:58:07,910 - #8 2
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #9 x
+INFO  21:58:07,910 - #31 ++
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #27 print
+INFO  21:58:07,910 - #14 (
+INFO  21:58:07,910 - #9 x
+INFO  21:58:07,910 - #15 )
+INFO  21:58:07,910 - #5 ;
+INFO  21:58:07,910 - #4 }
+INFO  21:58:07,926 - #4 }
+INFO  21:58:07,926 - ===================================
+INFO  21:58:07,926 - Promenljiva z na liniji 2
+INFO  21:58:07,926 - Promenljiva x na liniji 2
+INFO  21:58:07,926 - Pristup nizu validan na liniji 8
+INFO  21:58:07,926 - Pristup nizu validan na liniji 10
+INFO  21:58:07,926 - Pristup nizu validan na liniji 13
+INFO  21:58:07,941 - Parsiranje uspesno zavrseno!

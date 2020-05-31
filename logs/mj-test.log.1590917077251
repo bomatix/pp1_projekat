@@ -1,0 +1,76 @@
+INFO  11:23:29,271 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:23:29,305 - #2 program
+INFO  11:23:29,305 - #9 MJProgram
+INFO  11:23:29,305 - #9 int
+INFO  11:23:29,306 - #9 x
+INFO  11:23:29,307 - #6 ,
+INFO  11:23:29,307 - #9 y
+INFO  11:23:29,307 - #6 ,
+INFO  11:23:29,307 - #9 z
+INFO  11:23:29,308 - #17 [
+INFO  11:23:29,308 - #18 ]
+INFO  11:23:29,308 - #5 ;
+INFO  11:23:29,308 - #3 {
+INFO  11:23:29,308 - #16 void
+INFO  11:23:29,308 - #9 main
+INFO  11:23:29,308 - #14 (
+INFO  11:23:29,308 - #15 )
+INFO  11:23:29,309 - #3 {
+INFO  11:23:29,309 - #9 z
+INFO  11:23:29,310 - #37 =
+INFO  11:23:29,310 - #19 new
+INFO  11:23:29,311 - #9 int
+INFO  11:23:29,311 - #17 [
+INFO  11:23:29,311 - #8 2
+INFO  11:23:29,311 - #18 ]
+INFO  11:23:29,312 - #5 ;
+INFO  11:23:29,312 - #9 z
+INFO  11:23:29,312 - #17 [
+INFO  11:23:29,313 - #8 0
+INFO  11:23:29,313 - #18 ]
+INFO  11:23:29,313 - #37 =
+INFO  11:23:29,313 - #8 1
+INFO  11:23:29,313 - #5 ;
+INFO  11:23:29,313 - #9 y
+INFO  11:23:29,313 - #37 =
+INFO  11:23:29,313 - #8 3
+INFO  11:23:29,313 - #5 ;
+INFO  11:23:29,313 - #9 z
+INFO  11:23:29,313 - #17 [
+INFO  11:23:29,313 - #8 0
+INFO  11:23:29,313 - #18 ]
+INFO  11:23:29,313 - #46 +=
+INFO  11:23:29,313 - #9 y
+INFO  11:23:29,314 - #46 +=
+INFO  11:23:29,314 - #8 2
+INFO  11:23:29,314 - #34 *
+INFO  11:23:29,314 - #8 4
+INFO  11:23:29,315 - #29 +
+INFO  11:23:29,315 - #8 1
+INFO  11:23:29,316 - #5 ;
+INFO  11:23:29,316 - #27 print
+INFO  11:23:29,316 - #14 (
+INFO  11:23:29,316 - #9 y
+INFO  11:23:29,316 - #15 )
+INFO  11:23:29,316 - #5 ;
+INFO  11:23:29,316 - #27 print
+INFO  11:23:29,316 - #14 (
+INFO  11:23:29,317 - #9 z
+INFO  11:23:29,317 - #17 [
+INFO  11:23:29,317 - #8 0
+INFO  11:23:29,319 - #18 ]
+INFO  11:23:29,319 - #15 )
+INFO  11:23:29,319 - #5 ;
+INFO  11:23:29,319 - #4 }
+INFO  11:23:29,319 - #4 }
+INFO  11:23:29,329 - ===================================
+INFO  11:23:29,332 - Promenljiva x na liniji 2
+INFO  11:23:29,332 - Promenljiva y na liniji 2
+INFO  11:23:29,332 - Promenljiva z na liniji 2
+INFO  11:23:29,332 - Pristup nizu validan na liniji 8
+INFO  11:23:29,332 - Pristup nizu validan na liniji 12
+INFO  11:23:29,332 - Validan termList na liniji 12
+INFO  11:23:29,332 - Validno sabiranje na liniji 12
+INFO  11:23:29,332 - Validno sabiranje na liniji 12
+INFO  11:23:29,332 - Pristup nizu validan na liniji 15
+INFO  11:23:29,337 - Parsiranje uspesno zavrseno!

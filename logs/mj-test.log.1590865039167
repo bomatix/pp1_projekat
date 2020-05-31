@@ -1,0 +1,55 @@
+INFO  20:56:38,017 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  20:56:38,048 - #2 program
+INFO  20:56:38,048 - #9 MJProgram
+INFO  20:56:38,048 - #9 int
+INFO  20:56:38,048 - #9 z
+INFO  20:56:38,048 - #17 [
+INFO  20:56:38,048 - #18 ]
+INFO  20:56:38,048 - #5 ;
+INFO  20:56:38,048 - #3 {
+INFO  20:56:38,048 - #16 void
+INFO  20:56:38,048 - #9 main
+INFO  20:56:38,048 - #14 (
+INFO  20:56:38,048 - #15 )
+INFO  20:56:38,048 - #3 {
+INFO  20:56:38,048 - #9 z
+INFO  20:56:38,048 - #37 =
+INFO  20:56:38,048 - #19 new
+INFO  20:56:38,048 - #9 int
+INFO  20:56:38,048 - #17 [
+INFO  20:56:38,048 - #8 2
+INFO  20:56:38,048 - #18 ]
+INFO  20:56:38,048 - #5 ;
+INFO  20:56:38,048 - #9 z
+INFO  20:56:38,048 - #17 [
+INFO  20:56:38,048 - #8 0
+INFO  20:56:38,048 - #18 ]
+INFO  20:56:38,048 - #37 =
+INFO  20:56:38,048 - #8 5
+INFO  20:56:38,048 - #5 ;
+INFO  20:56:38,048 - #9 z
+INFO  20:56:38,048 - #17 [
+INFO  20:56:38,048 - #8 1
+INFO  20:56:38,048 - #18 ]
+INFO  20:56:38,048 - #37 =
+INFO  20:56:38,048 - #8 2
+INFO  20:56:38,048 - #5 ;
+INFO  20:56:38,048 - #27 print
+INFO  20:56:38,048 - #14 (
+INFO  20:56:38,048 - #8 2
+INFO  20:56:38,048 - #29 +
+INFO  20:56:38,048 - #9 z
+INFO  20:56:38,048 - #17 [
+INFO  20:56:38,048 - #8 0
+INFO  20:56:38,048 - #18 ]
+INFO  20:56:38,048 - #15 )
+INFO  20:56:38,063 - #5 ;
+INFO  20:56:38,063 - #4 }
+INFO  20:56:38,063 - #4 }
+INFO  20:56:38,063 - ===================================
+INFO  20:56:38,063 - Promenljiva z na liniji 2
+INFO  20:56:38,063 - Pristup nizu validan na liniji 8
+INFO  20:56:38,063 - Pristup nizu validan na liniji 10
+INFO  20:56:38,063 - Pristup nizu validan na liniji 12
+ERROR 20:56:38,063 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 20:56:38,063 - Parsiranje NIJE uspesno zavrseno!

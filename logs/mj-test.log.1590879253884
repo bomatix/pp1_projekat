@@ -1,0 +1,70 @@
+INFO  00:53:47,042 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:53:47,073 - #2 program
+INFO  00:53:47,073 - #9 MJProgram
+INFO  00:53:47,073 - #9 int
+INFO  00:53:47,073 - #9 x
+INFO  00:53:47,073 - #6 ,
+INFO  00:53:47,073 - #9 y
+INFO  00:53:47,073 - #6 ,
+INFO  00:53:47,073 - #9 z
+INFO  00:53:47,073 - #17 [
+INFO  00:53:47,073 - #18 ]
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #3 {
+INFO  00:53:47,073 - #16 void
+INFO  00:53:47,073 - #9 main
+INFO  00:53:47,073 - #14 (
+INFO  00:53:47,073 - #15 )
+INFO  00:53:47,073 - #3 {
+INFO  00:53:47,073 - #9 z
+INFO  00:53:47,073 - #37 =
+INFO  00:53:47,073 - #19 new
+INFO  00:53:47,073 - #9 int
+INFO  00:53:47,073 - #17 [
+INFO  00:53:47,073 - #8 2
+INFO  00:53:47,073 - #18 ]
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #9 z
+INFO  00:53:47,073 - #17 [
+INFO  00:53:47,073 - #8 0
+INFO  00:53:47,073 - #18 ]
+INFO  00:53:47,073 - #37 =
+INFO  00:53:47,073 - #8 1
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #9 y
+INFO  00:53:47,073 - #37 =
+INFO  00:53:47,073 - #8 3
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #9 z
+INFO  00:53:47,073 - #17 [
+INFO  00:53:47,073 - #8 0
+INFO  00:53:47,073 - #18 ]
+INFO  00:53:47,073 - #46 +=
+INFO  00:53:47,073 - #9 y
+INFO  00:53:47,073 - #46 +=
+INFO  00:53:47,073 - #8 2
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #27 print
+INFO  00:53:47,073 - #14 (
+INFO  00:53:47,073 - #9 y
+INFO  00:53:47,073 - #15 )
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #27 print
+INFO  00:53:47,073 - #14 (
+INFO  00:53:47,073 - #9 z
+INFO  00:53:47,073 - #17 [
+INFO  00:53:47,073 - #8 0
+INFO  00:53:47,073 - #18 ]
+INFO  00:53:47,073 - #15 )
+INFO  00:53:47,073 - #5 ;
+INFO  00:53:47,073 - #4 }
+INFO  00:53:47,089 - #4 }
+INFO  00:53:47,089 - ===================================
+INFO  00:53:47,089 - Promenljiva x na liniji 2
+INFO  00:53:47,089 - Promenljiva y na liniji 2
+INFO  00:53:47,089 - Promenljiva z na liniji 2
+INFO  00:53:47,089 - Pristup nizu validan na liniji 8
+INFO  00:53:47,089 - Pristup nizu validan na liniji 12
+INFO  00:53:47,089 - Validno sabiranje na liniji 12
+INFO  00:53:47,089 - Pristup nizu validan na liniji 15
+INFO  00:53:47,089 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,83 @@
+INFO  22:30:27,394 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:30:27,441 - #2 program
+INFO  22:30:27,441 - #9 MJProgram
+INFO  22:30:27,441 - #9 int
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #6 ,
+INFO  22:30:27,441 - #9 x
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #3 {
+INFO  22:30:27,441 - #16 void
+INFO  22:30:27,441 - #9 main
+INFO  22:30:27,441 - #14 (
+INFO  22:30:27,441 - #15 )
+INFO  22:30:27,441 - #3 {
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #37 =
+INFO  22:30:27,441 - #19 new
+INFO  22:30:27,441 - #9 int
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 2
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 0
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #37 =
+INFO  22:30:27,441 - #8 5
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 1
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #37 =
+INFO  22:30:27,441 - #8 2
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 0
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #31 ++
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #27 print
+INFO  22:30:27,441 - #14 (
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 0
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #15 )
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #27 print
+INFO  22:30:27,441 - #14 (
+INFO  22:30:27,441 - #9 z
+INFO  22:30:27,441 - #17 [
+INFO  22:30:27,441 - #8 1
+INFO  22:30:27,441 - #18 ]
+INFO  22:30:27,441 - #15 )
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #9 x
+INFO  22:30:27,441 - #37 =
+INFO  22:30:27,441 - #8 2
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #9 x
+INFO  22:30:27,441 - #31 ++
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #27 print
+INFO  22:30:27,441 - #14 (
+INFO  22:30:27,441 - #9 x
+INFO  22:30:27,441 - #15 )
+INFO  22:30:27,441 - #5 ;
+INFO  22:30:27,441 - #4 }
+INFO  22:30:27,441 - #4 }
+INFO  22:30:27,456 - ===================================
+INFO  22:30:27,456 - Promenljiva z na liniji 2
+INFO  22:30:27,456 - Promenljiva x na liniji 2
+INFO  22:30:27,456 - Pristup nizu validan na liniji 8
+INFO  22:30:27,456 - Pristup nizu validan na liniji 10
+INFO  22:30:27,456 - Pristup nizu validan na liniji 12
+INFO  22:30:27,456 - Pristup nizu validan na liniji 14
+INFO  22:30:27,456 - Pristup nizu validan na liniji 15
+INFO  22:30:27,456 - Parsiranje uspesno zavrseno!

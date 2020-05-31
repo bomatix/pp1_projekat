@@ -1,9 +1,11 @@
 package rs.ac.bg.etf.pp1;
 
+import java.io.Externalizable;
 import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
+import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.*;
 import rs.etf.pp1.symboltable.concepts.*;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -279,10 +281,12 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	// Method Call
 	
+	
+	
 	public void visit(DesignatorStatementExpression designatorStatementExpression) {
 //		Obj method = Tab.find(designatorStatementExpression.getDesignatorExpr())
 		if(designatorStatementExpression.getDesignatorStatement() instanceof DesignatorActPars) {
-			String name = designatorStatementExpression.getDesignatorExpr().getVarName();
+			String name = designatorStatementExpression.getDesignatorExpr().getDesignatorName().getVarName();
 			Obj method = Tab.find(name);
 			if(method != Tab.noObj) {
 				if(method.getKind() == Obj.Meth) {
@@ -343,11 +347,18 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		factorDesignator.struct = factorDesignator.getDesignatorExpr().obj.getType();
 	}
 	
+	public void visit(DesignatorName designatorName) {
+		Obj name = Tab.find(designatorName.getVarName());
+		if(name != Tab.noObj) {
+			designatorName.obj = name;
+		}
+	}
+	
 	public void visit(DesignatorExpr designatorExpression) {
-		Obj name = Tab.find(designatorExpression.getVarName());
+		Obj name = Tab.find(designatorExpression.getDesignatorName().getVarName());
 		if(name == Tab.noObj) {
 			designatorExpression.obj = Tab.noObj;
-			report_error("Greska: Promenljiva " + designatorExpression.getVarName() + " nije deklarisana", designatorExpression);
+			report_error("Greska: Promenljiva " + designatorExpression.getDesignatorName().getVarName() + " nije deklarisana", designatorExpression);
 		}
 		else {
 			designatorExpression.obj = name;
@@ -403,6 +414,9 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		}
 	}
 	
+	public void visit(FactorExpr_ expr) {
+		expr.struct = expr.getExpr().struct;
+	}
 	
 	public void visit(TermList_ termList) {
 		Struct f = termList.getFactor().struct;
@@ -433,10 +447,18 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		expr.struct = expr.getExpression().struct;
 	}
 	
+	public void visit(NegativeTermExpression expression) {
+		expression.struct = expression.getTerm().struct;
+	}
+	
 	public void visit(AddExpression addExpression) {
 		Struct te = addExpression.getExpression().struct;
 		Struct t = addExpression.getTerm().struct;
-		if(te.equals(t) && te == Tab.intType) {
+		
+		boolean expr1 = t.getElemType() == Tab.intType || t == Tab.intType;
+		boolean expr2 = te.getElemType() == Tab.intType || te == Tab.intType;
+		
+		if(expr1 && expr2) {
 			addExpression.struct = te;
 			report_info("Validno sabiranje", addExpression);
 		}

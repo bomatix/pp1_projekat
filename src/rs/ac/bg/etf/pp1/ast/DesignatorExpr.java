@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/4/2020 15:47:30
+// 30/4/2020 22:50:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,21 +11,22 @@ public class DesignatorExpr implements SyntaxNode {
     private int line;
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
-    private String varName;
+    private DesignatorName DesignatorName;
     private DesignatorList DesignatorList;
 
-    public DesignatorExpr (String varName, DesignatorList DesignatorList) {
-        this.varName=varName;
+    public DesignatorExpr (DesignatorName DesignatorName, DesignatorList DesignatorList) {
+        this.DesignatorName=DesignatorName;
+        if(DesignatorName!=null) DesignatorName.setParent(this);
         this.DesignatorList=DesignatorList;
         if(DesignatorList!=null) DesignatorList.setParent(this);
     }
 
-    public String getVarName() {
-        return varName;
+    public DesignatorName getDesignatorName() {
+        return DesignatorName;
     }
 
-    public void setVarName(String varName) {
-        this.varName=varName;
+    public void setDesignatorName(DesignatorName DesignatorName) {
+        this.DesignatorName=DesignatorName;
     }
 
     public DesignatorList getDesignatorList() {
@@ -57,15 +58,18 @@ public class DesignatorExpr implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(DesignatorName!=null) DesignatorName.accept(visitor);
         if(DesignatorList!=null) DesignatorList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(DesignatorName!=null) DesignatorName.traverseTopDown(visitor);
         if(DesignatorList!=null) DesignatorList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(DesignatorName!=null) DesignatorName.traverseBottomUp(visitor);
         if(DesignatorList!=null) DesignatorList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -75,7 +79,10 @@ public class DesignatorExpr implements SyntaxNode {
         buffer.append(tab);
         buffer.append("DesignatorExpr(\n");
 
-        buffer.append(" "+tab+varName);
+        if(DesignatorName!=null)
+            buffer.append(DesignatorName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(DesignatorList!=null)

@@ -1,0 +1,71 @@
+INFO  22:06:28,387 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:06:28,419 - #2 program
+INFO  22:06:28,419 - #9 MJProgram
+INFO  22:06:28,419 - #9 int
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #6 ,
+INFO  22:06:28,419 - #9 x
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #3 {
+INFO  22:06:28,419 - #16 void
+INFO  22:06:28,419 - #9 main
+INFO  22:06:28,419 - #14 (
+INFO  22:06:28,419 - #15 )
+INFO  22:06:28,419 - #3 {
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #37 =
+INFO  22:06:28,419 - #19 new
+INFO  22:06:28,419 - #9 int
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #8 2
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #8 0
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #37 =
+INFO  22:06:28,419 - #8 5
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #8 1
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #37 =
+INFO  22:06:28,419 - #8 2
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #8 0
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #31 ++
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #27 print
+INFO  22:06:28,419 - #14 (
+INFO  22:06:28,419 - #9 z
+INFO  22:06:28,419 - #17 [
+INFO  22:06:28,419 - #8 0
+INFO  22:06:28,419 - #18 ]
+INFO  22:06:28,419 - #15 )
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #9 x
+INFO  22:06:28,419 - #37 =
+INFO  22:06:28,419 - #8 2
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #27 print
+INFO  22:06:28,419 - #14 (
+INFO  22:06:28,419 - #9 x
+INFO  22:06:28,419 - #15 )
+INFO  22:06:28,419 - #5 ;
+INFO  22:06:28,419 - #4 }
+INFO  22:06:28,419 - #4 }
+INFO  22:06:28,434 - ===================================
+INFO  22:06:28,434 - Promenljiva z na liniji 2
+INFO  22:06:28,434 - Promenljiva x na liniji 2
+INFO  22:06:28,434 - Pristup nizu validan na liniji 8
+INFO  22:06:28,434 - Pristup nizu validan na liniji 10
+INFO  22:06:28,434 - Pristup nizu validan na liniji 12
+INFO  22:06:28,434 - Pristup nizu validan na liniji 14
+INFO  22:06:28,434 - Parsiranje uspesno zavrseno!
