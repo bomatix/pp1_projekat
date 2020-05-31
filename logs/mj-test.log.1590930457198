@@ -1,0 +1,73 @@
+INFO  15:06:32,256 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:06:32,293 - #2 program
+INFO  15:06:32,293 - #9 MJProgram
+INFO  15:06:32,293 - #9 int
+INFO  15:06:32,294 - #9 x
+INFO  15:06:32,295 - #6 ,
+INFO  15:06:32,296 - #9 y
+INFO  15:06:32,296 - #6 ,
+INFO  15:06:32,296 - #9 z
+INFO  15:06:32,296 - #5 ;
+INFO  15:06:32,296 - #3 {
+INFO  15:06:32,296 - #16 void
+INFO  15:06:32,296 - #9 main
+INFO  15:06:32,296 - #14 (
+INFO  15:06:32,297 - #15 )
+INFO  15:06:32,297 - #3 {
+INFO  15:06:32,297 - #9 y
+INFO  15:06:32,298 - #37 =
+INFO  15:06:32,298 - #8 1
+INFO  15:06:32,299 - #5 ;
+INFO  15:06:32,300 - #9 x
+INFO  15:06:32,300 - #37 =
+INFO  15:06:32,300 - #8 2
+INFO  15:06:32,300 - #5 ;
+INFO  15:06:32,300 - #9 z
+INFO  15:06:32,300 - #37 =
+INFO  15:06:32,300 - #8 1
+INFO  15:06:32,300 - #5 ;
+INFO  15:06:32,301 - #9 y
+INFO  15:06:32,301 - #37 =
+INFO  15:06:32,301 - #9 x
+INFO  15:06:32,301 - #48 *=
+INFO  15:06:32,301 - #9 x
+INFO  15:06:32,302 - #46 +=
+INFO  15:06:32,302 - #8 2
+INFO  15:06:32,302 - #5 ;
+INFO  15:06:32,303 - #9 y
+INFO  15:06:32,303 - #46 +=
+INFO  15:06:32,303 - #9 z
+INFO  15:06:32,303 - #46 +=
+INFO  15:06:32,303 - #8 4
+INFO  15:06:32,303 - #34 *
+INFO  15:06:32,303 - #8 2
+INFO  15:06:32,304 - #29 +
+INFO  15:06:32,304 - #8 1
+INFO  15:06:32,304 - #5 ;
+INFO  15:06:32,304 - #27 print
+INFO  15:06:32,304 - #14 (
+INFO  15:06:32,304 - #9 x
+INFO  15:06:32,304 - #15 )
+INFO  15:06:32,305 - #5 ;
+INFO  15:06:32,305 - #27 print
+INFO  15:06:32,305 - #14 (
+INFO  15:06:32,305 - #9 y
+INFO  15:06:32,305 - #15 )
+INFO  15:06:32,305 - #5 ;
+INFO  15:06:32,305 - #27 print
+INFO  15:06:32,305 - #14 (
+INFO  15:06:32,305 - #9 z
+INFO  15:06:32,305 - #15 )
+INFO  15:06:32,308 - #5 ;
+INFO  15:06:32,308 - #4 }
+INFO  15:06:32,308 - #4 }
+INFO  15:06:32,317 - ===================================
+INFO  15:06:32,320 - Promenljiva x na liniji 2
+INFO  15:06:32,320 - Promenljiva y na liniji 2
+INFO  15:06:32,320 - Promenljiva z na liniji 2
+INFO  15:06:32,320 - Validan termList na liniji 11
+INFO  15:06:32,320 - Validno sabiranje na liniji 11
+INFO  15:06:32,320 - Validan termList na liniji 13
+INFO  15:06:32,320 - Validno sabiranje na liniji 13
+INFO  15:06:32,320 - Validno sabiranje na liniji 13
+INFO  15:06:32,324 - Parsiranje uspesno zavrseno!

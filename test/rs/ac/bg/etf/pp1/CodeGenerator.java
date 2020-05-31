@@ -1,6 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Stack;
 
 import org.apache.log4j.Logger;
@@ -16,7 +17,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	Logger log = Logger.getLogger(getClass());
 	
 	private Stack<Obj> vars = new Stack<>();
-	private Stack<InstrObj> io = new Stack<>();
+	private LinkedList<InstrObj> io = new LinkedList();
 
 	private int mainPc;
 	
@@ -75,29 +76,35 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(FactorNum numConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.intType);
+		Obj cnst = new Obj(Obj.Con, "$", Tab.intType);
 		cnst.setLevel(0);
 		cnst.setAdr(numConst.getN1());
 		
-		Code.load(cnst);
+//		Code.load(cnst);
+		
+		InstrObj obj = new InstrObj(InstrObj.load, cnst); 
+		
+		io.addFirst(obj);
 	}
 	
 	public void visit(FactorChar charConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.charType);
+		Obj cnst = new Obj(Obj.Con, "$", Tab.charType);
 		cnst.setLevel(0);
 		cnst.setAdr(charConst.getC1());
 		
-		Code.load(cnst); 
+//		Code.load(cnst); 
+		io.addFirst(new InstrObj(InstrObj.load, cnst));
 	}
 	
 	public void visit(FactorBool boolConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.boolType);
+		Obj cnst = new Obj(Obj.Con, "$", Tab.boolType);
 		cnst.setLevel(0);
 		int boolValue  = 0;
 		if(boolConst.getB1().equals("true")) boolValue = 1;
 		cnst.setAdr(boolValue);
 				
-		Code.load(cnst);
+//		Code.load(cnst);
+		io.addFirst(new InstrObj(InstrObj.load, cnst));
 	}
 	
 	public void visit(FactorNew factorNew) {
@@ -114,35 +121,48 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(AssignExpr_ expr) {
 		DesignatorList dl = expr.getDesignatorExpr().getDesignatorList();
-		if(expr.getAssignOp() instanceof AddopRightAssign) {
-			AddopRight ar = ((AddopRightAssign)expr.getAssignOp()).getAddopRight();
-//			if(dl instanceof DesignatorsList) {
-//				Code.load(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType()));
+//		if(expr.getAssignOp() instanceof AddopRightAssign) {
+//			AddopRight ar = ((AddopRightAssign)expr.getAssignOp()).getAddopRight();
+//			if(ar instanceof PlusEqual) {				
+//				Code.put(Code.add);
 //			}
-			if(ar instanceof PlusEqual) {				
-				Code.put(Code.add);
-			}
-			else if(ar instanceof MinusEqual) {				
-				Code.put(Code.sub);
-			}
-		}
-		else if(expr.getAssignOp() instanceof MulopRightAssign) {
-			MulopRight mr = ((MulopRightAssign)expr.getAssignOp()).getMulopRight();
-			if(mr instanceof MulEqual) {
-				Code.put(Code.mul);
-			}
-			else if(mr instanceof DivEqual) {
-				Code.put(Code.div);
+//			else if(ar instanceof MinusEqual) {				
+//				Code.put(Code.sub);
+//			}
+//		}
+//		else if(expr.getAssignOp() instanceof MulopRightAssign) {
+//			MulopRight mr = ((MulopRightAssign)expr.getAssignOp()).getMulopRight();
+//			if(mr instanceof MulEqual) {
+//				Code.put(Code.mul);
+//			}
+//			else if(mr instanceof DivEqual) {
+//				Code.put(Code.div);
+//			}
+//			else {
+//				Code.put(Code.rem);
+//			}
+//		}
+		while(!io.isEmpty()) {
+			InstrObj instrObj = io.pop();
+			if(instrObj.obj != null) {
+				if(instrObj.instr == InstrObj.load) {
+					Code.load(instrObj.obj);
+				}
+				else {						
+					Code.store(instrObj.obj);
+				}
 			}
 			else {
-				Code.put(Code.rem);
+				Code.put(instrObj.instr);
 			}
 		}
 		if(dl instanceof DesignatorsList) {
 			Code.store(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType()));
+//			io.push(new InstrObj(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType())));
 		}
 		else {			
 			Code.store(expr.getDesignatorExpr().obj);
+//			io.push(new InstrObj(expr.getDesignatorExpr().obj));
 		}
 	}
 	
@@ -194,14 +214,15 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.load(designatorName.obj);
 		}
 		else if(designatorName.getParent().getParent().getClass() != AssignExpr_.class) {
-			Code.load(designatorName.obj);
+//			Code.load(designatorName.obj);
 			vars.add(designatorName.obj);
-//			io.push(new InstrObj(designatorName.obj));
+//			io.push(new InstrObj(InstrObj.load, designatorName.obj));
 		}
 		else {
 			AssignExpr_ ae = (AssignExpr_)designatorName.getParent().getParent();
 			if(ae.getAssignOp() instanceof AddopRightAssign || ae.getAssignOp() instanceof MulopRightAssign) {
-				Code.load(designatorName.obj);
+//				Code.load(designatorName.obj);
+				io.push(new InstrObj(InstrObj.load, designatorName.obj));
 			}
 		}
 	}
@@ -210,64 +231,53 @@ public class CodeGenerator extends VisitorAdaptor {
 		MulOp mulOp = termList.getMulOp();
 		if(mulOp instanceof MulopLeft_) {
 			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Multiply) {
-				Code.put(Code.mul);
+				io.addFirst(new InstrObj(Code.mul));
 			}
 			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Divide) {
-				Code.put(Code.div);
+				io.addFirst(new InstrObj(Code.div));
 			}
 			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Mod) {
-				Code.put(Code.rem);
+				io.addFirst(new InstrObj(Code.rem));
 			}
 		}
 		else {
 			if(((MulopRight_) mulOp).getMulopRight() instanceof DivEqual) {
-//				Code.put(Code.div);
-//				Code.put(Code.dup);
-//				Code.store(vars.pop());
 				Obj var = vars.remove(0);
-				io.push(new InstrObj(-1, var));
-				io.push(new InstrObj(var));
-//				io.push(new InstrObj(Code.dup));
-				io.push(new InstrObj(Code.div));
+				io.addFirst(new InstrObj(InstrObj.load, var));
+				io.addFirst(new InstrObj(Code.div));
+				io.addFirst(new InstrObj(Code.dup));
+				io.addFirst(new InstrObj(var));
 			}
 			else if(((MulopRight_) mulOp).getMulopRight() instanceof MulEqual) {
-//				Code.put(Code.mul);
-//				Code.put(Code.dup);
-//				Code.store(vars.pop());
 				Obj var = vars.remove(0);
-				io.push(new InstrObj(-1, var));
-				io.push(new InstrObj(var));
-//				io.push(new InstrObj(Code.dup));
-				io.push(new InstrObj(Code.mul));
+				io.addFirst(new InstrObj(InstrObj.load, var));
+				io.addFirst(new InstrObj(Code.mul));
+				io.addFirst(new InstrObj(Code.dup));
+				io.addFirst(new InstrObj(var));
 			}
 			else if(((MulopRight_) mulOp).getMulopRight() instanceof ModEqual) {
-//				Code.put(Code.rem);
-//				Code.put(Code.dup);
-//				Code.store(vars.pop());
 				Obj var = vars.remove(0);
-				io.push(new InstrObj(-1, var));
-				io.push(new InstrObj(var));
-//				io.push(new InstrObj(Code.dup));
-				io.push(new InstrObj(Code.rem));
+				io.addFirst(new InstrObj(InstrObj.load, var));
+				io.addFirst(new InstrObj(Code.rem));
+				io.addFirst(new InstrObj(Code.dup));
+				io.addFirst(new InstrObj(var));
 			}
 		}
 	}
 	
 	public void visit(Expr expr) {
-		if(expr.getExpression() instanceof AddExpression) {
-			while(!io.isEmpty()) {
-				InstrObj instrObj = io.pop();
-				if(instrObj.obj != null) {
-					if(instrObj.instr == -1) {
-						Code.load(instrObj.obj);
-					}
-					else {						
-						Code.store(instrObj.obj);
-					}
+		while(io.size() > 0) {
+			InstrObj instrObj = io.removeLast();
+			if(instrObj.obj != null) {
+				if(instrObj.instr == InstrObj.load) {
+					Code.load(instrObj.obj);
 				}
-				else {
-					Code.put(instrObj.instr);
+				else {						
+					Code.store(instrObj.obj);
 				}
+			}
+			else {
+				Code.put(instrObj.instr);
 			}
 		}
 	}
@@ -276,26 +286,26 @@ public class CodeGenerator extends VisitorAdaptor {
 		AddOp addop = addExpression.getAddOp();
 		if(addop instanceof AddopLeft_) {
 			if(((AddopLeft_) addop).getAddopLeft() instanceof Add) {
-				Code.put(Code.add);
+				io.addFirst(new InstrObj(Code.add));
 			}
 			if(((AddopLeft_) addop).getAddopLeft() instanceof Subtract) {
-				Code.put(Code.sub);
+				io.addFirst(new InstrObj(Code.sub));
 			}
 		}
 		else {
 			if(((AddopRight_) addop).getAddopRight() instanceof PlusEqual) {
 				Obj var = vars.remove(0);
-				io.push(new InstrObj(-1, var));
-				io.push(new InstrObj(var));
-//				io.push(new InstrObj(Code.dup));
-				io.push(new InstrObj(Code.add));
+				io.addFirst(new InstrObj(InstrObj.load, var));
+				io.addFirst(new InstrObj(Code.add));
+				io.addFirst(new InstrObj(Code.dup));
+				io.addFirst(new InstrObj(var));
 			}
 			else if(((AddopRight_) addop).getAddopRight() instanceof MinusEqual) {
 				Obj var = vars.remove(0);
-				io.push(new InstrObj(-1, var));
-				io.push(new InstrObj(var));
-//				io.push(new InstrObj(Code.dup));
-				io.push(new InstrObj(Code.add));
+				io.addFirst(new InstrObj(InstrObj.load, var));
+				io.addFirst(new InstrObj(Code.sub));
+				io.addFirst(new InstrObj(Code.dup));
+				io.addFirst(new InstrObj(var));
 			}
 		}
 	}

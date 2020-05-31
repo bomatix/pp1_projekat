@@ -1,0 +1,73 @@
+INFO  15:12:37,831 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:12:37,867 - #2 program
+INFO  15:12:37,867 - #9 MJProgram
+INFO  15:12:37,867 - #9 int
+INFO  15:12:37,868 - #9 x
+INFO  15:12:37,869 - #6 ,
+INFO  15:12:37,870 - #9 y
+INFO  15:12:37,870 - #6 ,
+INFO  15:12:37,870 - #9 z
+INFO  15:12:37,870 - #5 ;
+INFO  15:12:37,870 - #3 {
+INFO  15:12:37,870 - #16 void
+INFO  15:12:37,871 - #9 main
+INFO  15:12:37,871 - #14 (
+INFO  15:12:37,871 - #15 )
+INFO  15:12:37,871 - #3 {
+INFO  15:12:37,872 - #9 y
+INFO  15:12:37,872 - #37 =
+INFO  15:12:37,873 - #8 1
+INFO  15:12:37,873 - #5 ;
+INFO  15:12:37,874 - #9 x
+INFO  15:12:37,874 - #37 =
+INFO  15:12:37,874 - #8 2
+INFO  15:12:37,874 - #5 ;
+INFO  15:12:37,875 - #9 z
+INFO  15:12:37,875 - #37 =
+INFO  15:12:37,875 - #8 1
+INFO  15:12:37,875 - #5 ;
+INFO  15:12:37,875 - #9 y
+INFO  15:12:37,875 - #37 =
+INFO  15:12:37,875 - #9 x
+INFO  15:12:37,875 - #48 *=
+INFO  15:12:37,876 - #9 x
+INFO  15:12:37,876 - #46 +=
+INFO  15:12:37,876 - #8 2
+INFO  15:12:37,877 - #5 ;
+INFO  15:12:37,877 - #9 y
+INFO  15:12:37,877 - #46 +=
+INFO  15:12:37,877 - #9 z
+INFO  15:12:37,877 - #46 +=
+INFO  15:12:37,877 - #8 4
+INFO  15:12:37,877 - #34 *
+INFO  15:12:37,877 - #8 2
+INFO  15:12:37,878 - #29 +
+INFO  15:12:37,878 - #8 1
+INFO  15:12:37,879 - #5 ;
+INFO  15:12:37,879 - #27 print
+INFO  15:12:37,879 - #14 (
+INFO  15:12:37,879 - #9 x
+INFO  15:12:37,879 - #15 )
+INFO  15:12:37,879 - #5 ;
+INFO  15:12:37,879 - #27 print
+INFO  15:12:37,879 - #14 (
+INFO  15:12:37,879 - #9 y
+INFO  15:12:37,879 - #15 )
+INFO  15:12:37,879 - #5 ;
+INFO  15:12:37,880 - #27 print
+INFO  15:12:37,880 - #14 (
+INFO  15:12:37,880 - #9 z
+INFO  15:12:37,880 - #15 )
+INFO  15:12:37,882 - #5 ;
+INFO  15:12:37,882 - #4 }
+INFO  15:12:37,882 - #4 }
+INFO  15:12:37,886 - ===================================
+INFO  15:12:37,888 - Promenljiva x na liniji 2
+INFO  15:12:37,888 - Promenljiva y na liniji 2
+INFO  15:12:37,888 - Promenljiva z na liniji 2
+INFO  15:12:37,889 - Validan termList na liniji 11
+INFO  15:12:37,889 - Validno sabiranje na liniji 11
+INFO  15:12:37,889 - Validan termList na liniji 13
+INFO  15:12:37,889 - Validno sabiranje na liniji 13
+INFO  15:12:37,889 - Validno sabiranje na liniji 13
+INFO  15:12:37,893 - Parsiranje uspesno zavrseno!

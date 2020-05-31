@@ -6,6 +6,8 @@ public class InstrObj {
 	public int instr;
 	public Obj obj;
 	
+	public static int load = -1;
+	
 	public InstrObj(int instr) {
 		this.instr = instr;
 	}

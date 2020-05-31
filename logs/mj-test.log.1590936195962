@@ -1,0 +1,47 @@
+INFO  16:42:38,822 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  16:42:38,865 - #2 program
+INFO  16:42:38,865 - #9 MJProgram
+INFO  16:42:38,865 - #9 int
+INFO  16:42:38,866 - #9 x
+INFO  16:42:38,867 - #6 ,
+INFO  16:42:38,867 - #9 y
+INFO  16:42:38,868 - #6 ,
+INFO  16:42:38,868 - #9 z
+INFO  16:42:38,868 - #5 ;
+INFO  16:42:38,868 - #3 {
+INFO  16:42:38,868 - #16 void
+INFO  16:42:38,868 - #9 main
+INFO  16:42:38,868 - #14 (
+INFO  16:42:38,869 - #15 )
+INFO  16:42:38,869 - #3 {
+INFO  16:42:38,869 - #9 y
+INFO  16:42:38,870 - #37 =
+INFO  16:42:38,871 - #8 2
+INFO  16:42:38,871 - #34 *
+INFO  16:42:38,871 - #8 3
+INFO  16:42:38,872 - #29 +
+INFO  16:42:38,873 - #8 1
+INFO  16:42:38,873 - #5 ;
+INFO  16:42:38,874 - #27 print
+INFO  16:42:38,875 - #14 (
+INFO  16:42:38,875 - #9 x
+INFO  16:42:38,875 - #15 )
+INFO  16:42:38,875 - #5 ;
+INFO  16:42:38,875 - #27 print
+INFO  16:42:38,876 - #14 (
+INFO  16:42:38,876 - #9 y
+INFO  16:42:38,876 - #15 )
+INFO  16:42:38,876 - #5 ;
+INFO  16:42:38,876 - #27 print
+INFO  16:42:38,876 - #14 (
+INFO  16:42:38,876 - #9 z
+INFO  16:42:38,876 - #15 )
+INFO  16:42:38,876 - #5 ;
+INFO  16:42:38,876 - #4 }
+INFO  16:42:38,876 - #4 }
+INFO  16:42:38,887 - ===================================
+INFO  16:42:38,894 - Promenljiva x na liniji 2
+INFO  16:42:38,895 - Promenljiva y na liniji 2
+INFO  16:42:38,895 - Promenljiva z na liniji 2
+INFO  16:42:38,895 - Validan termList na liniji 7
+INFO  16:42:38,895 - Validno sabiranje na liniji 7

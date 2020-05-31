@@ -1,0 +1,72 @@
+INFO  15:06:23,694 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:06:23,730 - #2 program
+INFO  15:06:23,730 - #9 MJProgram
+INFO  15:06:23,730 - #9 int
+INFO  15:06:23,731 - #9 x
+INFO  15:06:23,732 - #6 ,
+INFO  15:06:23,732 - #9 y
+INFO  15:06:23,732 - #6 ,
+INFO  15:06:23,732 - #9 z
+INFO  15:06:23,732 - #5 ;
+INFO  15:06:23,733 - #3 {
+INFO  15:06:23,733 - #16 void
+INFO  15:06:23,733 - #9 main
+INFO  15:06:23,733 - #14 (
+INFO  15:06:23,733 - #15 )
+INFO  15:06:23,734 - #3 {
+INFO  15:06:23,734 - #9 y
+INFO  15:06:23,735 - #37 =
+INFO  15:06:23,735 - #8 1
+INFO  15:06:23,735 - #5 ;
+INFO  15:06:23,736 - #9 x
+INFO  15:06:23,736 - #37 =
+INFO  15:06:23,736 - #8 2
+INFO  15:06:23,736 - #5 ;
+INFO  15:06:23,736 - #9 z
+INFO  15:06:23,736 - #37 =
+INFO  15:06:23,736 - #8 1
+INFO  15:06:23,736 - #5 ;
+INFO  15:06:23,737 - #9 y
+INFO  15:06:23,737 - #37 =
+INFO  15:06:23,737 - #9 x
+INFO  15:06:23,737 - #48 *=
+INFO  15:06:23,737 - #9 x
+INFO  15:06:23,738 - #46 +=
+INFO  15:06:23,738 - #8 2
+INFO  15:06:23,738 - #5 ;
+INFO  15:06:23,739 - #9 y
+INFO  15:06:23,739 - #46 +=
+INFO  15:06:23,739 - #9 z
+INFO  15:06:23,739 - #46 +=
+INFO  15:06:23,739 - #8 4
+INFO  15:06:23,739 - #34 *
+INFO  15:06:23,739 - #8 2
+INFO  15:06:23,739 - #29 +
+INFO  15:06:23,740 - #8 1
+INFO  15:06:23,740 - #27 print
+ERROR 15:06:23,740 - 
+Sintaksna greska na liniji 15
+INFO  15:06:23,740 - #14 (
+INFO  15:06:23,740 - #9 x
+INFO  15:06:23,740 - #15 )
+INFO  15:06:23,741 - #5 ;
+INFO  15:06:23,741 - #27 print
+INFO  15:06:23,741 - #14 (
+INFO  15:06:23,741 - #9 y
+ERROR 15:06:23,741 - Izvrsen oporavak do ; na liniji 13
+INFO  15:06:23,741 - #15 )
+INFO  15:06:23,742 - #5 ;
+INFO  15:06:23,742 - #27 print
+INFO  15:06:23,742 - #14 (
+INFO  15:06:23,742 - #9 z
+INFO  15:06:23,744 - #15 )
+INFO  15:06:23,744 - #5 ;
+INFO  15:06:23,744 - #4 }
+INFO  15:06:23,744 - #4 }
+INFO  15:06:23,748 - ===================================
+INFO  15:06:23,751 - Promenljiva x na liniji 2
+INFO  15:06:23,751 - Promenljiva y na liniji 2
+INFO  15:06:23,751 - Promenljiva z na liniji 2
+INFO  15:06:23,751 - Validan termList na liniji 11
+INFO  15:06:23,751 - Validno sabiranje na liniji 11
+ERROR 15:06:23,751 - Parsiranje NIJE uspesno zavrseno!
