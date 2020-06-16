@@ -1,0 +1,92 @@
+INFO  11:34:03,734 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:34:03,771 - #2 program
+INFO  11:34:03,771 - #9 MJProgram
+INFO  11:34:03,771 - #9 int
+INFO  11:34:03,772 - #9 x
+INFO  11:34:03,772 - #6 ,
+INFO  11:34:03,773 - #9 y
+INFO  11:34:03,773 - #6 ,
+INFO  11:34:03,773 - #9 z
+INFO  11:34:03,773 - #17 [
+INFO  11:34:03,773 - #18 ]
+INFO  11:34:03,773 - #5 ;
+INFO  11:34:03,774 - #3 {
+INFO  11:34:03,774 - #16 void
+INFO  11:34:03,774 - #9 main
+INFO  11:34:03,774 - #14 (
+INFO  11:34:03,774 - #15 )
+INFO  11:34:03,775 - #3 {
+INFO  11:34:03,775 - #9 x
+INFO  11:34:03,776 - #37 =
+INFO  11:34:03,777 - #8 2
+INFO  11:34:03,777 - #5 ;
+INFO  11:34:03,778 - #9 z
+INFO  11:34:03,778 - #37 =
+INFO  11:34:03,778 - #19 new
+INFO  11:34:03,778 - #9 int
+INFO  11:34:03,778 - #17 [
+INFO  11:34:03,778 - #8 2
+INFO  11:34:03,778 - #18 ]
+INFO  11:34:03,778 - #5 ;
+INFO  11:34:03,779 - #9 z
+INFO  11:34:03,779 - #17 [
+INFO  11:34:03,779 - #8 0
+INFO  11:34:03,779 - #18 ]
+INFO  11:34:03,779 - #37 =
+INFO  11:34:03,779 - #8 5
+INFO  11:34:03,779 - #5 ;
+INFO  11:34:03,779 - #9 z
+INFO  11:34:03,779 - #17 [
+INFO  11:34:03,779 - #8 0
+INFO  11:34:03,779 - #18 ]
+INFO  11:34:03,779 - #46 +=
+INFO  11:34:03,779 - #9 x
+INFO  11:34:03,780 - #29 +
+INFO  11:34:03,781 - #8 1
+INFO  11:34:03,781 - #5 ;
+INFO  11:34:03,782 - #27 print
+INFO  11:34:03,782 - #14 (
+INFO  11:34:03,782 - #9 z
+INFO  11:34:03,782 - #17 [
+INFO  11:34:03,782 - #8 0
+INFO  11:34:03,782 - #18 ]
+INFO  11:34:03,782 - #15 )
+INFO  11:34:03,782 - #5 ;
+INFO  11:34:03,782 - #4 }
+INFO  11:34:03,782 - #4 }
+INFO  11:34:03,793 - ===================================
+INFO  11:34:03,795 - Promenljiva x na liniji 2
+INFO  11:34:03,795 - Promenljiva y na liniji 2
+INFO  11:34:03,798 - Promenljiva z na liniji 2
+INFO  11:34:03,799 - Pristup nizu validan na liniji 10
+INFO  11:34:03,799 - Pristup nizu validan na liniji 12
+INFO  11:34:03,799 - Validno sabiranje na liniji 12
+INFO  11:34:03,799 - Pristup nizu validan na liniji 14
+INFO  11:34:03,810 - DesignatorName x
+INFO  11:34:03,810 - numConst 2
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - AssignExpr
+INFO  11:34:03,811 - DesignatorName z
+INFO  11:34:03,811 - numConst 2
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - AssignExpr
+INFO  11:34:03,811 - DesignatorName z
+INFO  11:34:03,811 - numConst 0
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - numConst 5
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - AssignExpr
+INFO  11:34:03,811 - DesignatorName z
+INFO  11:34:03,811 - numConst 0
+INFO  11:34:03,811 - Expr
+INFO  11:34:03,811 - DesignatorName x
+INFO  11:34:03,811 - numConst 1
+INFO  11:34:03,811 - AddExpr
+INFO  11:34:03,816 - Expr
+INFO  11:34:03,816 - AssignExpr
+INFO  11:34:03,816 - DesignatorName z
+INFO  11:34:03,816 - numConst 0
+INFO  11:34:03,816 - Expr
+INFO  11:34:03,816 - Expr
+INFO  11:34:03,816 - Parsiranje uspesno zavrseno!

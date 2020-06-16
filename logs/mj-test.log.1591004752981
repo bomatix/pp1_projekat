@@ -1,0 +1,142 @@
+INFO  11:45:04,037 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:45:04,555 - #2 program
+INFO  11:45:04,555 - #9 MJProgram
+INFO  11:45:04,555 - #9 int
+INFO  11:45:04,564 - #9 x
+INFO  11:45:04,573 - #6 ,
+INFO  11:45:04,577 - #9 y
+INFO  11:45:04,577 - #6 ,
+INFO  11:45:04,577 - #9 z
+INFO  11:45:04,577 - #17 [
+INFO  11:45:04,577 - #18 ]
+INFO  11:45:04,577 - #5 ;
+INFO  11:45:04,578 - #3 {
+INFO  11:45:04,578 - #16 void
+INFO  11:45:04,579 - #9 main
+INFO  11:45:04,579 - #14 (
+INFO  11:45:04,579 - #15 )
+INFO  11:45:04,585 - #3 {
+INFO  11:45:04,589 - #9 x
+INFO  11:45:04,593 - #37 =
+INFO  11:45:04,603 - #8 2
+INFO  11:45:04,607 - #5 ;
+INFO  11:45:04,618 - #9 y
+INFO  11:45:04,618 - #37 =
+INFO  11:45:04,618 - #8 1
+INFO  11:45:04,618 - #5 ;
+INFO  11:45:04,618 - #9 z
+INFO  11:45:04,618 - #37 =
+INFO  11:45:04,618 - #19 new
+INFO  11:45:04,618 - #9 int
+INFO  11:45:04,618 - #17 [
+INFO  11:45:04,618 - #8 2
+INFO  11:45:04,619 - #18 ]
+INFO  11:45:04,619 - #5 ;
+INFO  11:45:04,619 - #9 z
+INFO  11:45:04,619 - #17 [
+INFO  11:45:04,619 - #8 0
+INFO  11:45:04,619 - #18 ]
+INFO  11:45:04,619 - #37 =
+INFO  11:45:04,619 - #8 5
+INFO  11:45:04,619 - #5 ;
+INFO  11:45:04,619 - #9 x
+INFO  11:45:04,619 - #37 =
+INFO  11:45:04,619 - #8 2
+INFO  11:45:04,619 - #34 *
+INFO  11:45:04,620 - #14 (
+INFO  11:45:04,624 - #8 3
+INFO  11:45:04,625 - #29 +
+INFO  11:45:04,625 - #8 2
+INFO  11:45:04,633 - #15 )
+INFO  11:45:04,633 - #35 /
+INFO  11:45:04,633 - #14 (
+INFO  11:45:04,637 - #8 4
+INFO  11:45:04,637 - #34 *
+INFO  11:45:04,637 - #14 (
+INFO  11:45:04,637 - #8 3
+INFO  11:45:04,637 - #29 +
+INFO  11:45:04,637 - #8 3
+INFO  11:45:04,638 - #15 )
+INFO  11:45:04,638 - #35 /
+INFO  11:45:04,640 - #8 6
+INFO  11:45:04,640 - #15 )
+INFO  11:45:04,640 - #5 ;
+INFO  11:45:04,640 - #27 print
+INFO  11:45:04,640 - #14 (
+INFO  11:45:04,640 - #9 x
+INFO  11:45:04,640 - #15 )
+INFO  11:45:04,649 - #5 ;
+INFO  11:45:04,649 - #27 print
+INFO  11:45:04,649 - #14 (
+INFO  11:45:04,649 - #9 y
+INFO  11:45:04,650 - #15 )
+INFO  11:45:04,650 - #5 ;
+INFO  11:45:04,650 - #27 print
+INFO  11:45:04,650 - #14 (
+INFO  11:45:04,650 - #9 z
+INFO  11:45:04,650 - #17 [
+INFO  11:45:04,650 - #8 0
+INFO  11:45:04,650 - #18 ]
+INFO  11:45:04,650 - #15 )
+INFO  11:45:04,650 - #5 ;
+INFO  11:45:04,650 - #4 }
+INFO  11:45:04,650 - #4 }
+INFO  11:45:04,668 - ===================================
+INFO  11:45:04,686 - Promenljiva x na liniji 2
+INFO  11:45:04,686 - Promenljiva y na liniji 2
+INFO  11:45:04,686 - Promenljiva z na liniji 2
+INFO  11:45:04,686 - Pristup nizu validan na liniji 10
+INFO  11:45:04,686 - Validno sabiranje na liniji 12
+INFO  11:45:04,686 - Validan termList na liniji 12
+INFO  11:45:04,686 - Validno sabiranje na liniji 12
+INFO  11:45:04,686 - Validan termList na liniji 12
+INFO  11:45:04,686 - Validan termList na liniji 12
+INFO  11:45:04,686 - Validan termList na liniji 12
+INFO  11:45:04,686 - Pristup nizu validan na liniji 16
+INFO  11:45:04,698 - DesignatorName x
+INFO  11:45:04,699 - numConst 2
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - AssignExpr
+INFO  11:45:04,703 - DesignatorName y
+INFO  11:45:04,703 - numConst 1
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - AssignExpr
+INFO  11:45:04,703 - DesignatorName z
+INFO  11:45:04,703 - numConst 2
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - AssignExpr
+INFO  11:45:04,703 - DesignatorName z
+INFO  11:45:04,703 - numConst 0
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - numConst 5
+INFO  11:45:04,703 - Expr
+INFO  11:45:04,703 - AssignExpr
+INFO  11:45:04,703 - DesignatorName x
+INFO  11:45:04,703 - numConst 2
+INFO  11:45:04,703 - numConst 3
+INFO  11:45:04,703 - numConst 2
+INFO  11:45:04,703 - AddExpr
+INFO  11:45:04,707 - Expr
+INFO  11:45:04,707 - TermExpr
+INFO  11:45:04,708 - numConst 4
+INFO  11:45:04,708 - numConst 3
+INFO  11:45:04,708 - numConst 3
+INFO  11:45:04,708 - AddExpr
+INFO  11:45:04,708 - Expr
+INFO  11:45:04,708 - TermExpr
+INFO  11:45:04,708 - numConst 6
+INFO  11:45:04,708 - TermExpr
+INFO  11:45:04,708 - Expr
+INFO  11:45:04,709 - TermExpr
+INFO  11:45:04,709 - Expr
+INFO  11:45:04,709 - AssignExpr
+INFO  11:45:04,709 - DesignatorName x
+INFO  11:45:04,709 - Expr
+INFO  11:45:04,709 - DesignatorName y
+INFO  11:45:04,709 - Expr
+INFO  11:45:04,709 - DesignatorName z
+INFO  11:45:04,709 - numConst 0
+INFO  11:45:04,709 - Expr
+INFO  11:45:04,709 - Expr
+INFO  11:45:04,709 - Parsiranje uspesno zavrseno!

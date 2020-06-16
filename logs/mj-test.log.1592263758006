@@ -1,0 +1,53 @@
+INFO  01:28:38,302 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  01:28:38,344 - #2 program
+INFO  01:28:38,344 - #9 MJProgram
+INFO  01:28:38,344 - #9 int
+INFO  01:28:38,345 - #9 x
+INFO  01:28:38,346 - #6 ,
+INFO  01:28:38,347 - #9 y
+INFO  01:28:38,347 - #6 ,
+INFO  01:28:38,347 - #9 z
+INFO  01:28:38,347 - #17 [
+INFO  01:28:38,347 - #18 ]
+INFO  01:28:38,347 - #5 ;
+INFO  01:28:38,347 - #3 {
+INFO  01:28:38,348 - #16 void
+INFO  01:28:38,348 - #9 main
+INFO  01:28:38,348 - #14 (
+INFO  01:28:38,348 - #15 )
+INFO  01:28:38,349 - #3 {
+INFO  01:28:38,349 - #9 x
+INFO  01:28:38,349 - #37 =
+INFO  01:28:38,350 - #8 2
+INFO  01:28:38,351 - #5 ;
+INFO  01:28:38,352 - #9 y
+INFO  01:28:38,352 - #37 =
+INFO  01:28:38,352 - #9 x
+INFO  01:28:38,352 - #46 +=
+INFO  01:28:38,353 - #9 x
+INFO  01:28:38,353 - #29 +
+INFO  01:28:38,354 - #8 1
+INFO  01:28:38,355 - #5 ;
+INFO  01:28:38,355 - #27 print
+INFO  01:28:38,355 - #14 (
+INFO  01:28:38,355 - #9 x
+INFO  01:28:38,355 - #15 )
+INFO  01:28:38,355 - #5 ;
+INFO  01:28:38,355 - #4 }
+INFO  01:28:38,355 - #4 }
+INFO  01:28:38,366 - ===================================
+INFO  01:28:38,368 - Promenljiva x na liniji 2
+INFO  01:28:38,369 - Promenljiva y na liniji 2
+INFO  01:28:38,369 - Promenljiva z na liniji 2
+INFO  01:28:38,369 - Validno sabiranje na liniji 8
+INFO  01:28:38,369 - Validno sabiranje na liniji 8
+INFO  01:28:38,372 - DesignatorName x
+INFO  01:28:38,372 - numConst 2
+INFO  01:28:38,372 - Expr
+INFO  01:28:38,372 - AssignExpr
+INFO  01:28:38,372 - DesignatorName y
+INFO  01:28:38,372 - DesignatorName x
+INFO  01:28:38,372 - DesignatorName x
+INFO  01:28:38,372 - AddExpr
+INFO  01:28:38,372 - numConst 1
+INFO  01:28:38,372 - AddExpr

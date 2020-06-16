@@ -1,0 +1,71 @@
+INFO  00:17:45,891 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:17:45,928 - #2 program
+INFO  00:17:45,929 - #9 MJProgram
+INFO  00:17:45,929 - #9 int
+INFO  00:17:45,929 - #9 x
+INFO  00:17:45,930 - #6 ,
+INFO  00:17:45,930 - #9 y
+INFO  00:17:45,931 - #6 ,
+INFO  00:17:45,931 - #9 z
+INFO  00:17:45,931 - #17 [
+INFO  00:17:45,931 - #18 ]
+INFO  00:17:45,931 - #5 ;
+INFO  00:17:45,931 - #3 {
+INFO  00:17:45,931 - #16 void
+INFO  00:17:45,931 - #9 main
+INFO  00:17:45,932 - #14 (
+INFO  00:17:45,932 - #15 )
+INFO  00:17:45,932 - #3 {
+INFO  00:17:45,932 - #9 x
+INFO  00:17:45,933 - #37 =
+INFO  00:17:45,934 - #8 2
+INFO  00:17:45,934 - #5 ;
+INFO  00:17:45,935 - #9 z
+INFO  00:17:45,936 - #37 =
+INFO  00:17:45,936 - #19 new
+INFO  00:17:45,936 - #9 int
+INFO  00:17:45,936 - #17 [
+INFO  00:17:45,936 - #8 2
+INFO  00:17:45,936 - #18 ]
+INFO  00:17:45,936 - #5 ;
+INFO  00:17:45,936 - #9 y
+INFO  00:17:45,936 - #37 =
+INFO  00:17:45,936 - #9 x
+INFO  00:17:45,936 - #46 +=
+INFO  00:17:45,937 - #9 x
+INFO  00:17:45,937 - #29 +
+INFO  00:17:45,938 - #8 1
+INFO  00:17:45,938 - #5 ;
+INFO  00:17:45,938 - #27 print
+INFO  00:17:45,938 - #14 (
+INFO  00:17:45,938 - #9 y
+INFO  00:17:45,938 - #15 )
+INFO  00:17:45,939 - #5 ;
+INFO  00:17:45,939 - #4 }
+INFO  00:17:45,939 - #4 }
+INFO  00:17:45,949 - ===================================
+INFO  00:17:45,952 - Promenljiva x na liniji 2
+INFO  00:17:45,952 - Promenljiva y na liniji 2
+INFO  00:17:45,952 - Promenljiva z na liniji 2
+INFO  00:17:45,952 - Validno sabiranje na liniji 9
+INFO  00:17:45,952 - Validno sabiranje na liniji 9
+INFO  00:17:45,955 - DesignatorName x
+INFO  00:17:45,956 - numConst 2
+INFO  00:17:45,956 - Expr
+INFO  00:17:45,956 - AssignExpr
+INFO  00:17:45,956 - DesignatorName z
+INFO  00:17:45,956 - numConst 2
+INFO  00:17:45,956 - Expr
+INFO  00:17:45,959 - Expr
+INFO  00:17:45,959 - AssignExpr
+INFO  00:17:45,959 - DesignatorName y
+INFO  00:17:45,959 - DesignatorName x
+INFO  00:17:45,959 - DesignatorName x
+INFO  00:17:45,959 - AddExpr
+INFO  00:17:45,959 - numConst 1
+INFO  00:17:45,959 - AddExpr
+INFO  00:17:45,959 - Expr
+INFO  00:17:45,960 - AssignExpr
+INFO  00:17:45,960 - DesignatorName y
+INFO  00:17:45,960 - Expr
+INFO  00:17:45,960 - Parsiranje uspesno zavrseno!

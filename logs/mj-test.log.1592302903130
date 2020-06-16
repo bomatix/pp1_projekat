@@ -1,0 +1,112 @@
+INFO  12:20:49,376 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  12:20:49,412 - #2 program
+INFO  12:20:49,412 - #9 MJProgram
+INFO  12:20:49,412 - #9 int
+INFO  12:20:49,413 - #9 x
+INFO  12:20:49,413 - #6 ,
+INFO  12:20:49,414 - #9 y
+INFO  12:20:49,414 - #6 ,
+INFO  12:20:49,414 - #9 z
+INFO  12:20:49,414 - #17 [
+INFO  12:20:49,414 - #18 ]
+INFO  12:20:49,414 - #5 ;
+INFO  12:20:49,414 - #3 {
+INFO  12:20:49,415 - #16 void
+INFO  12:20:49,415 - #9 main
+INFO  12:20:49,415 - #14 (
+INFO  12:20:49,415 - #15 )
+INFO  12:20:49,415 - #3 {
+INFO  12:20:49,416 - #9 x
+INFO  12:20:49,416 - #37 =
+INFO  12:20:49,417 - #8 2
+INFO  12:20:49,417 - #5 ;
+INFO  12:20:49,418 - #9 z
+INFO  12:20:49,419 - #37 =
+INFO  12:20:49,419 - #19 new
+INFO  12:20:49,419 - #9 int
+INFO  12:20:49,419 - #17 [
+INFO  12:20:49,419 - #8 2
+INFO  12:20:49,419 - #18 ]
+INFO  12:20:49,419 - #5 ;
+INFO  12:20:49,419 - #9 z
+INFO  12:20:49,419 - #17 [
+INFO  12:20:49,419 - #8 0
+INFO  12:20:49,419 - #18 ]
+INFO  12:20:49,420 - #37 =
+INFO  12:20:49,420 - #8 5
+INFO  12:20:49,420 - #5 ;
+INFO  12:20:49,420 - #9 z
+INFO  12:20:49,420 - #17 [
+INFO  12:20:49,420 - #8 0
+INFO  12:20:49,420 - #18 ]
+INFO  12:20:49,420 - #46 +=
+INFO  12:20:49,420 - #9 x
+INFO  12:20:49,421 - #29 +
+INFO  12:20:49,421 - #8 1
+INFO  12:20:49,422 - #5 ;
+INFO  12:20:49,422 - #9 x
+INFO  12:20:49,422 - #46 +=
+INFO  12:20:49,422 - #9 x
+INFO  12:20:49,422 - #46 +=
+INFO  12:20:49,422 - #9 z
+INFO  12:20:49,422 - #17 [
+INFO  12:20:49,422 - #8 0
+INFO  12:20:49,422 - #18 ]
+INFO  12:20:49,422 - #29 +
+INFO  12:20:49,422 - #8 1
+INFO  12:20:49,422 - #5 ;
+INFO  12:20:49,422 - #27 print
+INFO  12:20:49,422 - #14 (
+INFO  12:20:49,422 - #9 z
+INFO  12:20:49,425 - #17 [
+INFO  12:20:49,425 - #8 0
+INFO  12:20:49,426 - #18 ]
+INFO  12:20:49,426 - #15 )
+INFO  12:20:49,426 - #5 ;
+INFO  12:20:49,426 - #27 print
+INFO  12:20:49,426 - #14 (
+INFO  12:20:49,426 - #9 x
+INFO  12:20:49,426 - #15 )
+INFO  12:20:49,426 - #5 ;
+INFO  12:20:49,426 - #4 }
+INFO  12:20:49,426 - #4 }
+INFO  12:20:49,436 - ===================================
+INFO  12:20:49,439 - Promenljiva x na liniji 2
+INFO  12:20:49,439 - Promenljiva y na liniji 2
+INFO  12:20:49,440 - Promenljiva z na liniji 2
+INFO  12:20:49,441 - Pristup nizu validan na liniji 10
+INFO  12:20:49,441 - Pristup nizu validan na liniji 12
+INFO  12:20:49,441 - Validno sabiranje na liniji 12
+INFO  12:20:49,441 - Pristup nizu validan na liniji 14
+INFO  12:20:49,441 - Validno sabiranje na liniji 14
+INFO  12:20:49,441 - Validno sabiranje na liniji 14
+INFO  12:20:49,442 - Pristup nizu validan na liniji 16
+INFO  12:20:49,446 - DesignatorName x
+INFO  12:20:49,446 - numConst 2
+INFO  12:20:49,446 - Expr
+INFO  12:20:49,447 - AssignExpr
+INFO  12:20:49,447 - DesignatorName z
+INFO  12:20:49,447 - numConst 2
+INFO  12:20:49,447 - Expr
+INFO  12:20:49,447 - Expr
+INFO  12:20:49,447 - AssignExpr
+INFO  12:20:49,447 - DesignatorName z
+INFO  12:20:49,447 - numConst 0
+INFO  12:20:49,447 - Expr
+INFO  12:20:49,448 - numConst 5
+INFO  12:20:49,448 - Expr
+INFO  12:20:49,448 - AssignExpr
+INFO  12:20:49,448 - DesignatorName z
+INFO  12:20:49,448 - numConst 0
+INFO  12:20:49,448 - Expr
+INFO  12:20:49,448 - DesignatorName x
+INFO  12:20:49,448 - numConst 1
+INFO  12:20:49,448 - AddExpr
+INFO  12:20:49,449 - Expr
+INFO  12:20:49,449 - AssignExpr
+INFO  12:20:49,449 - DesignatorName x
+INFO  12:20:49,449 - DesignatorName x
+INFO  12:20:49,449 - DesignatorName z
+INFO  12:20:49,449 - numConst 0
+INFO  12:20:49,449 - Expr
+INFO  12:20:49,449 - AddExpr

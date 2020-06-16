@@ -1,0 +1,61 @@
+INFO  23:56:15,876 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  23:56:15,912 - #2 program
+INFO  23:56:15,912 - #9 MJProgram
+INFO  23:56:15,912 - #9 int
+INFO  23:56:15,913 - #9 x
+INFO  23:56:15,913 - #6 ,
+INFO  23:56:15,914 - #9 y
+INFO  23:56:15,914 - #6 ,
+INFO  23:56:15,914 - #9 z
+INFO  23:56:15,914 - #17 [
+INFO  23:56:15,914 - #18 ]
+INFO  23:56:15,914 - #5 ;
+INFO  23:56:15,914 - #3 {
+INFO  23:56:15,915 - #16 void
+INFO  23:56:15,915 - #9 main
+INFO  23:56:15,915 - #14 (
+INFO  23:56:15,915 - #15 )
+INFO  23:56:15,915 - #3 {
+INFO  23:56:15,917 - #9 x
+INFO  23:56:15,917 - #37 =
+INFO  23:56:15,919 - #8 2
+INFO  23:56:15,919 - #5 ;
+INFO  23:56:15,919 - #9 z
+INFO  23:56:15,919 - #37 =
+INFO  23:56:15,919 - #19 new
+INFO  23:56:15,919 - #9 int
+INFO  23:56:15,921 - #17 [
+INFO  23:56:15,921 - #8 2
+INFO  23:56:15,921 - #18 ]
+INFO  23:56:15,921 - #5 ;
+INFO  23:56:15,921 - #9 x
+INFO  23:56:15,921 - #17 [
+INFO  23:56:15,921 - #8 0
+INFO  23:56:15,921 - #18 ]
+INFO  23:56:15,921 - #37 =
+INFO  23:56:15,921 - #8 5
+INFO  23:56:15,921 - #5 ;
+INFO  23:56:15,921 - #9 x
+INFO  23:56:15,921 - #37 =
+INFO  23:56:15,921 - #9 z
+INFO  23:56:15,921 - #17 [
+INFO  23:56:15,921 - #8 0
+INFO  23:56:15,921 - #18 ]
+INFO  23:56:15,921 - #29 +
+INFO  23:56:15,921 - #8 1
+INFO  23:56:15,923 - #5 ;
+INFO  23:56:15,923 - #27 print
+INFO  23:56:15,923 - #14 (
+INFO  23:56:15,923 - #9 x
+INFO  23:56:15,923 - #15 )
+INFO  23:56:15,923 - #5 ;
+INFO  23:56:15,923 - #4 }
+INFO  23:56:15,923 - #4 }
+INFO  23:56:15,932 - ===================================
+INFO  23:56:15,935 - Promenljiva x na liniji 2
+INFO  23:56:15,935 - Promenljiva y na liniji 2
+INFO  23:56:15,935 - Promenljiva z na liniji 2
+ERROR 23:56:15,935 - Greska: Promenljiva x nije niz! na liniji 9
+INFO  23:56:15,935 - Pristup nizu validan na liniji 11
+INFO  23:56:15,938 - Validno sabiranje na liniji 11
+ERROR 23:56:15,938 - Parsiranje NIJE uspesno zavrseno!

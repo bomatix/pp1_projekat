@@ -1,0 +1,78 @@
+INFO  22:45:04,788 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:45:04,826 - #2 program
+INFO  22:45:04,826 - #9 MJProgram
+INFO  22:45:04,826 - #9 int
+INFO  22:45:04,827 - #9 x
+INFO  22:45:04,828 - #6 ,
+INFO  22:45:04,829 - #9 y
+INFO  22:45:04,829 - #6 ,
+INFO  22:45:04,829 - #9 z
+INFO  22:45:04,829 - #17 [
+INFO  22:45:04,829 - #18 ]
+INFO  22:45:04,829 - #5 ;
+INFO  22:45:04,829 - #3 {
+INFO  22:45:04,829 - #16 void
+INFO  22:45:04,830 - #9 main
+INFO  22:45:04,830 - #14 (
+INFO  22:45:04,830 - #15 )
+INFO  22:45:04,830 - #3 {
+INFO  22:45:04,831 - #9 x
+INFO  22:45:04,831 - #37 =
+INFO  22:45:04,832 - #8 2
+INFO  22:45:04,832 - #5 ;
+INFO  22:45:04,833 - #9 y
+INFO  22:45:04,834 - #37 =
+INFO  22:45:04,834 - #8 1
+INFO  22:45:04,834 - #5 ;
+INFO  22:45:04,834 - #9 x
+INFO  22:45:04,834 - #48 *=
+INFO  22:45:04,834 - #9 x
+INFO  22:45:04,835 - #46 +=
+INFO  22:45:04,835 - #8 2
+INFO  22:45:04,836 - #34 *
+INFO  22:45:04,836 - #8 2
+INFO  22:45:04,837 - #29 +
+INFO  22:45:04,837 - #8 1
+INFO  22:45:04,837 - #5 ;
+INFO  22:45:04,837 - #27 print
+INFO  22:45:04,837 - #14 (
+INFO  22:45:04,837 - #9 x
+INFO  22:45:04,838 - #15 )
+INFO  22:45:04,838 - #5 ;
+INFO  22:45:04,838 - #27 print
+INFO  22:45:04,838 - #14 (
+INFO  22:45:04,838 - #9 y
+INFO  22:45:04,838 - #15 )
+INFO  22:45:04,838 - #5 ;
+INFO  22:45:04,838 - #27 print
+INFO  22:45:04,838 - #14 (
+INFO  22:45:04,838 - #9 z
+INFO  22:45:04,838 - #15 )
+INFO  22:45:04,838 - #5 ;
+INFO  22:45:04,838 - #4 }
+INFO  22:45:04,838 - #4 }
+INFO  22:45:04,843 - ===================================
+INFO  22:45:04,845 - Promenljiva x na liniji 2
+INFO  22:45:04,845 - Promenljiva y na liniji 2
+INFO  22:45:04,845 - Promenljiva z na liniji 2
+INFO  22:45:04,846 - Validan termList na liniji 9
+INFO  22:45:04,846 - Validno sabiranje na liniji 9
+INFO  22:45:04,848 - Validno sabiranje na liniji 9
+INFO  22:45:04,851 - DesignatorName x
+INFO  22:45:04,851 - numConst 2
+INFO  22:45:04,851 - Expr
+INFO  22:45:04,851 - AssignExpr
+INFO  22:45:04,851 - DesignatorName y
+INFO  22:45:04,851 - numConst 1
+INFO  22:45:04,851 - Expr
+INFO  22:45:04,851 - AssignExpr
+INFO  22:45:04,851 - DesignatorName x
+INFO  22:45:04,852 - DesignatorName x
+INFO  22:45:04,852 - numConst 2
+INFO  22:45:04,852 - numConst 2
+INFO  22:45:04,852 - TermExpr
+INFO  22:45:04,852 - AddExpr
+INFO  22:45:04,852 - numConst 1
+INFO  22:45:04,852 - AddExpr
+INFO  22:45:04,852 - Expr
+INFO  22:45:04,852 - AssignExpr

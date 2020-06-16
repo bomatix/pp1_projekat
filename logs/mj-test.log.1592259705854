@@ -1,0 +1,53 @@
+INFO  00:20:18,302 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:20:18,339 - #2 program
+INFO  00:20:18,339 - #9 MJProgram
+INFO  00:20:18,339 - #9 int
+INFO  00:20:18,339 - #9 x
+INFO  00:20:18,340 - #6 ,
+INFO  00:20:18,341 - #9 y
+INFO  00:20:18,341 - #6 ,
+INFO  00:20:18,341 - #9 z
+INFO  00:20:18,341 - #17 [
+INFO  00:20:18,341 - #18 ]
+INFO  00:20:18,341 - #5 ;
+INFO  00:20:18,341 - #3 {
+INFO  00:20:18,341 - #16 void
+INFO  00:20:18,342 - #9 main
+INFO  00:20:18,342 - #14 (
+INFO  00:20:18,342 - #15 )
+INFO  00:20:18,342 - #3 {
+INFO  00:20:18,343 - #9 x
+INFO  00:20:18,343 - #37 =
+INFO  00:20:18,344 - #8 2
+INFO  00:20:18,344 - #5 ;
+INFO  00:20:18,345 - #9 x
+INFO  00:20:18,345 - #46 +=
+INFO  00:20:18,346 - #9 x
+INFO  00:20:18,346 - #29 +
+INFO  00:20:18,347 - #8 1
+INFO  00:20:18,347 - #5 ;
+INFO  00:20:18,347 - #27 print
+INFO  00:20:18,348 - #14 (
+INFO  00:20:18,348 - #9 x
+INFO  00:20:18,348 - #15 )
+INFO  00:20:18,348 - #5 ;
+INFO  00:20:18,348 - #4 }
+INFO  00:20:18,348 - #4 }
+INFO  00:20:18,358 - ===================================
+INFO  00:20:18,361 - Promenljiva x na liniji 2
+INFO  00:20:18,361 - Promenljiva y na liniji 2
+INFO  00:20:18,361 - Promenljiva z na liniji 2
+INFO  00:20:18,361 - Validno sabiranje na liniji 8
+INFO  00:20:18,364 - DesignatorName x
+INFO  00:20:18,364 - numConst 2
+INFO  00:20:18,364 - Expr
+INFO  00:20:18,364 - AssignExpr
+INFO  00:20:18,364 - DesignatorName x
+INFO  00:20:18,364 - DesignatorName x
+INFO  00:20:18,364 - numConst 1
+INFO  00:20:18,364 - AddExpr
+INFO  00:20:18,364 - Expr
+INFO  00:20:18,364 - AssignExpr
+INFO  00:20:18,364 - DesignatorName x
+INFO  00:20:18,364 - Expr
+INFO  00:20:18,364 - Parsiranje uspesno zavrseno!

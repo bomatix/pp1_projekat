@@ -1,0 +1,62 @@
+INFO  20:11:46,884 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  20:11:46,924 - #2 program
+INFO  20:11:46,924 - #9 MJProgram
+INFO  20:11:46,924 - #9 int
+INFO  20:11:46,925 - #9 x
+INFO  20:11:46,925 - #6 ,
+INFO  20:11:46,926 - #9 y
+INFO  20:11:46,926 - #6 ,
+INFO  20:11:46,926 - #9 z
+INFO  20:11:46,926 - #5 ;
+INFO  20:11:46,926 - #3 {
+INFO  20:11:46,926 - #16 void
+INFO  20:11:46,927 - #9 main
+INFO  20:11:46,927 - #14 (
+INFO  20:11:46,927 - #15 )
+INFO  20:11:46,927 - #3 {
+INFO  20:11:46,928 - #9 x
+INFO  20:11:46,928 - #37 =
+INFO  20:11:46,929 - #8 2
+INFO  20:11:46,929 - #5 ;
+INFO  20:11:46,931 - #9 y
+INFO  20:11:46,931 - #37 =
+INFO  20:11:46,931 - #8 1
+INFO  20:11:46,931 - #5 ;
+INFO  20:11:46,931 - #9 z
+INFO  20:11:46,931 - #37 =
+INFO  20:11:46,931 - #8 1
+INFO  20:11:46,931 - #5 ;
+INFO  20:11:46,931 - #9 y
+INFO  20:11:46,932 - #37 =
+INFO  20:11:46,932 - #9 x
+INFO  20:11:46,932 - #48 *=
+INFO  20:11:46,932 - #9 x
+INFO  20:11:46,933 - #46 +=
+INFO  20:11:46,933 - #8 2
+INFO  20:11:46,934 - #5 ;
+INFO  20:11:46,934 - #27 print
+INFO  20:11:46,934 - #14 (
+INFO  20:11:46,934 - #9 x
+INFO  20:11:46,934 - #15 )
+INFO  20:11:46,934 - #5 ;
+INFO  20:11:46,934 - #27 print
+INFO  20:11:46,934 - #14 (
+INFO  20:11:46,934 - #9 y
+INFO  20:11:46,934 - #15 )
+INFO  20:11:46,934 - #5 ;
+INFO  20:11:46,934 - #27 print
+INFO  20:11:46,934 - #14 (
+INFO  20:11:46,934 - #9 z
+INFO  20:11:46,934 - #15 )
+INFO  20:11:46,934 - #5 ;
+INFO  20:11:46,934 - #4 }
+INFO  20:11:46,934 - #4 }
+INFO  20:11:46,943 - ===================================
+INFO  20:11:46,946 - Promenljiva x na liniji 2
+INFO  20:11:46,946 - Promenljiva y na liniji 2
+INFO  20:11:46,946 - Promenljiva z na liniji 2
+INFO  20:11:46,946 - Validan termList na liniji 10
+INFO  20:11:46,946 - Validno sabiranje na liniji 10
+INFO  20:11:46,951 - TermExpression
+INFO  20:11:46,952 - AddExpression
+INFO  20:11:46,952 - Parsiranje uspesno zavrseno!

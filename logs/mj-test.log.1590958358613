@@ -1,0 +1,63 @@
+INFO  22:51:27,243 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:51:27,278 - #2 program
+INFO  22:51:27,278 - #9 MJProgram
+INFO  22:51:27,278 - #9 int
+INFO  22:51:27,279 - #9 x
+INFO  22:51:27,280 - #6 ,
+INFO  22:51:27,280 - #9 y
+INFO  22:51:27,280 - #6 ,
+INFO  22:51:27,280 - #9 z
+INFO  22:51:27,280 - #17 [
+INFO  22:51:27,280 - #18 ]
+INFO  22:51:27,280 - #5 ;
+INFO  22:51:27,280 - #3 {
+INFO  22:51:27,281 - #16 void
+INFO  22:51:27,281 - #9 main
+INFO  22:51:27,281 - #14 (
+INFO  22:51:27,281 - #15 )
+INFO  22:51:27,281 - #3 {
+INFO  22:51:27,282 - #9 x
+INFO  22:51:27,282 - #37 =
+INFO  22:51:27,283 - #8 2
+INFO  22:51:27,283 - #5 ;
+INFO  22:51:27,284 - #9 y
+INFO  22:51:27,284 - #37 =
+INFO  22:51:27,285 - #8 1
+INFO  22:51:27,285 - #5 ;
+INFO  22:51:27,285 - #9 x
+INFO  22:51:27,285 - #48 *=
+INFO  22:51:27,286 - #8 2
+INFO  22:51:27,286 - #5 ;
+INFO  22:51:27,286 - #27 print
+INFO  22:51:27,286 - #14 (
+INFO  22:51:27,286 - #9 x
+INFO  22:51:27,286 - #15 )
+INFO  22:51:27,287 - #5 ;
+INFO  22:51:27,287 - #27 print
+INFO  22:51:27,287 - #14 (
+INFO  22:51:27,287 - #9 y
+INFO  22:51:27,287 - #15 )
+INFO  22:51:27,287 - #5 ;
+INFO  22:51:27,287 - #4 }
+INFO  22:51:27,287 - #4 }
+INFO  22:51:27,296 - ===================================
+INFO  22:51:27,298 - Promenljiva x na liniji 2
+INFO  22:51:27,299 - Promenljiva y na liniji 2
+INFO  22:51:27,299 - Promenljiva z na liniji 2
+INFO  22:51:27,301 - DesignatorName x
+INFO  22:51:27,301 - numConst 2
+INFO  22:51:27,301 - Expr
+INFO  22:51:27,301 - AssignExpr
+INFO  22:51:27,302 - DesignatorName y
+INFO  22:51:27,302 - numConst 1
+INFO  22:51:27,302 - Expr
+INFO  22:51:27,302 - AssignExpr
+INFO  22:51:27,302 - DesignatorName x
+INFO  22:51:27,302 - numConst 2
+INFO  22:51:27,302 - Expr
+INFO  22:51:27,302 - AssignExpr
+INFO  22:51:27,302 - DesignatorName x
+INFO  22:51:27,302 - Expr
+INFO  22:51:27,302 - DesignatorName y
+INFO  22:51:27,302 - Expr
+INFO  22:51:27,302 - Parsiranje uspesno zavrseno!

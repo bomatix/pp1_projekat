@@ -1,0 +1,67 @@
+INFO  11:33:31,595 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:33:32,172 - #2 program
+INFO  11:33:32,172 - #9 MJProgram
+INFO  11:33:32,172 - #9 int
+INFO  11:33:32,183 - #9 x
+INFO  11:33:32,202 - #6 ,
+INFO  11:33:32,208 - #9 y
+INFO  11:33:32,208 - #6 ,
+INFO  11:33:32,208 - #9 z
+INFO  11:33:32,208 - #17 [
+INFO  11:33:32,209 - #18 ]
+INFO  11:33:32,209 - #5 ;
+INFO  11:33:32,209 - #3 {
+INFO  11:33:32,209 - #16 void
+INFO  11:33:32,214 - #9 main
+INFO  11:33:32,214 - #14 (
+INFO  11:33:32,214 - #15 )
+INFO  11:33:32,218 - #3 {
+INFO  11:33:32,224 - #9 x
+INFO  11:33:32,229 - #37 =
+INFO  11:33:32,245 - #8 2
+INFO  11:33:32,250 - #5 ;
+INFO  11:33:32,256 - #9 z
+INFO  11:33:32,256 - #37 =
+INFO  11:33:32,256 - #19 new
+INFO  11:33:32,256 - #9 int
+INFO  11:33:32,256 - #17 [
+INFO  11:33:32,256 - #18 ]
+ERROR 11:33:32,256 - 
+Sintaksna greska na liniji 8
+INFO  11:33:32,257 - #5 ;
+INFO  11:33:32,257 - #9 z
+INFO  11:33:32,257 - #17 [
+INFO  11:33:32,257 - #8 0
+ERROR 11:33:32,257 - Izvrsen oporavak do ; na liniji 8
+INFO  11:33:32,262 - #18 ]
+INFO  11:33:32,262 - #37 =
+INFO  11:33:32,262 - #8 5
+INFO  11:33:32,262 - #5 ;
+INFO  11:33:32,263 - #9 z
+INFO  11:33:32,263 - #17 [
+INFO  11:33:32,263 - #8 0
+INFO  11:33:32,263 - #18 ]
+INFO  11:33:32,263 - #46 +=
+INFO  11:33:32,263 - #9 x
+INFO  11:33:32,272 - #29 +
+INFO  11:33:32,277 - #8 1
+INFO  11:33:32,286 - #5 ;
+INFO  11:33:32,287 - #27 print
+INFO  11:33:32,287 - #14 (
+INFO  11:33:32,287 - #9 z
+INFO  11:33:32,287 - #17 [
+INFO  11:33:32,287 - #8 0
+INFO  11:33:32,287 - #18 ]
+INFO  11:33:32,287 - #15 )
+INFO  11:33:32,291 - #5 ;
+INFO  11:33:32,292 - #4 }
+INFO  11:33:32,292 - #4 }
+INFO  11:33:32,308 - ===================================
+INFO  11:33:32,325 - Promenljiva x na liniji 2
+INFO  11:33:32,329 - Promenljiva y na liniji 2
+INFO  11:33:32,329 - Promenljiva z na liniji 2
+INFO  11:33:32,329 - Pristup nizu validan na liniji 10
+INFO  11:33:32,329 - Pristup nizu validan na liniji 12
+INFO  11:33:32,329 - Validno sabiranje na liniji 12
+INFO  11:33:32,330 - Pristup nizu validan na liniji 14
+ERROR 11:33:32,330 - Parsiranje NIJE uspesno zavrseno!

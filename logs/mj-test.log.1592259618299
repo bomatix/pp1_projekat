@@ -1,0 +1,58 @@
+INFO  00:18:05,838 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:18:05,876 - #2 program
+INFO  00:18:05,876 - #9 MJProgram
+INFO  00:18:05,876 - #9 int
+INFO  00:18:05,876 - #9 x
+INFO  00:18:05,877 - #6 ,
+INFO  00:18:05,878 - #9 y
+INFO  00:18:05,878 - #6 ,
+INFO  00:18:05,878 - #9 z
+INFO  00:18:05,878 - #17 [
+INFO  00:18:05,878 - #18 ]
+INFO  00:18:05,878 - #5 ;
+INFO  00:18:05,878 - #3 {
+INFO  00:18:05,879 - #16 void
+INFO  00:18:05,879 - #9 main
+INFO  00:18:05,879 - #14 (
+INFO  00:18:05,879 - #15 )
+INFO  00:18:05,879 - #3 {
+INFO  00:18:05,880 - #9 x
+INFO  00:18:05,880 - #37 =
+INFO  00:18:05,881 - #8 2
+INFO  00:18:05,881 - #5 ;
+INFO  00:18:05,882 - #9 y
+INFO  00:18:05,882 - #37 =
+INFO  00:18:05,883 - #9 x
+INFO  00:18:05,883 - #46 +=
+INFO  00:18:05,883 - #9 x
+INFO  00:18:05,884 - #29 +
+INFO  00:18:05,884 - #8 1
+INFO  00:18:05,884 - #5 ;
+INFO  00:18:05,885 - #27 print
+INFO  00:18:05,885 - #14 (
+INFO  00:18:05,885 - #9 y
+INFO  00:18:05,885 - #15 )
+INFO  00:18:05,885 - #5 ;
+INFO  00:18:05,885 - #4 }
+INFO  00:18:05,885 - #4 }
+INFO  00:18:05,889 - ===================================
+INFO  00:18:05,892 - Promenljiva x na liniji 2
+INFO  00:18:05,892 - Promenljiva y na liniji 2
+INFO  00:18:05,892 - Promenljiva z na liniji 2
+INFO  00:18:05,892 - Validno sabiranje na liniji 8
+INFO  00:18:05,893 - Validno sabiranje na liniji 8
+INFO  00:18:05,895 - DesignatorName x
+INFO  00:18:05,895 - numConst 2
+INFO  00:18:05,896 - Expr
+INFO  00:18:05,896 - AssignExpr
+INFO  00:18:05,896 - DesignatorName y
+INFO  00:18:05,896 - DesignatorName x
+INFO  00:18:05,896 - DesignatorName x
+INFO  00:18:05,896 - AddExpr
+INFO  00:18:05,896 - numConst 1
+INFO  00:18:05,896 - AddExpr
+INFO  00:18:05,896 - Expr
+INFO  00:18:05,896 - AssignExpr
+INFO  00:18:05,896 - DesignatorName y
+INFO  00:18:05,896 - Expr
+INFO  00:18:05,897 - Parsiranje uspesno zavrseno!

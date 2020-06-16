@@ -1,0 +1,66 @@
+INFO  00:17:26,328 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:17:26,364 - #2 program
+INFO  00:17:26,364 - #9 MJProgram
+INFO  00:17:26,364 - #9 int
+INFO  00:17:26,364 - #9 x
+INFO  00:17:26,365 - #6 ,
+INFO  00:17:26,366 - #9 y
+INFO  00:17:26,366 - #6 ,
+INFO  00:17:26,366 - #9 z
+INFO  00:17:26,366 - #17 [
+INFO  00:17:26,366 - #18 ]
+INFO  00:17:26,366 - #5 ;
+INFO  00:17:26,366 - #3 {
+INFO  00:17:26,366 - #16 void
+INFO  00:17:26,367 - #9 main
+INFO  00:17:26,367 - #14 (
+INFO  00:17:26,367 - #15 )
+INFO  00:17:26,367 - #3 {
+INFO  00:17:26,368 - #9 x
+INFO  00:17:26,368 - #37 =
+INFO  00:17:26,369 - #8 2
+INFO  00:17:26,369 - #5 ;
+INFO  00:17:26,370 - #9 z
+INFO  00:17:26,371 - #37 =
+INFO  00:17:26,371 - #19 new
+INFO  00:17:26,371 - #9 int
+INFO  00:17:26,371 - #17 [
+INFO  00:17:26,371 - #8 2
+INFO  00:17:26,371 - #18 ]
+INFO  00:17:26,371 - #5 ;
+INFO  00:17:26,371 - #9 x
+INFO  00:17:26,371 - #46 +=
+INFO  00:17:26,371 - #9 x
+INFO  00:17:26,372 - #29 +
+INFO  00:17:26,372 - #8 1
+INFO  00:17:26,373 - #5 ;
+INFO  00:17:26,373 - #27 print
+INFO  00:17:26,373 - #14 (
+INFO  00:17:26,373 - #9 x
+INFO  00:17:26,373 - #15 )
+INFO  00:17:26,373 - #5 ;
+INFO  00:17:26,373 - #4 }
+INFO  00:17:26,374 - #4 }
+INFO  00:17:26,384 - ===================================
+INFO  00:17:26,386 - Promenljiva x na liniji 2
+INFO  00:17:26,386 - Promenljiva y na liniji 2
+INFO  00:17:26,386 - Promenljiva z na liniji 2
+INFO  00:17:26,386 - Validno sabiranje na liniji 9
+INFO  00:17:26,389 - DesignatorName x
+INFO  00:17:26,389 - numConst 2
+INFO  00:17:26,389 - Expr
+INFO  00:17:26,389 - AssignExpr
+INFO  00:17:26,389 - DesignatorName z
+INFO  00:17:26,389 - numConst 2
+INFO  00:17:26,389 - Expr
+INFO  00:17:26,389 - Expr
+INFO  00:17:26,389 - AssignExpr
+INFO  00:17:26,389 - DesignatorName x
+INFO  00:17:26,393 - DesignatorName x
+INFO  00:17:26,393 - numConst 1
+INFO  00:17:26,393 - AddExpr
+INFO  00:17:26,393 - Expr
+INFO  00:17:26,393 - AssignExpr
+INFO  00:17:26,393 - DesignatorName x
+INFO  00:17:26,393 - Expr
+INFO  00:17:26,394 - Parsiranje uspesno zavrseno!
