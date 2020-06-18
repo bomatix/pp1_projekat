@@ -1,0 +1,57 @@
+INFO  16:55:51,051 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  16:55:51,092 - #2 program
+INFO  16:55:51,092 - #9 MJProgram
+INFO  16:55:51,092 - #9 int
+INFO  16:55:51,093 - #9 x
+INFO  16:55:51,094 - #6 ,
+INFO  16:55:51,095 - #9 y
+INFO  16:55:51,095 - #6 ,
+INFO  16:55:51,095 - #9 z
+INFO  16:55:51,095 - #17 [
+INFO  16:55:51,095 - #18 ]
+INFO  16:55:51,095 - #5 ;
+INFO  16:55:51,095 - #3 {
+INFO  16:55:51,095 - #16 void
+INFO  16:55:51,096 - #9 main
+INFO  16:55:51,096 - #14 (
+INFO  16:55:51,096 - #15 )
+INFO  16:55:51,096 - #3 {
+INFO  16:55:51,097 - #9 z
+INFO  16:55:51,097 - #37 =
+INFO  16:55:51,098 - #19 new
+INFO  16:55:51,099 - #9 int
+INFO  16:55:51,099 - #17 [
+INFO  16:55:51,099 - #8 5
+INFO  16:55:51,099 - #18 ]
+INFO  16:55:51,100 - #5 ;
+INFO  16:55:51,100 - #9 z
+INFO  16:55:51,101 - #17 [
+INFO  16:55:51,101 - #8 0
+INFO  16:55:51,101 - #18 ]
+INFO  16:55:51,101 - #37 =
+INFO  16:55:51,102 - #8 3
+INFO  16:55:51,102 - #5 ;
+INFO  16:55:51,102 - #27 print
+INFO  16:55:51,102 - #14 (
+INFO  16:55:51,102 - #9 z
+INFO  16:55:51,102 - #17 [
+INFO  16:55:51,102 - #8 0
+INFO  16:55:51,102 - #18 ]
+INFO  16:55:51,102 - #29 +
+INFO  16:55:51,102 - #8 1
+INFO  16:55:51,103 - #15 )
+INFO  16:55:51,104 - #5 ;
+INFO  16:55:51,104 - #4 }
+INFO  16:55:51,104 - #4 }
+INFO  16:55:51,116 - ===================================
+INFO  16:55:51,123 - Promenljiva x na liniji 2
+INFO  16:55:51,124 - Promenljiva y na liniji 2
+INFO  16:55:51,124 - Promenljiva z na liniji 2
+INFO  16:55:51,124 - Pristup nizu validan na liniji 7
+INFO  16:55:51,124 - Pristup nizu validan na liniji 10
+INFO  16:55:51,124 - Validno sabiranje na liniji 10
+INFO  16:55:51,135 - DesignatorName z
+INFO  16:55:51,137 - numConst 5
+INFO  16:55:58,250 - DesignatorName z
+INFO  16:55:58,251 - numConst 0
+INFO  16:55:58,251 - numConst 3

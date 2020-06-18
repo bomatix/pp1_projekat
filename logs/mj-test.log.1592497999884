@@ -1,0 +1,127 @@
+INFO  18:33:02,426 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  18:33:02,462 - #2 program
+INFO  18:33:02,462 - #9 test301
+INFO  18:33:02,462 - #7 const
+INFO  18:33:02,463 - #9 int
+INFO  18:33:02,463 - #9 nula
+INFO  18:33:02,464 - #37 =
+INFO  18:33:02,464 - #8 0
+INFO  18:33:02,464 - #5 ;
+INFO  18:33:02,464 - #7 const
+INFO  18:33:02,464 - #9 int
+INFO  18:33:02,464 - #9 jedan
+INFO  18:33:02,465 - #37 =
+INFO  18:33:02,465 - #8 1
+INFO  18:33:02,465 - #5 ;
+INFO  18:33:02,465 - #7 const
+INFO  18:33:02,465 - #9 int
+INFO  18:33:02,465 - #9 pet
+INFO  18:33:02,465 - #37 =
+INFO  18:33:02,465 - #8 5
+INFO  18:33:02,465 - #5 ;
+INFO  18:33:02,465 - #9 int
+INFO  18:33:02,465 - #9 niz
+INFO  18:33:02,466 - #17 [
+INFO  18:33:02,466 - #18 ]
+INFO  18:33:02,466 - #5 ;
+INFO  18:33:02,466 - #9 char
+INFO  18:33:02,467 - #9 nizch
+INFO  18:33:02,467 - #17 [
+INFO  18:33:02,467 - #18 ]
+INFO  18:33:02,467 - #5 ;
+INFO  18:33:02,467 - #3 {
+INFO  18:33:02,467 - #16 void
+INFO  18:33:02,467 - #9 main
+INFO  18:33:02,467 - #14 (
+INFO  18:33:02,467 - #15 )
+INFO  18:33:02,468 - #9 int
+INFO  18:33:02,468 - #9 bodovi
+INFO  18:33:02,468 - #6 ,
+INFO  18:33:02,468 - #9 poeni
+INFO  18:33:02,468 - #6 ,
+INFO  18:33:02,468 - #9 slova
+INFO  18:33:02,468 - #6 ,
+INFO  18:33:02,468 - #9 temp
+INFO  18:33:02,468 - #6 ,
+INFO  18:33:02,468 - #9 prom
+INFO  18:33:02,468 - #5 ;
+INFO  18:33:02,468 - #3 {
+INFO  18:33:02,469 - #9 nizch
+INFO  18:33:02,469 - #37 =
+INFO  18:33:02,470 - #19 new
+INFO  18:33:02,470 - #9 char
+INFO  18:33:02,470 - #17 [
+INFO  18:33:02,470 - #8 3
+INFO  18:33:02,470 - #18 ]
+INFO  18:33:02,471 - #5 ;
+INFO  18:33:02,471 - #9 nizch
+INFO  18:33:02,472 - #17 [
+INFO  18:33:02,472 - #8 0
+INFO  18:33:02,472 - #18 ]
+INFO  18:33:02,475 - #37 =
+INFO  18:33:02,476 - #11 a
+INFO  18:33:02,476 - #5 ;
+INFO  18:33:02,476 - #9 nizch
+INFO  18:33:02,476 - #17 [
+INFO  18:33:02,476 - #9 jedan
+INFO  18:33:02,476 - #18 ]
+INFO  18:33:02,476 - #37 =
+INFO  18:33:02,476 - #11 b
+INFO  18:33:02,476 - #5 ;
+INFO  18:33:02,476 - #9 nizch
+INFO  18:33:02,477 - #17 [
+INFO  18:33:02,477 - #9 pet
+INFO  18:33:02,477 - #30 -
+INFO  18:33:02,477 - #8 3
+INFO  18:33:02,477 - #18 ]
+INFO  18:33:02,477 - #37 =
+INFO  18:33:02,478 - #11 c
+INFO  18:33:02,478 - #5 ;
+INFO  18:33:02,478 - #27 print
+INFO  18:33:02,478 - #14 (
+INFO  18:33:02,478 - #9 nizch
+INFO  18:33:02,478 - #17 [
+INFO  18:33:02,478 - #8 1
+INFO  18:33:02,478 - #18 ]
+INFO  18:33:02,478 - #15 )
+INFO  18:33:02,478 - #5 ;
+INFO  18:33:02,478 - #27 print
+INFO  18:33:02,478 - #14 (
+INFO  18:33:02,478 - #9 nizch
+INFO  18:33:02,478 - #17 [
+INFO  18:33:02,478 - #9 jedan
+INFO  18:33:02,478 - #34 *
+INFO  18:33:02,479 - #8 2
+INFO  18:33:02,479 - #18 ]
+INFO  18:33:02,479 - #15 )
+INFO  18:33:02,479 - #5 ;
+INFO  18:33:02,479 - #4 }
+INFO  18:33:02,479 - #4 }
+INFO  18:33:02,490 - ===================================
+INFO  18:33:02,493 - Konstanta nula na liniji 5
+INFO  18:33:02,493 - Konstanta jedan na liniji 6
+INFO  18:33:02,493 - Konstanta pet na liniji 7
+INFO  18:33:02,493 - Promenljiva niz na liniji 9
+INFO  18:33:02,493 - Promenljiva nizch na liniji 10
+INFO  18:33:02,493 - Promenljiva bodovi na liniji 15
+INFO  18:33:02,493 - Promenljiva poeni na liniji 15
+INFO  18:33:02,493 - Promenljiva slova na liniji 15
+INFO  18:33:02,493 - Promenljiva temp na liniji 15
+INFO  18:33:02,493 - Promenljiva prom na liniji 15
+INFO  18:33:02,493 - Pristup nizu validan na liniji 18
+INFO  18:33:02,493 - Pristup nizu validan na liniji 19
+INFO  18:33:02,493 - Validno sabiranje na liniji 20
+INFO  18:33:02,493 - Pristup nizu validan na liniji 20
+INFO  18:33:02,493 - Pristup nizu validan na liniji 21
+INFO  18:33:02,493 - Validno sabiranje na liniji 22
+INFO  18:33:02,493 - Pristup nizu validan na liniji 22
+INFO  18:33:02,496 - DesignatorName nizch
+INFO  18:33:02,498 - DesignatorName nizch
+INFO  18:33:02,498 - DesignatorName nizch
+INFO  18:33:02,498 - DesignatorName jedan
+INFO  18:33:02,498 - DesignatorName nizch
+INFO  18:33:02,498 - DesignatorName pet
+INFO  18:33:02,498 - DesignatorName nizch
+INFO  18:33:02,498 - DesignatorName nizch
+INFO  18:33:02,499 - DesignatorName jedan
+INFO  18:33:02,499 - Parsiranje uspesno zavrseno!

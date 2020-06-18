@@ -1,0 +1,35 @@
+INFO  14:01:38,886 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:01:38,921 - #2 program
+INFO  14:01:38,921 - #9 MJProgram
+INFO  14:01:38,921 - #9 int
+INFO  14:01:38,921 - #9 x
+INFO  14:01:38,922 - #6 ,
+INFO  14:01:38,923 - #9 y
+INFO  14:01:38,923 - #6 ,
+INFO  14:01:38,923 - #9 z
+INFO  14:01:38,923 - #17 [
+INFO  14:01:38,923 - #18 ]
+INFO  14:01:38,923 - #5 ;
+INFO  14:01:38,923 - #3 {
+INFO  14:01:38,923 - #16 void
+INFO  14:01:38,924 - #9 main
+INFO  14:01:38,924 - #14 (
+INFO  14:01:38,924 - #15 )
+INFO  14:01:38,924 - #3 {
+INFO  14:01:38,925 - #9 z
+INFO  14:01:38,925 - #37 =
+INFO  14:01:38,926 - #19 new
+INFO  14:01:38,926 - #9 int
+INFO  14:01:38,926 - #17 [
+INFO  14:01:38,926 - #8 2
+INFO  14:01:38,926 - #18 ]
+INFO  14:01:38,927 - #5 ;
+INFO  14:01:38,928 - #4 }
+INFO  14:01:38,928 - #4 }
+INFO  14:01:38,938 - ===================================
+INFO  14:01:38,940 - Promenljiva x na liniji 2
+INFO  14:01:38,940 - Promenljiva y na liniji 2
+INFO  14:01:38,940 - Promenljiva z na liniji 2
+INFO  14:01:38,943 - DesignatorName z
+INFO  14:01:38,946 - numConst 2
+INFO  14:01:38,948 - Parsiranje uspesno zavrseno!

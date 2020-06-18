@@ -1,0 +1,76 @@
+INFO  18:16:06,870 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  18:16:06,909 - #2 program
+INFO  18:16:06,909 - #9 MJProgram
+INFO  18:16:06,909 - #9 int
+INFO  18:16:06,910 - #9 x
+INFO  18:16:06,911 - #6 ,
+INFO  18:16:06,911 - #9 y
+INFO  18:16:06,911 - #6 ,
+INFO  18:16:06,911 - #9 z
+INFO  18:16:06,911 - #17 [
+INFO  18:16:06,911 - #18 ]
+INFO  18:16:06,911 - #5 ;
+INFO  18:16:06,911 - #3 {
+INFO  18:16:06,912 - #16 void
+INFO  18:16:06,912 - #9 main
+INFO  18:16:06,913 - #14 (
+INFO  18:16:06,913 - #15 )
+INFO  18:16:06,913 - #3 {
+INFO  18:16:06,914 - #9 x
+INFO  18:16:06,914 - #37 =
+INFO  18:16:06,914 - #8 2
+INFO  18:16:06,914 - #5 ;
+INFO  18:16:06,915 - #9 z
+INFO  18:16:06,915 - #37 =
+INFO  18:16:06,917 - #19 new
+INFO  18:16:06,917 - #9 int
+INFO  18:16:06,917 - #17 [
+INFO  18:16:06,917 - #8 2
+INFO  18:16:06,917 - #18 ]
+INFO  18:16:06,917 - #5 ;
+INFO  18:16:06,917 - #9 z
+INFO  18:16:06,917 - #17 [
+INFO  18:16:06,917 - #8 0
+INFO  18:16:06,917 - #18 ]
+INFO  18:16:06,918 - #37 =
+INFO  18:16:06,918 - #8 5
+INFO  18:16:06,918 - #5 ;
+INFO  18:16:06,918 - #9 x
+INFO  18:16:06,918 - #37 =
+INFO  18:16:06,918 - #9 x
+INFO  18:16:06,918 - #46 +=
+INFO  18:16:06,918 - #8 1
+INFO  18:16:06,918 - #29 +
+INFO  18:16:06,919 - #9 z
+INFO  18:16:06,919 - #17 [
+INFO  18:16:06,919 - #8 0
+INFO  18:16:06,919 - #18 ]
+INFO  18:16:06,919 - #5 ;
+INFO  18:16:06,919 - #27 print
+INFO  18:16:06,919 - #14 (
+INFO  18:16:06,920 - #9 z
+INFO  18:16:06,920 - #17 [
+INFO  18:16:06,920 - #8 0
+INFO  18:16:06,920 - #18 ]
+INFO  18:16:06,920 - #15 )
+INFO  18:16:06,920 - #5 ;
+INFO  18:16:06,920 - #27 print
+INFO  18:16:06,920 - #14 (
+INFO  18:16:06,920 - #9 x
+INFO  18:16:06,920 - #15 )
+INFO  18:16:06,920 - #5 ;
+INFO  18:16:06,920 - #4 }
+INFO  18:16:06,921 - #4 }
+INFO  18:16:06,930 - ===================================
+INFO  18:16:06,933 - Promenljiva x na liniji 2
+INFO  18:16:06,933 - Promenljiva y na liniji 2
+INFO  18:16:06,933 - Promenljiva z na liniji 2
+INFO  18:16:06,933 - Pristup nizu validan na liniji 10
+INFO  18:16:06,934 - Validno sabiranje na liniji 12
+INFO  18:16:06,934 - Pristup nizu validan na liniji 12
+INFO  18:16:06,934 - Validno sabiranje na liniji 12
+INFO  18:16:06,934 - Pristup nizu validan na liniji 14
+INFO  18:16:06,936 - numConst 2
+INFO  18:16:06,936 - numConst 2
+INFO  18:16:06,936 - numConst 0
+INFO  18:16:06,936 - numConst 5

@@ -1,0 +1,73 @@
+INFO  18:03:40,893 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  18:03:40,928 - #2 program
+INFO  18:03:40,928 - #9 MJProgram
+INFO  18:03:40,929 - #9 int
+INFO  18:03:40,929 - #9 x
+INFO  18:03:40,930 - #6 ,
+INFO  18:03:40,930 - #9 y
+INFO  18:03:40,931 - #6 ,
+INFO  18:03:40,931 - #9 z
+INFO  18:03:40,931 - #17 [
+INFO  18:03:40,931 - #18 ]
+INFO  18:03:40,931 - #5 ;
+INFO  18:03:40,931 - #3 {
+INFO  18:03:40,931 - #16 void
+INFO  18:03:40,932 - #9 main
+INFO  18:03:40,932 - #14 (
+INFO  18:03:40,932 - #15 )
+INFO  18:03:40,932 - #3 {
+INFO  18:03:40,933 - #9 z
+INFO  18:03:40,933 - #37 =
+INFO  18:03:40,934 - #19 new
+INFO  18:03:40,934 - #9 int
+INFO  18:03:40,934 - #17 [
+INFO  18:03:40,934 - #8 5
+INFO  18:03:40,934 - #18 ]
+INFO  18:03:40,935 - #5 ;
+INFO  18:03:40,936 - #9 z
+INFO  18:03:40,936 - #17 [
+INFO  18:03:40,936 - #8 0
+INFO  18:03:40,936 - #18 ]
+INFO  18:03:40,936 - #37 =
+INFO  18:03:40,937 - #8 3
+INFO  18:03:40,937 - #5 ;
+INFO  18:03:40,937 - #9 z
+INFO  18:03:40,937 - #17 [
+INFO  18:03:40,937 - #8 1
+INFO  18:03:40,937 - #18 ]
+INFO  18:03:40,937 - #37 =
+INFO  18:03:40,937 - #8 0
+INFO  18:03:40,937 - #5 ;
+INFO  18:03:40,937 - #27 print
+INFO  18:03:40,937 - #14 (
+INFO  18:03:40,937 - #9 z
+INFO  18:03:40,937 - #17 [
+INFO  18:03:40,937 - #9 z
+INFO  18:03:40,937 - #17 [
+INFO  18:03:40,937 - #8 1
+INFO  18:03:40,937 - #18 ]
+INFO  18:03:40,937 - #18 ]
+INFO  18:03:40,938 - #15 )
+INFO  18:03:40,938 - #5 ;
+INFO  18:03:40,938 - #4 }
+INFO  18:03:40,938 - #4 }
+INFO  18:03:40,949 - ===================================
+INFO  18:03:40,951 - Promenljiva x na liniji 2
+INFO  18:03:40,951 - Promenljiva y na liniji 2
+INFO  18:03:40,951 - Promenljiva z na liniji 2
+INFO  18:03:40,952 - Pristup nizu validan na liniji 7
+INFO  18:03:40,952 - Pristup nizu validan na liniji 8
+INFO  18:03:40,955 - Pristup nizu validan na liniji 10
+INFO  18:03:40,955 - Pristup nizu validan na liniji 10
+INFO  18:03:40,957 - DesignatorName z
+INFO  18:03:40,960 - numConst 5
+INFO  18:03:40,961 - DesignatorName z
+INFO  18:03:40,961 - numConst 0
+INFO  18:03:40,961 - numConst 3
+INFO  18:03:40,961 - DesignatorName z
+INFO  18:03:40,961 - numConst 1
+INFO  18:03:40,961 - numConst 0
+INFO  18:03:40,961 - DesignatorName z
+INFO  18:03:40,961 - DesignatorName z
+INFO  18:03:40,961 - numConst 1
+INFO  18:03:40,962 - Parsiranje uspesno zavrseno!

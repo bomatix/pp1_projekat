@@ -1,0 +1,72 @@
+INFO  14:12:57,264 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:12:57,302 - #2 program
+INFO  14:12:57,302 - #9 test301
+INFO  14:12:57,302 - #9 int
+INFO  14:12:57,302 - #9 niz
+INFO  14:12:57,303 - #17 [
+INFO  14:12:57,304 - #18 ]
+INFO  14:12:57,304 - #5 ;
+INFO  14:12:57,304 - #9 char
+INFO  14:12:57,304 - #9 nizch
+INFO  14:12:57,304 - #17 [
+INFO  14:12:57,304 - #18 ]
+INFO  14:12:57,304 - #5 ;
+INFO  14:12:57,304 - #3 {
+INFO  14:12:57,304 - #16 void
+INFO  14:12:57,305 - #9 main
+INFO  14:12:57,305 - #14 (
+INFO  14:12:57,305 - #15 )
+INFO  14:12:57,305 - #9 int
+INFO  14:12:57,306 - #9 bodovi
+INFO  14:12:57,306 - #6 ,
+INFO  14:12:57,306 - #9 poeni
+INFO  14:12:57,306 - #6 ,
+INFO  14:12:57,306 - #9 slova
+INFO  14:12:57,306 - #6 ,
+INFO  14:12:57,306 - #9 temp
+INFO  14:12:57,306 - #6 ,
+INFO  14:12:57,306 - #9 prom
+INFO  14:12:57,306 - #5 ;
+INFO  14:12:57,306 - #3 {
+INFO  14:12:57,306 - #9 bodovi
+INFO  14:12:57,307 - #37 =
+INFO  14:12:57,308 - #8 0
+INFO  14:12:57,308 - #5 ;
+INFO  14:12:57,309 - #9 bodovi
+INFO  14:12:57,309 - #31 ++
+INFO  14:12:57,309 - #5 ;
+INFO  14:12:57,310 - #9 bodovi
+INFO  14:12:57,310 - #37 =
+INFO  14:12:57,310 - #9 bodovi
+INFO  14:12:57,310 - #29 +
+INFO  14:12:57,310 - #9 jedan
+INFO  14:12:57,311 - #5 ;
+INFO  14:12:57,311 - #9 bodovi
+INFO  14:12:57,311 - #37 =
+INFO  14:12:57,311 - #9 bodovi
+INFO  14:12:57,311 - #34 *
+INFO  14:12:57,311 - #9 pet
+INFO  14:12:57,312 - #5 ;
+INFO  14:12:57,312 - #9 bodovi
+INFO  14:12:57,312 - #32 --
+INFO  14:12:57,312 - #5 ;
+INFO  14:12:57,312 - #27 print
+INFO  14:12:57,312 - #14 (
+INFO  14:12:57,312 - #9 bodovi
+INFO  14:12:57,312 - #15 )
+INFO  14:12:57,313 - #5 ;
+INFO  14:12:57,313 - #4 }
+INFO  14:12:57,313 - #4 }
+INFO  14:12:57,327 - ===================================
+INFO  14:12:57,329 - Promenljiva niz na liniji 3
+INFO  14:12:57,329 - Promenljiva nizch na liniji 4
+INFO  14:12:57,329 - Promenljiva bodovi na liniji 8
+INFO  14:12:57,329 - Promenljiva poeni na liniji 8
+INFO  14:12:57,329 - Promenljiva slova na liniji 8
+INFO  14:12:57,329 - Promenljiva temp na liniji 8
+INFO  14:12:57,329 - Promenljiva prom na liniji 8
+ERROR 14:12:57,330 - Greska: Promenljiva jedan nije deklarisana na liniji 12
+ERROR 14:12:57,330 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 14:12:57,330 - Greska: Promenljiva pet nije deklarisana na liniji 13
+ERROR 14:12:57,330 - Greska na liniji 13 : nekompatibilni tipovi u izrazu za mnozenje.
+ERROR 14:12:57,330 - Parsiranje NIJE uspesno zavrseno!

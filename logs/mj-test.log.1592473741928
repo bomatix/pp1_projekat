@@ -1,0 +1,68 @@
+INFO  11:47:58,754 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:47:58,802 - #2 program
+INFO  11:47:58,802 - #9 MJProgram
+INFO  11:47:58,802 - #9 int
+INFO  11:47:58,803 - #9 x
+INFO  11:47:58,804 - #6 ,
+INFO  11:47:58,805 - #9 y
+INFO  11:47:58,805 - #6 ,
+INFO  11:47:58,805 - #9 z
+INFO  11:47:58,805 - #17 [
+INFO  11:47:58,805 - #18 ]
+INFO  11:47:58,805 - #5 ;
+INFO  11:47:58,805 - #3 {
+INFO  11:47:58,806 - #16 void
+INFO  11:47:58,806 - #9 main
+INFO  11:47:58,807 - #14 (
+INFO  11:47:58,807 - #15 )
+INFO  11:47:58,807 - #3 {
+INFO  11:47:58,808 - #9 z
+INFO  11:47:58,808 - #37 =
+INFO  11:47:58,810 - #19 new
+INFO  11:47:58,810 - #9 int
+INFO  11:47:58,810 - #17 [
+INFO  11:47:58,810 - #8 5
+INFO  11:47:58,810 - #18 ]
+INFO  11:47:58,811 - #5 ;
+INFO  11:47:58,811 - #9 z
+INFO  11:47:58,812 - #17 [
+INFO  11:47:58,812 - #8 1
+INFO  11:47:58,812 - #18 ]
+INFO  11:47:58,812 - #37 =
+INFO  11:47:58,813 - #8 5
+INFO  11:47:58,813 - #5 ;
+INFO  11:47:58,813 - #9 x
+INFO  11:47:58,813 - #37 =
+INFO  11:47:58,813 - #8 2
+INFO  11:47:58,813 - #5 ;
+INFO  11:47:58,813 - #9 x
+INFO  11:47:58,813 - #46 +=
+INFO  11:47:58,813 - #9 x
+INFO  11:47:58,814 - #48 *=
+INFO  11:47:58,814 - #8 2
+INFO  11:47:58,815 - #5 ;
+INFO  11:47:58,815 - #27 print
+INFO  11:47:58,815 - #14 (
+INFO  11:47:58,815 - #9 x
+INFO  11:47:58,815 - #15 )
+INFO  11:47:58,815 - #5 ;
+INFO  11:47:58,816 - #4 }
+INFO  11:47:58,816 - #4 }
+INFO  11:47:58,820 - ===================================
+INFO  11:47:58,822 - Promenljiva x na liniji 2
+INFO  11:47:58,823 - Promenljiva y na liniji 2
+INFO  11:47:58,823 - Promenljiva z na liniji 2
+INFO  11:47:58,823 - Pristup nizu validan na liniji 7
+INFO  11:47:58,823 - Validan termList na liniji 9
+INFO  11:47:58,826 - DesignatorName z
+INFO  11:47:58,828 - numConst 5
+INFO  11:47:58,832 - DesignatorName z
+INFO  11:47:58,832 - numConst 1
+INFO  11:47:58,832 - numConst 5
+INFO  11:47:58,832 - DesignatorName x
+INFO  11:47:58,832 - numConst 2
+INFO  11:47:58,832 - DesignatorName x
+INFO  11:47:58,832 - DesignatorName x
+INFO  11:47:58,832 - numConst 2
+INFO  11:47:58,832 - DesignatorName x
+INFO  11:47:58,832 - Parsiranje uspesno zavrseno!

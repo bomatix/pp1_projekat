@@ -1,0 +1,42 @@
+INFO  20:09:29,690 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  20:09:29,724 - #2 program
+INFO  20:09:29,724 - #9 MJProgram
+INFO  20:09:29,725 - #9 int
+INFO  20:09:29,725 - #9 x
+INFO  20:09:29,726 - #6 ,
+INFO  20:09:29,726 - #9 y
+INFO  20:09:29,727 - #6 ,
+INFO  20:09:29,727 - #9 z
+INFO  20:09:29,727 - #17 [
+INFO  20:09:29,727 - #18 ]
+INFO  20:09:29,727 - #5 ;
+INFO  20:09:29,727 - #3 {
+INFO  20:09:29,727 - #16 void
+INFO  20:09:29,727 - #9 main
+INFO  20:09:29,727 - #14 (
+INFO  20:09:29,728 - #15 )
+INFO  20:09:29,728 - #3 {
+INFO  20:09:29,728 - #9 x
+INFO  20:09:29,729 - #37 =
+INFO  20:09:29,730 - #8 2
+INFO  20:09:29,730 - #5 ;
+INFO  20:09:29,731 - #9 x
+INFO  20:09:29,731 - #46 +=
+INFO  20:09:29,732 - #8 2
+INFO  20:09:29,732 - #5 ;
+INFO  20:09:29,732 - #27 print
+INFO  20:09:29,732 - #14 (
+INFO  20:09:29,732 - #9 x
+INFO  20:09:29,732 - #15 )
+INFO  20:09:29,733 - #5 ;
+INFO  20:09:29,733 - #4 }
+INFO  20:09:29,733 - #4 }
+INFO  20:09:29,743 - ===================================
+INFO  20:09:29,745 - Promenljiva x na liniji 2
+INFO  20:09:29,745 - Promenljiva y na liniji 2
+INFO  20:09:29,745 - Promenljiva z na liniji 2
+INFO  20:09:29,748 - DesignatorName x
+INFO  20:09:29,751 - numConst 2
+INFO  20:09:29,752 - DesignatorName x
+INFO  20:09:29,752 - numConst 2
+INFO  20:09:29,752 - DesignatorName x

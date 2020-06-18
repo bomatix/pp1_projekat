@@ -1,0 +1,45 @@
+INFO  13:02:05,840 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  13:02:05,877 - #2 program
+INFO  13:02:05,877 - #9 MJProgram
+INFO  13:02:05,877 - #9 int
+INFO  13:02:05,878 - #9 x
+INFO  13:02:05,879 - #6 ,
+INFO  13:02:05,879 - #9 y
+INFO  13:02:05,879 - #6 ,
+INFO  13:02:05,879 - #9 z
+INFO  13:02:05,879 - #17 [
+INFO  13:02:05,879 - #18 ]
+INFO  13:02:05,879 - #5 ;
+INFO  13:02:05,879 - #3 {
+INFO  13:02:05,880 - #16 void
+INFO  13:02:05,880 - #9 main
+INFO  13:02:05,880 - #14 (
+INFO  13:02:05,880 - #15 )
+INFO  13:02:05,881 - #3 {
+INFO  13:02:05,881 - #9 x
+INFO  13:02:05,881 - #37 =
+INFO  13:02:05,882 - #8 10
+INFO  13:02:05,883 - #5 ;
+INFO  13:02:05,884 - #9 x
+INFO  13:02:05,884 - #37 =
+INFO  13:02:05,884 - #9 x
+INFO  13:02:05,884 - #30 -
+INFO  13:02:05,885 - #8 6
+INFO  13:02:05,885 - #5 ;
+INFO  13:02:05,885 - #27 print
+INFO  13:02:05,885 - #14 (
+INFO  13:02:05,885 - #9 x
+INFO  13:02:05,885 - #15 )
+INFO  13:02:05,886 - #5 ;
+INFO  13:02:05,886 - #4 }
+INFO  13:02:05,886 - #4 }
+INFO  13:02:05,896 - ===================================
+INFO  13:02:05,899 - Promenljiva x na liniji 2
+INFO  13:02:05,899 - Promenljiva y na liniji 2
+INFO  13:02:05,899 - Promenljiva z na liniji 2
+INFO  13:02:05,899 - Validno sabiranje na liniji 7
+INFO  13:02:05,901 - DesignatorName x
+INFO  13:02:05,905 - DesignatorName x
+INFO  13:02:05,905 - DesignatorName x
+INFO  13:02:05,905 - DesignatorName x
+INFO  13:02:05,905 - Parsiranje uspesno zavrseno!

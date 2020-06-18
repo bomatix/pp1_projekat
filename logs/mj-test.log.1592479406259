@@ -1,0 +1,71 @@
+INFO  13:23:05,825 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  13:23:05,862 - #2 program
+INFO  13:23:05,862 - #9 MJProgram
+INFO  13:23:05,862 - #9 int
+INFO  13:23:05,863 - #9 x
+INFO  13:23:05,864 - #6 ,
+INFO  13:23:05,864 - #9 y
+INFO  13:23:05,864 - #6 ,
+INFO  13:23:05,864 - #9 z
+INFO  13:23:05,864 - #17 [
+INFO  13:23:05,864 - #18 ]
+INFO  13:23:05,864 - #5 ;
+INFO  13:23:05,865 - #3 {
+INFO  13:23:05,865 - #16 void
+INFO  13:23:05,865 - #9 main
+INFO  13:23:05,865 - #14 (
+INFO  13:23:05,865 - #15 )
+INFO  13:23:05,866 - #3 {
+INFO  13:23:05,866 - #9 z
+INFO  13:23:05,867 - #37 =
+INFO  13:23:05,867 - #19 new
+INFO  13:23:05,868 - #9 int
+INFO  13:23:05,868 - #17 [
+INFO  13:23:05,868 - #8 3
+INFO  13:23:05,868 - #18 ]
+INFO  13:23:05,869 - #5 ;
+INFO  13:23:05,869 - #9 z
+INFO  13:23:05,870 - #17 [
+INFO  13:23:05,870 - #8 0
+INFO  13:23:05,870 - #18 ]
+INFO  13:23:05,870 - #37 =
+INFO  13:23:05,870 - #8 3
+INFO  13:23:05,870 - #5 ;
+INFO  13:23:05,871 - #9 z
+INFO  13:23:05,871 - #17 [
+INFO  13:23:05,871 - #8 1
+INFO  13:23:05,871 - #18 ]
+INFO  13:23:05,871 - #37 =
+INFO  13:23:05,871 - #8 0
+INFO  13:23:05,871 - #5 ;
+INFO  13:23:05,871 - #9 z
+INFO  13:23:05,871 - #17 [
+INFO  13:23:05,871 - #9 z
+INFO  13:23:05,871 - #17 [
+INFO  13:23:05,871 - #8 1
+INFO  13:23:05,871 - #18 ]
+INFO  13:23:05,871 - #18 ]
+INFO  13:23:05,872 - #31 ++
+INFO  13:23:05,872 - #5 ;
+INFO  13:23:05,872 - #27 print
+INFO  13:23:05,872 - #14 (
+INFO  13:23:05,872 - #9 x
+INFO  13:23:05,872 - #15 )
+INFO  13:23:05,873 - #5 ;
+INFO  13:23:05,873 - #4 }
+INFO  13:23:05,873 - #4 }
+INFO  13:23:05,883 - ===================================
+INFO  13:23:05,885 - Promenljiva x na liniji 2
+INFO  13:23:05,885 - Promenljiva y na liniji 2
+INFO  13:23:05,885 - Promenljiva z na liniji 2
+INFO  13:23:05,885 - Pristup nizu validan na liniji 7
+INFO  13:23:05,885 - Pristup nizu validan na liniji 8
+INFO  13:23:05,885 - Pristup nizu validan na liniji 9
+INFO  13:23:05,885 - Pristup nizu validan na liniji 9
+INFO  13:23:05,888 - DesignatorName z
+INFO  13:23:05,891 - DesignatorName z
+INFO  13:23:05,891 - DesignatorName z
+INFO  13:23:05,892 - DesignatorName z
+INFO  13:23:05,892 - DesignatorName z
+INFO  13:23:05,892 - DesignatorName x
+INFO  13:23:05,892 - Parsiranje uspesno zavrseno!

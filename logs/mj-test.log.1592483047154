@@ -1,0 +1,78 @@
+INFO  14:13:24,396 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  14:13:24,433 - #2 program
+INFO  14:13:24,433 - #9 test301
+INFO  14:13:24,433 - #9 int
+INFO  14:13:24,433 - #9 niz
+INFO  14:13:24,433 - #17 [
+INFO  14:13:24,434 - #18 ]
+INFO  14:13:24,434 - #5 ;
+INFO  14:13:24,434 - #9 char
+INFO  14:13:24,434 - #9 nizch
+INFO  14:13:24,434 - #17 [
+INFO  14:13:24,434 - #18 ]
+INFO  14:13:24,434 - #5 ;
+INFO  14:13:24,434 - #3 {
+INFO  14:13:24,435 - #16 void
+INFO  14:13:24,435 - #9 main
+INFO  14:13:24,435 - #14 (
+INFO  14:13:24,435 - #15 )
+INFO  14:13:24,435 - #9 int
+INFO  14:13:24,436 - #9 bodovi
+INFO  14:13:24,436 - #6 ,
+INFO  14:13:24,436 - #9 poeni
+INFO  14:13:24,436 - #6 ,
+INFO  14:13:24,436 - #9 slova
+INFO  14:13:24,436 - #6 ,
+INFO  14:13:24,436 - #9 temp
+INFO  14:13:24,436 - #6 ,
+INFO  14:13:24,436 - #9 prom
+INFO  14:13:24,436 - #5 ;
+INFO  14:13:24,436 - #3 {
+INFO  14:13:24,437 - #9 bodovi
+INFO  14:13:24,437 - #37 =
+INFO  14:13:24,438 - #8 0
+INFO  14:13:24,438 - #5 ;
+INFO  14:13:24,439 - #9 bodovi
+INFO  14:13:24,439 - #31 ++
+INFO  14:13:24,439 - #5 ;
+INFO  14:13:24,440 - #9 bodovi
+INFO  14:13:24,440 - #37 =
+INFO  14:13:24,440 - #9 bodovi
+INFO  14:13:24,440 - #29 +
+INFO  14:13:24,440 - #8 1
+INFO  14:13:24,441 - #5 ;
+INFO  14:13:24,441 - #9 bodovi
+INFO  14:13:24,441 - #37 =
+INFO  14:13:24,441 - #9 bodovi
+INFO  14:13:24,441 - #34 *
+INFO  14:13:24,441 - #8 5
+INFO  14:13:24,442 - #5 ;
+INFO  14:13:24,442 - #9 bodovi
+INFO  14:13:24,442 - #32 --
+INFO  14:13:24,442 - #5 ;
+INFO  14:13:24,442 - #27 print
+INFO  14:13:24,442 - #14 (
+INFO  14:13:24,443 - #9 bodovi
+INFO  14:13:24,443 - #15 )
+INFO  14:13:24,443 - #5 ;
+INFO  14:13:24,443 - #4 }
+INFO  14:13:24,443 - #4 }
+INFO  14:13:24,447 - ===================================
+INFO  14:13:24,449 - Promenljiva niz na liniji 3
+INFO  14:13:24,450 - Promenljiva nizch na liniji 4
+INFO  14:13:24,450 - Promenljiva bodovi na liniji 8
+INFO  14:13:24,450 - Promenljiva poeni na liniji 8
+INFO  14:13:24,450 - Promenljiva slova na liniji 8
+INFO  14:13:24,450 - Promenljiva temp na liniji 8
+INFO  14:13:24,450 - Promenljiva prom na liniji 8
+INFO  14:13:24,450 - Validno sabiranje na liniji 12
+INFO  14:13:24,450 - Validno sabiranje na liniji 13
+INFO  14:13:24,453 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - DesignatorName bodovi
+INFO  14:13:24,456 - Parsiranje uspesno zavrseno!

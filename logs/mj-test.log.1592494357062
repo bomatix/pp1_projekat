@@ -1,0 +1,153 @@
+INFO  16:41:50,794 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  16:41:50,832 - #2 program
+INFO  16:41:50,832 - #9 test301
+INFO  16:41:50,832 - #7 const
+INFO  16:41:50,833 - #9 int
+INFO  16:41:50,833 - #9 nula
+INFO  16:41:50,833 - #37 =
+INFO  16:41:50,834 - #8 0
+INFO  16:41:50,834 - #5 ;
+INFO  16:41:50,834 - #7 const
+INFO  16:41:50,834 - #9 int
+INFO  16:41:50,834 - #9 jedan
+INFO  16:41:50,834 - #37 =
+INFO  16:41:50,834 - #8 1
+INFO  16:41:50,835 - #5 ;
+INFO  16:41:50,835 - #7 const
+INFO  16:41:50,835 - #9 int
+INFO  16:41:50,835 - #9 pet
+INFO  16:41:50,835 - #37 =
+INFO  16:41:50,835 - #8 5
+INFO  16:41:50,835 - #5 ;
+INFO  16:41:50,835 - #9 int
+INFO  16:41:50,835 - #9 niz
+INFO  16:41:50,836 - #17 [
+INFO  16:41:50,836 - #18 ]
+INFO  16:41:50,836 - #5 ;
+INFO  16:41:50,836 - #9 char
+INFO  16:41:50,837 - #9 nizch
+INFO  16:41:50,837 - #17 [
+INFO  16:41:50,837 - #18 ]
+INFO  16:41:50,837 - #5 ;
+INFO  16:41:50,837 - #3 {
+INFO  16:41:50,837 - #16 void
+INFO  16:41:50,837 - #9 main
+INFO  16:41:50,837 - #14 (
+INFO  16:41:50,837 - #15 )
+INFO  16:41:50,838 - #9 int
+INFO  16:41:50,838 - #9 bodovi
+INFO  16:41:50,838 - #6 ,
+INFO  16:41:50,838 - #9 poeni
+INFO  16:41:50,839 - #6 ,
+INFO  16:41:50,839 - #9 slova
+INFO  16:41:50,839 - #6 ,
+INFO  16:41:50,839 - #9 temp
+INFO  16:41:50,839 - #6 ,
+INFO  16:41:50,839 - #9 prom
+INFO  16:41:50,839 - #5 ;
+INFO  16:41:50,839 - #3 {
+INFO  16:41:50,839 - #9 niz
+INFO  16:41:50,839 - #37 =
+INFO  16:41:50,840 - #19 new
+INFO  16:41:50,841 - #9 int
+INFO  16:41:50,841 - #17 [
+INFO  16:41:50,841 - #8 3
+INFO  16:41:50,841 - #18 ]
+INFO  16:41:50,842 - #5 ;
+INFO  16:41:50,842 - #9 niz
+INFO  16:41:50,842 - #17 [
+INFO  16:41:50,842 - #9 nula
+INFO  16:41:50,842 - #18 ]
+INFO  16:41:50,846 - #37 =
+INFO  16:41:50,846 - #9 jedan
+INFO  16:41:50,846 - #5 ;
+INFO  16:41:50,846 - #9 niz
+INFO  16:41:50,846 - #17 [
+INFO  16:41:50,847 - #8 1
+INFO  16:41:50,847 - #18 ]
+INFO  16:41:50,847 - #37 =
+INFO  16:41:50,847 - #8 2
+INFO  16:41:50,847 - #5 ;
+INFO  16:41:50,847 - #9 niz
+INFO  16:41:50,847 - #17 [
+INFO  16:41:50,847 - #9 niz
+INFO  16:41:50,847 - #17 [
+INFO  16:41:50,847 - #9 jedan
+INFO  16:41:50,847 - #18 ]
+INFO  16:41:50,847 - #18 ]
+INFO  16:41:50,847 - #37 =
+INFO  16:41:50,847 - #9 niz
+INFO  16:41:50,847 - #17 [
+INFO  16:41:50,847 - #9 niz
+INFO  16:41:50,847 - #17 [
+INFO  16:41:50,847 - #8 0
+INFO  16:41:50,847 - #18 ]
+INFO  16:41:50,847 - #18 ]
+INFO  16:41:50,847 - #34 *
+INFO  16:41:50,847 - #8 3
+INFO  16:41:50,848 - #5 ;
+INFO  16:41:50,848 - #9 bodovi
+INFO  16:41:50,848 - #37 =
+INFO  16:41:50,848 - #9 niz
+INFO  16:41:50,848 - #17 [
+INFO  16:41:50,848 - #8 2
+INFO  16:41:50,848 - #18 ]
+INFO  16:41:50,848 - #35 /
+INFO  16:41:50,848 - #9 niz
+INFO  16:41:50,849 - #17 [
+INFO  16:41:50,849 - #8 0
+INFO  16:41:50,849 - #18 ]
+INFO  16:41:50,849 - #5 ;
+INFO  16:41:50,849 - #27 print
+INFO  16:41:50,849 - #14 (
+INFO  16:41:50,849 - #9 bodovi
+INFO  16:41:50,849 - #15 )
+INFO  16:41:50,849 - #5 ;
+INFO  16:41:50,849 - #27 print
+INFO  16:41:50,849 - #14 (
+INFO  16:41:50,849 - #9 niz
+INFO  16:41:50,849 - #17 [
+INFO  16:41:50,850 - #8 2
+INFO  16:41:50,850 - #18 ]
+INFO  16:41:50,850 - #15 )
+INFO  16:41:50,850 - #5 ;
+INFO  16:41:50,850 - #4 }
+INFO  16:41:50,850 - #4 }
+INFO  16:41:50,860 - ===================================
+INFO  16:41:50,863 - Konstanta nula na liniji 5
+INFO  16:41:50,863 - Konstanta jedan na liniji 6
+INFO  16:41:50,863 - Konstanta pet na liniji 7
+INFO  16:41:50,863 - Promenljiva niz na liniji 9
+INFO  16:41:50,863 - Promenljiva nizch na liniji 10
+INFO  16:41:50,863 - Promenljiva bodovi na liniji 15
+INFO  16:41:50,863 - Promenljiva poeni na liniji 15
+INFO  16:41:50,863 - Promenljiva slova na liniji 15
+INFO  16:41:50,863 - Promenljiva temp na liniji 15
+INFO  16:41:50,863 - Promenljiva prom na liniji 15
+INFO  16:41:50,863 - Pristup nizu validan na liniji 19
+INFO  16:41:50,864 - Pristup nizu validan na liniji 20
+INFO  16:41:50,864 - Pristup nizu validan na liniji 21
+INFO  16:41:50,864 - Pristup nizu validan na liniji 21
+INFO  16:41:50,864 - Pristup nizu validan na liniji 21
+INFO  16:41:50,864 - Pristup nizu validan na liniji 21
+INFO  16:41:50,864 - Validno sabiranje na liniji 21
+INFO  16:41:50,864 - Pristup nizu validan na liniji 22
+INFO  16:41:50,864 - Pristup nizu validan na liniji 22
+INFO  16:41:50,864 - Validno sabiranje na liniji 22
+INFO  16:41:50,864 - Pristup nizu validan na liniji 24
+INFO  16:41:50,867 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName nula
+INFO  16:41:50,870 - DesignatorName jedan
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName jedan
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName bodovi
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,870 - DesignatorName bodovi
+INFO  16:41:50,870 - DesignatorName niz
+INFO  16:41:50,871 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,75 @@
+INFO  13:43:22,873 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  13:43:22,909 - #2 program
+INFO  13:43:22,909 - #9 MJProgram
+INFO  13:43:22,909 - #9 int
+INFO  13:43:22,910 - #9 x
+INFO  13:43:22,910 - #6 ,
+INFO  13:43:22,911 - #9 y
+INFO  13:43:22,911 - #6 ,
+INFO  13:43:22,911 - #9 z
+INFO  13:43:22,911 - #17 [
+INFO  13:43:22,911 - #18 ]
+INFO  13:43:22,911 - #5 ;
+INFO  13:43:22,911 - #3 {
+INFO  13:43:22,912 - #16 void
+INFO  13:43:22,912 - #9 main
+INFO  13:43:22,912 - #14 (
+INFO  13:43:22,912 - #15 )
+INFO  13:43:22,913 - #3 {
+INFO  13:43:22,913 - #9 z
+INFO  13:43:22,913 - #37 =
+INFO  13:43:22,914 - #19 new
+INFO  13:43:22,915 - #9 int
+INFO  13:43:22,915 - #17 [
+INFO  13:43:22,915 - #8 3
+INFO  13:43:22,916 - #18 ]
+INFO  13:43:22,917 - #5 ;
+INFO  13:43:22,917 - #9 z
+INFO  13:43:22,917 - #17 [
+INFO  13:43:22,917 - #8 0
+INFO  13:43:22,917 - #18 ]
+INFO  13:43:22,917 - #37 =
+INFO  13:43:22,918 - #8 3
+INFO  13:43:22,918 - #5 ;
+INFO  13:43:22,918 - #9 z
+INFO  13:43:22,918 - #17 [
+INFO  13:43:22,918 - #8 1
+INFO  13:43:22,918 - #18 ]
+INFO  13:43:22,918 - #37 =
+INFO  13:43:22,918 - #8 0
+INFO  13:43:22,918 - #5 ;
+INFO  13:43:22,918 - #9 z
+INFO  13:43:22,918 - #17 [
+INFO  13:43:22,918 - #9 z
+INFO  13:43:22,918 - #17 [
+INFO  13:43:22,919 - #8 1
+INFO  13:43:22,919 - #18 ]
+INFO  13:43:22,919 - #18 ]
+INFO  13:43:22,919 - #31 ++
+INFO  13:43:22,919 - #5 ;
+INFO  13:43:22,920 - #27 print
+INFO  13:43:22,920 - #14 (
+INFO  13:43:22,920 - #9 z
+INFO  13:43:22,920 - #17 [
+INFO  13:43:22,920 - #8 0
+INFO  13:43:22,920 - #18 ]
+INFO  13:43:22,920 - #15 )
+INFO  13:43:22,920 - #5 ;
+INFO  13:43:22,920 - #4 }
+INFO  13:43:22,920 - #4 }
+INFO  13:43:22,933 - ===================================
+INFO  13:43:22,936 - Promenljiva x na liniji 2
+INFO  13:43:22,936 - Promenljiva y na liniji 2
+INFO  13:43:22,936 - Promenljiva z na liniji 2
+INFO  13:43:22,936 - Pristup nizu validan na liniji 7
+INFO  13:43:22,936 - Pristup nizu validan na liniji 8
+INFO  13:43:22,936 - Pristup nizu validan na liniji 9
+INFO  13:43:22,936 - Pristup nizu validan na liniji 9
+INFO  13:43:22,936 - Pristup nizu validan na liniji 11
+INFO  13:43:22,939 - DesignatorName z
+INFO  13:43:22,943 - DesignatorName z
+INFO  13:43:22,943 - DesignatorName z
+INFO  13:43:22,943 - DesignatorName z
+INFO  13:43:22,943 - DesignatorName z
+INFO  13:43:22,943 - DesignatorName z
+INFO  13:43:22,943 - Parsiranje uspesno zavrseno!

@@ -68,6 +68,15 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		Obj constName = Tab.find(constIdent.getConstName());
 		if(constName == Tab.noObj) {
 			constIdent.obj = Tab.insert(Obj.Con, constIdent.getConstName(), currentType);
+			if(constIdent.getConstValue() instanceof NumConst) {
+				constIdent.obj.setAdr(((NumConst)constIdent.getConstValue()).getN1());
+			}
+			if(constIdent.getConstValue() instanceof CharConst) {
+				constIdent.obj.setAdr(((CharConst)constIdent.getConstValue()).getC1());
+			}
+			if(constIdent.getConstValue() instanceof BoolConst) {
+				constIdent.obj.setAdr(((BoolConst)constIdent.getConstValue()).getB1().equals("true")?1:0);
+			}
 		}
 		else {
 			report_error("Greska: Identifikator " + constIdent.getConstName() + " je vec definisan!", constIdent);
@@ -409,8 +418,12 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	
 	public void visit(DesignatorArr designatorArr) {
 		designatorArr.struct = Tab.arrType;
-		if(designatorArr.getExpr().struct != Tab.intType) { 
-			report_error("Greska: Izraz u nizu mora biti tipe int!", designatorArr);
+		if(designatorArr.getExpr().struct.getKind() == Struct.Array) {
+			Struct t = ((DesignatorExpr)designatorArr.getParent().getParent()).getDesignatorName().obj.getType().getElemType();
+			if(t.getKind() != Struct.Int) report_error("Greska: Niz izraz u nizu mora biti tipa int!", designatorArr);
+		}
+		else if(designatorArr.getExpr().struct != Tab.intType) { 
+			report_error("Greska: Izraz u nizu mora biti tipa int!", designatorArr);
 		}
 	}
 	
@@ -421,12 +434,20 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	public void visit(TermList_ termList) {
 		Struct f = termList.getFactor().struct;
 		Struct tl = termList.getTermList().struct;
-		if(tl.equals(f) && tl == Tab.intType) {
+		
+		boolean expr1 = f.getElemType() == Tab.intType || f == Tab.intType;
+		boolean expr2 = tl.getElemType() == Tab.intType || tl == Tab.intType;
+		
+		if(expr1 && expr2) {
 			termList.struct = tl;
-			report_info("Validan termList", termList);
+			report_info("Validno sabiranje", termList);
 		}
+//		if(tl.equals(f) && tl == Tab.intType) {
+//			termList.struct = tl;
+//			report_info("Validan termList", termList);
+//		}
 		else {
-			report_error("Greska na liniji "+ termList.getLine()+" : nekompatibilni tipovi u izrazu za sabiranje.", null);
+			report_error("Greska na liniji "+ termList.getLine()+" : nekompatibilni tipovi u izrazu za mnozenje.", null);
 			termList.struct = Tab.noType;
 		}
 	}

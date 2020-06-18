@@ -1,10 +1,14 @@
 package rs.ac.bg.etf.pp1;
 
 import java.util.ArrayList;
+import java.util.EmptyStackException;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 import org.apache.log4j.Logger;
+
+import com.sun.org.apache.xpath.internal.operations.Div;
 
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
@@ -16,9 +20,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	Logger log = Logger.getLogger(getClass());
 	
-	private Stack<Obj> vars = new Stack<>();
-	private LinkedList<InstrObj> io = new LinkedList();
-	private Stack<InstrObj> temp = new Stack<>();
+	private static final int LEFT_TO_RIGHT = 1, RIGHT_TO_LEFT = 2;
+	
+	private Stack<SyntaxNode> ops = new Stack<>();
+	private LinkedList<SyntaxNode> out = new LinkedList();
+	private int arr;
 
 	private int mainPc;
 	
@@ -28,7 +34,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(PrintSt printSt) {
 		Struct st = printSt.getExpr().struct;
-//		Code.load(vars.pop());
+		generate();
 		if(st.getKind() == Struct.Int){
 			Code.loadConst(5);
 			Code.put(Code.print);
@@ -45,405 +51,604 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(ConstIdent constIdent) {
 		Code.load(constIdent.obj);
+		out.push(constIdent);
 	}
 	
 	public void visit(VarIdent varIdent) {
-		Code.load(varIdent.obj);
+//		Code.load(varIdent.obj);
+//		out.push(varIdent);
 	}
 	
-	public void visit(NumConst numConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.intType);
-		cnst.setLevel(0);
-		cnst.setAdr(numConst.getN1());
-		
-		Code.load(cnst);
-	}
-	
-	public void visit(CharConst charConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.charType);
-		cnst.setLevel(0);
-		cnst.setAdr(charConst.getC1());
-		
-		Code.load(cnst); 
-	}
-	
-	public void visit(BoolConst boolConst) {
-		Obj cnst = Tab.insert(Obj.Con, "$", Tab.boolType);
-		cnst.setLevel(0);
-		int boolValue  = 0;
-		if(boolConst.getB1().equals("true")) boolValue = 1;
-		cnst.setAdr(boolValue);
-				
-		Code.load(cnst);
-	}
+//	public void visit(NumConst numConst) {
+//		out.push(numConst);
+//	}
+//	
+//	public void visit(CharConst charConst) {
+//		out.push(charConst);
+//	}
+//	
+//	public void visit(BoolConst boolConst) {
+//		out.push(boolConst);
+//	}
 	
 	public void visit(FactorNum numConst) {
-		log.info("numConst " + numConst.getN1());
-		Obj cnst = new Obj(Obj.Con, "$", Tab.intType);
-		cnst.setLevel(0);
-		cnst.setAdr(numConst.getN1());
-		
-//		Code.load(cnst);
-		
-		InstrObj obj = new InstrObj(InstrObj.load, cnst); 
-		
-		temp.push(obj);
+		out.push(numConst);
 	}
 	
 	public void visit(FactorChar charConst) {
-		Obj cnst = new Obj(Obj.Con, "$", Tab.charType);
-		cnst.setLevel(0);
-		cnst.setAdr(charConst.getC1());
-		
-//		Code.load(cnst); 
-		temp.push(new InstrObj(InstrObj.load, cnst));
+		out.push(charConst);
 	}
 	
 	public void visit(FactorBool boolConst) {
-		Obj cnst = new Obj(Obj.Con, "$", Tab.boolType);
-		cnst.setLevel(0);
-		int boolValue  = 0;
-		if(boolConst.getB1().equals("true")) boolValue = 1;
-		cnst.setAdr(boolValue);
-				
-//		Code.load(cnst);
-		temp.push(new InstrObj(InstrObj.load, cnst));
+		out.push(boolConst);
 	}
 	
 	public void visit(FactorNew factorNew) {
-		if(factorNew.getFactorExpr() instanceof FactorExpr) {
-			Code.put(Code.newarray);
-			if(factorNew.getType().struct == Tab.charType) {
-				Code.put(0);
+		addOperator(factorNew);
+	}
+	
+	public void visit(LBracket_ op) {
+		addOperator(op);
+	}
+	
+	public void visit(RBracket_ op) {
+		addOperator(op);
+	}
+	
+	public void visit(LParen_ op) {
+		addOperator(op);
+	}
+	
+	public void visit(RParen_ op) {
+		addOperator(op);
+	}
+	
+	private int getPrecedence(SyntaxNode op) {
+		if(op instanceof LParen_ ||
+			op instanceof RParen_ ||
+			op instanceof LBracket_ ||
+			op instanceof RBracket_ ||
+			op instanceof DesignatorMinusMinus ||
+			op instanceof DesignatorPlusPlus) {
+			return 1;
+		}
+		else if(op instanceof Multiply ||
+				op instanceof Divide ||
+				op instanceof Mod || 
+				op instanceof FactorNew) {
+			return 3;
+		}
+		else if(op instanceof Add ||
+				op instanceof Subtract) {
+			return 4;
+		}
+		else if(op instanceof Assign ||
+				op instanceof PlusEqual ||
+				op instanceof MinusEqual ||
+				op instanceof MulEqual ||
+				op instanceof DivEqual ||
+				op instanceof ModEqual) {
+			return 14;
+		}
+		else return -1;
+	}
+	
+	private int getAssociativity(SyntaxNode op) {
+		if(op instanceof LParen_ ||
+			op instanceof RParen_ ||
+			op instanceof LBracket_ ||
+			op instanceof RBracket_ ||
+			op instanceof DesignatorMinusMinus ||
+			op instanceof DesignatorPlusPlus ||
+			op instanceof Multiply ||
+			op instanceof Divide ||
+			op instanceof Mod ||
+			op instanceof Add ||
+			op instanceof Subtract) {
+			return LEFT_TO_RIGHT;
+		}
+		else if(op instanceof Assign ||
+				op instanceof PlusEqual ||
+				op instanceof MinusEqual ||
+				op instanceof MulEqual ||
+				op instanceof DivEqual ||
+				op instanceof ModEqual ||
+				op instanceof FactorNew) {
+			return RIGHT_TO_LEFT;
+		}
+		else return -1;
+	}
+	
+	private boolean isOperator(SyntaxNode node) {
+		if(node instanceof LParen_ ||
+			node instanceof RParen_ ||
+			node instanceof LBracket_ ||
+			node instanceof RBracket_ ||
+			node instanceof DesignatorMinusMinus ||
+			node instanceof DesignatorPlusPlus || 
+			node instanceof Multiply ||
+			node instanceof Divide ||
+			node instanceof Mod ||
+			node instanceof Add ||
+			node instanceof Subtract ||
+			node instanceof Assign ||
+			node instanceof PlusEqual ||
+			node instanceof MinusEqual ||
+			node instanceof MulEqual ||
+			node instanceof DivEqual ||
+			node instanceof ModEqual ||
+			node instanceof FactorNew) {
+			return true;
+		}
+		return false;
+	}
+	
+	private void addOperator(SyntaxNode op) {
+		if(op instanceof RParen_) {
+			SyntaxNode top;
+			try {			
+				top = ops.peek();
+			}
+			catch (EmptyStackException e) {
+				top = null;
+			}
+			while(!(top instanceof LParen_)) {
+				out.push(ops.pop());
+				try {			
+					top = ops.peek();
+				}
+				catch (EmptyStackException e) {
+					top = null;
+				}
+			}
+		}
+		else if(op instanceof RBracket_) {
+			SyntaxNode top;
+			try {			
+				top = ops.peek();
+			}
+			catch (EmptyStackException e) {
+				top = null;
+			}
+			while(!(top instanceof LBracket_)) {
+				out.push(ops.pop());
+				try {			
+					top = ops.peek();
+				}
+				catch (EmptyStackException e) {
+					top = null;
+				}
+			}
+			if(top instanceof LBracket_) ops.pop();
+			out.push(op);
+		}
+		else if(op instanceof LParen_ || op instanceof LBracket_) {
+			ops.push(op);
+		}
+		else {
+			
+			int precedence = getPrecedence(op);
+			int associativity = getAssociativity(op);
+			SyntaxNode top;
+			try {			
+				top = ops.peek();
+			}
+			catch (EmptyStackException e) {
+				top = null;
+			}
+			int topPrecedence = getPrecedence(top);
+			while(top != null && 
+					(topPrecedence < precedence || 
+							(topPrecedence == precedence && associativity == LEFT_TO_RIGHT))
+					&& !(top instanceof LParen_ || top instanceof LBracket_)) {
+				out.push(ops.pop());
+				try {			
+					top = ops.peek();
+					topPrecedence = getPrecedence(top);
+				}
+				catch (EmptyStackException e) {
+					top = null;
+				}
+			}
+			ops.push(op);
+		}
+	}
+	
+	private void loadOperands(LinkedList<Obj> objs) {
+		Obj obj1 = objs.pop();
+		Obj obj2 = objs.pop();
+				
+		if(obj2.getKind() == Obj.Elem) {
+			if(obj1.getKind() == Obj.Elem) {
+				Code.load(obj1);
+				Code.put(Code.dup_x2);
+				Code.put(Code.pop);
+				Code.load(obj2);
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
 			}
 			else {
-				Code.put(1);
-			}
-		}
-	}
-	
-	
-	private void addVar(Obj var, boolean isArray) {
-		if(isArray) {
-			io.addLast(new InstrObj(new Obj(Obj.Elem, "$", var.getType().getElemType())));
-		}
-		else {
-			io.addLast(new InstrObj(var));
-		}
-	}
-	
-	public void visit(AssignExpr_ expr) {
-		log.info("AssignExpr");
-		DesignatorList dl = expr.getDesignatorExpr().getDesignatorList();
-		boolean isArray = dl instanceof DesignatorsList;
-		if(expr.getAssignOp() instanceof AddopRightAssign) {
-			AddopRight ar = ((AddopRightAssign)expr.getAssignOp()).getAddopRight();
-			if(ar instanceof PlusEqual) {				
-//				Code.put(Code.add);
-				Obj var = expr.getDesignatorExpr().obj;
-				io.addLast(new InstrObj(Code.add));
-//				io.addLast(new InstrObj(Code.dup));
-//				io.addLast(new InstrObj(var));
-				addVar(var, isArray);
-			}
-			else if(ar instanceof MinusEqual) {				
-//				Code.put(Code.sub);
-				Obj var = expr.getDesignatorExpr().obj;
-				io.addLast(new InstrObj(Code.sub));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(var));
-			}
-		}
-		else if(expr.getAssignOp() instanceof MulopRightAssign) {
-			MulopRight mr = ((MulopRightAssign)expr.getAssignOp()).getMulopRight();
-			if(mr instanceof MulEqual) {
-//				Code.put(Code.mul);
-				Obj var = expr.getDesignatorExpr().obj;
-				io.addLast(new InstrObj(Code.mul));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(var));
-			}
-			else if(mr instanceof DivEqual) {
-//				Code.put(Code.div);
-				Obj var = expr.getDesignatorExpr().obj;
-				io.addLast(new InstrObj(Code.div));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(var));
-			}
-			else {
-//				Code.put(Code.rem);
-				Obj var = expr.getDesignatorExpr().obj;
-				io.addLast(new InstrObj(Code.rem));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(var));
-			}
-		}
-		else {			
-			if(dl instanceof DesignatorsList) {
-				io.addLast(new InstrObj(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType())));
-//			Code.store(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType()));
-//			io.push(new InstrObj(new Obj(Obj.Elem, "$", expr.getDesignatorExpr().obj.getType().getElemType())));
-			}
-			else {		
-				io.addLast(new InstrObj(expr.getDesignatorExpr().obj));
-//			Code.store(expr.getDesignatorExpr().obj);
-//			io.push(new InstrObj(expr.getDesignatorExpr().obj));
-			}
-		}
-		
-		
-		while(!io.isEmpty()) {
-			InstrObj instrObj = io.pop();
-			if(instrObj.obj != null) {
-				if(instrObj.instr == InstrObj.load) {
-					Code.load(instrObj.obj);
-				}
-				else {						
-					Code.store(instrObj.obj);
-				}
-			}
-			else {
-				Code.put(instrObj.instr);
-			}
-		}
-	}
-	
-	public void visit(NegativeTermExpression expression) {
-		Code.loadConst(-1);
-		Code.put(Code.mul);
-	}
-	
-	public void visit(DesignatorExpr designatorExpr) {
-		SyntaxNode parent = designatorExpr.getParent();
-		
-		// Nije dodela nego Expr
-		if(AssignExpr_.class != parent.getClass()) {
-			// DesignatorStatementExpr => Statement
-			if(parent.getClass() == DesignatorStatementExpression.class)  {
-				DesignatorStatementExpression dse = (DesignatorStatementExpression) parent;
-				// Ako nije funkcija
-				if(!(dse.getDesignatorStatement() instanceof DesignatorActPars)) {
-					if(!(designatorExpr.obj.getType().getKind() == Struct.Array && designatorExpr.getDesignatorList() instanceof DesignatorList)) {						
-						Code.load(designatorExpr.obj);
-					}
-					else {
-						Code.put(Code.dup2);
-						Code.load(new Obj(Obj.Elem, "$", designatorExpr.obj.getType().getElemType()));
-					}
-					
-				}
-			}
-			else {				
-				if(designatorExpr.obj.getType().getKind() == Struct.Array && designatorExpr.getDesignatorList() instanceof DesignatorList) {
-					Code.load(new Obj(Obj.Elem, "$", designatorExpr.obj.getType().getElemType()));
-				}
-			}
-		}
-		else {
-			AssignOp ao = ((AssignExpr_) parent).getAssignOp();
-			if(ao instanceof AddopRightAssign || ao instanceof MulopRightAssign) {
-				if(designatorExpr.getDesignatorList() instanceof DesignatorsList) {
-					Code.put(Code.dup2);
-					Code.load(new Obj(Obj.Elem, "$", designatorExpr.obj.getType().getElemType()));
-				}
-			}
-		}
-	}
-	
-	public void visit(DesignatorArr arr) {
-		log.info("DesignatorArr");
-//		while(!temp.isEmpty()) {
-//			io.addLast(temp.pop());
-//		}
-//		while(io.size() > 0) {
-//			InstrObj instrObj = io.removeLast();
-//			if(instrObj.obj != null) {
-//				if(instrObj.instr == InstrObj.load) {
-//					Code.load(instrObj.obj);
-//				}
-//				else {						
-//					Code.store(instrObj.obj);
-//				}
-//			}
-//			else {
-//				Code.put(instrObj.instr);
-//			}
-//		}
-//		while(!vars.isEmpty()) {
-//			Code.load(vars.pop());
-//		}
-	}
-	
-	public void visit(DesignatorName designatorName) {
-		log.info("DesignatorName " + designatorName.getVarName());
-		DesignatorList dl = ((DesignatorExpr)designatorName.getParent()).getDesignatorList();
-		if(designatorName.getParent().getParent().getClass() != AssignExpr_.class) {
-//			Code.load(designatorName.obj);
-			if(((DesignatorExpr)designatorName.getParent()).getDesignatorList() instanceof DesignatorsList) {
-//				io.addLast(new InstrObj(InstrObj.load, designatorName.obj));
-				log.info("-- arr/not assign");
-//				Code.load(designatorName.obj);
-//				io.addLast(new InstrObj(InstrObj.load, designatorName.obj));
-			}
-			else {				
-				vars.add(designatorName.obj);
-			}
-			// Dodati identifikator ako kada??
-//			io.push(new InstrObj(InstrObj.load, designatorName.obj));
-//			temp.push(new InstrObj(InstrObj.load, designatorName.obj));
-		}
-		else {
-			if(dl instanceof DesignatorsList) {
-				log.info("-- arr/assign");
-				Code.load(designatorName.obj);
-//				temp.push(new InstrObj(InstrObj.load, designatorName.obj));
-//				vars.add(designatorName.obj);
-			}
-			AssignExpr_ ae = (AssignExpr_)designatorName.getParent().getParent();
-			if(ae.getAssignOp() instanceof AddopRightAssign || ae.getAssignOp() instanceof MulopRightAssign) {
-//				Code.load(designatorName.obj);
-				io.push(new InstrObj(InstrObj.load, designatorName.obj));
-			}
-		}
-	}
-	
-	public void visit(TermList_ termList) {	
-		log.info("TermExpr");
-		MulOp mulOp = termList.getMulOp();
-		if(mulOp instanceof MulopLeft_) {
-			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Multiply) {
-				temp.push(new InstrObj(Code.mul));
-			}
-			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Divide) {
-				temp.push(new InstrObj(Code.div));
-			}
-			if(((MulopLeft_) mulOp).getMulopLeft() instanceof Mod) {
-				temp.push(new InstrObj(Code.rem));
-			}
-		}
-		else {
-			if(((MulopRight_) mulOp).getMulopRight() instanceof DivEqual) {
-				Obj var = vars.remove(0);
-				io.addLast(new InstrObj(var));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(Code.div));
-				io.addLast(new InstrObj(InstrObj.load, var));
-			}
-			else if(((MulopRight_) mulOp).getMulopRight() instanceof MulEqual) {
-				Obj var = vars.remove(0);
-				io.addLast(new InstrObj(var));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(Code.mul));
-				io.addLast(new InstrObj(InstrObj.load, var));
-			}
-			else if(((MulopRight_) mulOp).getMulopRight() instanceof ModEqual) {
-				Obj var = vars.remove(0);
-				io.addLast(new InstrObj(var));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(Code.rem));
-				io.addLast(new InstrObj(InstrObj.load, var));
-			}
-		}
-	}
-	
-	public void visit(Expr expr) {
-//		if(expr.getParent() instanceof DesignatorArr) {
-////			while(!temp.isEmpty()) {
-////				io.addLast(temp.pop());
-////			}
-//		}
-//		else {			
-			log.info("Expr");
-			while(!temp.isEmpty()) {
-				io.addLast(temp.pop());
-			}
-			while(io.size() > 0) {
-				InstrObj instrObj = io.removeLast();
-				if(instrObj.obj != null) {
-					if(instrObj.instr == InstrObj.load) {
-						Code.load(instrObj.obj);
-					}
-					else {						
-						Code.store(instrObj.obj);
-					}
+				if(obj1.getKind() != Obj.NO_VALUE) {					
+					Code.load(obj2);
+					Code.load(obj1);
 				}
 				else {
-					Code.put(instrObj.instr);
+					Code.put(Code.dup_x2);
+					Code.put(Code.pop);
+					Code.load(obj2);
+					Code.put(Code.dup_x1);
+					Code.put(Code.pop);
 				}
 			}
-			while(!vars.isEmpty()) {
-				Code.load(vars.pop());
-			}
-//		}
-//		if
-	}
-	
-	public void visit(AddExpression addExpression) {
-		log.info("AddExpr");
-		AddOp addop = addExpression.getAddOp();
-		if(addop instanceof AddopLeft_) {
-//			if(!vars.isEmpty()) {			
-//				temp.push(new InstrObj(InstrObj.load, vars.pop()));
-//			}
-			if(((AddopLeft_) addop).getAddopLeft() instanceof Add) {
-				temp.push(new InstrObj(Code.add));
-			}
-			if(((AddopLeft_) addop).getAddopLeft() instanceof Subtract) {
-				temp.push(new InstrObj(Code.sub));
-			}
 		}
-		else {
-			if(((AddopRight_) addop).getAddopRight() instanceof PlusEqual) {
-				Obj var = vars.remove(0);
-				io.addLast(new InstrObj(var));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(Code.add));
-				io.addLast(new InstrObj(InstrObj.load, var));
-			}
-			else if(((AddopRight_) addop).getAddopRight() instanceof MinusEqual) {
-				Obj var = vars.remove(0);
-				io.addLast(new InstrObj(var));
-				io.addLast(new InstrObj(Code.dup));
-				io.addLast(new InstrObj(Code.sub));
-				io.addLast(new InstrObj(InstrObj.load, var));
-			}
-		}
-	}
-	
-	public void visit(ActParsItem item) {
-//		Code.load(item.getExpr());
-	}
-	
-	public void visit(DesignatorStatementExpression expression) {
-		Obj method = expression.getDesignatorExpr().obj;
-		if(expression.getDesignatorStatement() instanceof DesignatorActPars) {			
-			int offset = method.getAdr() - Code.pc;
-			Code.put(Code.call);
-			Code.put2(offset);
-			if(method.getType() != Tab.noType){
+		else if(obj1.getKind() == Obj.Elem) {
+			Code.load(obj1);
+			if(obj2.getKind() != Obj.NO_VALUE) {				
+				Code.load(obj2);
+				Code.put(Code.dup_x1);
 				Code.put(Code.pop);
 			}
 		}
-		else if(expression.getDesignatorStatement() instanceof DesignatorPlusPlus) {
-			Code.loadConst(1);
-			Code.put(Code.add);
-			if(expression.getDesignatorExpr().getDesignatorList() instanceof DesignatorsList) {
-				Code.store(new Obj(Obj.Elem, "$", expression.getDesignatorExpr().obj.getType().getElemType()));
+		else {			
+			if(obj2.getKind() != Obj.NO_VALUE) 
+				Code.load(obj2);
+			if(obj1.getKind() != Obj.NO_VALUE) 
+				Code.load(obj1);
+		}
+	}
+	
+	private void generate() {
+		LinkedList<Obj> objs = new LinkedList<>();
+		boolean newArray = false, loadArray = false;
+		while(!ops.isEmpty()) {
+			out.push(ops.pop());
+		}
+		while(!out.isEmpty()) {
+			SyntaxNode sn = out.pollLast();
+			if(sn instanceof RBracket_) {
+//				objs.push(new Obj(Obj.Elem, "$", Tab.intType));
 			}
-			else {				
-				Code.store(expression.getDesignatorExpr().obj);
+			else if(!isOperator(sn)) {
+				Obj obj = null;
+				if(sn instanceof DesignatorName) {
+					obj = ((DesignatorName) sn).obj;
+					if(obj.getType().getKind() == Struct.Array) arr++;
+				}
+				else if(sn instanceof FactorNum) {
+					obj = new Obj(Obj.Con, "$", Tab.intType);
+					obj.setLevel(0);
+					obj.setAdr(((FactorNum)sn).getN1());
+				}
+				else if(sn instanceof NumConst) {
+					obj = new Obj(Obj.Con, "$", Tab.intType);
+					obj.setLevel(0);
+					obj.setAdr(((NumConst)sn).getN1());
+				}
+				else if(sn instanceof CharConst) {
+					obj = new Obj(Obj.Con, "$", Tab.charType);
+					obj.setLevel(0);
+					obj.setAdr(((CharConst)sn).getC1());
+				}
+				else if(sn instanceof FactorChar) {
+					obj = new Obj(Obj.Con, "$", Tab.charType);
+					obj.setLevel(0);
+					obj.setAdr(((FactorChar)sn).getC1());
+				}
+				else if(sn instanceof BoolConst) {
+					obj = new Obj(Obj.Con, "$", Tab.charType);
+					obj.setLevel(0);
+					obj.setAdr(((BoolConst)sn).getB1().equals("true")?1:0);
+				}
+				else if(sn instanceof FactorBool) {
+					obj = new Obj(Obj.Con, "$", Tab.charType);
+					obj.setLevel(0);
+					obj.setAdr(((FactorBool)sn).getB1().equals("true")?1:0);
+				}
+				objs.push(obj);
+			}
+			else {
+				
+				if(sn instanceof FactorNew) {
+					FactorNew fn = (FactorNew) sn;
+					if(fn.getFactorExpr() instanceof FactorExpr) {
+						newArray = true;
+						Obj obj = objs.pop();
+						if(obj.getKind() != Obj.NO_VALUE) 
+							Code.load(obj);
+						Code.put(Code.newarray);
+						if(fn.getType().struct == Tab.charType) {
+							Code.put(0);
+						}
+						else {
+							Code.put(1);
+						}
+					}
+				}
+				
+				if(sn instanceof DesignatorPlusPlus) {
+					Obj obj = objs.pop();
+					if(obj.getKind() == Obj.Elem) {						
+						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					else {
+						Code.load(obj);
+					}
+					Code.loadConst(1);
+					Code.put(Code.add);
+					Code.store(obj);
+				}
+				if(sn instanceof DesignatorMinusMinus) {
+					Obj obj = objs.pop();
+					if(obj.getKind() == Obj.Elem) {						
+						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					else {
+						Code.load(obj);
+					}
+					Code.loadConst(1);
+					Code.put(Code.sub);
+					Code.store(obj);
+				}
+				
+				if(sn instanceof RBracket_) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					Code.load(obj2);
+					if(obj1.getKind() == Obj.NO_VALUE || obj1.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x1);
+						Code.put(Code.pop);
+					}
+					else {
+						Code.load(obj1);						
+					}
+					Obj obj_final = new Obj(Obj.Elem, "$", obj2.getType()); 
+					objs.push(obj_final);
+					arr--;
+					if(arr > 0) {
+						Code.load(obj_final);
+					}
+					
+				}
+				if(sn instanceof Assign) {	
+					Obj obj1 = null, obj2 = null;
+					if(!newArray) {						
+						obj1 = objs.pop();
+						obj2 = objs.pop();
+						if(obj2.getKind() == Obj.Elem) {
+//							Code.pc--;
+						}
+						if(obj1.getKind() != Obj.NO_VALUE && obj1.getKind() != Obj.Elem) 
+							Code.load(obj1);
+					}
+					else {
+						newArray = false;
+						obj2 = objs.pop();	
+					}
+					Code.store(obj2);
+				}
+				
+				
+				if(sn instanceof PlusEqual) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					if(obj2.getKind() == Obj.Elem) {
+//						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					if(obj1.getKind() != Obj.NO_VALUE) 
+						Code.load(obj1);
+					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
+						Code.load(obj2);
+					Code.put(Code.add);
+					if(obj2.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x2);
+					}
+					else {						
+						Code.put(Code.dup);
+					}
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					Code.store(obj2);
+				}
+				if(sn instanceof MinusEqual) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					if(obj2.getKind() == Obj.Elem) {
+//						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					if(obj1.getKind() != Obj.NO_VALUE) 
+						Code.load(obj1);
+					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
+						Code.load(obj2);
+					Code.put(Code.sub);
+					if(obj2.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x2);
+					}
+					else {						
+						Code.put(Code.dup);
+					}
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					Code.store(obj2);
+				}
+				if(sn instanceof MulEqual) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					if(obj2.getKind() == Obj.Elem) {
+//						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					if(obj1.getKind() != Obj.NO_VALUE) 
+						Code.load(obj1);
+					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
+						Code.load(obj2);
+					Code.put(Code.mul);
+					if(obj2.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x2);
+					}
+					else {						
+						Code.put(Code.dup);
+					}
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					Code.store(obj2);
+				}
+				if(sn instanceof DivEqual) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					if(obj2.getKind() == Obj.Elem) {
+//						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					if(obj1.getKind() != Obj.NO_VALUE) 
+						Code.load(obj1);
+					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
+						Code.load(obj2);
+					Code.put(Code.div);
+					if(obj2.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x2);
+					}
+					else {						
+						Code.put(Code.dup);
+					}
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					Code.store(obj2);
+				}
+				if(sn instanceof ModEqual) {
+					Obj obj1 = objs.pop();
+					Obj obj2 = objs.pop();
+					if(obj2.getKind() == Obj.Elem) {
+//						Code.pc--;
+						Code.put(Code.dup2);
+						Code.put(Code.aload);
+					}
+					if(obj1.getKind() != Obj.NO_VALUE) 
+						Code.load(obj1);
+					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
+						Code.load(obj2);
+					Code.put(Code.rem);
+					if(obj2.getKind() == Obj.Elem) {
+						Code.put(Code.dup_x2);
+					}
+					else {						
+						Code.put(Code.dup);
+					}
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					Code.store(obj2);
+				}
+				
+				
+				if(sn instanceof Multiply) {
+					loadOperands(objs);
+					Code.put(Code.mul);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+					
+				}
+				if(sn instanceof Divide) {
+					loadOperands(objs);
+					Code.put(Code.div);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+				}
+				if(sn instanceof Mod) {
+					loadOperands(objs);
+					Code.put(Code.rem);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+				}
+				if(sn instanceof Add) {
+					loadOperands(objs);
+					Code.put(Code.add);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+				}
+				if(sn instanceof Subtract) {
+					loadOperands(objs);
+					Code.put(Code.sub);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+				}
 			}
 		}
-		else {
-			Code.loadConst(1);
-			Code.put(Code.sub);
-			if(expression.getDesignatorExpr().getDesignatorList() instanceof DesignatorsList) {
-				Code.store(new Obj(Obj.Elem, "$", expression.getDesignatorExpr().obj.getType().getElemType()));
-			}
-			else {				
-				Code.store(expression.getDesignatorExpr().obj);
-			}
+		
+		
+		// THINK ABOUT THIS
+		// UNUSED VALUES LEFT ON STACK
+		while(!objs.isEmpty()) {
+			Obj obj = objs.pop();				
+			if(obj.getKind() != Obj.NO_VALUE) Code.load(obj);
 		}
+		
+		arr = 0;
+	}
+	
+	
+	public void visit(Multiply mul) {
+		addOperator(mul);
+	}
+	
+	public void visit(Divide div) {
+		addOperator(div);
+	}
+	
+	public void visit(Mod mod) {
+		addOperator(mod);
+	}
+	
+	public void visit(Add add) {
+		addOperator(add);
+	}
+	
+	public void visit(Subtract min) {
+		addOperator(min);
+	}
+
+	public void visit(Assign equal) {
+		addOperator(equal);
+	}
+
+	public void visit(PlusEqual plusEqual) {
+		addOperator(plusEqual);
+	}
+	
+	public void visit(MinusEqual minusEqual) {
+		addOperator(minusEqual);
+	}
+	
+	public void visit(MulEqual mulEqual) {
+		addOperator(mulEqual);
+	}
+	
+	public void visit(DivEqual divEqual) {
+		addOperator(divEqual);
+	}
+	
+	public void visit(ModEqual modEqual) {
+		addOperator(modEqual);
+	}
+	
+	public void visit(DesignatorPlusPlus plusPlus) {
+		addOperator(plusPlus);
+	}
+	
+	public void visit(DesignatorMinusMinus minusMinus) {
+		addOperator(minusMinus);
+	}
+	
+	public void visit(AssignExpr_ expr) {
+		generate();
+	}
+	
+	public void visit(DesignatorSt designatorSt) {
+		generate();
+	}
+	
+	
+	public void visit(DesignatorName designatorName) {
+		log.info("DesignatorName " + designatorName.getVarName());
+		out.push(designatorName);
 	}
 
 	public void visit(MethodNameVoid methodNameVoid) {

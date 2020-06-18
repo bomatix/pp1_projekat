@@ -1,0 +1,267 @@
+INFO  23:03:03,632 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  23:03:03,668 - #2 program
+INFO  23:03:03,668 - #9 test301
+INFO  23:03:03,668 - #7 const
+INFO  23:03:03,669 - #9 int
+INFO  23:03:03,669 - #9 nula
+INFO  23:03:03,671 - #37 =
+INFO  23:03:03,671 - #8 0
+INFO  23:03:03,671 - #5 ;
+INFO  23:03:03,671 - #7 const
+INFO  23:03:03,671 - #9 int
+INFO  23:03:03,671 - #9 jedan
+INFO  23:03:03,671 - #37 =
+INFO  23:03:03,671 - #8 1
+INFO  23:03:03,671 - #5 ;
+INFO  23:03:03,671 - #7 const
+INFO  23:03:03,671 - #9 int
+INFO  23:03:03,671 - #9 pet
+INFO  23:03:03,671 - #37 =
+INFO  23:03:03,671 - #8 5
+INFO  23:03:03,671 - #5 ;
+INFO  23:03:03,671 - #9 int
+INFO  23:03:03,671 - #9 niz
+INFO  23:03:03,673 - #17 [
+INFO  23:03:03,673 - #18 ]
+INFO  23:03:03,673 - #5 ;
+INFO  23:03:03,673 - #9 char
+INFO  23:03:03,673 - #9 nizch
+INFO  23:03:03,673 - #17 [
+INFO  23:03:03,673 - #18 ]
+INFO  23:03:03,673 - #5 ;
+INFO  23:03:03,673 - #3 {
+INFO  23:03:03,673 - #16 void
+INFO  23:03:03,674 - #9 incInput
+INFO  23:03:03,674 - #14 (
+INFO  23:03:03,674 - #15 )
+INFO  23:03:03,674 - #9 int
+INFO  23:03:03,674 - #9 i
+INFO  23:03:03,675 - #5 ;
+INFO  23:03:03,675 - #3 {
+INFO  23:03:03,675 - #28 read
+INFO  23:03:03,675 - #14 (
+INFO  23:03:03,675 - #9 i
+INFO  23:03:03,675 - #15 )
+INFO  23:03:03,676 - #5 ;
+INFO  23:03:03,676 - #27 print
+INFO  23:03:03,676 - #14 (
+INFO  23:03:03,676 - #9 i
+INFO  23:03:03,676 - #15 )
+INFO  23:03:03,678 - #5 ;
+INFO  23:03:03,678 - #9 i
+INFO  23:03:03,678 - #31 ++
+INFO  23:03:03,678 - #5 ;
+INFO  23:03:03,679 - #27 print
+INFO  23:03:03,679 - #14 (
+INFO  23:03:03,679 - #9 i
+INFO  23:03:03,679 - #15 )
+INFO  23:03:03,679 - #5 ;
+INFO  23:03:03,679 - #4 }
+INFO  23:03:03,679 - #16 void
+INFO  23:03:03,682 - #9 main
+INFO  23:03:03,682 - #14 (
+INFO  23:03:03,682 - #15 )
+INFO  23:03:03,682 - #9 int
+INFO  23:03:03,682 - #9 bodovi
+INFO  23:03:03,682 - #6 ,
+INFO  23:03:03,682 - #9 poeni
+INFO  23:03:03,682 - #6 ,
+INFO  23:03:03,682 - #9 slova
+INFO  23:03:03,682 - #6 ,
+INFO  23:03:03,682 - #9 temp
+INFO  23:03:03,683 - #6 ,
+INFO  23:03:03,683 - #9 prom
+INFO  23:03:03,683 - #5 ;
+INFO  23:03:03,683 - #3 {
+INFO  23:03:03,683 - #9 niz
+INFO  23:03:03,683 - #37 =
+INFO  23:03:03,683 - #19 new
+INFO  23:03:03,683 - #9 int
+INFO  23:03:03,683 - #17 [
+INFO  23:03:03,683 - #8 3
+INFO  23:03:03,683 - #18 ]
+INFO  23:03:03,683 - #5 ;
+INFO  23:03:03,684 - #9 nizch
+INFO  23:03:03,684 - #37 =
+INFO  23:03:03,684 - #19 new
+INFO  23:03:03,684 - #9 char
+INFO  23:03:03,684 - #17 [
+INFO  23:03:03,684 - #8 3
+INFO  23:03:03,684 - #18 ]
+INFO  23:03:03,684 - #5 ;
+INFO  23:03:03,684 - #9 niz
+INFO  23:03:03,684 - #17 [
+INFO  23:03:03,684 - #8 0
+INFO  23:03:03,685 - #18 ]
+INFO  23:03:03,685 - #37 =
+INFO  23:03:03,685 - #8 5
+INFO  23:03:03,685 - #5 ;
+INFO  23:03:03,685 - #9 niz
+INFO  23:03:03,685 - #17 [
+INFO  23:03:03,685 - #8 1
+INFO  23:03:03,685 - #18 ]
+INFO  23:03:03,685 - #37 =
+INFO  23:03:03,685 - #8 2
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 niz
+INFO  23:03:03,686 - #17 [
+INFO  23:03:03,686 - #8 2
+INFO  23:03:03,686 - #18 ]
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 4
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 poeni
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 2
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 slova
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 2
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 temp
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 3
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 prom
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 5
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,686 - #9 bodovi
+INFO  23:03:03,686 - #37 =
+INFO  23:03:03,686 - #8 10
+INFO  23:03:03,686 - #5 ;
+INFO  23:03:03,687 - #9 niz
+INFO  23:03:03,687 - #17 [
+INFO  23:03:03,687 - #9 niz
+INFO  23:03:03,687 - #17 [
+INFO  23:03:03,687 - #8 2
+INFO  23:03:03,687 - #18 ]
+INFO  23:03:03,687 - #47 -=
+INFO  23:03:03,687 - #8 3
+INFO  23:03:03,687 - #18 ]
+INFO  23:03:03,687 - #46 +=
+INFO  23:03:03,687 - #9 poeni
+INFO  23:03:03,688 - #48 *=
+INFO  23:03:03,688 - #9 niz
+INFO  23:03:03,688 - #17 [
+INFO  23:03:03,689 - #8 0
+INFO  23:03:03,689 - #18 ]
+INFO  23:03:03,689 - #50 %=
+INFO  23:03:03,689 - #9 prom
+INFO  23:03:03,689 - #46 +=
+INFO  23:03:03,689 - #9 temp
+INFO  23:03:03,689 - #46 +=
+INFO  23:03:03,689 - #9 bodovi
+INFO  23:03:03,689 - #47 -=
+INFO  23:03:03,689 - #9 niz
+INFO  23:03:03,689 - #17 [
+INFO  23:03:03,689 - #8 2
+INFO  23:03:03,689 - #18 ]
+INFO  23:03:03,689 - #48 *=
+INFO  23:03:03,689 - #8 2
+INFO  23:03:03,689 - #5 ;
+INFO  23:03:03,689 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 niz
+INFO  23:03:03,690 - #17 [
+INFO  23:03:03,690 - #8 2
+INFO  23:03:03,690 - #18 ]
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,690 - #5 ;
+INFO  23:03:03,690 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 bodovi
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,690 - #5 ;
+INFO  23:03:03,690 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 temp
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,690 - #5 ;
+INFO  23:03:03,690 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 prom
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,690 - #5 ;
+INFO  23:03:03,690 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 niz
+INFO  23:03:03,690 - #17 [
+INFO  23:03:03,690 - #8 0
+INFO  23:03:03,690 - #18 ]
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,690 - #5 ;
+INFO  23:03:03,690 - #27 print
+INFO  23:03:03,690 - #14 (
+INFO  23:03:03,690 - #9 poeni
+INFO  23:03:03,690 - #15 )
+INFO  23:03:03,691 - #5 ;
+INFO  23:03:03,691 - #27 print
+INFO  23:03:03,691 - #14 (
+INFO  23:03:03,691 - #9 niz
+INFO  23:03:03,691 - #17 [
+INFO  23:03:03,691 - #8 1
+INFO  23:03:03,691 - #18 ]
+INFO  23:03:03,691 - #15 )
+INFO  23:03:03,691 - #5 ;
+INFO  23:03:03,691 - #4 }
+INFO  23:03:03,691 - #4 }
+INFO  23:03:03,700 - ===================================
+INFO  23:03:03,703 - Konstanta nula na liniji 5
+INFO  23:03:03,703 - Konstanta jedan na liniji 6
+INFO  23:03:03,703 - Konstanta pet na liniji 7
+INFO  23:03:03,703 - Promenljiva niz na liniji 9
+INFO  23:03:03,703 - Promenljiva nizch na liniji 10
+INFO  23:03:03,703 - Promenljiva i na liniji 14
+INFO  23:03:03,703 - Promenljiva bodovi na liniji 23
+INFO  23:03:03,703 - Promenljiva poeni na liniji 23
+INFO  23:03:03,703 - Promenljiva slova na liniji 23
+INFO  23:03:03,703 - Promenljiva temp na liniji 23
+INFO  23:03:03,703 - Promenljiva prom na liniji 23
+INFO  23:03:03,703 - Pristup nizu validan na liniji 30
+INFO  23:03:03,703 - Pristup nizu validan na liniji 31
+INFO  23:03:03,704 - Pristup nizu validan na liniji 32
+INFO  23:03:03,704 - Pristup nizu validan na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Pristup nizu validan na liniji 39
+INFO  23:03:03,704 - Pristup nizu validan na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Pristup nizu validan na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Validno sabiranje na liniji 39
+INFO  23:03:03,704 - Pristup nizu validan na liniji 40
+INFO  23:03:03,704 - Pristup nizu validan na liniji 44
+INFO  23:03:03,704 - Pristup nizu validan na liniji 46
+INFO  23:03:03,706 - DesignatorName i
+INFO  23:03:03,706 - DesignatorName i
+INFO  23:03:03,709 - DesignatorName i
+INFO  23:03:03,709 - DesignatorName i
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName nizch
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName poeni
+INFO  23:03:03,709 - DesignatorName slova
+INFO  23:03:03,709 - DesignatorName temp
+INFO  23:03:03,709 - DesignatorName prom
+INFO  23:03:03,709 - DesignatorName bodovi
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName niz
+INFO  23:03:03,709 - DesignatorName poeni
+INFO  23:03:03,710 - DesignatorName niz
+INFO  23:03:03,710 - DesignatorName prom
+INFO  23:03:03,710 - DesignatorName temp
+INFO  23:03:03,710 - DesignatorName bodovi
+INFO  23:03:03,710 - DesignatorName niz
+INFO  23:03:03,710 - DesignatorName niz
+INFO  23:03:03,710 - DesignatorName bodovi
+INFO  23:03:03,710 - DesignatorName temp
+INFO  23:03:03,710 - DesignatorName prom
+INFO  23:03:03,710 - DesignatorName niz
+INFO  23:03:03,710 - DesignatorName poeni
+INFO  23:03:03,710 - DesignatorName niz
+INFO  23:03:03,710 - Parsiranje uspesno zavrseno!

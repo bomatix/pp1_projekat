@@ -1,0 +1,46 @@
+INFO  15:10:28,498 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  15:10:28,535 - #2 program
+INFO  15:10:28,535 - #9 MJProgram
+INFO  15:10:28,535 - #9 int
+INFO  15:10:28,536 - #9 x
+INFO  15:10:28,537 - #6 ,
+INFO  15:10:28,537 - #9 y
+INFO  15:10:28,537 - #6 ,
+INFO  15:10:28,537 - #9 z
+INFO  15:10:28,537 - #17 [
+INFO  15:10:28,537 - #18 ]
+INFO  15:10:28,538 - #5 ;
+INFO  15:10:28,538 - #3 {
+INFO  15:10:28,538 - #16 void
+INFO  15:10:28,538 - #9 main
+INFO  15:10:28,538 - #14 (
+INFO  15:10:28,538 - #15 )
+INFO  15:10:28,539 - #3 {
+INFO  15:10:28,539 - #9 z
+INFO  15:10:28,539 - #37 =
+INFO  15:10:28,540 - #19 new
+INFO  15:10:28,541 - #9 int
+INFO  15:10:28,541 - #17 [
+INFO  15:10:28,541 - #8 2
+INFO  15:10:28,541 - #18 ]
+INFO  15:10:28,542 - #5 ;
+INFO  15:10:28,542 - #9 z
+INFO  15:10:28,543 - #17 [
+INFO  15:10:28,543 - #8 0
+INFO  15:10:28,543 - #18 ]
+INFO  15:10:28,543 - #37 =
+INFO  15:10:28,544 - #8 2
+INFO  15:10:28,544 - #5 ;
+INFO  15:10:28,544 - #4 }
+INFO  15:10:28,544 - #4 }
+INFO  15:10:28,554 - ===================================
+INFO  15:10:28,557 - Promenljiva x na liniji 2
+INFO  15:10:28,557 - Promenljiva y na liniji 2
+INFO  15:10:28,557 - Promenljiva z na liniji 2
+INFO  15:10:28,557 - Pristup nizu validan na liniji 7
+INFO  15:10:28,559 - DesignatorName z
+INFO  15:10:28,562 - numConst 2
+INFO  15:10:28,563 - DesignatorName z
+INFO  15:10:28,563 - numConst 0
+INFO  15:10:28,563 - numConst 2
+INFO  15:10:28,564 - Parsiranje uspesno zavrseno!

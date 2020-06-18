@@ -1,0 +1,79 @@
+INFO  18:28:45,022 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  18:28:45,060 - #2 program
+INFO  18:28:45,060 - #9 test301
+INFO  18:28:45,060 - #7 const
+INFO  18:28:45,060 - #9 int
+INFO  18:28:45,060 - #9 nula
+INFO  18:28:45,061 - #37 =
+INFO  18:28:45,061 - #8 0
+INFO  18:28:45,061 - #5 ;
+INFO  18:28:45,062 - #7 const
+INFO  18:28:45,062 - #9 int
+INFO  18:28:45,062 - #9 jedan
+INFO  18:28:45,062 - #37 =
+INFO  18:28:45,062 - #8 1
+INFO  18:28:45,062 - #5 ;
+INFO  18:28:45,062 - #7 const
+INFO  18:28:45,062 - #9 int
+INFO  18:28:45,062 - #9 pet
+INFO  18:28:45,062 - #37 =
+INFO  18:28:45,062 - #8 5
+INFO  18:28:45,062 - #5 ;
+INFO  18:28:45,062 - #9 int
+INFO  18:28:45,063 - #9 niz
+INFO  18:28:45,063 - #17 [
+INFO  18:28:45,064 - #18 ]
+INFO  18:28:45,064 - #5 ;
+INFO  18:28:45,064 - #9 char
+INFO  18:28:45,064 - #9 nizch
+INFO  18:28:45,064 - #17 [
+INFO  18:28:45,064 - #18 ]
+INFO  18:28:45,064 - #5 ;
+INFO  18:28:45,064 - #3 {
+INFO  18:28:45,064 - #16 void
+INFO  18:28:45,064 - #9 main
+INFO  18:28:45,065 - #14 (
+INFO  18:28:45,065 - #15 )
+INFO  18:28:45,065 - #9 int
+INFO  18:28:45,065 - #9 bodovi
+INFO  18:28:45,065 - #6 ,
+INFO  18:28:45,065 - #9 poeni
+INFO  18:28:45,065 - #6 ,
+INFO  18:28:45,066 - #9 slova
+INFO  18:28:45,066 - #6 ,
+INFO  18:28:45,066 - #9 temp
+INFO  18:28:45,066 - #6 ,
+INFO  18:28:45,066 - #9 prom
+INFO  18:28:45,066 - #5 ;
+INFO  18:28:45,066 - #3 {
+INFO  18:28:45,066 - #9 nizch
+INFO  18:28:45,066 - #37 =
+INFO  18:28:45,067 - #19 new
+INFO  18:28:45,067 - #9 char
+INFO  18:28:45,067 - #17 [
+INFO  18:28:45,067 - #8 3
+INFO  18:28:45,068 - #18 ]
+INFO  18:28:45,068 - #5 ;
+INFO  18:28:45,069 - #9 nizch
+INFO  18:28:45,069 - #17 [
+INFO  18:28:45,069 - #8 0
+INFO  18:28:45,069 - #18 ]
+INFO  18:28:45,072 - #37 =
+INFO  18:28:45,073 - #11 a
+INFO  18:28:45,073 - #5 ;
+INFO  18:28:45,073 - #4 }
+INFO  18:28:45,073 - #4 }
+INFO  18:28:45,083 - ===================================
+INFO  18:28:45,086 - Konstanta nula na liniji 5
+INFO  18:28:45,086 - Konstanta jedan na liniji 6
+INFO  18:28:45,086 - Konstanta pet na liniji 7
+INFO  18:28:45,086 - Promenljiva niz na liniji 9
+INFO  18:28:45,086 - Promenljiva nizch na liniji 10
+INFO  18:28:45,086 - Promenljiva bodovi na liniji 15
+INFO  18:28:45,086 - Promenljiva poeni na liniji 15
+INFO  18:28:45,086 - Promenljiva slova na liniji 15
+INFO  18:28:45,086 - Promenljiva temp na liniji 15
+INFO  18:28:45,086 - Promenljiva prom na liniji 15
+INFO  18:28:45,086 - Pristup nizu validan na liniji 18
+INFO  18:28:45,089 - DesignatorName nizch
+INFO  18:28:45,092 - DesignatorName nizch

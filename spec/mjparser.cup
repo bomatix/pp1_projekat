@@ -55,7 +55,7 @@ terminal PLUSPLUS, MINUSMINUS, DOT, MUL, DIV, MOD, EQUAL, ISEQUAL, LESS, LESSEQU
 terminal AND, OR, ISNOTEQUAL;
 terminal PLUSEQUAL, MINUSEQUAL, MULEQUAL, DIVEQUAL, MODEQUAL;
 
-nonterminal DeclList, MethodDeclList, VarIdentList, AssignExprSemi;
+nonterminal DeclList, MethodDeclList, VarIdentList, AssignExprSemi, LParen_, RParen_, LBracket_, RBracket_;
 nonterminal Decl, ConstDecl, VarDecl, AbstractClassDecl, ClassDecl;
 nonterminal ConstIdents, ConstValue, FormParsList;
 nonterminal ArrayDecl, TypeVoid, OptionalCondition;
@@ -123,7 +123,7 @@ FormParsList ::= (FormParsList_) FormParsList COMMA FormParItem |
 FormParItem ::=  (FormParItem) Type IDENT:formParItem EmptyBrackets;
 
 
-EmptyBrackets ::= (EmptyBrackets_) LBRACKET RBRACKET | (NoEmptyBrackets);
+EmptyBrackets ::= (EmptyBrackets_) LBracket_ RBracket_ | (NoEmptyBrackets);
 
 AbstractMethodDecl ::= (AbstractMethodDeclaration) ABSTRACT TypeVoid:varType IDENT:varName FormPars SEMI | 
 					   (AbstractMethodDeclarationError) error SEMI:AbstractMethodDeclError
@@ -182,7 +182,7 @@ TermList ::= (TermList_) TermList MulOp Factor | (TermFactor) Factor;
 ActParsList ::= (ActParsList_) ActParsList COMMA ActParsItem| (ActPars_) ActParsItem | (NoActParsList); 
 ActParsItem ::= (ActParsItem) Expr;
 
-Factor ::= (FactorDesignator) DesignatorExpr DesignatorPars | (FactorNum) NUMCONST | (FactorChar) CHARCONST | (FactorBool) BOOLCONST | (FactorNew) NEW Type FactorExpr | (FactorExpr_) LPAREN Expr RPAREN;
+Factor ::= (FactorDesignator) DesignatorExpr DesignatorPars | (FactorNum) NUMCONST | (FactorChar) CHARCONST | (FactorBool) BOOLCONST | (FactorNew) NEW Type FactorExpr | (FactorExpr_) LParen_ Expr RParen_;
 FactorExpr ::= (FactorExpression) LBRACKET Expr RBRACKET | (NoFactorExpression);
 
 DesignatorStatementExpr ::= (DesignatorStatementExpression) DesignatorExpr DesignatorStatement; 
@@ -201,7 +201,13 @@ DesignatorPars ::= (DesignatorPars_) LPAREN ActParsList RPAREN | (NoDesignatorPa
 DesignatorExpr ::= (DesignatorExpr) DesignatorName DesignatorList;
 DesignatorName ::= (DesignatorName) IDENT:varName;
 DesignatorList ::= (DesignatorsList) DesignatorList Designator | (NoDesignatorList);
-Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBRACKET Expr:index RBRACKET;
+Designator ::= (DesignatorDot) DOT IDENT:fieldName | (DesignatorArr) LBracket_ Expr:index RBracket_;
+
+LBracket_ ::= (LBracket_) LBRACKET;
+RBracket_ ::= (RBracket_) RBRACKET;
+
+LParen_ ::= (LParen_) LPAREN;
+RParen_ ::= (RParen_) RPAREN;
 
 AssignOp ::= (Assign) EQUAL | (AddopRightAssign) AddopRight | (MulopRightAssign) MulopRight;
 

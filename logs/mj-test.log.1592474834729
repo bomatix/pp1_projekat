@@ -1,0 +1,64 @@
+INFO  11:49:23,695 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  11:49:23,733 - #2 program
+INFO  11:49:23,733 - #9 MJProgram
+INFO  11:49:23,733 - #9 int
+INFO  11:49:23,734 - #9 x
+INFO  11:49:23,735 - #6 ,
+INFO  11:49:23,735 - #9 y
+INFO  11:49:23,735 - #6 ,
+INFO  11:49:23,735 - #9 z
+INFO  11:49:23,735 - #17 [
+INFO  11:49:23,735 - #18 ]
+INFO  11:49:23,735 - #5 ;
+INFO  11:49:23,735 - #3 {
+INFO  11:49:23,736 - #16 void
+INFO  11:49:23,736 - #9 main
+INFO  11:49:23,736 - #14 (
+INFO  11:49:23,736 - #15 )
+INFO  11:49:23,736 - #3 {
+INFO  11:49:23,737 - #9 z
+INFO  11:49:23,737 - #37 =
+INFO  11:49:23,738 - #19 new
+INFO  11:49:23,738 - #9 int
+INFO  11:49:23,738 - #17 [
+INFO  11:49:23,739 - #8 5
+INFO  11:49:23,739 - #18 ]
+INFO  11:49:23,740 - #5 ;
+INFO  11:49:23,740 - #9 z
+INFO  11:49:23,740 - #17 [
+INFO  11:49:23,741 - #8 1
+INFO  11:49:23,741 - #18 ]
+INFO  11:49:23,741 - #37 =
+INFO  11:49:23,741 - #8 5
+INFO  11:49:23,741 - #5 ;
+INFO  11:49:23,742 - #9 x
+INFO  11:49:23,742 - #37 =
+INFO  11:49:23,742 - #8 2
+INFO  11:49:23,742 - #5 ;
+INFO  11:49:23,742 - #9 x
+INFO  11:49:23,742 - #46 +=
+INFO  11:49:23,742 - #9 x
+INFO  11:49:23,742 - #48 *=
+INFO  11:49:23,743 - #9 z
+INFO  11:49:23,743 - #17 [
+INFO  11:49:23,743 - #8 1
+INFO  11:49:23,743 - #18 ]
+INFO  11:49:23,743 - #46 +=
+INFO  11:49:23,744 - #8 2
+INFO  11:49:23,744 - #5 ;
+INFO  11:49:23,744 - #27 print
+INFO  11:49:23,744 - #14 (
+INFO  11:49:23,744 - #9 x
+INFO  11:49:23,744 - #15 )
+INFO  11:49:23,744 - #5 ;
+INFO  11:49:23,744 - #4 }
+INFO  11:49:23,745 - #4 }
+INFO  11:49:23,749 - ===================================
+INFO  11:49:23,751 - Promenljiva x na liniji 2
+INFO  11:49:23,751 - Promenljiva y na liniji 2
+INFO  11:49:23,751 - Promenljiva z na liniji 2
+INFO  11:49:23,755 - Pristup nizu validan na liniji 7
+INFO  11:49:23,755 - Pristup nizu validan na liniji 9
+ERROR 11:49:23,755 - Greska na liniji 9 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 11:49:23,755 - Greska na liniji 9 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 11:49:23,755 - Parsiranje NIJE uspesno zavrseno!

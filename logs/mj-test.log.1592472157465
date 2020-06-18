@@ -1,0 +1,77 @@
+INFO  18:32:16,162 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  18:32:16,200 - #2 program
+INFO  18:32:16,200 - #9 MJProgram
+INFO  18:32:16,200 - #9 int
+INFO  18:32:16,201 - #9 x
+INFO  18:32:16,202 - #6 ,
+INFO  18:32:16,202 - #9 y
+INFO  18:32:16,202 - #6 ,
+INFO  18:32:16,202 - #9 z
+INFO  18:32:16,202 - #17 [
+INFO  18:32:16,202 - #18 ]
+INFO  18:32:16,202 - #5 ;
+INFO  18:32:16,202 - #3 {
+INFO  18:32:16,203 - #16 void
+INFO  18:32:16,203 - #9 main
+INFO  18:32:16,203 - #14 (
+INFO  18:32:16,203 - #15 )
+INFO  18:32:16,204 - #3 {
+INFO  18:32:16,204 - #9 z
+INFO  18:32:16,204 - #37 =
+INFO  18:32:16,205 - #19 new
+INFO  18:32:16,206 - #9 int
+INFO  18:32:16,206 - #17 [
+INFO  18:32:16,206 - #8 5
+INFO  18:32:16,206 - #18 ]
+INFO  18:32:16,207 - #5 ;
+INFO  18:32:16,207 - #9 z
+INFO  18:32:16,208 - #17 [
+INFO  18:32:16,208 - #8 0
+INFO  18:32:16,208 - #18 ]
+INFO  18:32:16,208 - #37 =
+INFO  18:32:16,208 - #8 3
+INFO  18:32:16,208 - #5 ;
+INFO  18:32:16,208 - #9 z
+INFO  18:32:16,208 - #17 [
+INFO  18:32:16,208 - #8 1
+INFO  18:32:16,208 - #18 ]
+INFO  18:32:16,208 - #37 =
+INFO  18:32:16,208 - #8 1
+INFO  18:32:16,208 - #5 ;
+INFO  18:32:16,208 - #9 x
+INFO  18:32:16,208 - #37 =
+INFO  18:32:16,208 - #8 2
+INFO  18:32:16,208 - #5 ;
+INFO  18:32:16,208 - #9 z
+INFO  18:32:16,208 - #17 [
+INFO  18:32:16,208 - #9 x
+INFO  18:32:16,208 - #46 +=
+INFO  18:32:16,209 - #8 2
+INFO  18:32:16,209 - #18 ]
+INFO  18:32:16,209 - #37 =
+INFO  18:32:16,209 - #8 0
+INFO  18:32:16,211 - #5 ;
+INFO  18:32:16,211 - #27 print
+INFO  18:32:16,211 - #14 (
+INFO  18:32:16,211 - #9 z
+INFO  18:32:16,211 - #17 [
+INFO  18:32:16,211 - #9 z
+INFO  18:32:16,211 - #17 [
+INFO  18:32:16,211 - #8 4
+INFO  18:32:16,213 - #18 ]
+INFO  18:32:16,213 - #15 )
+ERROR 18:32:16,213 - 
+Sintaksna greska na liniji 12
+INFO  18:32:16,213 - #5 ;
+INFO  18:32:16,213 - #4 }
+INFO  18:32:16,213 - #4 }
+ERROR 18:32:16,214 - Izvrsen oporavak do ; na liniji 12
+INFO  18:32:16,219 - ===================================
+INFO  18:32:16,221 - Promenljiva x na liniji 2
+INFO  18:32:16,221 - Promenljiva y na liniji 2
+INFO  18:32:16,222 - Promenljiva z na liniji 2
+INFO  18:32:16,222 - Pristup nizu validan na liniji 7
+INFO  18:32:16,222 - Pristup nizu validan na liniji 8
+INFO  18:32:16,222 - Validno sabiranje na liniji 10
+INFO  18:32:16,222 - Pristup nizu validan na liniji 10
+ERROR 18:32:16,222 - Parsiranje NIJE uspesno zavrseno!

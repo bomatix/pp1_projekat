@@ -1,0 +1,709 @@
+INFO  23:00:21,391 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  23:00:21,429 - #2 program
+INFO  23:00:21,429 - #9 test301
+INFO  23:00:21,429 - #7 const
+INFO  23:00:21,430 - #9 int
+INFO  23:00:21,430 - #9 nula
+INFO  23:00:21,430 - #37 =
+INFO  23:00:21,431 - #8 0
+INFO  23:00:21,431 - #5 ;
+INFO  23:00:21,431 - #7 const
+INFO  23:00:21,431 - #9 int
+INFO  23:00:21,431 - #9 jedan
+INFO  23:00:21,431 - #37 =
+INFO  23:00:21,431 - #8 1
+INFO  23:00:21,432 - #5 ;
+INFO  23:00:21,432 - #7 const
+INFO  23:00:21,432 - #9 int
+INFO  23:00:21,432 - #9 pet
+INFO  23:00:21,432 - #37 =
+INFO  23:00:21,432 - #8 5
+INFO  23:00:21,432 - #5 ;
+INFO  23:00:21,432 - #9 int
+INFO  23:00:21,432 - #9 niz
+INFO  23:00:21,433 - #17 [
+INFO  23:00:21,433 - #18 ]
+INFO  23:00:21,433 - #5 ;
+INFO  23:00:21,433 - #9 char
+INFO  23:00:21,433 - #9 nizch
+INFO  23:00:21,434 - #17 [
+INFO  23:00:21,434 - #18 ]
+INFO  23:00:21,434 - #5 ;
+INFO  23:00:21,434 - #3 {
+INFO  23:00:21,434 - #16 void
+INFO  23:00:21,434 - #9 incInput
+INFO  23:00:21,434 - #14 (
+INFO  23:00:21,434 - #15 )
+INFO  23:00:21,434 - #9 int
+INFO  23:00:21,435 - #9 i
+INFO  23:00:21,435 - #5 ;
+INFO  23:00:21,435 - #3 {
+INFO  23:00:21,435 - #28 read
+INFO  23:00:21,435 - #14 (
+INFO  23:00:21,435 - #9 i
+INFO  23:00:21,435 - #15 )
+INFO  23:00:21,436 - #5 ;
+INFO  23:00:21,436 - #27 print
+INFO  23:00:21,437 - #14 (
+INFO  23:00:21,437 - #9 i
+INFO  23:00:21,437 - #15 )
+INFO  23:00:21,438 - #5 ;
+INFO  23:00:21,438 - #9 i
+INFO  23:00:21,438 - #31 ++
+INFO  23:00:21,438 - #5 ;
+INFO  23:00:21,439 - #27 print
+INFO  23:00:21,439 - #14 (
+INFO  23:00:21,439 - #9 i
+INFO  23:00:21,439 - #15 )
+INFO  23:00:21,439 - #5 ;
+INFO  23:00:21,439 - #4 }
+INFO  23:00:21,439 - #16 void
+INFO  23:00:21,442 - #9 main
+INFO  23:00:21,442 - #14 (
+INFO  23:00:21,442 - #15 )
+INFO  23:00:21,442 - #9 int
+INFO  23:00:21,442 - #9 bodovi
+INFO  23:00:21,442 - #6 ,
+INFO  23:00:21,442 - #9 poeni
+INFO  23:00:21,442 - #6 ,
+INFO  23:00:21,443 - #9 slova
+INFO  23:00:21,443 - #6 ,
+INFO  23:00:21,443 - #9 temp
+INFO  23:00:21,443 - #6 ,
+INFO  23:00:21,443 - #9 prom
+INFO  23:00:21,443 - #5 ;
+INFO  23:00:21,443 - #3 {
+INFO  23:00:21,443 - #9 bodovi
+INFO  23:00:21,443 - #37 =
+INFO  23:00:21,443 - #8 0
+INFO  23:00:21,443 - #5 ;
+INFO  23:00:21,444 - #9 bodovi
+INFO  23:00:21,444 - #31 ++
+INFO  23:00:21,444 - #5 ;
+INFO  23:00:21,444 - #9 bodovi
+INFO  23:00:21,444 - #37 =
+INFO  23:00:21,444 - #9 bodovi
+INFO  23:00:21,444 - #29 +
+INFO  23:00:21,444 - #9 jedan
+INFO  23:00:21,445 - #5 ;
+INFO  23:00:21,445 - #9 bodovi
+INFO  23:00:21,445 - #37 =
+INFO  23:00:21,445 - #9 bodovi
+INFO  23:00:21,445 - #34 *
+INFO  23:00:21,445 - #9 pet
+INFO  23:00:21,445 - #5 ;
+INFO  23:00:21,446 - #9 bodovi
+INFO  23:00:21,446 - #32 --
+INFO  23:00:21,446 - #5 ;
+INFO  23:00:21,446 - #27 print
+INFO  23:00:21,446 - #14 (
+INFO  23:00:21,446 - #9 bodovi
+INFO  23:00:21,446 - #15 )
+INFO  23:00:21,446 - #5 ;
+INFO  23:00:21,446 - #9 niz
+INFO  23:00:21,446 - #37 =
+INFO  23:00:21,446 - #19 new
+INFO  23:00:21,446 - #9 int
+INFO  23:00:21,446 - #17 [
+INFO  23:00:21,446 - #8 3
+INFO  23:00:21,446 - #18 ]
+INFO  23:00:21,446 - #5 ;
+INFO  23:00:21,447 - #9 niz
+INFO  23:00:21,447 - #17 [
+INFO  23:00:21,447 - #9 nula
+INFO  23:00:21,447 - #18 ]
+INFO  23:00:21,447 - #37 =
+INFO  23:00:21,447 - #9 jedan
+INFO  23:00:21,447 - #5 ;
+INFO  23:00:21,448 - #9 niz
+INFO  23:00:21,448 - #17 [
+INFO  23:00:21,448 - #8 1
+INFO  23:00:21,448 - #18 ]
+INFO  23:00:21,448 - #37 =
+INFO  23:00:21,448 - #8 2
+INFO  23:00:21,448 - #5 ;
+INFO  23:00:21,448 - #9 niz
+INFO  23:00:21,448 - #17 [
+INFO  23:00:21,448 - #9 niz
+INFO  23:00:21,448 - #17 [
+INFO  23:00:21,448 - #9 jedan
+INFO  23:00:21,448 - #18 ]
+INFO  23:00:21,448 - #18 ]
+INFO  23:00:21,448 - #37 =
+INFO  23:00:21,448 - #9 niz
+INFO  23:00:21,448 - #17 [
+INFO  23:00:21,448 - #9 niz
+INFO  23:00:21,448 - #17 [
+INFO  23:00:21,448 - #8 0
+INFO  23:00:21,448 - #18 ]
+INFO  23:00:21,448 - #18 ]
+INFO  23:00:21,448 - #34 *
+INFO  23:00:21,448 - #8 3
+INFO  23:00:21,449 - #5 ;
+INFO  23:00:21,449 - #9 bodovi
+INFO  23:00:21,449 - #37 =
+INFO  23:00:21,449 - #9 niz
+INFO  23:00:21,449 - #17 [
+INFO  23:00:21,449 - #8 2
+INFO  23:00:21,449 - #18 ]
+INFO  23:00:21,449 - #35 /
+INFO  23:00:21,449 - #9 niz
+INFO  23:00:21,449 - #17 [
+INFO  23:00:21,449 - #8 0
+INFO  23:00:21,449 - #18 ]
+INFO  23:00:21,449 - #5 ;
+INFO  23:00:21,449 - #27 print
+INFO  23:00:21,449 - #14 (
+INFO  23:00:21,449 - #9 bodovi
+INFO  23:00:21,449 - #15 )
+INFO  23:00:21,449 - #5 ;
+INFO  23:00:21,449 - #27 print
+INFO  23:00:21,450 - #14 (
+INFO  23:00:21,450 - #9 niz
+INFO  23:00:21,450 - #17 [
+INFO  23:00:21,450 - #8 2
+INFO  23:00:21,450 - #18 ]
+INFO  23:00:21,450 - #15 )
+INFO  23:00:21,450 - #5 ;
+INFO  23:00:21,450 - #9 nizch
+INFO  23:00:21,450 - #37 =
+INFO  23:00:21,450 - #19 new
+INFO  23:00:21,450 - #9 char
+INFO  23:00:21,451 - #17 [
+INFO  23:00:21,451 - #8 3
+INFO  23:00:21,451 - #18 ]
+INFO  23:00:21,451 - #5 ;
+INFO  23:00:21,451 - #9 nizch
+INFO  23:00:21,451 - #17 [
+INFO  23:00:21,451 - #8 0
+INFO  23:00:21,451 - #18 ]
+INFO  23:00:21,451 - #37 =
+INFO  23:00:21,451 - #11 a
+INFO  23:00:21,451 - #5 ;
+INFO  23:00:21,451 - #9 nizch
+INFO  23:00:21,451 - #17 [
+INFO  23:00:21,452 - #9 jedan
+INFO  23:00:21,452 - #18 ]
+INFO  23:00:21,452 - #37 =
+INFO  23:00:21,452 - #11 b
+INFO  23:00:21,452 - #5 ;
+INFO  23:00:21,452 - #9 nizch
+INFO  23:00:21,452 - #17 [
+INFO  23:00:21,452 - #9 pet
+INFO  23:00:21,452 - #30 -
+INFO  23:00:21,452 - #8 3
+INFO  23:00:21,452 - #18 ]
+INFO  23:00:21,452 - #37 =
+INFO  23:00:21,452 - #11 c
+INFO  23:00:21,452 - #5 ;
+INFO  23:00:21,452 - #27 print
+INFO  23:00:21,452 - #14 (
+INFO  23:00:21,452 - #9 nizch
+INFO  23:00:21,452 - #17 [
+INFO  23:00:21,453 - #8 1
+INFO  23:00:21,453 - #18 ]
+INFO  23:00:21,453 - #15 )
+INFO  23:00:21,453 - #5 ;
+INFO  23:00:21,453 - #27 print
+INFO  23:00:21,453 - #14 (
+INFO  23:00:21,453 - #9 nizch
+INFO  23:00:21,453 - #17 [
+INFO  23:00:21,453 - #9 jedan
+INFO  23:00:21,453 - #34 *
+INFO  23:00:21,453 - #8 2
+INFO  23:00:21,453 - #18 ]
+INFO  23:00:21,453 - #15 )
+INFO  23:00:21,453 - #5 ;
+INFO  23:00:21,453 - #9 bodovi
+INFO  23:00:21,453 - #37 =
+INFO  23:00:21,453 - #9 bodovi
+INFO  23:00:21,453 - #29 +
+INFO  23:00:21,453 - #14 (
+INFO  23:00:21,453 - #9 pet
+INFO  23:00:21,453 - #34 *
+INFO  23:00:21,453 - #9 jedan
+INFO  23:00:21,453 - #30 -
+INFO  23:00:21,453 - #8 1
+INFO  23:00:21,454 - #15 )
+INFO  23:00:21,454 - #34 *
+INFO  23:00:21,454 - #9 bodovi
+INFO  23:00:21,454 - #30 -
+INFO  23:00:21,454 - #14 (
+INFO  23:00:21,454 - #8 3
+INFO  23:00:21,454 - #36 %
+INFO  23:00:21,454 - #8 2
+INFO  23:00:21,454 - #29 +
+INFO  23:00:21,454 - #8 3
+INFO  23:00:21,454 - #34 *
+INFO  23:00:21,454 - #8 2
+INFO  23:00:21,454 - #30 -
+INFO  23:00:21,454 - #8 3
+INFO  23:00:21,454 - #15 )
+INFO  23:00:21,454 - #5 ;
+INFO  23:00:21,454 - #27 print
+INFO  23:00:21,454 - #14 (
+INFO  23:00:21,454 - #9 bodovi
+INFO  23:00:21,454 - #15 )
+INFO  23:00:21,454 - #5 ;
+INFO  23:00:21,454 - #9 incInput
+INFO  23:00:21,454 - #14 (
+INFO  23:00:21,454 - #15 )
+INFO  23:00:21,454 - #5 ;
+INFO  23:00:21,454 - #9 niz
+INFO  23:00:21,454 - #17 [
+INFO  23:00:21,454 - #9 niz
+INFO  23:00:21,454 - #17 [
+INFO  23:00:21,454 - #9 jedan
+INFO  23:00:21,454 - #18 ]
+INFO  23:00:21,454 - #18 ]
+INFO  23:00:21,455 - #31 ++
+INFO  23:00:21,455 - #5 ;
+INFO  23:00:21,455 - #27 print
+INFO  23:00:21,455 - #14 (
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #8 1
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #15 )
+INFO  23:00:21,455 - #5 ;
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #9 jedan
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #37 =
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #9 jedan
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #29 +
+INFO  23:00:21,455 - #8 5
+INFO  23:00:21,455 - #5 ;
+INFO  23:00:21,455 - #9 niz
+INFO  23:00:21,455 - #17 [
+INFO  23:00:21,455 - #8 2
+INFO  23:00:21,455 - #18 ]
+INFO  23:00:21,455 - #32 --
+INFO  23:00:21,455 - #5 ;
+INFO  23:00:21,455 - #27 print
+INFO  23:00:21,456 - #14 (
+INFO  23:00:21,456 - #9 niz
+INFO  23:00:21,456 - #17 [
+INFO  23:00:21,456 - #9 niz
+INFO  23:00:21,456 - #17 [
+INFO  23:00:21,456 - #8 1
+INFO  23:00:21,456 - #18 ]
+INFO  23:00:21,456 - #18 ]
+INFO  23:00:21,456 - #15 )
+INFO  23:00:21,456 - #5 ;
+INFO  23:00:21,456 - #9 niz
+INFO  23:00:21,456 - #17 [
+INFO  23:00:21,456 - #8 0
+INFO  23:00:21,456 - #18 ]
+INFO  23:00:21,456 - #37 =
+INFO  23:00:21,456 - #8 5
+INFO  23:00:21,456 - #5 ;
+INFO  23:00:21,456 - #9 niz
+INFO  23:00:21,456 - #17 [
+INFO  23:00:21,456 - #8 1
+INFO  23:00:21,456 - #18 ]
+INFO  23:00:21,456 - #37 =
+INFO  23:00:21,456 - #8 2
+INFO  23:00:21,456 - #5 ;
+INFO  23:00:21,456 - #9 niz
+INFO  23:00:21,456 - #17 [
+INFO  23:00:21,456 - #8 2
+INFO  23:00:21,456 - #18 ]
+INFO  23:00:21,456 - #37 =
+INFO  23:00:21,456 - #8 4
+INFO  23:00:21,456 - #5 ;
+INFO  23:00:21,456 - #9 poeni
+INFO  23:00:21,456 - #37 =
+INFO  23:00:21,456 - #8 2
+INFO  23:00:21,456 - #5 ;
+INFO  23:00:21,456 - #9 slova
+INFO  23:00:21,456 - #37 =
+INFO  23:00:21,456 - #8 2
+INFO  23:00:21,457 - #5 ;
+INFO  23:00:21,457 - #9 temp
+INFO  23:00:21,457 - #37 =
+INFO  23:00:21,457 - #8 3
+INFO  23:00:21,457 - #5 ;
+INFO  23:00:21,457 - #9 prom
+INFO  23:00:21,457 - #37 =
+INFO  23:00:21,457 - #8 5
+INFO  23:00:21,457 - #5 ;
+INFO  23:00:21,457 - #9 bodovi
+INFO  23:00:21,457 - #37 =
+INFO  23:00:21,457 - #8 10
+INFO  23:00:21,457 - #5 ;
+INFO  23:00:21,457 - #9 niz
+INFO  23:00:21,457 - #17 [
+INFO  23:00:21,457 - #9 niz
+INFO  23:00:21,457 - #17 [
+INFO  23:00:21,457 - #8 2
+INFO  23:00:21,457 - #18 ]
+INFO  23:00:21,457 - #47 -=
+INFO  23:00:21,457 - #8 3
+INFO  23:00:21,458 - #18 ]
+INFO  23:00:21,458 - #46 +=
+INFO  23:00:21,458 - #9 poeni
+INFO  23:00:21,458 - #48 *=
+INFO  23:00:21,458 - #9 niz
+INFO  23:00:21,459 - #17 [
+INFO  23:00:21,459 - #8 0
+INFO  23:00:21,459 - #18 ]
+INFO  23:00:21,459 - #50 %=
+INFO  23:00:21,459 - #9 prom
+INFO  23:00:21,459 - #46 +=
+INFO  23:00:21,459 - #9 temp
+INFO  23:00:21,459 - #46 +=
+INFO  23:00:21,459 - #9 bodovi
+INFO  23:00:21,459 - #47 -=
+INFO  23:00:21,459 - #9 niz
+INFO  23:00:21,459 - #17 [
+INFO  23:00:21,459 - #8 2
+INFO  23:00:21,459 - #18 ]
+INFO  23:00:21,459 - #48 *=
+INFO  23:00:21,459 - #8 2
+INFO  23:00:21,459 - #5 ;
+INFO  23:00:21,459 - #27 print
+INFO  23:00:21,459 - #14 (
+INFO  23:00:21,459 - #9 niz
+INFO  23:00:21,459 - #17 [
+INFO  23:00:21,459 - #8 2
+INFO  23:00:21,459 - #18 ]
+INFO  23:00:21,459 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 bodovi
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 temp
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 prom
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 niz
+INFO  23:00:21,460 - #17 [
+INFO  23:00:21,460 - #8 0
+INFO  23:00:21,460 - #18 ]
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 poeni
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #27 print
+INFO  23:00:21,460 - #14 (
+INFO  23:00:21,460 - #9 niz
+INFO  23:00:21,460 - #17 [
+INFO  23:00:21,460 - #8 1
+INFO  23:00:21,460 - #18 ]
+INFO  23:00:21,460 - #15 )
+INFO  23:00:21,460 - #5 ;
+INFO  23:00:21,460 - #9 niz
+INFO  23:00:21,460 - #17 [
+INFO  23:00:21,460 - #9 niz
+INFO  23:00:21,460 - #17 [
+INFO  23:00:21,460 - #8 2
+INFO  23:00:21,460 - #18 ]
+INFO  23:00:21,460 - #47 -=
+INFO  23:00:21,460 - #8 1
+INFO  23:00:21,460 - #18 ]
+INFO  23:00:21,460 - #48 *=
+INFO  23:00:21,460 - #9 poeni
+INFO  23:00:21,461 - #29 +
+INFO  23:00:21,461 - #8 5
+INFO  23:00:21,461 - #34 *
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 prom
+INFO  23:00:21,461 - #47 -=
+INFO  23:00:21,461 - #9 temp
+INFO  23:00:21,461 - #50 %=
+INFO  23:00:21,461 - #8 5
+INFO  23:00:21,461 - #34 *
+INFO  23:00:21,461 - #8 4
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #34 *
+INFO  23:00:21,461 - #8 2
+INFO  23:00:21,461 - #30 -
+INFO  23:00:21,461 - #8 40
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #27 print
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 niz
+INFO  23:00:21,461 - #17 [
+INFO  23:00:21,461 - #8 2
+INFO  23:00:21,461 - #18 ]
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #27 print
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 poeni
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #27 print
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 temp
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #27 print
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 prom
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #27 print
+INFO  23:00:21,461 - #14 (
+INFO  23:00:21,461 - #9 niz
+INFO  23:00:21,461 - #17 [
+INFO  23:00:21,461 - #8 1
+INFO  23:00:21,461 - #18 ]
+INFO  23:00:21,461 - #15 )
+INFO  23:00:21,461 - #5 ;
+INFO  23:00:21,461 - #9 temp
+INFO  23:00:21,461 - #37 =
+INFO  23:00:21,461 - #8 30
+INFO  23:00:21,461 - #36 %
+INFO  23:00:21,461 - #8 2
+INFO  23:00:21,462 - #29 +
+INFO  23:00:21,462 - #9 poeni
+INFO  23:00:21,462 - #34 *
+INFO  23:00:21,462 - #8 10
+INFO  23:00:21,462 - #34 *
+INFO  23:00:21,462 - #14 (
+INFO  23:00:21,462 - #9 prom
+INFO  23:00:21,462 - #48 *=
+INFO  23:00:21,462 - #8 3
+INFO  23:00:21,462 - #34 *
+INFO  23:00:21,462 - #8 4
+INFO  23:00:21,462 - #35 /
+INFO  23:00:21,462 - #14 (
+INFO  23:00:21,462 - #8 3
+INFO  23:00:21,462 - #29 +
+INFO  23:00:21,462 - #8 3
+INFO  23:00:21,462 - #15 )
+INFO  23:00:21,462 - #15 )
+INFO  23:00:21,462 - #35 /
+INFO  23:00:21,462 - #8 10
+INFO  23:00:21,462 - #5 ;
+INFO  23:00:21,462 - #27 print
+INFO  23:00:21,462 - #14 (
+INFO  23:00:21,462 - #9 prom
+INFO  23:00:21,462 - #15 )
+INFO  23:00:21,462 - #5 ;
+INFO  23:00:21,462 - #27 print
+INFO  23:00:21,462 - #14 (
+INFO  23:00:21,462 - #9 temp
+INFO  23:00:21,462 - #15 )
+INFO  23:00:21,462 - #5 ;
+INFO  23:00:21,462 - #4 }
+INFO  23:00:21,462 - #4 }
+INFO  23:00:21,466 - ===================================
+INFO  23:00:21,469 - Konstanta nula na liniji 5
+INFO  23:00:21,469 - Konstanta jedan na liniji 6
+INFO  23:00:21,469 - Konstanta pet na liniji 7
+INFO  23:00:21,469 - Promenljiva niz na liniji 9
+INFO  23:00:21,469 - Promenljiva nizch na liniji 10
+INFO  23:00:21,469 - Promenljiva i na liniji 14
+INFO  23:00:21,469 - Promenljiva bodovi na liniji 23
+INFO  23:00:21,469 - Promenljiva poeni na liniji 23
+INFO  23:00:21,469 - Promenljiva slova na liniji 23
+INFO  23:00:21,469 - Promenljiva temp na liniji 23
+INFO  23:00:21,469 - Promenljiva prom na liniji 23
+INFO  23:00:21,469 - Validno sabiranje na liniji 27
+INFO  23:00:21,469 - Validno sabiranje na liniji 28
+INFO  23:00:21,469 - Pristup nizu validan na liniji 34
+INFO  23:00:21,469 - Pristup nizu validan na liniji 35
+INFO  23:00:21,469 - Pristup nizu validan na liniji 36
+INFO  23:00:21,469 - Pristup nizu validan na liniji 36
+INFO  23:00:21,469 - Pristup nizu validan na liniji 36
+INFO  23:00:21,469 - Pristup nizu validan na liniji 36
+INFO  23:00:21,469 - Validno sabiranje na liniji 36
+INFO  23:00:21,469 - Pristup nizu validan na liniji 37
+INFO  23:00:21,469 - Pristup nizu validan na liniji 37
+INFO  23:00:21,469 - Validno sabiranje na liniji 37
+INFO  23:00:21,470 - Pristup nizu validan na liniji 39
+INFO  23:00:21,470 - Pristup nizu validan na liniji 43
+INFO  23:00:21,470 - Pristup nizu validan na liniji 44
+INFO  23:00:21,470 - Validno sabiranje na liniji 45
+INFO  23:00:21,470 - Pristup nizu validan na liniji 45
+INFO  23:00:21,470 - Pristup nizu validan na liniji 46
+INFO  23:00:21,470 - Validno sabiranje na liniji 47
+INFO  23:00:21,470 - Pristup nizu validan na liniji 47
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Validno sabiranje na liniji 50
+INFO  23:00:21,470 - Uspesan poziv funkcije: incInput na liniji 10
+INFO  23:00:21,470 - Poziv funkcije  na liniji 53
+INFO  23:00:21,470 - Pristup nizu validan na liniji 55
+INFO  23:00:21,470 - Pristup nizu validan na liniji 55
+INFO  23:00:21,470 - Pristup nizu validan na liniji 56
+INFO  23:00:21,470 - Pristup nizu validan na liniji 56
+INFO  23:00:21,470 - Pristup nizu validan na liniji 57
+INFO  23:00:21,470 - Pristup nizu validan na liniji 57
+INFO  23:00:21,470 - Pristup nizu validan na liniji 57
+INFO  23:00:21,470 - Pristup nizu validan na liniji 57
+INFO  23:00:21,470 - Validno sabiranje na liniji 57
+INFO  23:00:21,470 - Pristup nizu validan na liniji 58
+INFO  23:00:21,470 - Pristup nizu validan na liniji 59
+INFO  23:00:21,470 - Pristup nizu validan na liniji 59
+INFO  23:00:21,470 - Pristup nizu validan na liniji 62
+INFO  23:00:21,470 - Pristup nizu validan na liniji 63
+INFO  23:00:21,470 - Pristup nizu validan na liniji 64
+INFO  23:00:21,470 - Pristup nizu validan na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Pristup nizu validan na liniji 71
+INFO  23:00:21,470 - Pristup nizu validan na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Pristup nizu validan na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Validno sabiranje na liniji 71
+INFO  23:00:21,470 - Pristup nizu validan na liniji 72
+INFO  23:00:21,470 - Pristup nizu validan na liniji 76
+INFO  23:00:21,471 - Pristup nizu validan na liniji 78
+INFO  23:00:21,471 - Pristup nizu validan na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Pristup nizu validan na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Validno sabiranje na liniji 80
+INFO  23:00:21,471 - Pristup nizu validan na liniji 81
+INFO  23:00:21,471 - Pristup nizu validan na liniji 85
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,471 - Validno sabiranje na liniji 87
+INFO  23:00:21,473 - DesignatorName i
+INFO  23:00:21,473 - DesignatorName i
+INFO  23:00:21,474 - DesignatorName i
+INFO  23:00:21,474 - DesignatorName i
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName pet
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName nula
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName niz
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName pet
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName nizch
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName pet
+INFO  23:00:21,474 - DesignatorName jedan
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,474 - DesignatorName bodovi
+INFO  23:00:21,475 - DesignatorName incInput
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName jedan
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName jedan
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName jedan
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName slova
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,475 - DesignatorName bodovi
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName bodovi
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName bodovi
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,475 - DesignatorName niz
+INFO  23:00:21,475 - DesignatorName temp
+INFO  23:00:21,475 - DesignatorName poeni
+INFO  23:00:21,475 - DesignatorName prom
+INFO  23:00:21,481 - DesignatorName prom
+INFO  23:00:21,481 - DesignatorName temp
+INFO  23:00:21,483 - Parsiranje uspesno zavrseno!

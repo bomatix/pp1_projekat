@@ -1,0 +1,69 @@
+INFO  17:09:23,474 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  17:09:23,515 - #2 program
+INFO  17:09:23,515 - #9 MJProgram
+INFO  17:09:23,515 - #9 int
+INFO  17:09:23,516 - #9 x
+INFO  17:09:23,517 - #6 ,
+INFO  17:09:23,517 - #9 y
+INFO  17:09:23,518 - #6 ,
+INFO  17:09:23,518 - #9 z
+INFO  17:09:23,518 - #17 [
+INFO  17:09:23,518 - #18 ]
+INFO  17:09:23,518 - #5 ;
+INFO  17:09:23,518 - #3 {
+INFO  17:09:23,518 - #16 void
+INFO  17:09:23,519 - #9 main
+INFO  17:09:23,519 - #14 (
+INFO  17:09:23,519 - #15 )
+INFO  17:09:23,519 - #3 {
+INFO  17:09:23,520 - #9 z
+INFO  17:09:23,520 - #37 =
+INFO  17:09:23,521 - #19 new
+INFO  17:09:23,522 - #9 int
+INFO  17:09:23,522 - #17 [
+INFO  17:09:23,522 - #8 5
+INFO  17:09:23,522 - #18 ]
+INFO  17:09:23,523 - #5 ;
+INFO  17:09:23,523 - #9 z
+INFO  17:09:23,524 - #17 [
+INFO  17:09:23,524 - #8 0
+INFO  17:09:23,524 - #18 ]
+INFO  17:09:23,524 - #37 =
+INFO  17:09:23,525 - #8 3
+INFO  17:09:23,525 - #5 ;
+INFO  17:09:23,525 - #9 x
+INFO  17:09:23,525 - #37 =
+INFO  17:09:23,525 - #9 x
+INFO  17:09:23,525 - #29 +
+INFO  17:09:23,526 - #9 z
+INFO  17:09:23,526 - #17 [
+INFO  17:09:23,526 - #8 0
+INFO  17:09:23,526 - #18 ]
+INFO  17:09:23,526 - #5 ;
+INFO  17:09:23,527 - #27 print
+INFO  17:09:23,527 - #14 (
+INFO  17:09:23,527 - #9 z
+INFO  17:09:23,527 - #17 [
+INFO  17:09:23,527 - #8 0
+INFO  17:09:23,527 - #18 ]
+INFO  17:09:23,527 - #15 )
+INFO  17:09:23,527 - #5 ;
+INFO  17:09:23,527 - #4 }
+INFO  17:09:23,528 - #4 }
+INFO  17:09:23,539 - ===================================
+INFO  17:09:23,547 - Promenljiva x na liniji 2
+INFO  17:09:23,547 - Promenljiva y na liniji 2
+INFO  17:09:23,547 - Promenljiva z na liniji 2
+INFO  17:09:23,547 - Pristup nizu validan na liniji 7
+INFO  17:09:23,547 - Pristup nizu validan na liniji 9
+INFO  17:09:23,547 - Validno sabiranje na liniji 9
+INFO  17:09:23,550 - Pristup nizu validan na liniji 11
+INFO  17:09:23,559 - DesignatorName z
+INFO  17:09:23,561 - numConst 5
+INFO  17:09:25,616 - DesignatorName z
+INFO  17:09:25,616 - numConst 0
+INFO  17:09:25,617 - numConst 3
+INFO  17:09:26,704 - DesignatorName x
+INFO  17:09:26,705 - DesignatorName x
+INFO  17:09:26,705 - DesignatorName z
+INFO  17:09:26,705 - numConst 0

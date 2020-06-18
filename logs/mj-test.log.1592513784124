@@ -1,0 +1,113 @@
+INFO  22:56:06,568 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  22:56:06,604 - #2 program
+INFO  22:56:06,604 - #9 test301
+INFO  22:56:06,604 - #7 const
+INFO  22:56:06,605 - #9 int
+INFO  22:56:06,605 - #9 nula
+INFO  22:56:06,606 - #37 =
+INFO  22:56:06,606 - #8 0
+INFO  22:56:06,606 - #5 ;
+INFO  22:56:06,606 - #7 const
+INFO  22:56:06,607 - #9 int
+INFO  22:56:06,607 - #9 jedan
+INFO  22:56:06,607 - #37 =
+INFO  22:56:06,607 - #8 1
+INFO  22:56:06,607 - #5 ;
+INFO  22:56:06,607 - #7 const
+INFO  22:56:06,607 - #9 int
+INFO  22:56:06,607 - #9 pet
+INFO  22:56:06,607 - #37 =
+INFO  22:56:06,607 - #8 5
+INFO  22:56:06,607 - #5 ;
+INFO  22:56:06,607 - #9 int
+INFO  22:56:06,607 - #9 niz
+INFO  22:56:06,608 - #17 [
+INFO  22:56:06,609 - #18 ]
+INFO  22:56:06,609 - #5 ;
+INFO  22:56:06,609 - #9 char
+INFO  22:56:06,609 - #9 nizch
+INFO  22:56:06,609 - #17 [
+INFO  22:56:06,609 - #18 ]
+INFO  22:56:06,609 - #5 ;
+INFO  22:56:06,609 - #3 {
+INFO  22:56:06,609 - #16 void
+INFO  22:56:06,609 - #9 main
+INFO  22:56:06,610 - #14 (
+INFO  22:56:06,610 - #15 )
+INFO  22:56:06,610 - #9 int
+INFO  22:56:06,610 - #9 bodovi
+INFO  22:56:06,610 - #6 ,
+INFO  22:56:06,610 - #9 poeni
+INFO  22:56:06,611 - #6 ,
+INFO  22:56:06,611 - #9 slova
+INFO  22:56:06,611 - #6 ,
+INFO  22:56:06,611 - #9 temp
+INFO  22:56:06,611 - #6 ,
+INFO  22:56:06,611 - #9 prom
+INFO  22:56:06,611 - #5 ;
+INFO  22:56:06,611 - #3 {
+INFO  22:56:06,611 - #9 bodovi
+INFO  22:56:06,611 - #37 =
+INFO  22:56:06,612 - #8 6
+INFO  22:56:06,612 - #5 ;
+INFO  22:56:06,613 - #9 bodovi
+INFO  22:56:06,614 - #37 =
+INFO  22:56:06,614 - #9 bodovi
+INFO  22:56:06,614 - #29 +
+INFO  22:56:06,614 - #14 (
+INFO  22:56:06,615 - #9 pet
+INFO  22:56:06,615 - #34 *
+INFO  22:56:06,615 - #9 jedan
+INFO  22:56:06,618 - #30 -
+INFO  22:56:06,619 - #8 1
+INFO  22:56:06,619 - #15 )
+INFO  22:56:06,619 - #34 *
+INFO  22:56:06,619 - #9 bodovi
+INFO  22:56:06,619 - #30 -
+INFO  22:56:06,620 - #14 (
+INFO  22:56:06,620 - #8 3
+INFO  22:56:06,620 - #36 %
+INFO  22:56:06,620 - #8 2
+INFO  22:56:06,620 - #29 +
+INFO  22:56:06,620 - #8 3
+INFO  22:56:06,620 - #34 *
+INFO  22:56:06,620 - #8 2
+INFO  22:56:06,620 - #30 -
+INFO  22:56:06,620 - #8 3
+INFO  22:56:06,620 - #15 )
+INFO  22:56:06,620 - #5 ;
+INFO  22:56:06,620 - #27 print
+INFO  22:56:06,620 - #14 (
+INFO  22:56:06,620 - #9 bodovi
+INFO  22:56:06,620 - #15 )
+INFO  22:56:06,621 - #5 ;
+INFO  22:56:06,621 - #4 }
+INFO  22:56:06,621 - #4 }
+INFO  22:56:06,631 - ===================================
+INFO  22:56:06,634 - Konstanta nula na liniji 5
+INFO  22:56:06,634 - Konstanta jedan na liniji 6
+INFO  22:56:06,634 - Konstanta pet na liniji 7
+INFO  22:56:06,634 - Promenljiva niz na liniji 9
+INFO  22:56:06,634 - Promenljiva nizch na liniji 10
+INFO  22:56:06,634 - Promenljiva bodovi na liniji 14
+INFO  22:56:06,634 - Promenljiva poeni na liniji 14
+INFO  22:56:06,634 - Promenljiva slova na liniji 14
+INFO  22:56:06,634 - Promenljiva temp na liniji 14
+INFO  22:56:06,634 - Promenljiva prom na liniji 14
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,634 - Validno sabiranje na liniji 19
+INFO  22:56:06,635 - Validno sabiranje na liniji 19
+INFO  22:56:06,635 - Validno sabiranje na liniji 19
+INFO  22:56:06,637 - DesignatorName bodovi
+INFO  22:56:06,639 - DesignatorName bodovi
+INFO  22:56:06,640 - DesignatorName bodovi
+INFO  22:56:06,640 - DesignatorName pet
+INFO  22:56:06,640 - DesignatorName jedan
+INFO  22:56:06,640 - DesignatorName bodovi
+INFO  22:56:06,640 - DesignatorName bodovi
+INFO  22:56:06,640 - Parsiranje uspesno zavrseno!

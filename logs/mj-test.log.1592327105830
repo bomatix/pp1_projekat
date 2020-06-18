@@ -1,0 +1,44 @@
+INFO  19:04:56,196 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  19:04:56,233 - #2 program
+INFO  19:04:56,233 - #9 MJProgram
+INFO  19:04:56,233 - #9 int
+INFO  19:04:56,233 - #9 x
+INFO  19:04:56,234 - #6 ,
+INFO  19:04:56,235 - #9 y
+INFO  19:04:56,235 - #6 ,
+INFO  19:04:56,235 - #9 z
+INFO  19:04:56,235 - #17 [
+INFO  19:04:56,235 - #18 ]
+INFO  19:04:56,235 - #5 ;
+INFO  19:04:56,235 - #3 {
+INFO  19:04:56,235 - #16 void
+INFO  19:04:56,236 - #9 main
+INFO  19:04:56,236 - #14 (
+INFO  19:04:56,236 - #15 )
+INFO  19:04:56,236 - #3 {
+INFO  19:04:56,237 - #9 x
+INFO  19:04:56,237 - #37 =
+INFO  19:04:56,238 - #8 2
+INFO  19:04:56,238 - #5 ;
+INFO  19:04:56,239 - #27 print
+INFO  19:04:56,239 - #14 (
+INFO  19:04:56,240 - #8 2
+INFO  19:04:56,240 - #29 +
+INFO  19:04:56,240 - #8 3
+INFO  19:04:56,240 - #34 *
+INFO  19:04:56,240 - #8 2
+INFO  19:04:56,241 - #15 )
+INFO  19:04:56,241 - #5 ;
+INFO  19:04:56,241 - #4 }
+INFO  19:04:56,242 - #4 }
+INFO  19:04:56,252 - ===================================
+INFO  19:04:56,254 - Promenljiva x na liniji 2
+INFO  19:04:56,254 - Promenljiva y na liniji 2
+INFO  19:04:56,254 - Promenljiva z na liniji 2
+INFO  19:04:56,254 - Validan termList na liniji 7
+INFO  19:04:56,255 - Validno sabiranje na liniji 7
+INFO  19:04:56,257 - numConst 2
+INFO  19:04:56,257 - numConst 2
+INFO  19:04:56,259 - numConst 3
+INFO  19:04:56,259 - numConst 2
+INFO  19:04:56,261 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,126 @@
+INFO  17:46:02,315 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  17:46:02,353 - #2 program
+INFO  17:46:02,353 - #9 test301
+INFO  17:46:02,353 - #7 const
+INFO  17:46:02,354 - #9 int
+INFO  17:46:02,354 - #9 nula
+INFO  17:46:02,355 - #37 =
+INFO  17:46:02,355 - #8 0
+INFO  17:46:02,355 - #5 ;
+INFO  17:46:02,355 - #7 const
+INFO  17:46:02,356 - #9 int
+INFO  17:46:02,356 - #9 jedan
+INFO  17:46:02,356 - #37 =
+INFO  17:46:02,356 - #8 1
+INFO  17:46:02,356 - #5 ;
+INFO  17:46:02,356 - #7 const
+INFO  17:46:02,356 - #9 int
+INFO  17:46:02,356 - #9 pet
+INFO  17:46:02,356 - #37 =
+INFO  17:46:02,356 - #8 5
+INFO  17:46:02,356 - #5 ;
+INFO  17:46:02,356 - #9 int
+INFO  17:46:02,356 - #9 niz
+INFO  17:46:02,357 - #17 [
+INFO  17:46:02,471 - #18 ]
+INFO  17:46:02,471 - #5 ;
+INFO  17:46:02,471 - #9 char
+INFO  17:46:02,471 - #9 nizch
+INFO  17:46:02,471 - #17 [
+INFO  17:46:02,471 - #18 ]
+INFO  17:46:02,471 - #5 ;
+INFO  17:46:02,471 - #3 {
+INFO  17:46:02,471 - #16 void
+INFO  17:46:02,472 - #9 main
+INFO  17:46:02,472 - #14 (
+INFO  17:46:02,472 - #15 )
+INFO  17:46:02,472 - #9 int
+INFO  17:46:02,472 - #9 bodovi
+INFO  17:46:02,472 - #6 ,
+INFO  17:46:02,472 - #9 poeni
+INFO  17:46:02,473 - #6 ,
+INFO  17:46:02,473 - #9 slova
+INFO  17:46:02,473 - #6 ,
+INFO  17:46:02,473 - #9 temp
+INFO  17:46:02,473 - #6 ,
+INFO  17:46:02,473 - #9 prom
+INFO  17:46:02,473 - #5 ;
+INFO  17:46:02,473 - #3 {
+INFO  17:46:02,473 - #9 niz
+INFO  17:46:02,473 - #37 =
+INFO  17:46:02,474 - #19 new
+INFO  17:46:02,474 - #9 int
+INFO  17:46:02,474 - #17 [
+INFO  17:46:02,475 - #8 3
+INFO  17:46:02,475 - #18 ]
+INFO  17:46:02,476 - #5 ;
+INFO  17:46:02,476 - #9 niz
+INFO  17:46:02,476 - #17 [
+INFO  17:46:02,476 - #9 nula
+INFO  17:46:02,477 - #18 ]
+INFO  17:46:02,480 - #37 =
+INFO  17:46:02,480 - #9 jedan
+INFO  17:46:02,480 - #5 ;
+INFO  17:46:02,481 - #9 niz
+INFO  17:46:02,481 - #17 [
+INFO  17:46:02,481 - #8 1
+INFO  17:46:02,481 - #18 ]
+INFO  17:46:02,481 - #37 =
+INFO  17:46:02,481 - #8 2
+INFO  17:46:02,481 - #5 ;
+INFO  17:46:02,481 - #9 niz
+INFO  17:46:02,481 - #17 [
+INFO  17:46:02,481 - #9 niz
+INFO  17:46:02,481 - #17 [
+INFO  17:46:02,481 - #9 jedan
+INFO  17:46:02,481 - #18 ]
+INFO  17:46:02,481 - #18 ]
+INFO  17:46:02,481 - #37 =
+INFO  17:46:02,481 - #9 niz
+INFO  17:46:02,481 - #17 [
+INFO  17:46:02,481 - #9 niz
+INFO  17:46:02,481 - #17 [
+INFO  17:46:02,481 - #8 0
+INFO  17:46:02,481 - #18 ]
+INFO  17:46:02,481 - #18 ]
+INFO  17:46:02,482 - #5 ;
+INFO  17:46:02,482 - #27 print
+INFO  17:46:02,482 - #14 (
+INFO  17:46:02,482 - #9 niz
+INFO  17:46:02,482 - #17 [
+INFO  17:46:02,482 - #8 2
+INFO  17:46:02,482 - #18 ]
+INFO  17:46:02,482 - #15 )
+INFO  17:46:02,482 - #5 ;
+INFO  17:46:02,482 - #4 }
+INFO  17:46:02,482 - #4 }
+INFO  17:46:02,487 - ===================================
+INFO  17:46:02,489 - Konstanta nula na liniji 5
+INFO  17:46:02,489 - Konstanta jedan na liniji 6
+INFO  17:46:02,489 - Konstanta pet na liniji 7
+INFO  17:46:02,489 - Promenljiva niz na liniji 9
+INFO  17:46:02,489 - Promenljiva nizch na liniji 10
+INFO  17:46:02,489 - Promenljiva bodovi na liniji 15
+INFO  17:46:02,489 - Promenljiva poeni na liniji 15
+INFO  17:46:02,489 - Promenljiva slova na liniji 15
+INFO  17:46:02,489 - Promenljiva temp na liniji 15
+INFO  17:46:02,489 - Promenljiva prom na liniji 15
+INFO  17:46:02,490 - Pristup nizu validan na liniji 20
+INFO  17:46:02,490 - Pristup nizu validan na liniji 21
+INFO  17:46:02,490 - Pristup nizu validan na liniji 22
+INFO  17:46:02,490 - Pristup nizu validan na liniji 22
+INFO  17:46:02,490 - Pristup nizu validan na liniji 22
+INFO  17:46:02,490 - Pristup nizu validan na liniji 22
+INFO  17:46:02,490 - Pristup nizu validan na liniji 23
+INFO  17:46:02,493 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName nula
+INFO  17:46:02,497 - DesignatorName jedan
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName jedan
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,497 - DesignatorName niz
+INFO  17:46:02,498 - DesignatorName niz
+INFO  17:46:02,498 - Parsiranje uspesno zavrseno!

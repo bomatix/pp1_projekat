@@ -1,0 +1,66 @@
+INFO  17:39:45,189 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  17:39:45,224 - #2 program
+INFO  17:39:45,224 - #9 MJProgram
+INFO  17:39:45,224 - #9 int
+INFO  17:39:45,225 - #9 x
+INFO  17:39:45,226 - #6 ,
+INFO  17:39:45,226 - #9 y
+INFO  17:39:45,227 - #6 ,
+INFO  17:39:45,227 - #9 z
+INFO  17:39:45,227 - #17 [
+INFO  17:39:45,227 - #18 ]
+INFO  17:39:45,227 - #5 ;
+INFO  17:39:45,227 - #3 {
+INFO  17:39:45,227 - #16 void
+INFO  17:39:45,227 - #9 main
+INFO  17:39:45,228 - #14 (
+INFO  17:39:45,228 - #15 )
+INFO  17:39:45,228 - #3 {
+INFO  17:39:45,228 - #9 z
+INFO  17:39:45,229 - #37 =
+INFO  17:39:45,230 - #19 new
+INFO  17:39:45,230 - #9 int
+INFO  17:39:45,230 - #17 [
+INFO  17:39:45,230 - #8 5
+INFO  17:39:45,230 - #18 ]
+INFO  17:39:45,231 - #5 ;
+INFO  17:39:45,231 - #9 z
+INFO  17:39:45,232 - #17 [
+INFO  17:39:45,232 - #8 0
+INFO  17:39:45,232 - #18 ]
+INFO  17:39:45,232 - #37 =
+INFO  17:39:45,233 - #8 3
+INFO  17:39:45,233 - #5 ;
+INFO  17:39:45,233 - #9 x
+INFO  17:39:45,233 - #37 =
+INFO  17:39:45,233 - #8 1
+INFO  17:39:45,233 - #5 ;
+INFO  17:39:45,233 - #9 x
+INFO  17:39:45,233 - #37 =
+INFO  17:39:45,233 - #9 x
+INFO  17:39:45,233 - #29 +
+INFO  17:39:45,233 - #9 z
+INFO  17:39:45,234 - #17 [
+INFO  17:39:45,234 - #9 z
+INFO  17:39:45,234 - #17 [
+INFO  17:39:45,234 - #8 1
+INFO  17:39:45,234 - #18 ]
+INFO  17:39:45,234 - #18 ]
+INFO  17:39:45,234 - #5 ;
+INFO  17:39:45,234 - #27 print
+INFO  17:39:45,234 - #14 (
+INFO  17:39:45,234 - #9 x
+INFO  17:39:45,234 - #15 )
+INFO  17:39:45,235 - #5 ;
+INFO  17:39:45,235 - #4 }
+INFO  17:39:45,235 - #4 }
+INFO  17:39:45,245 - ===================================
+INFO  17:39:45,248 - Promenljiva x na liniji 2
+INFO  17:39:45,248 - Promenljiva y na liniji 2
+INFO  17:39:45,248 - Promenljiva z na liniji 2
+INFO  17:39:45,248 - Pristup nizu validan na liniji 7
+INFO  17:39:45,248 - Pristup nizu validan na liniji 11
+ERROR 17:39:45,248 - Greska: Niz izraz u nizu mora biti tipa int! na liniji 11
+INFO  17:39:45,248 - Pristup nizu validan na liniji 11
+INFO  17:39:45,248 - Validno sabiranje na liniji 11
+ERROR 17:39:45,249 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,34 @@
+INFO  19:07:25,424 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  19:07:25,466 - #2 program
+INFO  19:07:25,466 - #9 MJProgram
+INFO  19:07:25,466 - #9 int
+INFO  19:07:25,467 - #9 x
+INFO  19:07:25,468 - #6 ,
+INFO  19:07:25,468 - #9 y
+INFO  19:07:25,469 - #6 ,
+INFO  19:07:25,469 - #9 z
+INFO  19:07:25,469 - #17 [
+INFO  19:07:25,469 - #18 ]
+INFO  19:07:25,469 - #5 ;
+INFO  19:07:25,469 - #3 {
+INFO  19:07:25,469 - #16 void
+INFO  19:07:25,470 - #9 main
+INFO  19:07:25,470 - #14 (
+INFO  19:07:25,470 - #15 )
+INFO  19:07:25,470 - #3 {
+INFO  19:07:25,471 - #9 x
+INFO  19:07:25,471 - #37 =
+INFO  19:07:25,472 - #8 2
+INFO  19:07:25,473 - #5 ;
+INFO  19:07:25,474 - #27 print
+INFO  19:07:25,474 - #14 (
+INFO  19:07:25,876 - #9 x
+INFO  19:07:25,877 - #15 )
+INFO  19:07:25,877 - #5 ;
+INFO  19:07:25,877 - #4 }
+INFO  19:07:25,878 - #4 }
+INFO  19:07:25,889 - ===================================
+INFO  19:07:25,897 - Promenljiva x na liniji 2
+INFO  19:07:25,897 - Promenljiva y na liniji 2
+INFO  19:07:25,897 - Promenljiva z na liniji 2
+INFO  19:07:25,906 - numConst 2

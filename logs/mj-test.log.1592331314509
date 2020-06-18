@@ -1,0 +1,63 @@
+INFO  20:14:33,968 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  20:14:34,004 - #2 program
+INFO  20:14:34,004 - #9 MJProgram
+INFO  20:14:34,004 - #9 int
+INFO  20:14:34,005 - #9 x
+INFO  20:14:34,006 - #6 ,
+INFO  20:14:34,006 - #9 y
+INFO  20:14:34,006 - #6 ,
+INFO  20:14:34,006 - #9 z
+INFO  20:14:34,006 - #17 [
+INFO  20:14:34,006 - #18 ]
+INFO  20:14:34,006 - #5 ;
+INFO  20:14:34,007 - #3 {
+INFO  20:14:34,007 - #16 void
+INFO  20:14:34,007 - #9 main
+INFO  20:14:34,007 - #14 (
+INFO  20:14:34,007 - #15 )
+INFO  20:14:34,008 - #3 {
+INFO  20:14:34,008 - #9 y
+INFO  20:14:34,009 - #37 =
+INFO  20:14:34,009 - #8 2
+INFO  20:14:34,010 - #5 ;
+INFO  20:14:34,011 - #9 x
+INFO  20:14:34,011 - #37 =
+INFO  20:14:34,011 - #8 2
+INFO  20:14:34,011 - #5 ;
+INFO  20:14:34,011 - #9 y
+INFO  20:14:34,011 - #37 =
+INFO  20:14:34,011 - #9 x
+INFO  20:14:34,011 - #46 +=
+INFO  20:14:34,012 - #9 x
+INFO  20:14:34,012 - #46 +=
+INFO  20:14:34,013 - #8 2
+INFO  20:14:34,013 - #5 ;
+INFO  20:14:34,013 - #27 print
+INFO  20:14:34,013 - #14 (
+INFO  20:14:34,013 - #9 x
+INFO  20:14:34,013 - #15 )
+INFO  20:14:34,013 - #5 ;
+INFO  20:14:34,013 - #27 print
+INFO  20:14:34,013 - #14 (
+INFO  20:14:34,013 - #9 y
+INFO  20:14:34,013 - #15 )
+INFO  20:14:34,013 - #5 ;
+INFO  20:14:34,014 - #4 }
+INFO  20:14:34,014 - #4 }
+INFO  20:14:34,023 - ===================================
+INFO  20:14:34,026 - Promenljiva x na liniji 2
+INFO  20:14:34,026 - Promenljiva y na liniji 2
+INFO  20:14:34,026 - Promenljiva z na liniji 2
+INFO  20:14:34,027 - Validno sabiranje na liniji 8
+INFO  20:14:34,027 - Validno sabiranje na liniji 8
+INFO  20:14:34,029 - DesignatorName y
+INFO  20:14:34,032 - numConst 2
+INFO  20:14:34,033 - DesignatorName x
+INFO  20:14:34,034 - numConst 2
+INFO  20:14:34,034 - DesignatorName y
+INFO  20:14:34,034 - DesignatorName x
+INFO  20:14:34,036 - DesignatorName x
+INFO  20:14:34,036 - numConst 2
+INFO  20:14:34,036 - DesignatorName x
+INFO  20:14:34,037 - DesignatorName y
+INFO  20:14:34,037 - Parsiranje uspesno zavrseno!
