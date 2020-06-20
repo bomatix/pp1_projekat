@@ -101,7 +101,7 @@ true|false {return new_symbol (sym.BOOLCONST, yytext()); }
 
 
 
-. { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); }
+. { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1) + ", " + yycolumn); }
 
 
 

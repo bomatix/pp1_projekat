@@ -1,0 +1,101 @@
+INFO  01:14:15,496 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  01:14:15,534 - #2 program
+INFO  01:14:15,534 - #9 test301
+INFO  01:14:15,534 - #7 const
+INFO  01:14:15,535 - #9 int
+INFO  01:14:15,535 - #9 nula
+INFO  01:14:15,535 - #37 =
+INFO  01:14:15,535 - #8 0
+INFO  01:14:15,535 - #5 ;
+INFO  01:14:15,536 - #7 const
+INFO  01:14:15,536 - #9 int
+INFO  01:14:15,536 - #9 jedan
+INFO  01:14:15,536 - #37 =
+INFO  01:14:15,536 - #8 1
+INFO  01:14:15,536 - #5 ;
+INFO  01:14:15,536 - #7 const
+INFO  01:14:15,536 - #9 int
+INFO  01:14:15,536 - #9 pet
+INFO  01:14:15,537 - #37 =
+INFO  01:14:15,537 - #8 5
+INFO  01:14:15,537 - #5 ;
+INFO  01:14:15,537 - #9 int
+INFO  01:14:15,537 - #9 niz
+INFO  01:14:15,537 - #17 [
+INFO  01:14:15,538 - #18 ]
+INFO  01:14:15,538 - #5 ;
+INFO  01:14:15,538 - #9 char
+INFO  01:14:15,538 - #9 nizch
+INFO  01:14:15,538 - #17 [
+INFO  01:14:15,538 - #18 ]
+INFO  01:14:15,538 - #5 ;
+INFO  01:14:15,538 - #3 {
+INFO  01:14:15,539 - #16 void
+INFO  01:14:15,539 - #9 main
+INFO  01:14:15,539 - #14 (
+INFO  01:14:15,539 - #15 )
+INFO  01:14:15,539 - #9 int
+INFO  01:14:15,540 - #9 bodovi
+INFO  01:14:15,540 - #6 ,
+INFO  01:14:15,540 - #9 poeni
+INFO  01:14:15,540 - #6 ,
+INFO  01:14:15,540 - #9 slova
+INFO  01:14:15,540 - #6 ,
+INFO  01:14:15,540 - #9 temp
+INFO  01:14:15,540 - #6 ,
+INFO  01:14:15,540 - #9 prom
+INFO  01:14:15,540 - #5 ;
+INFO  01:14:15,540 - #3 {
+INFO  01:14:15,540 - #9 temp
+INFO  01:14:15,541 - #37 =
+INFO  01:14:15,542 - #8 2
+INFO  01:14:15,542 - #5 ;
+INFO  01:14:15,543 - #27 print
+INFO  01:14:15,543 - #14 (
+INFO  01:14:15,543 - #9 temp
+INFO  01:14:15,543 - #15 )
+INFO  01:14:15,544 - #5 ;
+INFO  01:14:15,544 - #9 niz
+INFO  01:14:15,544 - #37 =
+INFO  01:14:15,544 - #19 new
+INFO  01:14:15,547 - #9 int
+INFO  01:14:15,547 - #17 [
+INFO  01:14:15,547 - #8 3
+INFO  01:14:15,547 - #18 ]
+INFO  01:14:15,547 - #5 ;
+INFO  01:14:15,547 - #9 niz
+INFO  01:14:15,547 - #17 [
+INFO  01:14:15,547 - #8 0
+INFO  01:14:15,548 - #18 ]
+INFO  01:14:15,548 - #37 =
+INFO  01:14:15,548 - #8 3
+INFO  01:14:15,549 - #5 ;
+INFO  01:14:15,549 - #27 print
+INFO  01:14:15,549 - #14 (
+INFO  01:14:15,549 - #9 niz
+INFO  01:14:15,549 - #17 [
+INFO  01:14:15,549 - #8 0
+INFO  01:14:15,549 - #18 ]
+INFO  01:14:15,549 - #15 )
+INFO  01:14:15,549 - #5 ;
+INFO  01:14:15,549 - #4 }
+INFO  01:14:15,549 - #4 }
+INFO  01:14:15,559 - ===================================
+INFO  01:14:15,562 - Konstanta nula na liniji 5
+INFO  01:14:15,562 - Konstanta jedan na liniji 6
+INFO  01:14:15,562 - Konstanta pet na liniji 7
+INFO  01:14:15,562 - Promenljiva niz na liniji 9
+INFO  01:14:15,562 - Promenljiva nizch na liniji 10
+INFO  01:14:15,562 - Promenljiva bodovi na liniji 15
+INFO  01:14:15,562 - Promenljiva poeni na liniji 15
+INFO  01:14:15,562 - Promenljiva slova na liniji 15
+INFO  01:14:15,563 - Promenljiva temp na liniji 15
+INFO  01:14:15,563 - Promenljiva prom na liniji 15
+INFO  01:14:15,563 - Pristup nizu validan na liniji 21
+INFO  01:14:15,563 - Pristup nizu validan na liniji 22
+INFO  01:14:15,565 - DesignatorName temp
+INFO  01:14:15,569 - DesignatorName temp
+INFO  01:14:15,569 - DesignatorName niz
+INFO  01:14:15,569 - DesignatorName niz
+INFO  01:14:15,569 - DesignatorName niz
+INFO  01:14:15,570 - Parsiranje uspesno zavrseno!

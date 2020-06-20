@@ -64,7 +64,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 	
 	public void visit(ConstIdent_ constIdent) {
-		report_info("Konstanta " + constIdent.getConstName(), constIdent);
+		report_info("Deklarisana konstanta (" + constIdent.getConstName() + ")", constIdent);
 		Obj constName = Tab.find(constIdent.getConstName());
 		if(constName == Tab.noObj) {
 			constIdent.obj = Tab.insert(Obj.Con, constIdent.getConstName(), currentType);
@@ -98,7 +98,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 	}
 	
 	public void visit(VarIdent_ varIdent) {
-		report_info("Promenljiva " + varIdent.getVarIdent(), varIdent);
+		report_info("Deklarisana promenljiva (" + varIdent.getVarIdent() + ")", varIdent);
 		Obj varName = Tab.find(varIdent.getVarIdent());
 		if(varName == Tab.noObj) {
 			if(varIdent.getArrayDecl() instanceof NoArrayDeclaration) {				
@@ -376,7 +376,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 					report_error("Greska: Promenljiva " + name.getName() + " nije niz!", designatorExpression);
 				}
 				else {
-					report_info("Pristup nizu validan", designatorExpression);
+					report_info("Pristup nizu (" + name.getName() + ")", designatorExpression);
 				}
 			}
 			else if(hasDesignatorList == null) {
@@ -440,7 +440,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		
 		if(expr1 && expr2) {
 			termList.struct = tl;
-			report_info("Validno sabiranje", termList);
+//			report_info("Validno sabiranje", termList);
 		}
 //		if(tl.equals(f) && tl == Tab.intType) {
 //			termList.struct = tl;
@@ -481,7 +481,7 @@ public class SemanticAnalyzer extends VisitorAdaptor{
 		
 		if(expr1 && expr2) {
 			addExpression.struct = te;
-			report_info("Validno sabiranje", addExpression);
+//			report_info("Validno sabiranje", addExpression);
 		}
 		else {
 			report_error("Greska na liniji "+ addExpression.getLine()+" : nekompatibilni tipovi u izrazu za sabiranje.", null);

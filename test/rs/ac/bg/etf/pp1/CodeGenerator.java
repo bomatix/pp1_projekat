@@ -32,6 +32,33 @@ public class CodeGenerator extends VisitorAdaptor {
 		return mainPc;
 	}
 	
+	public CodeGenerator() {
+		init();
+	}
+	
+	private void init() {
+		Code.put(Code.enter);
+        Obj chrMethod = Tab.find("chr");
+        chrMethod.setAdr(Code.pc);
+        Obj ordMethod = Tab.find("ord");
+        ordMethod.setAdr(Code.pc);
+        Code.put(1);
+        Code.put(1);
+        Code.put(Code.load_n);
+        Code.put(Code.exit);
+        Code.put(Code.return_);
+ 
+        Code.put(Code.enter);
+        Obj lenMethod = Tab.find("len");
+        lenMethod.setAdr(Code.pc);        
+        Code.put(1);
+        Code.put(1);
+        Code.put(Code.load_n);
+        Code.put(Code.arraylength);
+        Code.put(Code.exit);
+        Code.put(Code.return_);
+	}
+	
 	public void visit(PrintSt printSt) {
 		Struct st = printSt.getExpr().struct;
 		generate();
@@ -53,23 +80,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.load(constIdent.obj);
 		out.push(constIdent);
 	}
-	
-	public void visit(VarIdent varIdent) {
-//		Code.load(varIdent.obj);
-//		out.push(varIdent);
-	}
-	
-//	public void visit(NumConst numConst) {
-//		out.push(numConst);
-//	}
-//	
-//	public void visit(CharConst charConst) {
-//		out.push(charConst);
-//	}
-//	
-//	public void visit(BoolConst boolConst) {
-//		out.push(boolConst);
-//	}
 	
 	public void visit(FactorNum numConst) {
 		out.push(numConst);
@@ -101,6 +111,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(RParen_ op) {
 		addOperator(op);
+	}
+	
+	public void visit(ReadSt readSt) {
+		ops.push(readSt);
+		generate();
 	}
 	
 	private int getPrecedence(SyntaxNode op) {
@@ -177,7 +192,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			node instanceof MulEqual ||
 			node instanceof DivEqual ||
 			node instanceof ModEqual ||
-			node instanceof FactorNew) {
+			node instanceof FactorNew ||
+			node instanceof ReadSt) {
 			return true;
 		}
 		return false;
@@ -201,6 +217,7 @@ public class CodeGenerator extends VisitorAdaptor {
 					top = null;
 				}
 			}
+			if(top!= null && top instanceof LParen_) ops.pop();
 		}
 		else if(op instanceof RBracket_) {
 			SyntaxNode top;
@@ -256,45 +273,171 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	private void loadOperands(LinkedList<Obj> objs) {
 		Obj obj1 = objs.pop();
+		
+		Obj objI1 = null, objI2 = null, objArr1 = null, objArr2 = null;
+		
+		if(obj1.getKind() == Obj.Elem) {
+			obj1 = loadNestedArray(objs, obj1);
+		}
+		else if(obj1.getKind() != Obj.NO_VALUE) Code.load(obj1);
+		
 		Obj obj2 = objs.pop();
-				
 		if(obj2.getKind() == Obj.Elem) {
-			if(obj1.getKind() == Obj.Elem) {
-				Code.load(obj1);
-				Code.put(Code.dup_x2);
-				Code.put(Code.pop);
-				Code.load(obj2);
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);
+			obj2 = loadNestedArray(objs, obj2);
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+		}
+		else if(obj2.getKind() != Obj.NO_VALUE) {
+			Code.load(obj2);
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+		}
+		
+	}
+	
+	private void EqualOp(LinkedList<Obj> objs, int operation) {
+		Obj obj1 = objs.pop();
+		Obj objI1 = null, objArr1 = null, objI2 = null, objArr2 = null;
+		Obj temp = null;
+		
+		if(obj1.getKind() == Obj.Elem) {
+			objI1 = objs.pop(); objArr1 = objs.pop();
+		}
+		
+		Obj obj2 = objs.pop();
+		// Ako je levi niz
+		if(obj2.getKind() == Obj.Elem) {
+			objI2 = objs.pop(); objArr2 = objs.pop();
+			Code.load(objArr2);
+			// Ako je desni na steku
+			if(obj1.getKind() == Obj.NO_VALUE) {
+				// Ako je indeks na steku
+				if(objI2.getKind() == Obj.NO_VALUE) {
+					Code.put(Code.dup_x2); Code.put(Code.pop); // Dupliraj levi iznad indeksa i desnog i popuj sa vrha
+				}
+				else {					
+					Code.put(Code.dup_x1); Code.put(Code.pop); // Dupliraj levi iznad desnog i popuj sa vrha
+				}
 			}
 			else {
-				if(obj1.getKind() != Obj.NO_VALUE) {					
-					Code.load(obj2);
-					Code.load(obj1);
+				if(objI2.getKind() == Obj.NO_VALUE) {
+					Code.put(Code.dup_x1); Code.put(Code.pop);
 				}
-				else {
-					Code.put(Code.dup_x2);
-					Code.put(Code.pop);
-					Code.load(obj2);
-					Code.put(Code.dup_x1);
-					Code.put(Code.pop);
+			}
+			
+			// Ako indeks nije na steku
+			if(objI2.getKind() != Obj.NO_VALUE) {				
+				Code.load(objI2);
+				// Ako je desni na steku
+				if(obj1.getKind() == Obj.NO_VALUE) {
+					Code.put(Code.dup_x1);	// Dupliraj indeks iznad desnog						
 				}
+				else Code.put(Code.dup); // Dupliraj indeks
+			}
+			else { // indeks na steku
+				if(obj1.getKind() == Obj.NO_VALUE) { // desni na steku			
+					Code.put(Code.dup_x1); Code.put(Code.pop); Code.put(Code.dup_x1);
+				}
+				else Code.put(Code.dup);
+			}
+			Code.load(objArr2);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			
+			Code.load(obj2);
+			if(obj1.getKind() == Obj.NO_VALUE) {
+				Code.put(Code.dup_x1); Code.put(Code.pop);								
 			}
 		}
-		else if(obj1.getKind() == Obj.Elem) {
-			Code.load(obj1);
-			if(obj2.getKind() != Obj.NO_VALUE) {				
-				Code.load(obj2);
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);
+		else {
+			Code.load(obj2);
+			if(obj1.getKind() == Obj.NO_VALUE) {
+				Code.put(Code.dup_x1); Code.put(Code.pop);
 			}
+		}
+		
+		if(obj1.getKind() == Obj.Elem) {
+			Code.load(objArr1);
+			Code.load(objI1);
+			Code.load(obj1);
+		}
+		else if(obj1.getKind() != Obj.NO_VALUE) {						
+			Code.load(obj1);
+		}
+		Code.put(operation);
+		if(obj2.getKind() == Obj.Elem) {
+			Code.put(Code.dup_x2);
+		}
+		else {
+			Code.put(Code.dup);						
+		}
+		
+		Code.store(obj2);
+		objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+	}
+	
+	private Obj loadNestedArray(LinkedList<Obj> objs, Obj start) {
+		Obj obj = objs.pop(), objI = null;
+		
+		if(obj.getKind() == Obj.Elem) {
+			objI = loadNestedArray(objs, obj);
+		}
+		else objI = obj;
+		Obj objArr = objs.pop();
+		Code.load(objArr);
+		if(objI.getKind() == Obj.NO_VALUE) {
+			Code.put(Code.dup_x1); Code.put(Code.pop);
 		}
 		else {			
-			if(obj2.getKind() != Obj.NO_VALUE) 
-				Code.load(obj2);
-			if(obj1.getKind() != Obj.NO_VALUE) 
-				Code.load(obj1);
+			Code.load(objI);
 		}
+		Code.load(start);
+		Obj ret = new Obj(Obj.NO_VALUE, "$", Tab.intType);
+		return ret;
+	}
+	
+	private void storeNestedArray(LinkedList<Obj> objs, Obj start) {
+		Obj obj = objs.pop(), objI = null;
+		
+		if(obj.getKind() == Obj.Elem) {
+			objI = loadNestedArray(objs, obj);
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+		}
+		else objI = obj;
+		Obj objArr = objs.pop();
+		Code.load(objArr);
+		if(objI.getKind() == Obj.NO_VALUE) {
+			Code.put(Code.dup_x2); Code.put(Code.pop);
+		}
+		else {
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+			Code.load(objI);
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+		}
+	}
+	
+	
+	// kada treba koristiti vrednost elementa niza i upisati u element niza
+	private void storeLoadNestedArray(LinkedList<Obj> objs, Obj start) {
+		Obj obj = objs.pop(), objI = null;
+		
+		if(obj.getKind() == Obj.Elem) {
+			objI = loadNestedArray(objs, obj);
+		}
+		else objI = obj;
+		Obj objArr = objs.pop();
+		Code.load(objArr);
+		if(objI.getKind() == Obj.NO_VALUE) {
+			Code.put(Code.dup_x2); Code.put(Code.pop);
+			Code.put(Code.dup_x1);
+		}
+		else {
+			Code.put(Code.dup_x1); Code.put(Code.pop);
+			Code.load(objI);
+			Code.put(Code.dup_x1);
+		}
+		Code.load(objArr);
+		Code.put(Code.dup_x1); Code.put(Code.pop);
+		Code.load(start);
+		Code.put(Code.dup_x1); Code.put(Code.pop);
 	}
 	
 	private void generate() {
@@ -306,7 +449,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		while(!out.isEmpty()) {
 			SyntaxNode sn = out.pollLast();
 			if(sn instanceof RBracket_) {
-//				objs.push(new Obj(Obj.Elem, "$", Tab.intType));
+				objs.push(new Obj(Obj.Elem, "$", Tab.intType));
 			}
 			else if(!isOperator(sn)) {
 				Obj obj = null;
@@ -367,62 +510,43 @@ public class CodeGenerator extends VisitorAdaptor {
 				
 				if(sn instanceof DesignatorPlusPlus) {
 					Obj obj = objs.pop();
+					Code.loadConst(1);
 					if(obj.getKind() == Obj.Elem) {						
-						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
+						storeLoadNestedArray(objs, obj);
 					}
 					else {
 						Code.load(obj);
+						Code.put(Code.dup_x1); Code.put(Code.pop);
 					}
-					Code.loadConst(1);
 					Code.put(Code.add);
 					Code.store(obj);
 				}
 				if(sn instanceof DesignatorMinusMinus) {
 					Obj obj = objs.pop();
+					Code.loadConst(1);
 					if(obj.getKind() == Obj.Elem) {						
-						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
+						storeLoadNestedArray(objs, obj);
 					}
 					else {
 						Code.load(obj);
+						Code.put(Code.dup_x1); Code.put(Code.pop);
 					}
-					Code.loadConst(1);
 					Code.put(Code.sub);
 					Code.store(obj);
 				}
-				
-				if(sn instanceof RBracket_) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					Code.load(obj2);
-					if(obj1.getKind() == Obj.NO_VALUE || obj1.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x1);
-						Code.put(Code.pop);
-					}
-					else {
-						Code.load(obj1);						
-					}
-					Obj obj_final = new Obj(Obj.Elem, "$", obj2.getType()); 
-					objs.push(obj_final);
-					arr--;
-					if(arr > 0) {
-						Code.load(obj_final);
-					}
-					
-				}
 				if(sn instanceof Assign) {	
 					Obj obj1 = null, obj2 = null;
+					Obj objI1 = null, objArr1 = null, objI2 = null, objArr2 = null;
 					if(!newArray) {						
 						obj1 = objs.pop();
+						if(obj1.getKind() == Obj.Elem) {
+							obj1 = loadNestedArray(objs, obj1);
+						}
+						else if(obj1.getKind() != Obj.NO_VALUE) Code.load(obj1);
 						obj2 = objs.pop();
 						if(obj2.getKind() == Obj.Elem) {
-//							Code.pc--;
+							storeNestedArray(objs, obj2);
 						}
-						if(obj1.getKind() != Obj.NO_VALUE && obj1.getKind() != Obj.Elem) 
-							Code.load(obj1);
 					}
 					else {
 						newArray = false;
@@ -433,114 +557,19 @@ public class CodeGenerator extends VisitorAdaptor {
 				
 				
 				if(sn instanceof PlusEqual) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					if(obj2.getKind() == Obj.Elem) {
-//						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
-					}
-					if(obj1.getKind() != Obj.NO_VALUE) 
-						Code.load(obj1);
-					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
-						Code.load(obj2);
-					Code.put(Code.add);
-					if(obj2.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x2);
-					}
-					else {						
-						Code.put(Code.dup);
-					}
-					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
-					Code.store(obj2);
+					EqualOp(objs, Code.add);
 				}
 				if(sn instanceof MinusEqual) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					if(obj2.getKind() == Obj.Elem) {
-//						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
-					}
-					if(obj1.getKind() != Obj.NO_VALUE) 
-						Code.load(obj1);
-					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
-						Code.load(obj2);
-					Code.put(Code.sub);
-					if(obj2.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x2);
-					}
-					else {						
-						Code.put(Code.dup);
-					}
-					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
-					Code.store(obj2);
+					EqualOp(objs, Code.sub);
 				}
 				if(sn instanceof MulEqual) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					if(obj2.getKind() == Obj.Elem) {
-//						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
-					}
-					if(obj1.getKind() != Obj.NO_VALUE) 
-						Code.load(obj1);
-					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
-						Code.load(obj2);
-					Code.put(Code.mul);
-					if(obj2.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x2);
-					}
-					else {						
-						Code.put(Code.dup);
-					}
-					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
-					Code.store(obj2);
+					EqualOp(objs, Code.mul);
 				}
 				if(sn instanceof DivEqual) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					if(obj2.getKind() == Obj.Elem) {
-//						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
-					}
-					if(obj1.getKind() != Obj.NO_VALUE) 
-						Code.load(obj1);
-					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
-						Code.load(obj2);
-					Code.put(Code.div);
-					if(obj2.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x2);
-					}
-					else {						
-						Code.put(Code.dup);
-					}
-					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
-					Code.store(obj2);
+					EqualOp(objs, Code.div);
 				}
 				if(sn instanceof ModEqual) {
-					Obj obj1 = objs.pop();
-					Obj obj2 = objs.pop();
-					if(obj2.getKind() == Obj.Elem) {
-//						Code.pc--;
-						Code.put(Code.dup2);
-						Code.put(Code.aload);
-					}
-					if(obj1.getKind() != Obj.NO_VALUE) 
-						Code.load(obj1);
-					if(obj2.getKind() != Obj.NO_VALUE && obj2.getKind() != Obj.Elem) 
-						Code.load(obj2);
-					Code.put(Code.rem);
-					if(obj2.getKind() == Obj.Elem) {
-						Code.put(Code.dup_x2);
-					}
-					else {						
-						Code.put(Code.dup);
-					}
-					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
-					Code.store(obj2);
+					EqualOp(objs, Code.rem);
 				}
 				
 				
@@ -570,6 +599,17 @@ public class CodeGenerator extends VisitorAdaptor {
 					Code.put(Code.sub);
 					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
 				}
+				
+				if(sn instanceof ReadSt) {
+					Obj obj = objs.pop();
+					Code.put(Code.read);
+					if(obj.getKind() == Obj.Elem) {
+						
+					}
+					else {
+						Code.store(obj);
+					}
+				}
 			}
 		}
 		
@@ -577,11 +617,13 @@ public class CodeGenerator extends VisitorAdaptor {
 		// THINK ABOUT THIS
 		// UNUSED VALUES LEFT ON STACK
 		while(!objs.isEmpty()) {
-			Obj obj = objs.pop();				
-			if(obj.getKind() != Obj.NO_VALUE) Code.load(obj);
+			Obj obj = objs.pop();	
+			if(obj.getKind() == Obj.Elem) {
+				loadNestedArray(objs, obj);
+			}
+			else if(obj.getKind() != Obj.NO_VALUE) Code.load(obj);
+
 		}
-		
-		arr = 0;
 	}
 	
 	
@@ -642,12 +684,18 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorSt designatorSt) {
-		generate();
+		DesignatorStatementExpression dse = (DesignatorStatementExpression)designatorSt.getDesignatorStatementExpr();
+		if(dse.getDesignatorStatement() instanceof DesignatorActPars) {
+			Code.put(Code.call);
+			Code.put2(dse.getDesignatorExpr().getDesignatorName().obj.getAdr() - Code.pc + 1);
+		}
+		else {			
+			generate();
+		}
 	}
 	
 	
 	public void visit(DesignatorName designatorName) {
-		log.info("DesignatorName " + designatorName.getVarName());
 		out.push(designatorName);
 	}
 

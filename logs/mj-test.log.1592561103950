@@ -1,0 +1,82 @@
+INFO  12:04:53,263 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  12:04:53,299 - #2 program
+INFO  12:04:53,299 - #9 test301
+INFO  12:04:53,299 - #7 const
+INFO  12:04:53,300 - #9 int
+INFO  12:04:53,300 - #9 nula
+INFO  12:04:53,301 - #37 =
+INFO  12:04:53,301 - #8 0
+INFO  12:04:53,301 - #5 ;
+INFO  12:04:53,301 - #7 const
+INFO  12:04:53,301 - #9 int
+INFO  12:04:53,301 - #9 jedan
+INFO  12:04:53,301 - #37 =
+INFO  12:04:53,302 - #8 1
+INFO  12:04:53,302 - #5 ;
+INFO  12:04:53,302 - #7 const
+INFO  12:04:53,302 - #9 int
+INFO  12:04:53,302 - #9 pet
+INFO  12:04:53,302 - #37 =
+INFO  12:04:53,302 - #8 5
+INFO  12:04:53,302 - #5 ;
+INFO  12:04:53,302 - #9 int
+INFO  12:04:53,302 - #9 niz
+INFO  12:04:53,303 - #17 [
+INFO  12:04:53,303 - #18 ]
+INFO  12:04:53,303 - #5 ;
+INFO  12:04:53,304 - #9 char
+INFO  12:04:53,304 - #9 nizch
+INFO  12:04:53,304 - #17 [
+INFO  12:04:53,304 - #18 ]
+INFO  12:04:53,304 - #5 ;
+INFO  12:04:53,304 - #3 {
+INFO  12:04:53,304 - #16 void
+INFO  12:04:53,304 - #9 main
+INFO  12:04:53,304 - #14 (
+INFO  12:04:53,304 - #15 )
+INFO  12:04:53,305 - #9 int
+INFO  12:04:53,305 - #9 bodovi
+INFO  12:04:53,305 - #6 ,
+INFO  12:04:53,305 - #9 poeni
+INFO  12:04:53,305 - #6 ,
+INFO  12:04:53,305 - #9 slova
+INFO  12:04:53,305 - #6 ,
+INFO  12:04:53,305 - #9 temp
+INFO  12:04:53,305 - #6 ,
+INFO  12:04:53,305 - #9 prom
+INFO  12:04:53,306 - #5 ;
+INFO  12:04:53,306 - #3 {
+INFO  12:04:53,306 - #9 niz
+INFO  12:04:53,306 - #37 =
+INFO  12:04:53,307 - #19 new
+INFO  12:04:53,307 - #9 int
+INFO  12:04:53,307 - #17 [
+INFO  12:04:53,307 - #8 3
+INFO  12:04:53,307 - #18 ]
+INFO  12:04:53,308 - #5 ;
+INFO  12:04:53,308 - #9 niz
+INFO  12:04:53,309 - #17 [
+INFO  12:04:53,309 - #9 nula
+INFO  12:04:53,309 - #18 ]
+INFO  12:04:53,312 - #37 =
+INFO  12:04:53,313 - #9 jedan
+INFO  12:04:53,313 - #5 ;
+INFO  12:04:53,313 - #4 }
+INFO  12:04:53,313 - #4 }
+INFO  12:04:53,324 - ===================================
+INFO  12:04:53,326 - Konstanta nula na liniji 5
+INFO  12:04:53,326 - Konstanta jedan na liniji 6
+INFO  12:04:53,326 - Konstanta pet na liniji 7
+INFO  12:04:53,326 - Promenljiva niz na liniji 9
+INFO  12:04:53,326 - Promenljiva nizch na liniji 10
+INFO  12:04:53,326 - Promenljiva bodovi na liniji 15
+INFO  12:04:53,326 - Promenljiva poeni na liniji 15
+INFO  12:04:53,326 - Promenljiva slova na liniji 15
+INFO  12:04:53,327 - Promenljiva temp na liniji 15
+INFO  12:04:53,327 - Promenljiva prom na liniji 15
+INFO  12:04:53,327 - Pristup nizu validan na liniji 20
+INFO  12:04:53,330 - DesignatorName niz
+INFO  12:04:53,333 - DesignatorName niz
+INFO  12:04:53,334 - DesignatorName nula
+INFO  12:04:53,334 - DesignatorName jedan
+INFO  12:04:53,334 - Parsiranje uspesno zavrseno!

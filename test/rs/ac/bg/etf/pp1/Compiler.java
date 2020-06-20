@@ -17,7 +17,7 @@ import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.*;
 import rs.ac.bg.etf.pp1.ast.*;
 
-public class MJTest {
+public class Compiler {
 
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
@@ -29,7 +29,7 @@ public class MJTest {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		Logger log = Logger.getLogger(MJTest.class);
+		Logger log = Logger.getLogger(Compiler.class);
 		
 		Reader br = null;
 		try {
