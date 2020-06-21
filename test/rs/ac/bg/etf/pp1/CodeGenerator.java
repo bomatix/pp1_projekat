@@ -113,6 +113,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		addOperator(op);
 	}
 	
+	public void visit(NegativeTermExpression op) {
+		addOperator(op);
+	}
+	
 	public void visit(ReadSt readSt) {
 		ops.push(readSt);
 		generate();
@@ -130,7 +134,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		else if(op instanceof Multiply ||
 				op instanceof Divide ||
 				op instanceof Mod || 
-				op instanceof FactorNew) {
+				op instanceof FactorNew ||
+				op instanceof NegativeTermExpression) {
 			return 3;
 		}
 		else if(op instanceof Add ||
@@ -159,7 +164,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			op instanceof Divide ||
 			op instanceof Mod ||
 			op instanceof Add ||
-			op instanceof Subtract) {
+			op instanceof Subtract ||
+			op instanceof NegativeTermExpression) {
 			return LEFT_TO_RIGHT;
 		}
 		else if(op instanceof Assign ||
@@ -193,7 +199,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			node instanceof DivEqual ||
 			node instanceof ModEqual ||
 			node instanceof FactorNew ||
-			node instanceof ReadSt) {
+			node instanceof ReadSt ||
+			node instanceof NegativeTermExpression) {
 			return true;
 		}
 		return false;
@@ -395,10 +402,15 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	private void storeNestedArray(LinkedList<Obj> objs, Obj start) {
+		storeNestedArray(objs, start, true);
+	}
+	
+	private Obj storeNestedArray(LinkedList<Obj> objs, Obj start, boolean first) {
 		Obj obj = objs.pop(), objI = null;
 		
 		if(obj.getKind() == Obj.Elem) {
-			objI = loadNestedArray(objs, obj);
+//			objI = loadNestedArray(objs, obj);
+			objI = storeNestedArray(objs, obj, false);
 			Code.put(Code.dup_x1); Code.put(Code.pop);
 		}
 		else objI = obj;
@@ -412,6 +424,13 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.load(objI);
 			Code.put(Code.dup_x1); Code.put(Code.pop);
 		}
+		Obj ret = new Obj(Obj.NO_VALUE, "$", Tab.intType);
+		if(!first) {
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			Code.load(start);
+		}
+		return ret;
 	}
 	
 	
@@ -490,6 +509,16 @@ public class CodeGenerator extends VisitorAdaptor {
 				objs.push(obj);
 			}
 			else {
+				if(sn instanceof NegativeTermExpression) {
+					Obj obj = objs.pop();
+					if(obj.getKind() == Obj.Elem) {
+						loadNestedArray(objs, obj);
+					}
+					else if(obj.getKind() != Obj.NO_VALUE) Code.load(obj);
+					Code.loadConst(-1);
+					Code.put(Code.mul);
+					objs.push(new Obj(Obj.NO_VALUE, "$", Tab.intType));
+				}
 				
 				if(sn instanceof FactorNew) {
 					FactorNew fn = (FactorNew) sn;
@@ -604,7 +633,8 @@ public class CodeGenerator extends VisitorAdaptor {
 					Obj obj = objs.pop();
 					Code.put(Code.read);
 					if(obj.getKind() == Obj.Elem) {
-						
+						storeNestedArray(objs, obj);
+						Code.store(obj);
 					}
 					else {
 						Code.store(obj);

@@ -1,0 +1,67 @@
+INFO  13:04:46,386 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  13:04:46,465 - #2 program
+INFO  13:04:46,465 - #9 test301
+INFO  13:04:46,465 - #7 const
+INFO  13:04:46,466 - #9 int
+INFO  13:04:46,466 - #9 nula
+INFO  13:04:46,467 - #37 =
+INFO  13:04:46,467 - #8 0
+INFO  13:04:46,467 - #5 ;
+INFO  13:04:46,467 - #7 const
+INFO  13:04:46,468 - #9 int
+INFO  13:04:46,468 - #9 jedan
+INFO  13:04:46,468 - #37 =
+INFO  13:04:46,468 - #8 1
+INFO  13:04:46,468 - #5 ;
+INFO  13:04:46,468 - #7 const
+INFO  13:04:46,468 - #9 int
+INFO  13:04:46,468 - #9 pet
+INFO  13:04:46,468 - #37 =
+INFO  13:04:46,468 - #8 5
+INFO  13:04:46,468 - #5 ;
+INFO  13:04:46,468 - #9 int
+INFO  13:04:46,468 - #9 niz
+INFO  13:04:46,469 - #17 [
+INFO  13:04:46,469 - #18 ]
+INFO  13:04:46,469 - #5 ;
+INFO  13:04:46,470 - #9 char
+INFO  13:04:46,470 - #9 nizch
+INFO  13:04:46,470 - #17 [
+INFO  13:04:46,470 - #18 ]
+INFO  13:04:46,470 - #5 ;
+INFO  13:04:46,470 - #3 {
+INFO  13:04:46,470 - #16 void
+INFO  13:04:46,470 - #9 main
+INFO  13:04:46,470 - #14 (
+INFO  13:04:46,471 - #15 )
+INFO  13:04:46,471 - #9 int
+INFO  13:04:46,471 - #9 bodovi
+INFO  13:04:46,471 - #6 ,
+INFO  13:04:46,472 - #9 x
+INFO  13:04:46,472 - #5 ;
+INFO  13:04:46,472 - #3 {
+INFO  13:04:46,472 - #9 bodovi
+INFO  13:04:46,472 - #37 =
+INFO  13:04:46,473 - #8 3
+INFO  13:04:46,473 - #5 ;
+INFO  13:04:46,474 - #9 x
+INFO  13:04:46,474 - #37 =
+INFO  13:04:46,475 - #30 -
+INFO  13:04:46,475 - #9 bodovi
+INFO  13:04:46,475 - #5 ;
+INFO  13:04:46,475 - #27 print
+INFO  13:04:46,475 - #14 (
+INFO  13:04:46,475 - #9 x
+INFO  13:04:46,475 - #15 )
+INFO  13:04:46,475 - #5 ;
+INFO  13:04:46,476 - #4 }
+INFO  13:04:46,476 - #4 }
+INFO  13:04:46,486 - ===================================
+INFO  13:04:46,502 - Deklarisana konstanta (nula) na liniji 5
+INFO  13:04:46,502 - Deklarisana konstanta (jedan) na liniji 6
+INFO  13:04:46,503 - Deklarisana konstanta (pet) na liniji 7
+INFO  13:04:46,503 - Deklarisana promenljiva (niz) na liniji 9
+INFO  13:04:46,503 - Deklarisana promenljiva (nizch) na liniji 10
+INFO  13:04:46,503 - Deklarisana promenljiva (bodovi) na liniji 14
+INFO  13:04:46,503 - Deklarisana promenljiva (x) na liniji 14
+INFO  13:04:46,511 - Parsiranje uspesno zavrseno!

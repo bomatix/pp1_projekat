@@ -1,0 +1,267 @@
+INFO  00:49:10,853 - Compiling source file: C:\repos\PP1\Projekat\test\program.mj
+INFO  00:49:10,904 - #2 program
+INFO  00:49:10,904 - #9 test301
+INFO  00:49:10,904 - #7 const
+INFO  00:49:10,905 - #9 int
+INFO  00:49:10,905 - #9 nula
+INFO  00:49:10,906 - #37 =
+INFO  00:49:10,906 - #8 0
+INFO  00:49:10,906 - #5 ;
+INFO  00:49:10,907 - #7 const
+INFO  00:49:10,907 - #9 int
+INFO  00:49:10,907 - #9 jedan
+INFO  00:49:10,907 - #37 =
+INFO  00:49:10,907 - #8 1
+INFO  00:49:10,907 - #5 ;
+INFO  00:49:10,907 - #7 const
+INFO  00:49:10,907 - #9 int
+INFO  00:49:10,908 - #9 pet
+INFO  00:49:10,908 - #37 =
+INFO  00:49:10,908 - #8 5
+INFO  00:49:10,908 - #5 ;
+INFO  00:49:10,908 - #9 int
+INFO  00:49:10,908 - #9 niz
+INFO  00:49:10,909 - #17 [
+INFO  00:49:10,909 - #18 ]
+INFO  00:49:10,909 - #5 ;
+INFO  00:49:10,910 - #9 char
+INFO  00:49:10,910 - #9 nizch
+INFO  00:49:10,910 - #17 [
+INFO  00:49:10,910 - #18 ]
+INFO  00:49:10,910 - #5 ;
+INFO  00:49:10,910 - #3 {
+INFO  00:49:10,910 - #16 void
+INFO  00:49:10,910 - #9 main
+INFO  00:49:10,910 - #14 (
+INFO  00:49:10,910 - #15 )
+INFO  00:49:10,911 - #9 int
+INFO  00:49:10,911 - #9 bodovi
+INFO  00:49:10,911 - #5 ;
+INFO  00:49:10,911 - #3 {
+INFO  00:49:10,911 - #9 bodovi
+INFO  00:49:10,912 - #37 =
+INFO  00:49:10,912 - #8 0
+INFO  00:49:10,912 - #5 ;
+INFO  00:49:10,913 - #9 bodovi
+INFO  00:49:10,913 - #31 ++
+INFO  00:49:10,913 - #5 ;
+INFO  00:49:10,914 - #9 bodovi
+INFO  00:49:10,914 - #37 =
+INFO  00:49:10,914 - #9 bodovi
+INFO  00:49:10,914 - #29 +
+INFO  00:49:10,915 - #9 jedan
+INFO  00:49:10,915 - #5 ;
+INFO  00:49:10,915 - #9 bodovi
+INFO  00:49:10,915 - #37 =
+INFO  00:49:10,915 - #9 bodovi
+INFO  00:49:10,915 - #34 *
+INFO  00:49:10,916 - #9 pet
+INFO  00:49:10,916 - #5 ;
+INFO  00:49:10,916 - #9 bodovi
+INFO  00:49:10,919 - #32 --
+INFO  00:49:10,919 - #5 ;
+INFO  00:49:10,920 - #27 print
+INFO  00:49:10,920 - #14 (
+INFO  00:49:10,920 - #9 bodovi
+INFO  00:49:10,920 - #15 )
+INFO  00:49:10,920 - #5 ;
+INFO  00:49:10,920 - #9 niz
+INFO  00:49:10,920 - #37 =
+INFO  00:49:10,921 - #19 new
+INFO  00:49:10,921 - #9 int
+INFO  00:49:10,921 - #17 [
+INFO  00:49:10,921 - #8 3
+INFO  00:49:10,921 - #18 ]
+INFO  00:49:10,921 - #5 ;
+INFO  00:49:10,921 - #9 niz
+INFO  00:49:10,921 - #17 [
+INFO  00:49:10,921 - #9 nula
+INFO  00:49:10,921 - #18 ]
+INFO  00:49:10,921 - #37 =
+INFO  00:49:10,922 - #9 jedan
+INFO  00:49:10,922 - #5 ;
+INFO  00:49:10,922 - #9 niz
+INFO  00:49:10,922 - #17 [
+INFO  00:49:10,922 - #8 1
+INFO  00:49:10,922 - #18 ]
+INFO  00:49:10,922 - #37 =
+INFO  00:49:10,922 - #8 2
+INFO  00:49:10,922 - #5 ;
+INFO  00:49:10,922 - #9 niz
+INFO  00:49:10,922 - #17 [
+INFO  00:49:10,922 - #9 niz
+INFO  00:49:10,922 - #17 [
+INFO  00:49:10,922 - #9 jedan
+INFO  00:49:10,922 - #18 ]
+INFO  00:49:10,922 - #18 ]
+INFO  00:49:10,922 - #37 =
+INFO  00:49:10,922 - #9 niz
+INFO  00:49:10,922 - #17 [
+INFO  00:49:10,922 - #9 niz
+INFO  00:49:10,923 - #17 [
+INFO  00:49:10,923 - #8 0
+INFO  00:49:10,923 - #18 ]
+INFO  00:49:10,923 - #18 ]
+INFO  00:49:10,923 - #34 *
+INFO  00:49:10,923 - #8 3
+INFO  00:49:10,923 - #5 ;
+INFO  00:49:10,923 - #9 bodovi
+INFO  00:49:10,923 - #37 =
+INFO  00:49:10,923 - #9 niz
+INFO  00:49:10,923 - #17 [
+INFO  00:49:10,923 - #8 2
+INFO  00:49:10,923 - #18 ]
+INFO  00:49:10,923 - #35 /
+INFO  00:49:10,923 - #9 niz
+INFO  00:49:10,923 - #17 [
+INFO  00:49:10,923 - #8 0
+INFO  00:49:10,923 - #18 ]
+INFO  00:49:10,924 - #5 ;
+INFO  00:49:10,924 - #27 print
+INFO  00:49:10,924 - #14 (
+INFO  00:49:10,924 - #9 bodovi
+INFO  00:49:10,924 - #15 )
+INFO  00:49:10,924 - #5 ;
+INFO  00:49:10,924 - #27 print
+INFO  00:49:10,924 - #14 (
+INFO  00:49:10,924 - #9 niz
+INFO  00:49:10,924 - #17 [
+INFO  00:49:10,924 - #8 2
+INFO  00:49:10,924 - #18 ]
+INFO  00:49:10,924 - #15 )
+INFO  00:49:10,924 - #5 ;
+INFO  00:49:10,924 - #28 read
+INFO  00:49:10,925 - #14 (
+INFO  00:49:10,925 - #9 bodovi
+INFO  00:49:10,925 - #15 )
+INFO  00:49:10,925 - #5 ;
+INFO  00:49:10,925 - #9 niz
+INFO  00:49:10,925 - #17 [
+INFO  00:49:10,925 - #8 2
+INFO  00:49:10,925 - #18 ]
+INFO  00:49:10,926 - #46 +=
+INFO  00:49:10,926 - #9 bodovi
+INFO  00:49:10,926 - #48 *=
+INFO  00:49:10,926 - #8 2
+INFO  00:49:10,927 - #5 ;
+INFO  00:49:10,927 - #9 niz
+INFO  00:49:10,927 - #17 [
+INFO  00:49:10,927 - #8 2
+INFO  00:49:10,927 - #18 ]
+INFO  00:49:10,927 - #31 ++
+INFO  00:49:10,927 - #5 ;
+INFO  00:49:10,927 - #27 print
+INFO  00:49:10,927 - #14 (
+INFO  00:49:10,927 - #9 niz
+INFO  00:49:10,927 - #17 [
+INFO  00:49:10,927 - #8 2
+INFO  00:49:10,927 - #18 ]
+INFO  00:49:10,927 - #15 )
+INFO  00:49:10,927 - #5 ;
+INFO  00:49:10,927 - #9 nizch
+INFO  00:49:10,927 - #37 =
+INFO  00:49:10,927 - #19 new
+INFO  00:49:10,927 - #9 char
+INFO  00:49:10,927 - #17 [
+INFO  00:49:10,928 - #8 3
+INFO  00:49:10,928 - #18 ]
+INFO  00:49:10,928 - #5 ;
+INFO  00:49:10,928 - #9 nizch
+INFO  00:49:10,928 - #17 [
+INFO  00:49:10,928 - #8 0
+INFO  00:49:10,928 - #18 ]
+INFO  00:49:10,928 - #37 =
+INFO  00:49:10,928 - #11 a
+INFO  00:49:10,928 - #5 ;
+INFO  00:49:10,928 - #9 nizch
+INFO  00:49:10,928 - #17 [
+INFO  00:49:10,928 - #9 jedan
+INFO  00:49:10,928 - #18 ]
+INFO  00:49:10,928 - #37 =
+INFO  00:49:10,928 - #11 b
+INFO  00:49:10,928 - #5 ;
+INFO  00:49:10,928 - #9 nizch
+INFO  00:49:10,928 - #17 [
+INFO  00:49:10,928 - #9 pet
+INFO  00:49:10,928 - #30 -
+INFO  00:49:10,928 - #8 3
+INFO  00:49:10,929 - #18 ]
+INFO  00:49:10,929 - #37 =
+INFO  00:49:10,929 - #11 c
+INFO  00:49:10,929 - #5 ;
+INFO  00:49:10,929 - #27 print
+INFO  00:49:10,929 - #14 (
+INFO  00:49:10,929 - #9 nizch
+INFO  00:49:10,929 - #17 [
+INFO  00:49:10,929 - #8 1
+INFO  00:49:10,929 - #18 ]
+INFO  00:49:10,929 - #15 )
+INFO  00:49:10,929 - #5 ;
+INFO  00:49:10,929 - #27 print
+INFO  00:49:10,929 - #14 (
+INFO  00:49:10,929 - #9 nizch
+INFO  00:49:10,929 - #17 [
+INFO  00:49:10,929 - #9 jedan
+INFO  00:49:10,929 - #34 *
+INFO  00:49:10,929 - #8 2
+INFO  00:49:10,929 - #18 ]
+INFO  00:49:10,929 - #15 )
+INFO  00:49:10,929 - #5 ;
+INFO  00:49:10,929 - #9 bodovi
+INFO  00:49:10,929 - #37 =
+INFO  00:49:10,929 - #9 bodovi
+INFO  00:49:10,929 - #29 +
+INFO  00:49:10,929 - #14 (
+INFO  00:49:10,929 - #9 pet
+INFO  00:49:10,930 - #34 *
+INFO  00:49:10,930 - #9 jedan
+INFO  00:49:10,930 - #30 -
+INFO  00:49:10,930 - #8 1
+INFO  00:49:10,930 - #15 )
+INFO  00:49:10,930 - #34 *
+INFO  00:49:10,930 - #9 bodovi
+INFO  00:49:10,930 - #30 -
+INFO  00:49:10,930 - #14 (
+INFO  00:49:10,930 - #8 3
+INFO  00:49:10,930 - #36 %
+INFO  00:49:10,930 - #8 2
+INFO  00:49:10,931 - #29 +
+INFO  00:49:10,931 - #8 3
+INFO  00:49:10,931 - #34 *
+INFO  00:49:10,931 - #8 2
+INFO  00:49:10,931 - #30 -
+INFO  00:49:10,931 - #8 3
+INFO  00:49:10,931 - #15 )
+INFO  00:49:10,931 - #5 ;
+INFO  00:49:10,931 - #27 print
+INFO  00:49:10,931 - #14 (
+INFO  00:49:10,931 - #9 bodovi
+INFO  00:49:10,931 - #15 )
+INFO  00:49:10,931 - #5 ;
+INFO  00:49:10,931 - #4 }
+INFO  00:49:10,931 - #4 }
+INFO  00:49:10,935 - ===================================
+INFO  00:49:10,937 - Deklarisana konstanta (nula) na liniji 5
+INFO  00:49:10,938 - Deklarisana konstanta (jedan) na liniji 6
+INFO  00:49:10,938 - Deklarisana konstanta (pet) na liniji 7
+INFO  00:49:10,938 - Deklarisana promenljiva (niz) na liniji 9
+INFO  00:49:10,938 - Deklarisana promenljiva (nizch) na liniji 10
+INFO  00:49:10,938 - Deklarisana promenljiva (bodovi) na liniji 14
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 25
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 26
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 27
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 27
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 27
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 27
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 28
+INFO  00:49:10,938 - Pristup nizu (niz) na liniji 28
+INFO  00:49:10,939 - Pristup nizu (niz) na liniji 30
+INFO  00:49:10,939 - Pristup nizu (niz) na liniji 33
+INFO  00:49:10,939 - Pristup nizu (niz) na liniji 34
+INFO  00:49:10,939 - Pristup nizu (niz) na liniji 35
+INFO  00:49:10,939 - Pristup nizu (nizch) na liniji 39
+INFO  00:49:10,939 - Pristup nizu (nizch) na liniji 40
+INFO  00:49:10,939 - Pristup nizu (nizch) na liniji 41
+INFO  00:49:10,939 - Pristup nizu (nizch) na liniji 42
+INFO  00:49:10,939 - Pristup nizu (nizch) na liniji 43
+INFO  00:49:10,943 - Parsiranje uspesno zavrseno!
